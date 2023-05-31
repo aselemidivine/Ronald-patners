@@ -272,7 +272,7 @@ font-family: 'Rubik', sans-serif; */
     gap: 25px;
   }
   
-  .w-100 { width: 76%; }
+  .w-100 { width: 100%; }
   
   
   
@@ -508,7 +508,7 @@ font-family: 'Rubik', sans-serif; */
   .service .section-title { margin-block-end: 50px; }
   
   .service-card {
-    padding: 33px;
+    padding: 17px;
     min-height: 389px;
     box-shadow: var(--shadow-2);
     border-radius: var(--radius-6);
@@ -1174,7 +1174,7 @@ font-family: 'Rubik', sans-serif; */
     background: var(--atomic-tangerine);
     color: #333;
     transform: rotateY(180deg);
-    text-align: center;
+    padding: 30px;
     border-radius: 40px;
     font-size: 18px;
     font-weight: bold;
@@ -1229,8 +1229,8 @@ swiper-slide img {
 /* TESTIMONIALS */
 .contain {
   width: 100%;
-  min-height: 100vh;
-  background: #ffe8f0;
+  min-height: 93vh;
+  /* background: #ffe8f0; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1238,17 +1238,83 @@ swiper-slide img {
 
 .testimonial {
   width: 90%;
-  max-width: 800px;
+  max-width: 1088px;
   margin: auto;
 }
 
+.testimon .container{
+  text-align: center;
+}
+
 .testimonial-text {
-  background: #ff0058;
+  background: var(--hero);
   color: #fff;
   width: 100%;
+  border-radius: 10px;
   height: 350px;
   position: relative;
-  /* box-shadow: ; */
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.user-text {
+  width: 80%;
+  text-align: center;
+  /* line-height: 30px; */
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+}
+
+.user-text.active-text {
+  display: block;
+  animation: moveup 0.5s linear forwards;
+}
+
+.user-pic.active-pic {
+  width: 100px;
+  border: 3px solid var(--atomic-tangerine);
+}
+
+
+.user-text .fas {
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.user-text span {
+  display: block;
+  font-size: 13px;
+  margin-top: 70px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.testimonial-pic {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-pic {
+  width: 13%;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@keyframes moveup {
+  0% {
+    margin-top: 25px;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }
 
 /* .swiper-container {

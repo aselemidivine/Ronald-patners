@@ -1,6 +1,20 @@
 'use strict';
 
+// let userTexts = document.getElementsByClassName("user-text");
+// let userPics = document.getElementsByClassName("user-pic");
 
+// function showReview() {
+//   for(userPic of userPics) {
+//     userPic.classList.remove("active-pic");
+//   }
+//   for(userText of userTexts) {
+//     userText.classList.remove("active-text");
+//   }
+//   let i = Array.from(userPics).indexOf(event.target);
+
+//   userPics[i].classList.add("active-pic");
+//   userTexts[i].classList.add("active-text");
+// }
 
 /**
  * add event listener on multiple elements
@@ -179,18 +193,16 @@ hiddenElements.forEach((el) => observer.observe(el));
 //   }
 // });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   var elems = document.querySelectorAll('.carousel');
-//   var instances = M.Carousel.init(elems, options);
-// });
+// let userTexts = document.getElementsByClassName("user-text");
+// let userPics = document.getElementsByClassName("user-pic");
 
-// $(document).ready(function(){
-//   $('.caarousel').carousel({
-//     padding: 200
-//   });
-//   autoplay();
-//   function autoplay() {
-//     $('.caarousel').carousel('next');
-//     setTimeout(autoplay, 4500);
+// function showReview() {
+//   for(userPic of userPics) {
+//     userPic.classList.remove("active-pic");
 //   }
-// });
+//   for(userText of userTexts) {
+//     userText.classList.remove("active-text");
+//   }
+// }
+
+

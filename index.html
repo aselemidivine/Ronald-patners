@@ -615,7 +615,7 @@
         </section>
 
         <!-- 
-        - #PROJECT
+        - #THINK OF STUDYING 
       -->
 
         <section class="section project hidden" aria-labelledby="project-label">
@@ -645,7 +645,17 @@
                       </figure>
                     </div>
                   </div>
-                  <div class="theback"> back of the card</div>
+                  <div class="theback"> 
+                    <p>Diversity and open-mindedness are the fabrics of Canada. This is the reason why thousands of international students have chosen to study in Canada and make the country their permanent home in recent times.</p>
+                    <a href="#" class="btn-text">
+                      <span class="span">APPLY HERE</span>
+  
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
                 </div>               
               </div>
             </li>
@@ -772,27 +782,51 @@
           - #TESTIMONIALS
          -->
 
-         <!-- <section class="contain"> -->
+         <section class="hidden testimon">
+          <div class="container">
+
+            <p class="section-subtitle" id="project-label">TESTIMONIALS</p>
+            <h2 class="h2 section-title">
+              What Our Happy Students Have To Say
+            </h2>
+          </div>
           <div class="contain">
+            
             <div class="testimonial">
-              <div class="testimonial-text">
+              <div class="testimonial-text"  style="background-image: url('./assets/images/hero-bg.jpg')">
                 <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae cum odio maiores explicabo voluptatum rerum hic illo? Fuga tempora repellat sit animi optio, maiores in exercitationem unde quasi earum.</p>
                   <span>Kemi Adesoye, student</span>
                 </div>
-              </div>
+                <div class="user-text active-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Ronald-partners is one of the best consultancies. They work very hard, and very trustable consultancy and all services were free. They provide all the information as well as help you with your career plan. They provide you with information about sop, application, interview preparation and visa filing.</p>
+                  <span>Kemi Adesoye, student</span>
+                </div>
+                <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Thank you, Ronald-partners, for your excellent service. Thank you to My Counsellor, who is so helpful and loyal about their service. Their Education Counsellors explained well the whole process to us to get my visa and made it a stress-free process all throughout. I highly recommend ronald-partners who are looking for a great migration agent.</p>
+                  <span>Kemi Adesoye, student</span>
+                </div>
+                <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Ronald and Partners is one of the best ones out there in their field of profession. I'm really pleased by the services they provide. They are really helpful and always provide the right guidance to the students through their experience. All the staff members are supportive and really happy with their assistance.</p>
+                  <span>Kemi Adesoye, student</span>
+                </div>
+              </div>  
               <div class="testimonial-pic">
-                <img src="./assets/images/hero-1.png" alt="" class="user-pic">
-                <img src="./assets/images/hero-2.png" alt=""  class="user-pic">
-                <img src="./assets/images/hero-3.png" alt=""  class="user-pic">
-                <img src="./assets/images/hero-4.png" alt=""  class="user-pic">
+                <img src="./assets/images/hero-1.png" alt="" class="user-pic" onclick="showReview()">
+                <img src="./assets/images/hero-2.png" alt=""  class="user-pic active-pic" onclick="showReview()">
+                <img src="./assets/images/hero-1x.png" alt=""  class="user-pic" onclick="showReview()">
+                <img src="./assets/images/hero-4.png" alt=""  class="user-pic" onclick="showReview()">
               </div>
             </div>
           </div>
 
 
 
-         <!-- </section> -->
+         </section>
 
         <!-- 
         - #CTA
@@ -951,6 +985,26 @@
     <!-- 
     - custom js link
   -->
+
+<script>
+
+    let userTexts = document.getElementsByClassName("user-text");
+    let userPics = document.getElementsByClassName("user-pic");
+
+    function showReview() {
+      for(userPic of userPics) {
+        userPic.classList.remove("active-pic");
+      }
+      for(userText of userTexts) {
+        userText.classList.remove("active-text");
+      }
+      let i = Array.from(userPics).indexOf(event.target);
+
+      userPics[i].classList.add("active-pic");
+      userTexts[i].classList.add("active-text");
+    }
+</script>
+
     <script src="./assets/js/script.js"></script>
 
     <!-- 
@@ -964,5 +1018,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
   </body>
 </html>
