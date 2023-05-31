@@ -1,0 +1,1889 @@
+<!-- import QuestionModal from "@/components/QuestionModal";
+import FilterArray from "@/components/formsComponents/FilterArray";
+import SearchField from "@/components/formsComponents/SearchField";
+import React from "react";
+import { useState } from "react";
+import styled from "styled-components";
+
+const dataList = [
+  {
+    id: "1",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    name: "Aselemi divine",
+    views: "23",
+    likes: "63",
+    answers: "3",
+  },
+  {
+    id: "2",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    name: "daivine thinker",
+    views: "283",
+    likes: "63",
+    answers: "33",
+  },
+  {
+    id: "3",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    name: "Toyeeb Kayode",
+    views: "278",
+    likes: "632",
+    answers: "309",
+  },
+  {
+    id: "4",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    name: "Feranmi Esther",
+    views: "234",
+    likes: "612",
+    answers: "6",
+  },
+  {
+    id: "5",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    name: "Afenikhena ThankGod",
+    views: "23",
+    likes: "63",
+    answers: "3",
+  },
+  {
+    id: "6",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    name: "Makinde Sodiq",
+    views: "23",
+    likes: "63",
+    answers: "3",
+  },
+];
+
+const List = ({ data }) => {
+  return (
+    <div className="parent-style">
+      {data.map((item, index) => (
+        <div className="forum">
+          <div className="forum-post">
+            <div className="forum-post-1">
+              <div className="header-wrapper">
+                <div className="header-text">
+                  <h4>
+                    does not appear to have any patterns in it. If you see valid
+                    patterns in the issue is probably caused by a circular imp
+                  </h4>
+                </div>
+                <div className="answers">
+                  <h4>{item.answers}</h4>
+                  <p>Answers</p>
+                </div>
+              </div>
+
+              <div className="commentss">
+                <div className="name">
+                  <img src="" alt="" className="img-rad" />
+                  <p className="views-p-tag">
+                    <span className="values">{item.name}</span>
+                  </p>
+                </div>
+                <div className="likes-views">
+                  <div className="name">
+                    <span class="material-symbols-outlined">{item.icon1}</span>
+                    <p className="views-p-tag">
+                      <span className="values">({item.likes})</span> Likes
+                    </p>
+                  </div>
+                  <div className="name">
+                    <span class="material-symbols-outlined">
+                      {" "}
+                      {item.icon2}{" "}
+                    </span>
+                    <p className="views-p-tag">
+                      <span className="values">({item.views})</span> Views
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tech-stack">
+                <span className="default-btn">Html</span>
+                <span className="default-btn">Css</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const Forum = ({ props }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  return (
+    <ForumContainer>
+      <div className="containe">
+        <div className="community">
+          <h3>Welcome to the Community</h3>
+          <p>
+            Instincthub community is the best place to connect with like-minded
+            folks going through the same journey as you. It’s made up of a
+            mixture of students, professionals, and volunteers from all over the
+            world, and it’s a safe and positive environment to ask questions,
+            learn, and grow.
+          </p>
+        </div>
+      </div>
+      <ForumContainerBody className="container">
+        <div className="start">
+          <div className="search-forum">
+            <SearchField />
+          </div>
+          <div className="filter-container">
+            <div className="filter">
+              <FilterArray options={["Newest", "Option 2", "Option 3"]} />
+              <FilterArray options={["All topics", "Option 2", "Option 3"]} />
+              <FilterArray options={["Year", "Option 2", "Option 3"]} />
+            </div>
+          </div>
+          {/* <div className="filter-btn"> */}
+          <button
+            onClick={() => {
+              setIsModalOpen(true);
+            }}
+            className="outlined-btn"
+          >
+            Ask Question
+          </button>
+          {/* </div> */}
+        </div>
+
+        {/* Modal component */}
+        {isModalOpen && <QuestionModal closeModal={handleCloseModal} />}
+
+        <List data={dataList} />
+      </ForumContainerBody>
+    </ForumContainer>
+  );
+};
+
+export default Forum;
+
+const ForumContainer = styled.div`
+  margin-top: 40px;
+
+  .containe {
+    background: linear-gradient(79.85deg, #009ba2 -20.87%, #bc658d 87.74%);
+    height: 300px;
+  }
+
+  .views-p-tag span {
+    font-size: 12px;
+  }
+  .views-p-tag {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+
+  .likes-views {
+    display: flex;
+    align-items: center;
+  }
+
+  .parent-style {
+    margin-top: 70px;
+  }
+
+  .commentss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 401px;
+    margin-bottom: 24px;
+    // margin-top: 16px;
+  }
+
+  .img-rad {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background-color: var(--DarkCyan);
+    border-radius: 100%;
+  }
+
+  .name {
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 4px;
+      cursor: pointer;
+    }
+
+    cursor: pointer;
+    .name-style {
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .values {
+      color: var(--Gunmetal);
+      font-weight: 700;
+    }
+  }
+
+  .header-text {
+    h4 {
+      font-weight: 600;
+    }
+  }
+
+  .community {
+    // height: 129px;
+    // max-width: 730px;
+    margin: 30px;
+    padding-left: 30px;
+    padding-top: 60px;
+
+    height: 129px;
+    max-width: 730px;
+  }
+
+    h3 {
+      color: var(--White);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    p {
+      color: var(--White);
+      margin-top: 8px;
+    }
+  }
+
+  .answers {
+    h4 {
+      color: var(--DarkCyan);
+      margin-left: 15px;
+    }
+    p {
+      color: var(--Gunmetal);
+    }
+  }
+
+  .forum {
+    border-bottom: var(--borderDefault);
+  }
+
+  // MEDIA SCREENS
+  @media (min-width: 648px) {
+    .answers {
+      display: flex;
+      align-items: center;
+      h4 {
+        margin-right: 20px;
+      }
+    }
+
+    .forum {
+      min-height: 232px;
+      margin-bottom: 14px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .forum {
+      min-height: 207px;
+    }
+
+
+    .header-text {
+      max-width: 762px;
+    }
+
+    .answers {
+      display: block;
+    }
+    .commentss {
+      max-width: 372px;
+    }
+  }
+
+  @media (max-width: 646px) {
+    .forum {
+      min-height: 308px;
+      margin-bottom: 10px;
+    }
+
+    .answers {
+      display: flex;
+      align-items: center;
+      h4 {
+        margin-right: 20px;
+      }
+      p {
+      }
+    }
+
+    .tech-stack {
+      display: flex;
+      justify-content: space-between;
+      .default-btn {
+        // margin: 20px 0 10px 0;
+        // width: 46%;
+        // padding: 13px 69px;
+        margin: 20px 0 10px 0;
+        width: 48%;
+        height: 39px;
+        font-size: 14px;
+        padding-left: 85px;
+      }
+    }
+
+    .commentss {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  // @media (max-width: 377px) {
+  //   .community {
+  //     h3 {
+  //       font-size: 16px;
+  //     }
+  //   }
+  // }
+
+  @media (max-width: 483px) {
+    .forum {
+      min-height: 308px;
+    }
+    .forum-post-1 h4 {
+      font-size: 15px;
+    }
+
+    .views-p-tag span {
+      font-size: 11px;
+    }
+
+    .community {
+      padding: 12px;
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+    .img-rad {
+      width: 24px;
+      height: 24px;
+    }
+
+    .name p {
+      font-size: 12px;
+    }
+
+    .img-icon {
+      align-items: center;
+    }
+
+    .name .values {
+      font-size: 11px;
+    }
+
+    .name span {
+      font-size: 16px;
+    }
+
+    .tech-stack {
+      .default-btn {
+        padding-left: 60px;
+      }
+    }
+
+   
+  }
+
+  // MEDIA QUERY ENDS
+`;
+
+const ForumContainerBody = styled.div`
+  .search-forum {
+    width: 100%;
+    .event-input {
+      width: 100%;
+    }
+  }
+
+  .start {
+    padding: 24px;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.05),
+      0px 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-top: 80px;
+  }
+
+  .outlined-btn {
+    width: 100%;
+  }
+
+  // MEDIA SCREENS
+
+  @media (min-width: 868px) {
+    .search_set {
+      width: 65%;
+      height: 40px;
+    }
+
+    .start {
+      display: flex;
+      align-items: center;
+    }
+    .outlined-btn {
+      width: 25%;
+      padding: 12px;
+      margin: 0;
+      height: 40px;
+    }
+
+    .filter {
+      width: 28%;
+      margin-right: 22px;
+    }
+  }
+
+
+  @media (min-width: 648px) {
+    .filter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .select__btn {
+        min-width: 112px;
+        height: 24px;
+        border: none;
+      }
+    }
+
+    .tech-stack {
+      .default-btn {
+        width: 58px;
+        height: 37px;
+        // padding: 5px;
+        background-color: white;
+        padding: 8px 16px;
+        margin: 0px;
+        margin-right: 16px;
+        border: 1px solid #2c333a;
+        border-radius: 5px;
+      }
+    }
+
+    .border-rad {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+      background-color: #00838f;
+      border-radius: 100%;
+    }
+  }
+`; -->
+<!-- 
+
+
+
+import CodeSnippet from "@/components/CodeSnippet";
+import FilterArray from "@/components/formsComponents/FilterArray";
+import TextArea from "@/components/formsComponents/TextArea";
+import React, { useState } from "react";
+import styled from "styled-components";
+
+const dataList = [
+  {
+    id: "1",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    icon3: "chat",
+    name: "Aselemi divine",
+    views: "23",
+    time: "01:00AM",
+    date: "Friday, 12 2022",
+    likes: "53",
+    comments: "4",
+    answers: "3",
+  },
+  {
+    id: "2",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    icon3: "chat",
+    name: "daivine thinker",
+    views: "283",
+    time: "08:00AM",
+    date: "Tuesday, 16 2022",
+    likes: "63",
+    comments: "2",
+    answers: "33",
+  },
+  {
+    id: "3",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    icon3: "chat",
+    name: "Toyeeb Kayode",
+    views: "278",
+    time: "03:00AM",
+    date: "Friday, 31 2023",
+    likes: "632",
+    comments: "14",
+    answers: "309",
+  },
+  {
+    id: "4",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    icon3: "chat",
+    name: "Feranmi Esther",
+    views: "234",
+    time: "04:00AM",
+    date: "Friday, 12 2022",
+    likes: "612",
+    comments: "908",
+    answers: "6",
+  },
+  {
+    id: "5",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    icon3: "chat",
+    name: "Afenikhena ThankGod",
+    views: "23",
+    time: "03:00AM",
+    date: "Friday, 12 2022",
+    likes: "63",
+    comments: "467",
+    answers: "3",
+  },
+  {
+    id: "6",
+    icon1: "thumb_up",
+    icon2: "visibility",
+    icon3: "chat",
+    name: "Makinde Sodiq",
+    views: "23",
+    time: "09:00AM",
+    date: "Thursday, 22 2022",
+    likes: "63",
+    comments: "634",
+    answers: "3",
+  },
+];
+
+const List = ({ data }) => {
+  return (
+    <div>
+      {data.map((item, index) => (
+        <div>
+          <div className="feeds">
+            <div className="feeds-content">
+              <div className="comments">
+                <div className="img-icon">
+                  <img src="" alt="" className="img-rad" />
+                  <p>{item.name}</p>
+                </div>
+                <div className="name">
+                  <p>{item.date}</p>
+                  <p className="time">{item.time}</p>
+                </div>
+              </div>
+              <p>
+                Did you first create "main" to reference the element, as the
+                instructor did in step 3?
+              </p>
+              <p>
+                If that's not it, try sharing your whole code, with proper
+                formatting. You might want to take a look at this video about
+                Posting a Question, and this one about sharing a snapshot of
+                your workspace.
+              </p>
+
+              <div className="commentss">
+                <div className="name">
+                  <span class="material-symbols-outlined">{item.icon1}</span>
+                  <p className="views-p-tag">
+                    <span className="values">({item.likes})</span> Likes
+                  </p>
+                </div>
+                <div className="name">
+                  <span class="material-symbols-outlined"> {item.icon2} </span>
+                  <p className="views-p-tag">
+                    <span className="values">({item.views})</span> Views
+                  </p>
+                </div>
+                <div className="name">
+                  <span class="material-symbols-outlined"> {item.icon3} </span>
+                  <p className="views-p-tag">
+                    <span className="values">({item.comments})</span> Comments
+                  </p>
+                </div>
+              </div>
+
+              <button class="outlined-btn">
+                Add Comment<span class="material-symbols-outlined">add</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const questionDetails = () => {
+  const code = `function sayHello() {
+    console.log("Hello, World!");
+  }`;
+
+  return (
+    <ForumContainer className="container">
+      <div className="forum-question">
+        <span className="html">Html</span>
+        <span class="material-symbols-outlined">navigate_next</span>
+        <p>does not appear to have any...</p>
+      </div>
+      <div className="forum-question-container">
+        <h4>
+          does not appear to have any patterns in it. If you see valid patterns
+          in the issue is probably caused by a circular imp
+        </h4>
+        <div className="code-display">
+          <CodeSnippet code={code} />
+        </div>
+      </div>
+      <div className="question-container">
+        <div className="answers">
+          <h4>3</h4>
+          <p>Answers</p>
+        </div>
+
+        <div className="filter">
+          <FilterArray options={["Sort By", "Newest", "Year"]} />
+        </div>
+      </div>
+      <List data={dataList} />
+
+      <div className=" border">
+        <img src="" alt="" className="img-rad" />
+        <div className="textfield-container">
+          <TextArea placeholder="Ask Your Question" />
+
+          <button class="outlined-btn answer-btn">Post Answer</button>
+        </div>
+      </div>
+    </ForumContainer>
+  );
+};
+
+export default questionDetails;
+
+const ForumContainer = styled.div`
+  .forum-question {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 282px;
+    height: 27px;
+    .material-symbols-outlined {
+      font-weight: 700 !important;
+    }
+    .html {
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--Gunmetal);
+      opacity: 0.7;
+    }
+  }
+
+  .forum-question-container {
+    max-width: 873px;
+    height: 320px;
+    h4 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+
+  .question-container {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 61px;
+    margin-bottom: 71px;
+    height: 40px;
+  }
+
+  .feeds {
+    display: flex;
+    border-bottom: var(--borderDefault);
+    margin-top: 40px;
+  }
+  .border {
+    display: flex;
+    border-bottom: var(--borderDefault);
+    margin-top: 40px;
+  }
+
+  .answers {
+    width: 90px;
+    justify-content: space-between;
+    display: flex;
+    h4 {
+      font-size: 25px;
+      margin-left: 15px;
+      width: 0px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Gunmetal);
+
+
+    .select__btn {
+      width: 102px;
+      height: 40px;
+      border: 1px solid rgba(44, 51, 58, 0.2);
+      border-radius: 5px;
+    }
+  }
+
+  .feeds-content {
+    width: 762px;
+
+    .comments {
+      margin-top: 0px;
+
+      .style,
+      .time {
+          font-weight: 700;
+          color: var(--Gunmetal);
+          margin-left: 30px;
+
+      }
+    }
+  }
+
+ 
+
+  .img-rad {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    background-color: var(--DarkCyan);
+    border-radius: 100%;
+  }
+
+  .comments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 486px;
+    height: 24px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+  }
+  .commentss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 401px;
+    height: 24px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+  }
+
+  .name {
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 4px;
+      cursor: pointer;
+    }
+ 
+    cursor: pointer;
+    .name-style {
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .values {
+      color: var(--Gunmetal);
+      font-weight: 700;
+    }
+  }
+
+  // MEDIUM SCREENS
+
+  @media (max-width: 648px) {
+    .forum-question-container h4 {
+      font-size: 20px;
+  }
+
+  .border {
+    display: block;
+  }
+
+  .textfield-container {
+    margin-bottom: 20px;
+
+    .answer-btn {
+      width: 100%;
+      height: 44px;
+    }
+  }
+
+   .outlined-btn {
+    width: 100%;
+   }
+
+    .img-icon {
+      display: flex;
+    }
+
+    .comments {
+      display: block;
+      margin-bottom: 74px;
+    }
+
+    .border {
+
+      .img-rad {
+        margin-bottom: 20px;
+      }
+  }
+}
+
+
+@media (min-width: 653px) {
+  .textfield-container {
+    min-width: 551px;
+  }
+}
+
+// MEDIA QUERY ENDS
+
+
+
+
+
+
+  button {
+    min-width: 185px;
+    height: 40px;
+    border-radius: 0px;
+    color: var(--Gunmetal);
+    border: var(--borderDefault);
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .outlined-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+
+  .answer-btn {
+    width: 203px;
+    height: 55px;
+    border-radius: 5px;
+  }
+
+  .textfield-container {
+    // min-width: 650px;
+    margin-bottom: 20px;
+  }
+
+  .input_w {
+    margin-top: 0px;
+  }
+
+  textarea {
+    // max-width: 650px;
+    height: 162px;
+    margin-bottom: 10px;
+  }
+
+  textarea::placeholder {
+    color: var(--Gunmetal);
+    font-weight: 500;
+  }
+
+  .border {
+    border-bottom: none !important;
+  }
+
+  .code-display {
+    max-width: 701px;
+    height: 216px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--Gunmetal);
+
+    
+  }
+
+  .img-icon {
+    display: flex;
+    p {
+      font-weight: 700;
+      color: var(--Gunmetal);
+
+
+    }
+  }
+
+  @media (max-width: 448px) {
+   
+
+    .question-container {
+      margin-top: 118px;
+    }    
+    .views-p-tag span {
+      font-size: 11px;
+  }
+    .views-p-tag {     
+      font-size: 12px;
+    }
+    .img-rad {
+        width: 33px;
+        height: 28px;
+    }
+
+    .name p {
+      font-size: 12px;
+    }
+
+    .img-icon {
+      align-items: center;
+    }
+
+    .name .values {
+      font-size: 11px;
+  }
+    
+
+    .name span {
+      font-size: 16px;
+  }
+
+    .comments {
+      width: 267px;
+    }
+    .commentss {
+      max-width: 307px;
+    }
+  }
+`; -->
+
+<!-- 
+import React, { useState } from "react";
+import styled from "styled-components";
+import TextArea from "@/components/formsComponents/TextArea";
+
+const QuestionForm1 = ({ onNext }) => {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const isInputValid = inputValue.trim().length >= 8; // Check if input value is not empty
+
+  return (
+    <div>
+      <h4>Ask a Question</h4>
+      <div className="txt_modal">
+        <TextArea
+          placeholder=" What are the best techniques to learn faster?"
+          onChange={handleInputChange}
+        />
+        <button className="default-btn blue-color" onClick={onNext}>
+          Next Steps
+        </button>
+      </div>
+      <div className="border-test">
+        <h5>A few reminder before you post</h5>
+        <div className="reminder">
+          <div className="mui search">
+            <span class="material-symbols-outlined check-icon">search</span>
+          </div>
+          <p>
+            There may be other studdents who have already asked the same
+            question. You should do a quick search first to make sure your
+            question is unique.
+          </p>
+        </div>
+        <div className="reminder">
+          <div className="mui">
+            <span class="material-symbols-outlined check-icon">play_arrow</span>
+          </div>
+          <p>
+            The best way to get answers you're looking for is to learn how to
+            ask good questions. Get tips on how to ask good questions to get
+            answers more quickly.
+          </p>
+        </div>
+        <div className="reminder">
+          <div className="mui">
+            <span class="material-symbols-outlined check-icon">
+              priority_high
+            </span>
+          </div>
+          <p>
+            Your full name or profile name will appear next to your comment,
+            according to your Privacy Settings. Your profile name can be changed
+            in the Account Settings.
+          </p>
+        </div>
+        <div className="reminder">
+          <div className="mui">
+            <span class="material-symbols-outlined check-icon">
+              question_mark
+            </span>
+          </div>
+          <p>
+            If you're experiencing what appears to be a bug or something that
+            doesn't seem to be working correctly, please contact support
+            directly.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default QuestionForm1;
+
+const Modal = styled.div`
+
+
+// @media (max-width: 468px) {
+//   .border-test {
+//     padding: 10px;
+//     background: #d5d5d555;
+//     min-height: 377px;
+//   }
+// }
+
+
+//display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #d9d9d9b5;
+  padding: 20px;
+  // opacity: 0.79;
+  z-index: 1000;
+  .modal-content {
+    background-color: var(--White);
+    max-width: 721px;
+    // min-height: 556px;
+    margin: 150px auto;
+    opacity: 1;
+    margin-bottom: 50px;
+    // padding: 30px;
+    position: relative;
+
+    @media (max-width: 800px) {
+      // padding: 30px;
+      // padding-bottom: 50px;
+      h4 {
+        margin-top: 50px;
+      }
+      
+    }
+
+   
+    h2 {
+      margin-bottom: 0;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    h4 {
+      font-weight: 600;
+    }
+
+    .close_it {
+      transition: 0.3s;
+      cursor: pointer;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      padding: 7px;
+      border: 2px solid #d9d9d9;
+      border-radius: 10px;
+
+      &:hover {
+        background: #d9d9d9;
+      }
+    }
+
+    .txt_modal {
+      // max-height: 400px;
+      overflow: auto;
+      padding: 0 5px;
+      .blue-color {
+        min-width: 110px;
+        background: #5072a7;
+        color: white;
+        margin-right: 20px;
+      }
+      h5 {
+        margin-top: 10px;
+      }
+    }
+    .txt_modal::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .txt_modal::-webkit-scrollbar-track {
+      //   background-color: #d3d3d3;
+      border-radius: 50px;
+    }
+
+    .txt_modal::-webkit-scrollbar-thumb {
+      background-color: #a9a9a9;
+      border-radius: 50px;
+    }
+  }
+
+  .blue-color {
+    // background: #5072a7;
+    // color: white;
+
+  }
+
+  .input_w textarea {
+    border: 2px solid #d8d8d8;
+  }
+
+  textarea::placeholder {
+    color: gray;
+    font-weight: 500;
+  }
+
+  .detail-textarea {
+    .input_w textarea {
+      height: 200px;
+      background: #d9d9d9b5;
+    }
+    .select {
+      width: 45%;
+    }
+
+    textarea::placeholder {
+      color: gray;
+      font-weight: 500;
+    }
+  }
+
+ 
+
+
+  // .border-test {
+  //   padding: 30px;
+  //   background: #d5d5d555;
+  //   height: 291px;
+  //   h5 {
+  //     margin-bottom: 0px;
+  //   }
+  // }
+
+  .mui {
+    width: 23px;
+    height: 23px;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    margin-left: 5px;
+    // border-radius: 100%;
+    // border: 1px solid var(--Gunmetal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .check-icon {
+      color: #00838f;
+      font-weight: 700 !important;
+      border: 2px solid #00838f;
+      border-radius: 50px;
+      font-size: 20px;
+      margin-right: 15px;
+  }
+  
+  }
+
+ 
+
+  .reminder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-size: 14px;
+      color: #00838f;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  .modal-question {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 30px;
+  }
+
+  .answer-2 {
+    padding: 30px;
+  }
+
+  .related-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #d8d8d8; 
+        
+
+      p {
+        font-size: 17px;
+        color: #5072a7;
+        font-weight: 700;
+      }
+      
+      .no-of-answers {
+        color: green;
+        margin: 0px;
+      }
+    }
+
+    .detail-question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+          p {
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0px;
+          } 
+          .markdown-color {
+            color: #5072a7;
+            font-size: 17px;
+            font-weight: 700;
+        } 
+    }
+
+    .green-icon {
+      color: var(--White);
+      font-weight: 700 !important;
+      background: green;
+      border-radius: 100%;
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+    
+  
+
+
+  .no-2 {
+    background-color: var(--White);
+    max-width: 721px;
+    margin: 150px auto;
+    opacity: 1;
+    margin-bottom: 50px;
+    // padding: 30px;
+    position: relative;
+    @media (max-width: 800px) {
+      padding: 30px;
+      padding-bottom: 50px;
+      h2 {
+        margin-top: 50px;
+      }
+      .answer-2 {
+        padding: 0px;
+    }
+    }
+    h2 {
+      margin-bottom: 0;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    h4 {
+      font-weight: 600;
+    }
+
+    .close_it {
+      transition: 0.3s;
+      cursor: pointer;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      padding: 7px;
+      border: 2px solid #d9d9d9;
+      border-radius: 10px;
+
+      &:hover {
+        background: #d9d9d9;
+      }
+    }
+
+    // .question-detail {
+    //   max-height: 0px;
+
+    //     }
+
+    .txt_modal {
+      // min-height: 400px;
+      overflow: auto;
+      padding: 0 5px;
+       
+        .blue-color {
+          min-width: 110px;
+          background: #5072a7;
+          color: white;
+          margin-right: 20px;
+        }
+
+        .no-style {
+          border: 2px solid var(--DarkCyan);
+          color: var(--DarkCyan);
+        }
+
+      h5 {
+        margin-top: 10px;
+      }
+      h4 {
+        margin-top: 20px;
+      }
+    }
+
+    .input_w {
+      margin-top: 20px;
+    }
+
+    .txt_modal::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .txt_modal::-webkit-scrollbar-track {
+      //   background-color: #d3d3d3;
+      border-radius: 50px;
+    }
+
+    .txt_modal::-webkit-scrollbar-thumb {
+      background-color: #a9a9a9;
+      border-radius: 50px;
+    }
+  }
+}
+
+.select__btn {
+  padding: 0 5px;
+  border: 2px solid #d8d8d8;
+  span {
+    background: #00838f;
+    font-size: 36px;
+    height: 42px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+.email {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-bottom: 1px solid #d9d9d9d9;
+  .check-icon {
+    color: #00838f;
+    font-weight: 700 !important;
+    border: 2px solid #00838f;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 15px;
+}
+p {
+  color: #00838f;
+  font-weight: 700 !important;
+}
+}
+
+
+`; -->
+
+<!-- 
+
+import React from "react";
+import styled from "styled-components";
+import { useState } from "react";
+import QuestionForm2 from "@/components/forms/QuestionForm2";
+import QuestionForm3 from "@/components/forms/QuestionForm3";
+import QuestionForm1 from "@/components/forms/QuestionForm1";
+
+const QuestionModal = ({ closeModal }) => {
+  const [currentStep, setCurrentStep] = useState(1);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // const handleClickInsideModal = (e) => {
+  //   e.stopPropagation();
+  //   // Handle clicks inside the modal content if needed
+  // };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  function handleClickInsideModal(event) {
+    event.stopPropagation();
+  }
+
+  const handleNext = () => {
+    setCurrentStep(currentStep + 1);
+  };
+
+  const handlePrevious = () => {
+    setCurrentStep(currentStep - 1);
+  };
+
+  const renderStep = () => {
+    switch (currentStep) {
+      case 1:
+        return <QuestionForm1 onNext={handleNext} />;
+      case 2:
+        return <QuestionForm2 onNext={handleNext} />;
+      case 3:
+        return <QuestionForm3 onPrevious={handlePrevious} />;
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <Modal className="modal">
+      <div className="modal-content" onClick={handleClickInsideModal}>
+        <div className="modal-question">
+          <span
+            onClick={closeModal}
+            class="material-symbols-outlined  close_it"
+          >
+            close
+          </span>
+
+          {renderStep()}
+        </div>
+      </div>
+    </Modal>
+  );
+};
+
+export default QuestionModal;
+
+const Modal = styled.div`
+//display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #d9d9d9b5;
+  padding: 20px;
+  // opacity: 0.79;
+  z-index: 1000;
+  .modal-content {
+    background-color: var(--White);
+    max-width: 721px;
+    // min-height: 556px;
+    margin: 150px auto;
+    opacity: 1;
+    margin-bottom: 50px;
+    // padding: 30px;
+    position: relative;
+
+    @media (max-width: 800px) {
+      padding: 30px;
+      padding-bottom: 50px;
+      h4 {
+        margin-top: 50px;
+      }
+      
+    }
+
+   
+    h2 {
+      margin-bottom: 0;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    h4 {
+      font-weight: 600;
+    }
+
+    .close_it {
+      transition: 0.3s;
+      cursor: pointer;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      padding: 7px;
+      border: 2px solid #d9d9d9;
+      border-radius: 10px;
+
+      &:hover {
+        background: #d9d9d9;
+      }
+    }
+
+    .txt_modal {
+      // max-height: 400px;
+      overflow: auto;
+      padding: 0 5px;
+      .blue-color {
+        min-width: 110px;
+        background: #5072a7;
+        color: white;
+        margin-right: 20px;
+      }
+      h5 {
+        margin-top: 10px;
+      }
+    }
+    .txt_modal::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .txt_modal::-webkit-scrollbar-track {
+      //   background-color: #d3d3d3;
+      border-radius: 50px;
+    }
+
+    .txt_modal::-webkit-scrollbar-thumb {
+      background-color: #a9a9a9;
+      border-radius: 50px;
+    }
+  }
+
+  .blue-color {
+    // background: #5072a7;
+    // color: white;
+
+  }
+
+  .input_w textarea {
+    border: 2px solid #d8d8d8;
+  }
+
+  textarea::placeholder {
+    color: gray;
+    font-weight: 500;
+  }
+
+  .detail-textarea {
+    .input_w textarea {
+      height: 200px;
+      background: #d9d9d9b5;
+    }
+    .select {
+      width: 45%;
+    }
+
+    textarea::placeholder {
+      color: gray;
+      font-weight: 500;
+    }
+  }
+
+
+
+  .border-test {
+    padding: 30px;
+    background: #d5d5d555;
+    // height: 291px;
+    // h5 {
+    //   margin-bottom: 0px;
+    // }
+  }
+
+  @media (max-width: 468px) {
+    modal-question {
+      padding: 0px;
+    }
+
+    .border-test {
+      padding: 10px;
+      h5 {
+        font-size: 15px;
+      }
+    }
+    .reminder {
+      display: block;
+    }
+  }
+
+  .mui {
+    width: 23px;
+    height: 23px;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    margin-left: 5px;
+    // border-radius: 100%;
+    // border: 1px solid var(--Gunmetal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .check-icon {
+      color: #00838f;
+      font-weight: 700 !important;
+      border: 2px solid #00838f;
+      border-radius: 50px;
+      font-size: 20px;
+      margin-right: 15px;
+  }
+  
+  }
+
+ 
+
+  .reminder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-size: 14px;
+      color: #00838f;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  .modal-question {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 30px;
+  }
+
+  .answer-2 {
+    padding: 30px;
+  }
+
+  .related-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #d8d8d8; 
+        
+
+      p {
+        font-size: 17px;
+        color: #5072a7;
+        font-weight: 700;
+      }
+      
+      .no-of-answers {
+        color: green;
+        margin: 0px;
+      }
+    }
+
+    .detail-question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+          p {
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0px;
+          } 
+          .markdown-color {
+            color: #5072a7;
+            font-size: 17px;
+            font-weight: 700;
+        } 
+    }
+
+    .green-icon {
+      color: var(--White);
+      font-weight: 700 !important;
+      background: green;
+      border-radius: 100%;
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+    
+  
+
+
+  .no-2 {
+    background-color: var(--White);
+    max-width: 721px;
+    margin: 150px auto;
+    opacity: 1;
+    margin-bottom: 50px;
+    // padding: 30px;
+    position: relative;
+    @media (max-width: 800px) {
+      padding: 30px;
+      padding-bottom: 50px;
+      h2 {
+        margin-top: 50px;
+      }
+      .answer-2 {
+        padding: 0px;
+    }
+    }
+    h2 {
+      margin-bottom: 0;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    h4 {
+      font-weight: 600;
+    }
+
+    .close_it {
+      transition: 0.3s;
+      cursor: pointer;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      padding: 7px;
+      border: 2px solid #d9d9d9;
+      border-radius: 10px;
+
+      &:hover {
+        background: #d9d9d9;
+      }
+    }
+
+    // .question-detail {
+    //   max-height: 0px;
+
+    //     }
+
+    .txt_modal {
+      // min-height: 400px;
+      overflow: auto;
+      padding: 0 5px;
+       
+        .blue-color {
+          min-width: 110px;
+          background: #5072a7;
+          color: white;
+          margin-right: 20px;
+        }
+
+        .no-style {
+          border: 2px solid var(--DarkCyan);
+          color: var(--DarkCyan);
+        }
+
+      h5 {
+        margin-top: 10px;
+      }
+      h4 {
+        margin-top: 20px;
+      }
+    }
+
+    .input_w {
+      margin-top: 20px;
+    }
+
+    .txt_modal::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    .txt_modal::-webkit-scrollbar-track {
+      //   background-color: #d3d3d3;
+      border-radius: 50px;
+    }
+
+    .txt_modal::-webkit-scrollbar-thumb {
+      background-color: #a9a9a9;
+      border-radius: 50px;
+    }
+  }
+}
+
+.select__btn {
+  padding: 0 5px;
+  border: 2px solid #d8d8d8;
+  span {
+    background: #00838f;
+    font-size: 36px;
+    height: 42px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+.email {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-bottom: 1px solid #d9d9d9d9;
+  .check-icon {
+    color: #00838f;
+    font-weight: 700 !important;
+    border: 2px solid #00838f;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 15px;
+}
+p {
+  color: #00838f;
+  font-weight: 700 !important;
+}
+}
+
+
+`; -->
