@@ -46,7 +46,7 @@ app.post("/submit-form", async (req, res) => {
     const customerEmail = {
       from: "aselemidivine@gmail.com",
       // to: email,
-      to: 'sammybammystudios@gmail.com',
+      to: 'dev.codertjay@gmail.com',
       subject: "Thank you for your submission",
       text: "Your message has been received. We will get back to you soon.",
     };
