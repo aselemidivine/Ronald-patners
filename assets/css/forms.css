@@ -310,6 +310,7 @@ body.nav-active {
   top: 0;
   left: 0;
   width: 100%;
+  background: var(--black-coral);
   padding-block: 20px;
   box-shadow: var(--shadow-1);
   z-index: 4;
@@ -1430,23 +1431,23 @@ body{
   left: 230px;
 }
 
-.container {
+.container-form {
   max-width: 700px;
   width: 100%;
   background-color: #fff;
   position: relative;
-  top: 50px;
+  top: 121px;
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
-.container .title {
+.container-form .title {
   font-size: 25px;
   font-weight: 500;
   position: relative;
   top: -40px;
 }
-.container .title::before {
+.container-form .title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1508,6 +1509,10 @@ form .input-box span.details {
     width: 189px;
     margin-top: 14px;
     height: 32px;
+}
+
+.study-enquiry {
+    min-height: 1060px;
 }
 
 form .category {
