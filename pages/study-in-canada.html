@@ -1,0 +1,59 @@
+<!--Registration Form-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/forms.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <img src = '../assets/images/hero-4.png' alt = "avatar by flaticon" class = "avatar"/>
+    <div class="title">Study Abroad Enquiry </div>
+    <div class="content">
+      <form method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <label class="details">Name</label>
+            <input type="text" class = "inputbox" placeholder="Enter your full name" name = "name" required>
+          </div>
+          <div class="input-box">
+            <label class="details">Nationality</label>
+            <input type="text" class = "inputbox" placeholder="Enter your username" name = "username" required>
+          </div>
+          <div class="input-box">
+            <label class="details">Email</label>
+            <input type="text" class = "inputbox" placeholder="Enter your email" name = "mail" required>
+          </div>
+          <div class="input-box">
+            <label class="details">Phone Mobile</label>
+            <input type="text" class = "inputbox" placeholder="Enter your number" name = "mobile" required>
+          </div>
+          <div class="input-box">
+            <label class="details">What course do you want to study?</label>
+            <input type="text" class = "inputbox" placeholder="Enter your number" name = "mobile" required>
+          </div>
+          <div class="input-box">
+            <label class="details">What country do you want to study in?</label>
+            <select id="country" name="country" required>
+                <option value="country1">Country 1</option>
+                <option value="country2">Country 2</option>
+                <option value="country3">Country 3</option>
+                <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="note">Note:</label>
+            <textarea id="note" name="note" required></textarea>
+          </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
