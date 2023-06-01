@@ -11,27 +11,29 @@
     <img src = '../assets/images/hero-4.png' alt = "avatar by flaticon" class = "avatar"/>
     <div class="title">Study Abroad Enquiry </div>
     <div class="content">
-      <form method="post">
+      <form 
+        id="myForm"
+      >
         <div class="user-details">
           <div class="input-box">
             <label class="details">Name</label>
-            <input type="text" class = "inputbox" placeholder="Enter your full name" name = "name" required>
+            <input type="text" class = "inputbox" placeholder="Enter your full name" name = "name" id="name" required>
           </div>
           <div class="input-box">
             <label class="details">Nationality</label>
-            <input type="text" class = "inputbox" placeholder="Enter your username" name = "username" required>
+            <input type="text" class = "inputbox" placeholder="Enter your username" name = "username" id="nationality" required>
           </div>
           <div class="input-box">
             <label class="details">Email</label>
-            <input type="text" class = "inputbox" placeholder="Enter your email" name = "mail" required>
+            <input type="text" class = "inputbox" placeholder="Enter your email" name = "mail" id="email" required>
           </div>
           <div class="input-box">
             <label class="details">Phone Mobile</label>
-            <input type="text" class = "inputbox" placeholder="Enter your number" name = "mobile" required>
+            <input type="text" class = "inputbox" placeholder="Enter your number" name="mobile" id="mobile" required>
           </div>
           <div class="input-box">
             <label class="details">What course do you want to study?</label>
-            <input type="text" class = "inputbox" placeholder="Enter your number" name = "mobile" required>
+            <input type="text" class = "inputbox" placeholder="Enter your number" name="mobile" id="study" required>
           </div>
           <div class="input-box">
             <label class="details">What country do you want to study in?</label>
@@ -44,7 +46,7 @@
           </div>
           <div class="input-box">
             <label for="note">Note:</label>
-            <textarea id="note" name="note" required></textarea>
+            <textarea id="note" name="note" id="note" required></textarea>
           </div>
         </div>
         
@@ -55,5 +57,7 @@
     </div>
   </div>
 
+  <script src="../assets/js/canada.js">
+  </script>
 </body>
 </html>
