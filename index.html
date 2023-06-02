@@ -43,6 +43,7 @@
     - custom css link
   -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/forms.css" />
 
     <!-- 
     - preload images
@@ -200,7 +201,7 @@
               </p>
 
               <div class="btn-wrapper">
-                <a href="#" class="btn btn-primary">Start Enquiry</a>
+                <a href="./pages/study-in-canada.html" class="btn btn-primary">Study Enquiry</a>
 
                 <a href="#" class="btn btn-outline">Contact Us</a>
               </div>
@@ -305,7 +306,7 @@
                     You can be rest assured that you get the best Immigration
                   </p>
 
-                  <a href="#" class="btn-text">
+                  <a href="./pages/migration-form.html" class="btn-text">
                     <span class="span">Learn More</span>
 
                     <ion-icon
@@ -333,7 +334,7 @@
                     relevance
                   </p>
 
-                  <a href="#" class="btn-text">
+                  <a href="./pages/study-in-canada.html" class="btn-text">
                     <span class="span">Learn More</span>
 
                     <ion-icon
@@ -356,7 +357,7 @@
                     consultation with proven track record
                   </p>
 
-                  <a href="#" class="btn-text">
+                  <a href="./pages/visa-enquiry.html" class="btn-text">
                     <span class="span">Learn More</span>
 
                     <ion-icon
@@ -384,7 +385,7 @@
                     city in which you
                   </p>
 
-                  <a href="#" class="btn-text">
+                  <a href="./pages/visa-enquiry.html" class="btn-text">
                     <span class="span">Learn More</span>
 
                     <ion-icon
@@ -881,6 +882,104 @@
 
 
          </section>
+
+         <!-- 
+          #STUDY ENQUIRY
+          -->
+         <section class="section study-enquiry ">
+          <div class="container">
+            <div class="container-form">
+              <img
+                src="../assets/images/hero-4.png"
+                alt="avatar by flaticon"
+                class="avatar"
+              />
+              <div class="title">Study Abroad Enquiry</div>
+              <div class="content">
+                <form id="form" >
+                  <div class="user-details">
+                    <div class="input-box">
+                      <label class="details">Name</label>
+                      <input
+                        type="text"
+                        class="inputbox"
+                        placeholder="Enter your full name"
+                        name="name"
+                        id="name"
+                        required
+                      />
+                    </div>
+                    <div class="input-box">
+                      <label class="details">Nationality</label>
+                      <input
+                        type="text"
+                        class="inputbox"
+                        placeholder="USA or"
+                        name="nationality"
+                        id="nationality"
+                        required
+                      />
+                    </div>
+                    <div class="input-box">
+                      <label class="details">Email</label>
+                      <input
+                        type="text"
+                        class="inputbox"
+                        placeholder="Enter your email"
+                        name="email"
+                        id="email"
+                        required
+                      />
+                    </div>
+                    <div class="input-box">
+                      <label class="details">Phone Mobile</label>
+                      <input
+                        type="text"
+                        class="inputbox"
+                        placeholder="Enter your number"
+                        name="phoneNumber"
+                        id="phoneNumber"
+                        required
+                      />
+                    </div>
+                    <div class="input-box">
+                      <label class="details"
+                        >What course do you want to study?</label
+                      >
+                      <input
+                        type="text"
+                        class="inputbox"
+                        placeholder="Choose a course"
+                        name="course"
+                        id="course"
+                        required
+                      />
+                    </div>
+                    <div class="input-box">
+                      <label class="details"
+                        >What country do you want to study in?</label
+                      >
+                      <select id="country" name="country" required>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="europe">Europe</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                    </div>
+                    <div class="input-box">
+                      <label for="note">Note:</label>
+                      <textarea id="note" name="note" id="note" required></textarea>
+                    </div>
+                  </div>
+    
+                  <div class="button">
+                    <input type="submit" value="Submit-form" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- 
         - #CTA
