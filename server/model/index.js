@@ -9,10 +9,13 @@ const formDataSchema = Schema({
   country: String,
   note: String,
   course: String,
+  skillsSpecialization: String,
   employmentHistory: String,
   destinationCountry: String,
   purposeOfTravel: String,
   educationHistory: String,
+  studyDestination: String,
+  countryToStudy: String,
 });
 
 module.exports.FormData = model("FormData", formDataSchema);
