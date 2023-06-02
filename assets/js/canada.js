@@ -1,6 +1,11 @@
 
 const formValue = document.getElementById('form');
 
+//reset form value...
+const resetForm = () => {
+  formValue.reset();
+};
+
 formValue.addEventListener('submit', function(e) {
   e.preventDefault();
   //send request using urlencoded
@@ -17,4 +22,6 @@ formValue.addEventListener('submit', function(e) {
     .then(res => res.json())
     .then(data => console.log(data))
     .catch(err => console.log(err))
+
+  resetForm();
 });
