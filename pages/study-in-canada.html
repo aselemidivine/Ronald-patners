@@ -1,97 +1,24 @@
-<!--Registration Form-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../assets/css/forms.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <header class="header" data-header>
-      <div class="container">
-        <a href="#" class="logo">
-          <!-- <img
-            src="./assets/images/logo-light.png"          
-            width="124"
-            height="24"
-            alt="Ronald home"
-            class="logo-light"
-            /> -->
-          <img
-            src="../assets/images/logo.png"
-            width="124"
-            height="24"
-            alt="Ronald home"
-            class="logo-light"
-          />
-
-          <img
-            src="../assets/images/cropped-ronald-partner-logo.png"
-            width="124"
-            height="24"
-            alt="Adex home"
-            class="logo-dark"
-          />
-        </a>
-
-        <nav class="navbar" data-navbar>
-          <div class="navbar-top">
-            <a href="#" class="logo">
-              <img
-                src="./assets/images/cropped-ronald-partner-logo.png"
-                width="74"
-                height="24"
-                alt="Ronald home"
-              />
-            </a>
-            <!-- src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" -->
-
-            <button
-              class="nav-close-btn"
-              aria-label="close menu"
-              data-nav-toggler
-            >
-              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-            </button>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/forms.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <img src = '../assets/images/hero-4.png' alt = "avatar by flaticon" class = "avatar"/>
+    <div class="title">Study Abroad Enquiry </div>
+    <div class="content">
+      <form method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <label class="details">Name</label>
+            <input type="text" class = "inputbox" placeholder="Enter your full name" name = "name" required>
           </div>
-
-          <ul class="navbar-list">
-            <li>
-              <a href="#" class="navbar-link">Home</a>
-            </li>
-
-            <li>
-              <a href="./pages/study-in-canada.html" class="navbar-link"
-                >About</a
-              >
-            </li>
-
-            <li>
-              <a href="./pages/study-in-canada.html" class="navbar-link"
-                >Our services</a
-              >
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Offers</a>
-            </li>
-            <li>
-              <a href="#" class="navbar-link">News</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Contact</a>
-            </li>
-          </ul>
-
-          <div class="wrapper">
-            <a href="mailto:info@email.com" class="contact-link"
-              >info@email.com</a
-            >
-
-            <a href="tel:001234567890" class="contact-link"
-              >00 (123) 456 78 90</a
-            >
+          <div class="input-box">
+            <label class="details">Nationality</label>
+            <input type="text" class = "inputbox" placeholder="Enter your username" name = "username" required>
           </div>
 
           <ul class="social-list">
@@ -229,168 +156,39 @@
                 <input type="submit" value="Submit-form" />
               </div>
             </form>
+          <div class="input-box">
+            <label class="details">Email</label>
+            <input type="text" class = "inputbox" placeholder="Enter your email" name = "mail" required>
+          </div>
+          <div class="input-box">
+            <label class="details">Phone Mobile</label>
+            <input type="text" class = "inputbox" placeholder="Enter your number" name = "mobile" required>
+          </div>
+          <div class="input-box">
+            <label class="details">What course do you want to study?</label>
+            <input type="text" class = "inputbox" placeholder="Enter your number" name = "mobile" required>
+          </div>
+          <div class="input-box">
+            <label class="details">What country do you want to study in?</label>
+            <select id="country" name="country" required>
+                <option value="country1">Country 1</option>
+                <option value="country2">Country 2</option>
+                <option value="country3">Country 3</option>
+                <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="input-box">
+            <label for="note">Note:</label>
+            <textarea id="note" name="note" required></textarea>
           </div>
         </div>
-      </div>
-    </section>
-
-  
-
-            <!-- 
-        - #CTA
-      -->
-
-      <section class="cta" aria-label="call to action">
-        <div class="container">
-          <h2 class="h2 section-title">
-            Join our community to get latest updates on visa openings.
-          </h2>
-
-          <a href="#" class="btn btn-primary">Try it For Free</a>
+        
+        <div class="button">
+          <input type="submit" value="Register">
         </div>
-      </section>
-    </article>
-  </main>
-
-  <!-- 
-  - #FOOTER
--->
-
-  <footer class="footer">
-    <div class="container grid-list">
-      <div class="footer-brand">
-        <a href="#" class="logo">
-          <img
-            src="../assets/images/logo.png"
-            width="124"
-            height="24"
-            alt="Adex home"
-          />
-        </a>
-
-        <p class="footer-text">
-          &copy; Copyright © 2022 Ronald and Partners. <br />
-          All rights reserved.
-        </p>
-
-        <ul class="social-list">
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-        </ul>
-        <li>
-          <a href="tel:001234567890" class="footer-link"
-            >Phone: +234(1)2953655
-            Phone: +2348034311748
-            Phone: +2349073666847</a
-          >
-        </li>
-      </div>
-
-      <ul class="footer-list">
-        <li>
-          <p class="h4 footer-list-title">Get in Touch</p>
-        </li>
-
-        <li>
-          <address class="footer-text">
-            Head Office: Ronald and Partners Consult, 3rd Floor, Nurses House, PC 43, Church Gate Street, Victoria Island, Lagos State.
-          </address>
-        </li>
-        <li>
-          <address class="footer-text">
-            Ikeja Office: Ronald and Partners Consult, Suite 14, Victory School Office Complex, Olaniyan Close,, Behind Don Etiebet House, Off Mobolaji Bank Anthony Way, Ikeja, Lagos State.
-
-          </address>
-        </li>
-      
-
-        <li>
-          <a href="mailto:ronalddesk@ronald-partners.com" class="footer-link"
-           Email: ronalddesk@ronald-partners.com
-          ></a
-          >
-        </li>
-
-       
-      </ul>
-
-      <ul class="footer-list">
-        <li>
-          <p class="h4 footer-list-title">Learn More</p>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">About Us</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Our Story</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Projects</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Terms of Use</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </li>
-      </ul>
-
-      <div class="footer-list">
-        <p class="h4 footer-list-title">Our Newsletter</p>
-
-        <p class="footer-text">
-          Subscribe to our newsletter to get our news & deals delivered to
-          you.
-        </p>
-
-        <form action="" class="input-wrapper">
-          <input
-            type="email"
-            name="email_address"
-            placeholder="Email Address"
-            required
-            class="input-field"
-          />
-
-          <button type="submit" class="submit-btn">Join</button>
-        </form>
-      </div>
+      </form>
     </div>
-  </footer>
-
-  <script src="../assets/js/script.js"></script>
-
-  </body>
+  </div>
+  <script src='../assests/js/canada.js'></script>
+</body>
 </html>
