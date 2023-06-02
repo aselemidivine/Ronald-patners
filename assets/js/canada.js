@@ -1,15 +1,16 @@
-const form = document.getElementById('myForm');
 
-form.addEventListener('submit', function(e) {
+const formValue = document.getElementById('form');
+
+formValue.addEventListener('submit', function(e) {
   e.preventDefault();
   //send request using urlencoded
-  const prePayload = new FormData(myForm);
+  const prePayload = new FormData(formValue);
   const payload = new URLSearchParams(prePayload);
   console.log([...payload]);
 
   //plug into the database .....  
   // replace url with your api url
-  fetch('url', {
+  fetch('http://localhost:3000/api/submit-form', {
     method: 'POST',
     body: payload,
   })
