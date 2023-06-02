@@ -1,3 +1,9 @@
+<!-- Registration Form -->
+
+
+
+
+
 <!--Registration Form-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -152,7 +158,7 @@
           />
           <div class="title">Study Abroad Enquiry</div>
           <div class="content">
-            <form method="post">
+            <form id="form" >
               <div class="user-details">
                 <div class="input-box">
                   <label class="details">Name</label>
@@ -161,6 +167,7 @@
                     class="inputbox"
                     placeholder="Enter your full name"
                     name="name"
+                    id="name"
                     required
                   />
                 </div>
@@ -170,7 +177,8 @@
                     type="text"
                     class="inputbox"
                     placeholder="USA or"
-                    name="username"
+                    name="nationality"
+                    id="nationality"
                     required
                   />
                 </div>
@@ -180,7 +188,8 @@
                     type="text"
                     class="inputbox"
                     placeholder="Enter your email"
-                    name="mail"
+                    name="email"
+                    id="email"
                     required
                   />
                 </div>
@@ -190,7 +199,8 @@
                     type="text"
                     class="inputbox"
                     placeholder="Enter your number"
-                    name="mobile"
+                    name="phoneNumber"
+                    id="phoneNumber"
                     required
                   />
                 </div>
@@ -202,7 +212,8 @@
                     type="text"
                     class="inputbox"
                     placeholder="Choose a course"
-                    name="mobile"
+                    name="course"
+                    id="course"
                     required
                   />
                 </div>
@@ -219,7 +230,7 @@
                 </div>
                 <div class="input-box">
                   <label for="note">Note:</label>
-                  <textarea id="note" name="note" required></textarea>
+                  <textarea id="note" name="note" id="note" required></textarea>
                 </div>
               </div>
 
@@ -373,7 +384,7 @@
           you.
         </p>
 
-        <form action="" class="input-wrapper">
+        <form class="input-wrapper">
           <input
             type="email"
             name="email_address"
@@ -388,7 +399,8 @@
     </div>
   </footer>
 
-  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/canada.js">
+  </script>
 
   </body>
 </html>
