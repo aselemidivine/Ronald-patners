@@ -4,12 +4,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../assets/css/forms.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/forms.css" />
     <link rel="shortcut icon" href="../assets/images/faviconn.png" type="image/svg+xml" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
@@ -258,6 +258,15 @@
     </article>
   </main>
 
+
+   <!-- 
+        #TO TOP ICON
+  -->
+
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+   </a>
+
   <!-- 
   - #FOOTER
 -->
@@ -396,6 +405,19 @@
     </div>
   </footer>
 
+  <script>
+    const navbar = document.querySelector("[data-navbar]");
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const overlay = document.querySelector("[data-overlay]");
+
+const toggleNavbar = function () {
+  navbar.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("nav-active");
+}
+
+addEventOnElements(navTogglers, "click", toggleNavbar);
+  </script>
   <script src="../assets/js/canada.js">
   </script>
 

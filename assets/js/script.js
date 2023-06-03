@@ -172,37 +172,36 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 
+// TYPING EFFECT
+
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-// SWIPPER JS
-// var swiper = new Swiper('.swiper-container', {
-//   effect: 'coverflow',
-//   grabCursor: true,
-//   centeredSlides: true,
-//   slidesPerview: 'auto',
-//   coverFlowEffect: {
-//     rotate: 50,
-//     stretch: 0,
-//     depth: 100,
-//     modifier: 1,
-//     slideShadow: true,
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//   }
-// });
 
-// let userTexts = document.getElementsByClassName("user-text");
-// let userPics = document.getElementsByClassName("user-pic");
+var typed= new Typed(".auto-type", {
+  strings: ["CANADA", " USA", " SWITZERLAND", " UK", " EUROPE", ],
+  typeSpeed: 150,
+  backSpeed: 150,
+  loop: true
+})
 
-// function showReview() {
-//   for(userPic of userPics) {
-//     userPic.classList.remove("active-pic");
-//   }
-//   for(userText of userTexts) {
-//     userText.classList.remove("active-text");
-//   }
-// }
+
+
+// TO TOP MENU 
+
+const toTop = document.querySelector (".to-top");
+window.addEventListener("scroll", () => {
+    if  (window.pageYOffset > 100)  {
+        toTop.classList.add("active");
+    }
+    else {
+        toTop.classList.remove ("active");
+    }
+})
+
+
+
+
+
 
 
