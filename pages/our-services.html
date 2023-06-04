@@ -13,28 +13,38 @@
     <meta
       name="description"
       content="This is a study and travel agency, made by Digital ad planet"
-    >
+    />
 
     <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="./assets/images/faviconn.png" type="image/svg+xml" />
 
     <!-- 
     - google font link
   -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Outfit:wght@200;300;400&family=Poppins:wght@200;300;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+     -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@200;300;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> -->
+
     <!-- 
     - custom css link
   -->
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/forms.css" />
+
 
     <!-- 
     - preload images
@@ -46,31 +56,31 @@
   </head>
 
   <body>
-   
-
     <header class="header" data-header>
       <div class="container">
         <a href="#" class="logo">
           <img
-            src="../assets/images/cropped-ronald-partner-logo.png"
-            width="124"
-            height="24"
-            alt="Adex home"
-            class="logo-light"
+          src="../assets/images/logo.png"          
+          width="124"
+          height="24"
+          alt="Ronald home"
+          class="logo-light"
           />
 
+          <img src="../assets/images/cropped-ronald-partner-logo.png" width="124" height="24" alt="Adex home" class="logo-dark">
         </a>
 
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
             <a href="#" class="logo">
               <img
-                src="../assets/images/cropped-ronald-partner-logo.png"
+                src="../assets/images/cropped-ronald-partner-logo.png"          
                 width="74"
                 height="24"
                 alt="Ronald home"
-              />
-            </a>
+                />
+              </a>
+              <!-- src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" -->
 
             <button
               class="nav-close-btn"
@@ -87,11 +97,11 @@
             </li>
 
             <li>
-              <a href="#" class="navbar-link">About</a>
+              <a href="./pages/test.html" class="navbar-link">About</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Our services</a>
+              <a href="./pages/our-services.html" class="navbar-link">Our services</a>
             </li>
 
             <li>
@@ -115,13 +125,393 @@
               >00 (123) 456 78 90</a
             >
           </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
         </nav>
+
+        <a href="#" class="btn btn-primary">Login</a>
+        <a href="#" class="btn btn-primary">Sign Up</a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
     </header>
 
-    <div>
-        asdfsdfvsfvwfdvv
-    </div>
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
 
+        <section
+          class="section hero has-bg-image"
+          aria-label="home"
+          style="background-image: url('../assets/images/ab-us.jpg')">
+          >
+
+            <div class="page-title__area pt-110 " >
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xxl-12">
+                          <div class="page__title-wrapper text-center">
+                              <h3 class="pb-100">Our Services</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section service" aria-labelledby="service-label">
+          <div class="container">
+            <p class="section-subtitle" id="service-label">What We Do?</p>
+
+            <h2 class="h2 section-title">
+              Deliver Study Abroad & Immigration Consultancy Services
+            </h2>
+
+            <ul class="grid-list">
+              <li class="card-list hidden">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img src="../assets/images/consultants-icon.png" alt="">
+                    <!-- <ion-icon name="call-outline" aria-hidden="true"></ion-icon> -->
+                  </div>
+
+                  <h3 class="h4 card-title">IMMIGRATION CONSULTANCY</h3>
+
+                  <p class="card-text">
+                    You can be rest assured that you get the best Immigration
+                  </p>
+
+                  <a href="../pages/migration-form.html" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li class="card-list hidden">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img src="../assets/images/student-icon-new.png" alt="">
+                    <!-- <ion-icon
+                      name="shield-checkmark-outline"
+                      aria-hidden="true"
+                    ></ion-icon> -->
+                  </div>
+
+                  <h3 class="h4 card-title">STUDY ABROAD</h3>
+
+                  <p class="card-text">
+                    We show clients how to get quality education for Global
+                    relevance
+                  </p>
+
+                  <a href="../pages/study-in-canada.html" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li class="card-list hidden">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img src="../assets/images/institution-icon.png" alt="">
+                  </div>
+
+                  <h3 class="h4 card-title">EXPERT VISA SERVICES</h3>
+                  <p class="card-text">
+                    We have years of experience with VISA processing and
+                    consultation with proven track record
+                  </p>
+
+                  <a href="./pages/visa-enquiry.html" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li class="card-list hidden">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img src="../assets/images/school-icon.png" alt="">
+                    <!-- <ion-icon
+                      name="pie-chart-outline"
+                      aria-hidden="true"
+                    ></ion-icon> -->
+                  </div>
+
+                  <h3 class="h4 card-title">IETS COACHING CLASS</h3>
+
+                  <p class="card-text">
+                    An applicant should apply at center in or closest to, the
+                    city in which you
+                  </p>
+
+                  <a href="../pages/visa-enquiry.html" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-2195481 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="2195481" data-element_type="section">
+          <div class="">
+             <div class="">
+                <div class="">
+                  <div class="">
+                    <div class="">
+        
+        
+                    <div class="services-featurs">
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                              <div class="services-fimg">
+                          <img decoding="async" src="https://ronald-partners.com/wp-content/uploads/2022/01/services-1.jpg" alt="">
+                      </div>
+                      
+                      <div class="section_title_wrapper pt-40 bdevs-el-content">
+                                                      <span class="subtitle bdevs-el-subtitle">Featured Services </span>
+                                                      <h2 class="section-title bdevs-el-title">We Take The Challenge to Make The Life Easier </h2>                                                            <p class="pt-30 pb-25 mr-25">For 10 years plus, We have helped students, business persons, tourists, clients with medical needs. We are proud to celebrate our first decade of excellence and expert delivery of immigration, visa and overseas education placement services to our increasing clients across Nigeria and the world at large.</p>
+                                                  </div>
+                  </div>
+                  <div class="col-xxl-6 col-xl-6 col-lg-6">
+                      <div class="row">
+                                                      <div class="col-lg-6 col-md-6">
+                              <div class="services-items services-itm-color mb-30 elementor-repeater-item-40fce96">
+                                                                      <h4 class="services-items__title">
+                                      Proper<br> Information                                     </h4>
+                                  
+                                                                          <p>We carry out proper research before carrying out any form of consultation</p>
+                                  
+                                                                  </div>
+                          </div>
+                                                      <div class="col-lg-6 col-md-6">
+                              <div class="services-items services-itm-color mb-30 elementor-repeater-item-270c8e0">
+                                                                      <h4 class="services-items__title">
+                                      Advice &amp; <br> Consultancy                                    </h4>
+                                  
+                                                                          <p>We provide quality advice which help clients achieve their desired result</p>
+                                  
+                                                                  </div>
+                          </div>
+                                                      <div class="col-lg-6 col-md-6">
+                              <div class="services-items services-itm-color mb-30 elementor-repeater-item-f26874f">
+                                                                      <h4 class="services-items__title">
+                                      Tour &amp; Travel <br>Guidelines                                     </h4>
+                                  
+                                                                          <p>We help clients with guidelines when processing relocation or preparing for embassy interview</p>
+                                  
+                                                                  </div>
+                          </div>
+                                                      <div class="col-lg-6 col-md-6">
+                              <div class="services-items services-itm-color mb-30 elementor-repeater-item-e4c5272">
+                                                                      <h4 class="services-items__title">
+                                      Education <br>Tips and Tricks                                     </h4>
+                                  
+                                                                          <p>We give valuable educational tips and processing tips to our clients</p>
+                                  
+                                                                  </div>
+                          </div>
+                                                  </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+              
+          </div>
+        </div>
+        </div>
+        </div>
+            </div>
+        </section>
+       
+
+     
+
+        <!-- 
+        - #STATS
+      -->
+
+        <section class="stats hidden" aria-label="our stats">
+          <div class="container">
+            <ul
+              class="stats-card has-bg-image"
+              style="background-color: var(--black-coral);"
+            >
+              <li>
+                <p class="card-text">
+                  <span class="h1">10k + </span>
+
+                  <spna class="span">Happy Clients and Students</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">20 + </span>
+
+                  <spna class="span">Countries Affiliation</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">30</span>
+
+                  <spna class="span">Top University Partner</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">10 k+ </span>
+                  <spna class="span">Visa & Immigration</spna>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      
+
+        <!-- 
+          - #TESTIMONIALS
+         -->
+
+         <section class="hidden testimon">
+          <div class="container">
+
+            <p class="section-subtitle" id="project-label">TESTIMONIALS</p>
+            <h2 class="h2 section-title">
+              What Our Happy Students Have To Say
+            </h2>
+          </div>
+          <div class="section contain">
+            
+            <div class="testimonial">
+              <div class="testimonial-text"  style=" background-image: url('./assets/images/hero-bg.jpg')">
+                <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae cum odio maiores explicabo voluptatum rerum hic illo? Fuga tempora repellat sit animi optio, maiores in exercitationem unde quasi earum.</p>
+                  <span>Kemi Adesoye, student</span>
+                </div>
+                <div class="user-text active-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Ronald-partners is one of the best consultancies. They work very hard, and very trustable consultancy and all services were free. They provide all the information as well as help you with your career plan. They provide you with information about sop, application, interview preparation and visa filing.</p>
+                  <span>Chioma Anderson, student</span>
+                </div>
+                <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Thank you, Ronald-partners, for your excellent service. Thank you to My Counsellor, who is so helpful and loyal about their service. Their Education Counsellors explained well the whole process to us to get my visa and made it a stress-free process all throughout. I highly recommend ronald-partners who are looking for a great migration agent.</p>
+                  <span>Kemi Adesoye, student</span>
+                </div>
+                <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Ronald and Partners is one of the best ones out there in their field of profession. I'm really pleased by the services they provide. They are really helpful and always provide the right guidance to the students through their experience. All the staff members are supportive and really happy with their assistance.</p>
+                  <span>Stephen Cavhill, student</span>
+                </div>
+                <div class="user-text">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Ronald and Partners is one of the best ones out there in their field of profession. I'm really pleased by the services they provide. They are really helpful and always provide the right guidance to the students through their experience. All the staff members are supportive and really happy with their assistance.</p>
+                  <span>Toyin Samuel, student</span>
+                </div>
+              </div>  
+              <div class="testimonial-pic">
+                <img src="./assets/images/hero-1.png" alt="" class="user-pic" onclick="showReview()">
+                <img src="./assets/images/hero-2.png" alt=""  class="user-pic active-pic" onclick="showReview()">
+                <img src="./assets/images/hero-1x.png" alt=""  class="user-pic" onclick="showReview()">
+                <img src="./assets/images/hero-3.png" alt=""  class="user-pic" onclick="showReview()">
+              </div>
+            </div>
+          </div>
+
+
+
+         </section>
+
+      </article>
+    </main>
+
+
+      <!-- 
+        #TO TOP ICON
+       -->
+
+         <a href="#" class="to-top">
+           <i class="fas fa-chevron-up"></i>
+          </a>
+          
+          <!-- #WHATSAPP
+          -->
+          <!-- <a href="https://wa.me/08168924643" class="whatsapp" target="_blank">
+            <i class="fa-3x fa-brands fa-whatsapp"></i>
+          </a> -->
+
+    
     <!-- 
     - #FOOTER
   -->
@@ -131,11 +521,10 @@
         <div class="footer-brand">
           <a href="#" class="logo">
             <img
-              src="./assets/images/cropped-ronald-partner-logo.png"
+              src="../assets/images/logo.png"
               width="124"
               height="24"
               alt="Ronald home"
-
             />
           </a>
 
@@ -175,6 +564,13 @@
               </a>
             </li>
           </ul>
+          <li>
+            <a href="tel:001234567890" class="footer-link"
+              >Phone: +234(1)2953655
+              Phone: +2348034311748
+              Phone: +2349073666847</a
+            >
+          </li>
         </div>
 
         <ul class="footer-list">
@@ -184,21 +580,25 @@
 
           <li>
             <address class="footer-text">
-              Moonshine St. 14/05 Light City, London, United Kingdom
+              Head Office: Ronald and Partners Consult, 3rd Floor, Nurses House, PC 43, Church Gate Street, Victoria Island, Lagos State.
             </address>
           </li>
+          <li>
+            <address class="footer-text">
+              Ikeja Office: Ronald and Partners Consult, Suite 14, Victory School Office Complex, Olaniyan Close,, Behind Don Etiebet House, Off Mobolaji Bank Anthony Way, Ikeja, Lagos State.
+
+            </address>
+          </li>
+        
 
           <li>
-            <a href="mailto:info@email.com" class="footer-link"
-              >info@email.com</a
+            <a href="mailto:ronalddesk@ronald-partners.com" class="footer-link"
+             Email: ronalddesk@ronald-partners.com
+            ></a
             >
           </li>
 
-          <li>
-            <a href="tel:001234567890" class="footer-link"
-              >00 (123) 456 78 90</a
-            >
-          </li>
+         
         </ul>
 
         <ul class="footer-list">
@@ -253,7 +653,39 @@
     <!-- 
     - custom js link
   -->
+
+<script>
+
+
+
+
+    let userTexts = document.getElementsByClassName("user-text");
+    let userPics = document.getElementsByClassName("user-pic");
+
+    function showReview() {
+      for(userPic of userPics) {
+        userPic.classList.remove("active-pic");
+      }
+      for(userText of userTexts) {
+        userText.classList.remove("active-text");
+      }
+      let i = Array.from(userPics).indexOf(event.target);
+
+      userPics[i].classList.add("active-pic");
+      userTexts[i].classList.add("active-text");
+    }
+
+   
+ 
+ 
+ 
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/canada.js"></script>
+
 
     <!-- 
     - ionicon
@@ -266,5 +698,121 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
   </body>
 </html>
+
+
+
+
+
+
+
+
+<section class="elementor-section elementor-top-section elementor-element elementor-element-2195481 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="2195481" data-element_type="section">
+  <div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b5478a6" data-id="b5478a6" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+      <div class="elementor-element elementor-element-a06e44e elementor-widget elementor-widget-service bdevs-el service" data-id="a06e44e" data-element_type="widget" data-settings="{&quot;design_style&quot;:&quot;style_1&quot;}" data-widget_type="service.default">
+<div class="elementor-widget-container">
+
+
+<div class="services-featurs">
+  <div class="container">
+      <div class="row">
+          <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                      <div class="services-fimg">
+                  <img decoding="async" src="https://ronald-partners.com/wp-content/uploads/2022/01/services-1.jpg" alt="">
+              </div>
+              
+              <div class="section_title_wrapper pt-40 bdevs-el-content">
+                                              <span class="subtitle bdevs-el-subtitle">Featured Services </span>
+                                              <h2 class="section-title bdevs-el-title">We Take The Challenge to Make The Life Easier </h2>                                                            <p class="pt-30 pb-25 mr-25">For 10 years plus, We have helped students, business persons, tourists, clients with medical needs. We are proud to celebrate our first decade of excellence and expert delivery of immigration, visa and overseas education placement services to our increasing clients across Nigeria and the world at large.</p>
+                                          </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6">
+              <div class="row">
+                                              <div class="col-lg-6 col-md-6">
+                      <div class="services-items services-itm-color mb-30 elementor-repeater-item-40fce96">
+                                                              <h4 class="services-items__title">
+                              Proper<br> Information                                     </h4>
+                          
+                                                                  <p>We carry out proper research before carrying out any form of consultation</p>
+                          
+                                                          </div>
+                  </div>
+                                              <div class="col-lg-6 col-md-6">
+                      <div class="services-items services-itm-color mb-30 elementor-repeater-item-270c8e0">
+                                                              <h4 class="services-items__title">
+                              Advice &amp; <br> Consultancy                                    </h4>
+                          
+                                                                  <p>We provide quality advice which help clients achieve their desired result</p>
+                          
+                                                          </div>
+                  </div>
+                                              <div class="col-lg-6 col-md-6">
+                      <div class="services-items services-itm-color mb-30 elementor-repeater-item-f26874f">
+                                                              <h4 class="services-items__title">
+                              Tour &amp; Travel <br>Guidelines                                     </h4>
+                          
+                                                                  <p>We help clients with guidelines when processing relocation or preparing for embassy interview</p>
+                          
+                                                          </div>
+                  </div>
+                                              <div class="col-lg-6 col-md-6">
+                      <div class="services-items services-itm-color mb-30 elementor-repeater-item-e4c5272">
+                                                              <h4 class="services-items__title">
+                              Education <br>Tips and Tricks                                     </h4>
+                          
+                                                                  <p>We give valuable educational tips and processing tips to our clients</p>
+                          
+                                                          </div>
+                  </div>
+                                          </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+      
+  </div>
+</div>
+</div>
+</div>
+    </div>
+</section>
+
+
+<section class="elementor-section elementor-top-section elementor-element elementor-element-4a5dd1f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4a5dd1f" data-element_type="section">
+  <div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f740d16" data-id="f740d16" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-widget-wrap elementor-element-populated">
+      <div class="elementor-element elementor-element-a7d1bb6 elementor-widget elementor-widget-about bdevs-el about" data-id="a7d1bb6" data-element_type="widget" data-settings="{&quot;design_style&quot;:&quot;style_8&quot;}" data-widget_type="about.default">
+<div class="elementor-widget-container">
+     
+<section class="intro-area">
+  <div class="container">
+      <div class="row abintro-top-up g-0">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 d-flex align-items-center wow fadeInUp2" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp2;">
+              <div class="section_title_wrapper bdevs-el-content pl-50 pr-70 wow fadeInUp2" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp2;">
+                                                                          <h2 class="section-title bdevs-el-title">
+                      We Take 1-2 Working Months For Processing                            </h2>
+                  
+                                              <p class="pt-30 pb-30 ">We put in our very best effort to carryout document processing to ensure higher chances of our clients getting an approval.</p>
+                  
+                  <div class="abinfro-btn d-flex align-items-center">
+
+                      <a class="theme-btn bdevs-el-btn site-btn" href="https://ronald-partners.com/application-form"><span>Apply Here</span></a>
+                    
+                  </div>
+              </div>
+          </div> 
+          <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInUp2" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp2;">
+              <div class="intro-right">
+                  <img decoding="async" src="https://ronald-partners.com/wp-content/uploads/2022/01/ab-m.jpg" alt="study abroad">
+                                          </div>
+          </div>
+      </div>
+  </div>
+</section>

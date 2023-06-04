@@ -13,28 +13,37 @@
     <meta
       name="description"
       content="This is a study and travel agency, made by Digital ad planet"
-    >
+    />
 
     <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="../assets/images/faviconn.png" type="image/svg+xml" />
 
     <!-- 
     - google font link
   -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Outfit:wght@200;300;400&family=Poppins:wght@200;300;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+     -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@200;300;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> -->
+
     <!-- 
     - custom css link
   -->
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/forms.css" /> -->
 
     <!-- 
     - preload images
@@ -46,31 +55,31 @@
   </head>
 
   <body>
-   
-
     <header class="header" data-header>
-      <!-- <div class="container"> -->
+      <div class="container">
         <a href="#" class="logo">
           <img
-            src="../assets/images/cropped-ronald-partner-logo.png"
-            width="124"
-            height="24"
-            alt="Adex home"
-            class="logo-light"
+          src="../assets/images/logo.png"          
+          width="124"
+          height="24"
+          alt="Ronald home"
+          class="logo-light"
           />
 
+          <img src="../assets/images/cropped-ronald-partner-logo.png" width="124" height="24" alt="Adex home" class="logo-dark">
         </a>
 
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
             <a href="#" class="logo">
               <img
-                src="../assets/images/cropped-ronald-partner-logo.png"
+                src="../assets/images/cropped-ronald-partner-logo.png"          
                 width="74"
                 height="24"
                 alt="Ronald home"
-              />
-            </a>
+                />
+              </a>
+              <!-- src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" -->
 
             <button
               class="nav-close-btn"
@@ -87,11 +96,11 @@
             </li>
 
             <li>
-              <a href="#" class="navbar-link">About</a>
+              <a href="../pages/about-us.html" class="navbar-link">About</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Our services</a>
+              <a href="../pages/study-in-canada.html" class="navbar-link">Our services</a>
             </li>
 
             <li>
@@ -115,30 +124,161 @@
               >00 (123) 456 78 90</a
             >
           </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
         </nav>
+
+        <a href="#" class="btn btn-primary">Login</a>
+        <a href="#" class="btn btn-primary">Sign Up</a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
         <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
     </header>
 
-    <!-- <section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam architecto numquam animi exercitationem iste, soluta cumque, quam veniam voluptatem incidunt quibusdam placeat sed aspernatur non illum recusandae, fuga beatae impedit?
-    </section> -->
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
 
+        <section
+        >
+        <!-- class="section hero has-bg-image"
+        aria-label="home"
+        style="background-image: url('../assets/images/hero-bg.jpg')"> -->
+          <!-- style="background-color: var(--hero);" -->
+
+        </section>
+
+      
+
+       
+
+       
+
+        <!-- 
+        - #STATS
+      -->
+
+        <section class="stats hidden" aria-label="our stats">
+          <div class="container">
+            <ul
+              class="stats-card has-bg-image"
+              style="background-color: var(--black-coral);"
+            >
+              <li>
+                <p class="card-text">
+                  <span class="h1">10k + </span>
+
+                  <spna class="span">Happy Clients and Students</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">20 + </span>
+
+                  <spna class="span">Countries Affiliation</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">30</span>
+
+                  <spna class="span">Top University Partner</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">10 k+ </span>
+                  <spna class="span">Visa & Immigration</spna>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="cta" aria-label="call to action">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Join our community to get latest updates on visa openings.
+            </h2>
+
+            <a href="#" class="btn btn-primary">Try it For Free</a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+
+      <!-- 
+        #TO TOP ICON
+       -->
+
+         <a href="#" class="to-top">
+           <i class="fas fa-chevron-up"></i>
+          </a>
+          
+          <!-- #WHATSAPP
+          -->
+          <!-- <a href="https://wa.me/08168924643" class="whatsapp" target="_blank">
+            <i class="fa-3x fa-brands fa-whatsapp"></i>
+          </a> -->
+
+    
     <!-- 
     - #FOOTER
   -->
-
-  
 
     <footer class="footer">
       <div class="container grid-list">
         <div class="footer-brand">
           <a href="#" class="logo">
             <img
-              src="./assets/images/cropped-ronald-partner-logo.png"
+              src="../assets/images/logo.png"
               width="124"
               height="24"
-              alt="Ronald home"
-
+              alt="Adex home"
             />
           </a>
 
@@ -178,6 +318,13 @@
               </a>
             </li>
           </ul>
+          <li>
+            <a href="tel:001234567890" class="footer-link"
+              >Phone: +234(1)2953655
+              Phone: +2348034311748
+              Phone: +2349073666847</a
+            >
+          </li>
         </div>
 
         <ul class="footer-list">
@@ -187,21 +334,25 @@
 
           <li>
             <address class="footer-text">
-              Moonshine St. 14/05 Light City, London, United Kingdom
+              Head Office: Ronald and Partners Consult, 3rd Floor, Nurses House, PC 43, Church Gate Street, Victoria Island, Lagos State.
             </address>
           </li>
+          <li>
+            <address class="footer-text">
+              Ikeja Office: Ronald and Partners Consult, Suite 14, Victory School Office Complex, Olaniyan Close,, Behind Don Etiebet House, Off Mobolaji Bank Anthony Way, Ikeja, Lagos State.
+
+            </address>
+          </li>
+        
 
           <li>
-            <a href="mailto:info@email.com" class="footer-link"
-              >info@email.com</a
+            <a href="mailto:ronalddesk@ronald-partners.com" class="footer-link"
+             Email: ronalddesk@ronald-partners.com
+            ></a
             >
           </li>
 
-          <li>
-            <a href="tel:001234567890" class="footer-link"
-              >00 (123) 456 78 90</a
-            >
-          </li>
+         
         </ul>
 
         <ul class="footer-list">
@@ -256,6 +407,17 @@
     <!-- 
     - custom js link
   -->
+
+<script>
+
+   
+ 
+ 
+ 
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <script src="../assets/js/script.js"></script>
 
     <!-- 
@@ -269,5 +431,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
   </body>
 </html>
