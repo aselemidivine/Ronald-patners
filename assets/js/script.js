@@ -179,7 +179,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 var typed= new Typed(".auto-type", {
-  strings: ["CANADA", " USA", " SWITZERLAND", " UK", " EUROPE", ],
+  strings: ["CANADA", " USA", "IRELAND", " UK", " EUROPE", ],
   typeSpeed: 150,
   backSpeed: 150,
   loop: true
