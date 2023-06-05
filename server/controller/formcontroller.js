@@ -20,11 +20,25 @@ async function sendEmail(emailOptions) {
 
 // Handle form submission
 module.exports.handleForm = async (req, res) => {
-  const { name, nationality, country, email, phoneNumber, note, course, skillsSpecialization, studyDestination, countryToStudy, educationHistory, employmentHistory, destinationCountry, purposeOfTravel } = req.body;
+  const { 
+    name, nationality, 
+    country, email, phoneNumber,
+    note, course, skillsSpecialization, 
+    studyDestination, countryToStudy, 
+    educationHistory, employmentHistory, 
+    destinationCountry, purposeOfTravel 
+  } = req.body;
 
   try {
     // Save form data to MongoDB
-    const formData = new FormData({ name, nationality, country, email, phoneNumber, note, course, skillsSpecialization, studyDestination, countryToStudy, educationHistory, employmentHistory, destinationCountry, purposeOfTravel });
+    const formData = new FormData({ 
+      name, nationality, country, 
+      email, phoneNumber, note, 
+      course, skillsSpecialization, 
+      studyDestination, countryToStudy, 
+      educationHistory, employmentHistory, 
+      destinationCountry, purposeOfTravel 
+    });
     await formData.save();
 
    
