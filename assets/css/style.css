@@ -1353,8 +1353,8 @@ cursor: pointer;
   max-width: 700px;
   width: 100%;
   background-color: #fff;
-  position: relative;
-  top: 121px;
+  /* position: relative;
+  top: 121px; */
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -1509,7 +1509,9 @@ form .button input:hover {
 
 .study-container {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-top: 74px
 }
 
 
