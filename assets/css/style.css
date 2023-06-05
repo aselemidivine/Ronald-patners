@@ -402,15 +402,23 @@ body.nav-active { overflow: hidden; }
 .hero .container {
   display: grid;
   gap: 70px;
+  margin-top: 20px;
   /* max-height: 350px; */
 }
 
-.hero-title { color: var(--white); }
+.hero-title {     font-size: 80px; color: var(--white); }
+
+.hero-text-header {
+  font-size: var(--fs-5);
+  color: var(--white);
+  margin-bottom: 0px;
+}
+
 
 .hero-text {
   font-size: var(--fs-5);
   color: var(--white);
-  margin-block: 24px 36px;
+  margin-block: 0px 12px;
 }
 
 .btn-wrapper {
@@ -980,7 +988,7 @@ body.nav-active { overflow: hidden; }
    */
 
   .hero {
-    padding-block-start: calc(var(--section-padding) + 50px);
+    /* padding-block-start: calc(var(--section-padding) + 50px); */
     text-align: left;
   }
 
@@ -1082,7 +1090,7 @@ body.nav-active { overflow: hidden; }
    * STATS
    */
 
-  .stats .container { max-width: 70%; }
+  .stats .container { max-width: 100%; }
 
   .stats-card { padding: 60px; }
 
@@ -1294,6 +1302,7 @@ animation: moveup 0.5s linear forwards;
 
 .user-pic.active-pic {
 width: 100px;
+/* width: 71px; */
 border: 3px solid var(--atomic-tangerine);
 }
 
@@ -1320,7 +1329,7 @@ justify-content: center;
 }
 
 .user-pic {
-width: 13%;
+width: 7%;
 padding: 5px;
 border-radius: 50%;
 margin: 10px;
@@ -1518,7 +1527,7 @@ form .button input:hover {
 
 .auto-type {
   font-family: "Courier New", monospace;
-  font-size: 50px;
+  /* font-size: 50px; */
   font-weight: bold;
   /* animation: typing 3s steps(40) infinite; */
   white-space: nowrap;
