@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -175,10 +174,11 @@
 
         </section>
 
-        <!-- 
-        #MIGRATION ENQUIRY
+      
+    <!-- 
+        #STUDY ENQUIRY
      -->
-    <section class="section study-enquiry ">
+     <section class="section study-enquiry ">
       <div class="study-container">
         <div class="container-form">
           <img
@@ -186,7 +186,7 @@
             alt="avatar by flaticon"
             class="avatar"
           />
-          <div class="title">Migration Enquiry Form</div>
+          <div class="title">Study Abroad Enquiry</div>
           <div class="content">
             <form id="form" >
               <div class="user-details">
@@ -236,70 +236,28 @@
                 </div>
                 <div class="input-box">
                   <label class="details"
-                    >Your skills specialization</label
+                    >What course do you want to study?</label
                   >
                   <input
                     type="text"
                     class="inputbox"
-                    placeholder="I.T"
-                    name="skillsSpecialization"
-                    id="skillsSpecialization"
+                    placeholder="Choose a course"
+                    name="course"
+                    id="course"
                     required
                   />
                 </div>
                 <div class="input-box">
                   <label class="details"
-                    >Education History</label
+                    >What country do you want to study in?</label
                   >
-                  <input
-                    type="text"
-                    class="inputbox"
-                    placeholder=""
-                    name="educationHistory"
-                    id="educationHistory"
-                    required
-                  />
+                  <select id="country" name="country" required>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="europe">Europe</option>
+                    <!-- Add more options as needed -->
+                  </select>
                 </div>
-                <div class="input-box">
-                  <label class="details"
-                    >Employment History</label
-                  >
-                  <input
-                    type="text"
-                    class="inputbox"
-                    placeholder="Are you employed?"
-                    name="employmentHistory"
-                    id="employmentHistory"
-                    required
-                  />
-                </div>
-
-                <div class="input-box">
-                  <label class="details"
-                    >Purpose of travel</label
-                  >
-                  <input
-                    type="text"
-                    class="inputbox"
-                    placeholder=""
-                    name="purposeOfTravel"
-                    id="purposeOfTravel"
-                    required
-                  />
-                </div>
-               
-                <div class="input-box">
-                    <label class="details">Destination Country</label>
-                    <input
-                      type="text"
-                      class="inputbox"
-                      placeholder=""
-                      name="destinationCountry"
-                      id="destinationCountry"
-                      required
-                    />
-                </div>
-
                 <div class="input-box">
                   <label for="note">Note:</label>
                   <textarea id="note" name="note" id="note" required></textarea>
@@ -314,6 +272,8 @@
         </div>
       </div>
     </section>
+
+       
 
         <!-- 
         - #CTA
@@ -488,13 +448,26 @@
     <!-- 
     - custom js link
   -->
-  <script src="../assets/js/canada.js"></script>
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
+
+<!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> -->
+
+    <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/canada.js"></script>
 
 
     <!-- 
     - ionicon
   -->
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script> -->
+    <!-- <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script> -->
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+
   </body>
 </html>
