@@ -2,8 +2,10 @@ const express = require("express");
 const mongoose = require('mongoose');
 const formRouter = require('./route/index')
 require('dotenv/config');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 // Connect to MongoDB
 mongoose
   .connect(
