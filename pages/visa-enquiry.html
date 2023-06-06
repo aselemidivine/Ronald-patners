@@ -266,9 +266,14 @@
                     <textarea id="note" name="note" id="note" required></textarea>
                   </div>
                 </div>
-  
+
                 <div class="button">
-                  <input type="submit" value="Submit-form" />
+                  <input type="submit" onclick="openPopup()" value="Submit-form" />
+                </div>
+                <div class="popup" id="popup">
+                  <h2>Thank You</h2>
+                  <p>Your details have been successfully submitted. Thanks!</p>
+                  <button type="button" onclick="closePopup()" >OK</button>
                 </div>
               </form>
             </div>

@@ -21,12 +21,22 @@ formValue.addEventListener('submit', function(e) {
     body: payload,
     mode: 'cors'
   })
+    
     .then(res => res.json())
     .then(data => console.log(data))
     .catch(err => console.log(err))
 
     resetForm();
 });
+
+// Function to alert when form have been submitted
+var form = document.getElementById('form');
+
+function myFunction() {
+  if (form.checkValidity()) {
+    alert("Adding Succesful!");
+  }
+}
 
 
 // TO TOP MENU 
@@ -41,6 +51,17 @@ window.addEventListener("scroll", () => {
     }
 })
 // });
+
+// POPUP AFTER FORM SUBMISSION
+let popup = document.getElementById("popup");
+
+function openPopup() { 
+  popup.classList.add("open-popup");
+}
+
+function closePopup() { 
+  popup.classList.remove("open-popup");
+}
 
 
 

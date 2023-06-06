@@ -1,53 +1,86 @@
-
-<!--Registration Form-->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/forms.css" />
-    <link rel="shortcut icon" href="../assets/images/faviconn.png" type="image/svg+xml" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Ronald Partners</title>
+    <meta name="title" content="Ronald Partners" />
+    <meta
+      name="description"
+      content="This is a study and travel agency, made by Digital ad planet"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/faviconn.png" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Outfit:wght@200;300;400&family=Poppins:wght@200;300;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+     -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@200;300;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> -->
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/forms.css" />
+
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
   </head>
+
   <body>
     <header class="header" data-header>
       <div class="container">
         <a href="#" class="logo">
           <img
-            src="../assets/images/logo.png"
-            width="124"
-            height="24"
-            alt="Ronald home"
-            class="logo-light"
+          src="../assets/images/logo.png"          
+          width="124"
+          height="24"
+          alt="Ronald home"
+          class="logo-light"
           />
 
-          <img
-            src="../assets/images/cropped-ronald-partner-logo.png"
-            width="124"
-            height="24"
-            alt="Adex home"
-            class="logo-dark"
-          />
+          <img src="../assets/images/cropped-ronald-partner-logo.png" width="124" height="24" alt="Adex home" class="logo-dark">
         </a>
 
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
             <a href="#" class="logo">
               <img
-                src="./assets/images/cropped-ronald-partner-logo.png"
+                src="../assets/images/cropped-ronald-partner-logo.png"          
                 width="74"
                 height="24"
                 alt="Ronald home"
-              />
-            </a>
+                />
+              </a>
+              <!-- src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" -->
 
             <button
               class="nav-close-btn"
@@ -64,26 +97,22 @@
             </li>
 
             <li>
-              <a href="./pages/study-in-canada.html" class="navbar-link"
-                >About</a
-              >
+              <a href="./about-us.html" class="navbar-link">About</a>
             </li>
 
             <li>
-              <a href="./pages/study-in-canada.html" class="navbar-link"
-                >Our services</a
-              >
+              <a href="./pages/our-services.html" class="navbar-link">Our services</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Offers</a>
+              <a href="./offers.html" class="navbar-link">Offers</a>
             </li>
             <li>
               <a href="#" class="navbar-link">News</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Contact</a>
+              <a href="./contact-us.html" class="navbar-link">Contact</a>
             </li>
           </ul>
 
@@ -141,285 +170,507 @@
       </div>
     </header>
 
-
-    <!-- 
-        #STUDY ENQUIRY
-     -->
-    <section class="section study-enquiry ">
-      <div class="container">
-        <div class="container-form">
-          <img
-            src="../assets/images/hero-4.png"
-            alt="avatar by flaticon"
-            class="avatar"
-          />
-          <div class="title">Visa Enquiry</div>
-          <div class="content">
-            <form id="form" >
-              <div class="user-details">
-                <div class="input-box">
-                  <label class="details">Name</label>
-                  <input
-                    type="text"
-                    class="inputbox"
-                    placeholder="Enter your full name"
-                    name="name"
-                    id="name"
-                    required
-                  />
-                </div>
-                <div class="input-box">
-                  <label class="details">Nationality</label>
-                  <input
-                    type="text"
-                    class="inputbox"
-                    placeholder="USA or"
-                    name="nationality"
-                    id="nationality"
-                    required
-                  />
-                </div>
-                <div class="input-box">
-                  <label class="details">Email</label>
-                  <input
-                    type="text"
-                    class="inputbox"
-                    placeholder="Enter your email"
-                    name="email"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div class="input-box">
-                  <label class="details">Phone Mobile</label>
-                  <input
-                    type="text"
-                    class="inputbox"
-                    placeholder="Enter your number"
-                    name="phoneNumber"
-                    id="phoneNumber"
-                    required
-                  />
-                </div>
-                <div class="input-box">
-                  <label class="details">Purpose of Travel</label>
-                  <input
-                    type="text"
-                    class="inputbox"
-                    placeholder=""
-                    name=" purposeOfTravel"
-                    id=" purposeOfTravel"
-                    required
-                  />
-                </div>
-                <div class="input-box">
-                  <label class="details">Destination Country</label>
-                  <input
-                    type="text"
-                    class="inputbox"
-                    placeholder=""
-                    name="destinationCountry"
-                    id="destinationCountry"
-                    required
-                  />
-                </div>
-               
-             
-                <div class="input-box">
-                  <label for="note">Note:</label>
-                  <textarea id="note" name="note" id="note" required></textarea>
-                </div>
-              </div>
-
-              <div class="button">
-                <input type="submit" value="Submit-form" />
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  
-
-            <!-- 
-        - #CTA
+    <main>
+      <article>
+        <!-- 
+        - #HERO
       -->
 
-      <section class="cta" aria-label="call to action">
-        <div class="container">
-          <h2 class="h2 section-title">
-            Join our community to get latest updates on visa openings.
-          </h2>
-
-          <a href="#" class="btn btn-primary">Try it For Free</a>
-        </div>
-      </section>
-    </article>
-  </main>
-
-
-   <!-- 
-        #TO TOP ICON
-  -->
-
-  <a href="#" class="to-top">
-    <i class="fas fa-chevron-up"></i>
-   </a>
-
-  <!-- 
-  - #FOOTER
--->
-
-  <footer class="footer">
-    <div class="container grid-list">
-      <div class="footer-brand">
-        <a href="#" class="logo">
-          <img
-            src="../assets/images/logo.png"
-            width="124"
-            height="24"
-            alt="ronald home"
-          />
-        </a>
-
-        <p class="footer-text">
-          &copy; Copyright © 2022 Ronald and Partners. <br />
-          All rights reserved.
-        </p>
-
-        <ul class="social-list">
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-        </ul>
-        <li>
-          <a href="tel:001234567890" class="footer-link"
-            >Phone: +234(1)2953655
-            Phone: +2348034311748
-            Phone: +2349073666847</a
+        <section
+          class="section hero has-bg-image"
+          aria-label="home"
+          style="background-image: url('../assets/images/ab-us.jpg')">
           >
-        </li>
-      </div>
 
-      <ul class="footer-list">
-        <li>
-          <p class="h4 footer-list-title">Get in Touch</p>
-        </li>
+            <div class="page-title__area pt-110 " >
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xxl-12">
+                          <div class="page__title-wrapper text-center">
+                              <h3 class="pb-100">Contact Us</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            
+        </section>
 
-        <li>
-          <address class="footer-text">
-            Head Office: Ronald and Partners Consult, 3rd Floor, Nurses House, PC 43, Church Gate Street, Victoria Island, Lagos State.
-          </address>
-        </li>
-        <li>
-          <address class="footer-text">
-            Ikeja Office: Ronald and Partners Consult, Suite 14, Victory School Office Complex, Olaniyan Close,, Behind Don Etiebet House, Off Mobolaji Bank Anthony Way, Ikeja, Lagos State.
+        <!-- 
+        - #SERVICE
+      -->
 
-          </address>
-        </li>
+        <section class="section service" aria-labelledby="service-label">
+          <div class="container">
+            <p class="section-subtitle" id="service-label">What We Do?</p>
+
+            <h2 class="h2 section-title">
+              Deliver Study Abroad & Immigration Consultancy Services
+            </h2>
+
+            <ul class="grid-list">
+              <li class="card-list hidden">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img src="../assets/images/consultants-icon.png" alt="">
+                    <!-- <ion-icon name="call-outline" aria-hidden="true"></ion-icon> -->
+                  </div>
+
+                  <h3 class="h4 card-title">IMMIGRATION CONSULTANCY</h3>
+
+                  <p class="card-text">
+                    You can be rest assured that you get the best Immigration
+                  </p>
+
+                  <a href="../pages/migration-form.html" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li class="card-list hidden">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img src="../assets/images/student-icon-new.png" alt="">
+                    <!-- <ion-icon
+                      name="shield-checkmark-outline"
+                      aria-hidden="true"
+                    ></ion-icon> -->
+                  </div>
+
+                  <h3 class="h4 card-title">STUDY ABROAD</h3>
+
+                  <p class="card-text">
+                    We show clients how to get quality education for Global
+                    relevance
+                  </p>
+
+                  <a href="../pages/study-in-canada.html" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li class="card-list hidden">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img src="../assets/images/institution-icon.png" alt="">
+                  </div>
+
+                  <h3 class="h4 card-title">EXPERT VISA SERVICES</h3>
+                  <p class="card-text">
+                    We have years of experience with VISA processing and
+                    consultation with proven track record
+                  </p>
+
+                  <a href="./pages/visa-enquiry.html" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li class="card-list hidden">
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img src="../assets/images/school-icon.png" alt="">
+                    <!-- <ion-icon
+                      name="pie-chart-outline"
+                      aria-hidden="true"
+                    ></ion-icon> -->
+                  </div>
+
+                  <h3 class="h4 card-title">IELTS COACHING CLASS</h3>
+
+                  <p class="card-text">
+                    An applicant should apply at center in or closest to, the
+                    city in which you
+                  </p>
+
+                  <a href="../pages/visa-enquiry.html" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+
+                
+
+        <section class="section feature hidden" aria-labelledby="feature-label">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h3>PROPER INFORMATION</h3>
+                  <p>We carry out proper research before carrying out any form of consultation</p>
+              </div>
+       
+               <div class="col"> <h3>TOUR & TRAVELGUIDELINES</h3>
+                  <p>We help clients with guidelines when processing relocation or preparing for embassy interview</p></div>
+              <div class="col"> <h3>EDUCATION TIPS AND TRICKS</h>
+                  <p>We give valuable educational tips and processing tips to our clients</p></div>
+              <div class="col"> <h3>ADVICE & CONSULTANCY</h>
+                  <p>We provide quality advice which help clients achieve their desired result</p></div> 
+            </div>
+            <!-- <figure class="feature-banner">
+              <img
+                src="../assets/images/Student-Visa-Apply (1).jpg"
+                width="800"
+                height="531"
+                loading="lazy"
+                alt="feature banner"
+                class="w-100"
+              />
+            </figure> -->
+
+            <div class="feature-content">
+              <figure class="feature-banner">
+                <img
+                  src="../assets/images/Student-Visa-Apply (1).jpg"
+                  width="800"
+                  height="531"
+                  loading="lazy"
+                  alt="feature banner"
+                  class="w-100"
+                />
+              </figure>
+              <p class="section-subtitle" id="feautre-label">FEATURED SERVICES
+              </p>
+
+              <h2 class="h2 section-title">
+                We Take The Challenge to Make The Life Easier
+              </h2>
+
+              <p class="section-text">
+                We Have Done Excellently For 10 Years And More.
+                We are proud to celebrate our first decade of excellence and expert delivery of immigration, visa and overseas education placement services to our increasing clients across Nigeria and the world at large.
+              </p>
+
+             
+            </div>
+          </div>
+        </section>
+     
+
+
+        <!-- #VISA PROCESSING TIME
+         -->
+         <section class="section feature hidden" aria-labelledby="feature-label">
+          <div class="container">
+            <figure class="feature-banner">
+              <img
+                src="../assets/images/services.jpg-1.jpg"
+                width="800"
+                height="531"
+                loading="lazy"
+                alt="feature banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="feature-content">
+              
+
+              <h2 class="h2 section-title">
+                We Take 1-2 Working Months For Processing
+              </h2>
+
+              <p class="section-text">
+                We put in our very best effort to carryout document processing to ensure higher chances of our clients getting an approval.
+              </p>
+
+              <a href="#" class="btn btn-about">APPLY HERE</a>
+             
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #STATS
+      -->
+
+        <section class="stats hidden" aria-label="our stats">
+          <div class="container">
+            <ul
+              class="stats-card has-bg-image"
+              style="background-color: var(--black-coral);"
+            >
+              <li>
+                <p class="card-text">
+                  <span class="h1">10k + </span>
+
+                  <spna class="span">Happy Clients and Students</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">20 + </span>
+
+                  <spna class="span">Countries Affiliation</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">30</span>
+
+                  <spna class="span">Top University Partner</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">10 k+ </span>
+                  <spna class="span">Visa & Immigration</spna>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
       
 
-        <li>
-          <a href="mailto:ronalddesk@ronald-partners.com" class="footer-link"
-           Email: ronalddesk@ronald-partners.com
-          ></a
-          >
-        </li>
+    
 
-       
-      </ul>
+      </article>
+    </main>
 
-      <ul class="footer-list">
-        <li>
-          <p class="h4 footer-list-title">Learn More</p>
-        </li>
 
-        <li>
-          <a href="#" class="footer-link">About Us</a>
-        </li>
+      <!-- 
+        #TO TOP ICON
+       -->
 
-        <li>
-          <a href="#" class="footer-link">Our Story</a>
-        </li>
+         <a href="#" class="to-top">
+           <i class="fas fa-chevron-up"></i>
+          </a>
+          
+          <!-- #WHATSAPP
+          -->
+          <!-- <a href="https://wa.me/08168924643" class="whatsapp" target="_blank">
+            <i class="fa-3x fa-brands fa-whatsapp"></i>
+          </a> -->
 
-        <li>
-          <a href="#" class="footer-link">Projects</a>
-        </li>
+    
+    <!-- 
+    - #FOOTER
+  -->
 
-        <li>
-          <a href="#" class="footer-link">Terms of Use</a>
-        </li>
+    <footer class="footer">
+      <div class="container grid-list">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img
+              src="../assets/images/logo.png"
+              width="124"
+              height="24"
+              alt="Ronald home"
+            />
+          </a>
 
-        <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </li>
-      </ul>
+          <p class="footer-text">
+            &copy; Copyright © 2022 Ronald and Partners. <br />
+            All rights reserved.
+          </p>
 
-      <div class="footer-list">
-        <p class="h4 footer-list-title">Our Newsletter</p>
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
 
-        <p class="footer-text">
-          Subscribe to our newsletter to get our news & deals delivered to
-          you.
-        </p>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
-        <form class="input-wrapper">
-          <input
-            type="email"
-            name="email_address"
-            placeholder="Email Address"
-            required
-            class="input-field"
-          />
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
 
-          <button type="submit" class="submit-btn">Join</button>
-        </form>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a href="tel:001234567890" class="footer-link"
+              >Phone: +234(1)2953655
+              Phone: +2348034311748
+              Phone: +2349073666847</a
+            >
+          </li>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Get in Touch</p>
+          </li>
+
+          <li>
+            <address class="footer-text">
+              Head Office: Ronald and Partners Consult, 3rd Floor, Nurses House, PC 43, Church Gate Street, Victoria Island, Lagos State.
+            </address>
+          </li>
+          <li>
+            <address class="footer-text">
+              Ikeja Office: Ronald and Partners Consult, Suite 14, Victory School Office Complex, Olaniyan Close,, Behind Don Etiebet House, Off Mobolaji Bank Anthony Way, Ikeja, Lagos State.
+
+            </address>
+          </li>
+        
+
+          <li>
+            <a href="mailto:ronalddesk@ronald-partners.com" class="footer-link"
+             Email: ronalddesk@ronald-partners.com
+            ></a
+            >
+          </li>
+
+         
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Learn More</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Story</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <div class="footer-list">
+          <p class="h4 footer-list-title">Our Newsletter</p>
+
+          <p class="footer-text">
+            Subscribe to our newsletter to get our news & deals delivered to
+            you.
+          </p>
+
+          <form action="" class="input-wrapper">
+            <input
+              type="email"
+              name="email_address"
+              placeholder="Email Address"
+              required
+              class="input-field"
+            />
+
+            <button type="submit" class="submit-btn">Join</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script>
-    const navbar = document.querySelector("[data-navbar]");
-    const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-    const overlay = document.querySelector("[data-overlay]");
+    <!-- 
+    - custom js link
+  -->
 
-    const toggleNavbar = function () {
-      navbar.classList.toggle("active");
-      overlay.classList.toggle("active");
-      document.body.classList.toggle("nav-active");
+<script>
+
+
+
+
+    let userTexts = document.getElementsByClassName("user-text");
+    let userPics = document.getElementsByClassName("user-pic");
+
+    function showReview() {
+      for(userPic of userPics) {
+        userPic.classList.remove("active-pic");
+      }
+      for(userText of userTexts) {
+        userText.classList.remove("active-text");
+      }
+      let i = Array.from(userPics).indexOf(event.target);
+
+      userPics[i].classList.add("active-pic");
+      userTexts[i].classList.add("active-text");
     }
 
-addEventOnElements(navTogglers, "click", toggleNavbar);
-  </script>
-  <script src="../assets/js/canada.js">
-  </script>
+   
+ 
+ 
+ 
+</script>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/canada.js"></script>
+
+
+    <!-- 
+    - ionicon
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
