@@ -42,6 +42,7 @@ module.exports.handleForm = async (req, res) => {
     await formData.save();
 
    
+    console.log(email)
 
     // Send email to the customer
     const customerEmail = {
@@ -59,7 +60,7 @@ module.exports.handleForm = async (req, res) => {
       // from: "aselemidivine@gmail.com",
       to: "aselemidivine@gmail.com",
       subject: "New Form Submission",
-      text: `A new form submission has been received.\n\nEmail: ${email}\nMessage: ${phoneNumber}`,
+      text: `A new form submission has been received.\n\nEmail: ${email}\nMessage: ${phoneNumber} \nSpecialization: ${skillsSpecialization} \nCourse: ${course} `,
     };
     await sendEmail(ownerEmail);
 
