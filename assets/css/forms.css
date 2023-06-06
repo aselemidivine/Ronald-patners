@@ -450,8 +450,11 @@ body.nav-active {
 }
 
 .hero .container {
-  display: grid;
-  gap: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: grid;
+  gap: 70px; */
   /* max-height: 350px; */
 }
 

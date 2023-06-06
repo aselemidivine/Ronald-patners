@@ -47,8 +47,8 @@ module.exports.handleForm = async (req, res) => {
     // Send email to the customer
     const customerEmail = {
       from: "aselemidivine@gmail.com",
-      // to: email,
-      to: 'dev.codertjay@gmail.com',
+      to: email,
+      // to: 'dev.codertjay@gmail.com',
       subject: "Thank you for your submission",
       text: "Your message has been received. We will get back to you soon.",
     };
