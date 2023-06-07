@@ -1525,13 +1525,40 @@ form .user-details .input-box {
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
+
+form .user-details .input-boxx {
+  position: relative;
+  top: -25px;
+  margin-bottom: 15px;
+  width: calc(210% / 2 - 20px);
+}
 form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+form .input-boxx span.details {
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
 .user-details .input-box input {
+  background: transparent;
+  border-style: solid;
+  border-color: linear-gradient(135deg, cyan, #71b7e6, #9b59b6, tomato);
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  padding-left: 15px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-boxx input {
   background: transparent;
   border-style: solid;
   border-color: linear-gradient(135deg, cyan, #71b7e6, #9b59b6, tomato);
@@ -1707,6 +1734,14 @@ form .button input:hover {
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-map {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 58px;
+  align-items: center;
 }
 
 
