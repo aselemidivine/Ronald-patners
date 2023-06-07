@@ -42,7 +42,7 @@ module.exports.handleForm = async (req, res) => {
     await formData.save();
 
    
-    console.log(email)
+    console.log(email);
 
     // Send email to the customer
     const customerEmail = {
