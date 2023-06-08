@@ -558,6 +558,10 @@ body.nav-active { overflow: hidden; }
   gap: 50px;
 }
 
+.about-item {
+  margin-bottom: 18px;
+}
+
 .about .section-title { margin-block-end: 35px; }
 
 .accordion-card .card-title { padding-block-end: 20px; }
@@ -570,6 +574,7 @@ body.nav-active { overflow: hidden; }
 
 .accordion-btn ion-icon {
   font-size: 1.5rem;
+  border: 1px solid;
   color: var(--atomic-tangerine);
   transition: var(--transition-1);
 }
@@ -625,6 +630,12 @@ body.nav-active { overflow: hidden; }
   font-size: 1.4rem;
   padding: 4px;
   border-radius: var(--radius-circle);
+}
+
+.feature-content h2 {
+   
+    margin-bottom: 40px;
+
 }
 
 .feature-card .card-icon ion-icon { --ionicon-stroke-width: 40px; }

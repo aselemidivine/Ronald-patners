@@ -683,9 +683,9 @@ body.nav-active {
   gap: 15px;
 }
 
-.feature-content {
+/* .feature-content {
   text-align: center;
-}
+} */
 
 .feature-card {
   display: flex;
