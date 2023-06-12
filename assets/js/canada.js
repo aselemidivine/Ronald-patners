@@ -54,6 +54,7 @@ window.addEventListener("scroll", () => {
 
 // POPUP AFTER FORM SUBMISSION
 let popup = document.getElementById("popup");
+let closeBtn = document.querySelector(".button-close-modal");
 
 function openPopup() { 
   popup.classList.add("open-popup");
@@ -61,7 +62,38 @@ function openPopup() {
 
 function closePopup() { 
   popup.classList.remove("open-popup");
+  document.addEventListener(
+    "click",
+    function(event) {
+      // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+      if (
+        event.target.matches("button-close-modal") ||
+        !event.target.closest("popup")
+      ) {
+        closeModal()
+      }
+    },
+    false
+  )
 }
+
+
+function closeModal() {
+    document.getElementById("popup").style.display = "none"
+  }
+  
+  // Close modal when clicking outside the modal or on the close button
+  window.addEventListener("click", function(event) {
+    if (event.target === popup || event.target === closeBtn) {
+      closeModal();
+    }
+  });
+
+
+
+
+
+
 
 
 

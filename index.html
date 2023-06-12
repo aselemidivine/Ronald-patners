@@ -47,6 +47,8 @@
   <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg" />
   <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
   <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
+
+
 </head>
 
 <body>
@@ -762,7 +764,12 @@
                   </div>
 
                   <div class="button">
-                    <input type="submit" value="Submit-form" />
+                    <input type="submit" onclick="openPopup()" value="Submit-form" />
+                  </div>
+                  <div class="popup" id="popup">
+                    <h2>Thank You</h2>
+                    <p>Your details have been successfully submitted. Thanks!</p>
+                    <button type="button" onclick="closePopup()" class="button-close-modal" >OK</button>
                   </div>
                 </form>
               </div>
@@ -953,15 +960,28 @@
     }
 
 
+    // POPUP AFTER FORM SUBMISSION
+    // let popup = document.getElementById("popup");
+
+    // function openPopup() { 
+    //   popup.classList.add("open-popup");
+    // }
+
+    // function closePopup() { 
+    //   popup.classList.remove("open-popup");
+    // }
+
 
 
 
   </script>
 
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/canada.js"></script>
+<script src="./assets/js/script.js"></script>
+<!-- <script defer src="./assets/js/canada.js"></script> -->
+<script src="./assets/js/canada.js"></script>
+
 
   <!-- 
     - ionicon

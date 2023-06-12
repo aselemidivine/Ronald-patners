@@ -1399,7 +1399,7 @@ cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0 12px 0;
+  /* margin: 20px 0 12px 0; */
 }
 form .user-details .input-box {
   position: relative;
@@ -1479,7 +1479,7 @@ form .category label {
 }
 form .button {
   height: 45px;
-  margin: 35px 0;
+  /* margin: 35px 0; */
 }
 form .button input {
   height: 100%;
@@ -1575,6 +1575,50 @@ form .button input:hover {
   opacity: 0.8;
   color: var(--atomic-tangerine);
 
+}
+
+
+.popup {
+  background: var(--baby-powder);
+  border-radius: 6px;
+  position: relative;
+  top: 50%;
+  left: 30%;
+  max-width: 480px;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 0px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+
+}
+
+.popup button {
+  width: 100%;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+
+}
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* .whatsapp {
