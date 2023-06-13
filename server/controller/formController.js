@@ -42,16 +42,18 @@ module.exports.handleForm = async (req, res) => {
     await formData.save();
 
    
-    console.log(email);
+    // console.log(asdfasdflninds);
 
     // Send email to the customer
     const customerEmail = {
       from: "aselemidivine@gmail.com",
       to: email,
       // to: 'dev.codertjay@gmail.com',
-      subject: "Thank you for your submission",
+      subject: "Thank you for your submission and we hope to see you soon",
       text: "Your message has been received. We will get back to you soon.",
     };
+
+    console.log(customerEmail);
     await sendEmail(customerEmail);
 
     // Send email to the business owner

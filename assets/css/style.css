@@ -187,6 +187,23 @@ body.nav-active { overflow: hidden; }
   margin-top: 73px;
 } */
 
+.items-center {
+  max-width: 745px;
+  align-items: center;
+  text-align: center;
+}
+
+.items-center .section-text {
+  font-size: 20px;
+}
+
+.items-centr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
 .has-bg-image {
   background-repeat: no-repeat;
   background-position: center;
@@ -609,6 +626,10 @@ body.nav-active { overflow: hidden; }
 
 .feature .container {
   display: grid;
+  gap: 50px;
+}
+.feature .items-center {
+  display: row;
   gap: 50px;
 }
 
@@ -1059,7 +1080,11 @@ body.nav-active { overflow: hidden; }
    * FOOTER
    */
 
-  .footer .grid-list { grid-template-columns: repeat(4, 1fr); }
+   .footer .grid-list { grid-template-columns: repeat(3, 1fr); }
+  /* .footer .grid-list { grid-template-columns: repeat(4, 1fr); } */
+
+
+  /* .footer .grid-listt { grid-template-columns: repeat(3, 1fr); } */
 
 }
 
