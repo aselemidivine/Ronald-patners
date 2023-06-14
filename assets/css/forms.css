@@ -566,7 +566,7 @@ body.nav-active {
 
 .service-card {
   padding: 17px;
-  min-height: 389px;
+  min-height: 322px;
   box-shadow: var(--shadow-2);
   border-radius: var(--radius-6);
 }
