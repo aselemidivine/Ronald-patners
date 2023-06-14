@@ -761,6 +761,37 @@ body.nav-active { overflow: hidden; }
   #FOOTER
 \*-----------------------------------*/
 
+.footerr {
+    background-color: var(--hero);
+    padding-block: 60px 34px;
+    color: white;
+  }
+  
+  .footer-brand .footer-text { margin-block: 20px; }
+  
+  .footer .social-list { color: var(--white); margin-bottom: 30px; }
+  
+  .footer-list-title {
+    color: var(--white);
+    margin-block-end: 16px;
+  }
+  
+  .footer-link {
+    padding-block: 4px;
+    transition: var(--transition-1);
+  }
+  
+  .footer-link:is(:hover, :focus-visible) { color: var(--violet-blue-crayola); }
+  
+  .input-wrapper {
+    position: relative;
+    margin-block-start: 25px;
+  }
+  
+
+
+
+
 .footer {
   background-color: var(--charcoal);
   padding-block: 60px 34px;
@@ -1080,8 +1111,8 @@ body.nav-active { overflow: hidden; }
    * FOOTER
    */
 
-   .footer .grid-list { grid-template-columns: repeat(3, 1fr); }
-  /* .footer .grid-list { grid-template-columns: repeat(4, 1fr); } */
+   .footer .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .footerr .grid-list { grid-template-columns: repeat(3, 1fr); }
 
 
   /* .footer .grid-listt { grid-template-columns: repeat(3, 1fr); } */
