@@ -60,7 +60,7 @@ module.exports.handleForm = async (req, res) => {
     const ownerEmail = {
       from: email,
       // from: "aselemidivine@gmail.com",
-      to: "aselemidivine@gmail.com",
+      to: "edu.ronald101@gmail.com",
       subject: "New Form Submission",
       text: `A new form submission has been received.\n\nEmail: ${email}\nMessage: ${phoneNumber} \nSpecialization: ${skillsSpecialization} \nCourse: ${course} `,
     };
