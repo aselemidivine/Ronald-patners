@@ -1080,7 +1080,9 @@ font-family: 'Rubik', sans-serif; */
      * SERVICE
      */
   
-    .service .grid-list { grid-template-columns: repeat(4, 1fr); }
+
+  .service .grid-list { grid-template-columns: repeat(3, 1fr); }
+
   
   
   

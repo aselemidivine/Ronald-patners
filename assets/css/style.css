@@ -1149,7 +1149,7 @@ body.nav-active { overflow: hidden; }
    * SERVICE
    */
 
-  .service .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .service .grid-list { grid-template-columns: repeat(3, 1fr); }
 
 
 
