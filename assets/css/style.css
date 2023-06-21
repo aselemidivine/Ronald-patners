@@ -194,7 +194,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .items-center .section-text {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .items-centr {
@@ -1675,6 +1675,19 @@ form .button input:hover {
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.flex-container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.items-centrr {
+    /* display: flex;
+    align-items: center; */
+    padding: 30px;
+    max-width: 540px;
 }
 
 /* .whatsapp {
