@@ -262,6 +262,10 @@ body.nav-active { overflow: hidden; }
   height: 434px;
   object-fit: cover;
 }
+.img-coverr {
+  object-fit: cover;
+  width: 199px;
+}
 
 .section-subtitle {
   font-size: var(--fs-3);
@@ -543,6 +547,11 @@ body.nav-active { overflow: hidden; }
 .card-icon img {
   width: 84px;
   height: 75px;
+}
+
+.card {
+  background-color: var(--cultured);
+  border: none;
 }
 
 .service-card .card-icon ion-icon { --ionicon-stroke-width: 50px; }
@@ -1149,7 +1158,8 @@ body.nav-active { overflow: hidden; }
    * SERVICE
    */
 
-  .service .grid-list { grid-template-columns: repeat(3, 1fr); }
+  .service .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .service .grid-listt { grid-template-columns: repeat(3, 1fr); }
 
 
 
@@ -1218,6 +1228,19 @@ body.nav-active { overflow: hidden; }
   position: absolute;
   width: 100%;
   height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.maincontainerr {
+  position: relative;
+  height: 70px;
+}
+
+.thecardd {
+  position: absolute;
+  /* width: 100%;
+  height: 100%; */
   transform-style: preserve-3d;
   transition: all 0.5s ease;
 }
