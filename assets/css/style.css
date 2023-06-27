@@ -1713,6 +1713,28 @@ form .button input:hover {
     max-width: 540px;
 }
 
+
+/* PARTNER SHCOOL CONTAINER */
+/* .containerr .roww {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.row {
+  display: flex;
+} */
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+
+/* .carousel-item {
+
+} */
+
 /* .whatsapp {
     background: var(--black-coral);
     position: fixed;
