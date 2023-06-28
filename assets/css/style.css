@@ -1732,7 +1732,7 @@ form .button input:hover {
 
 .swiper-wrapper {
   width: 100%;
-  height: 35em;
+  height: 19em;
   align-items: center;
   display: flex;
 }
@@ -1740,7 +1740,7 @@ form .button input:hover {
 /* / */
 .card {
   width: 20em;
-  height: 22%;
+  height: 50%;
   background-color: #fff;
   border-radius: 2em;
   box-shadow: 0 0 2em rgba(0, 0, 0, .2);
