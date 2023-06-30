@@ -1489,6 +1489,11 @@ body{
   align-items: center;
   margin-top: 74px
 }
+.study-containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .container-form {
   max-width: 700px;
