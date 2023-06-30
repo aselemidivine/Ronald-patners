@@ -1,9 +1,50 @@
 const express = require("express");
+const multer =  require('multer');
 const router = express.Router();
 
-const formController = require("../controller/formcontroller");
+const { signUpRequestSerializer } = require('../serializer/userSerializers');
+const { verifyToken } = require('../middleware/jwt');
+const { signUp, login } = require('../controller/userController');
+const { createProfilePicture, getOneProfilePic } = require('../controller/pictureController');
+const { requestOTP, verifyUserOTP } = require('../controller/otpController');
+const { createApplication, getAllApplication } = require('../controller/applicationController');
+const { createDocument, getOneDocument, getAllDocument } = require('../controller/userDocumentController');
+const { createProfile, modifyProfile, getOneProfile, getAllProfile } = require('../controller/userProfileController');
+
+
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, 'uploads')
+    },
+    filename: function (req, file, cb) {
+      cb(null, Date.now() + '-' + file.originalname)
+    },
+})
+const upload = multer({ storage: storage })
 
 // api route
-router.post("/submit-form", formController.handleForm);
+router.post("/signup", signUpRequestSerializer, signUp);
+router.post("/login", login);
+router.post("/verify", verifyUserOTP);
+router.post("/request", requestOTP);
+
+//profile route
+router.post("/profile", verifyToken, createProfile);
+router.get("/profile", verifyToken, getAllProfile);
+router.get("/profile/:id", verifyToken, getOneProfile);
+router.patch("/profile/:id", verifyToken, modifyProfile);
+
+//document route
+router.post("/document", verifyToken, upload.array('file', 3), createDocument);
+router.get("/document/:id", verifyToken, getOneDocument);
+router.get("/document", verifyToken, getAllDocument);
+
+//application route
+router.post("/application", verifyToken, createApplication);
+router.get("/application", verifyToken, getAllApplication);
+
+//picture route
+router.post("/picture", verifyToken, upload.single('file'), createProfilePicture);
+router.get("/picture/:id", verifyToken, getOneProfilePic);
     
 module.exports = router;

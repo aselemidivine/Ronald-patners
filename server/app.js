@@ -8,8 +8,7 @@ const app = express();
 app.use(cors());
 // Connect to MongoDB
 mongoose
-  .connect(
-    "mongodb+srv://Ronald-Partners:ronald-partners@cluster0.gwdmzoy.mongodb.net/",
+  .connect(process.env.MONGODB_URL_LOCAL,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
