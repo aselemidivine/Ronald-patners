@@ -2,6 +2,7 @@ const express = require("express");
 const multer =  require('multer');
 const router = express.Router();
 
+<<<<<<< HEAD
 const { signUpRequestSerializer } = require('../serializer/userSerializers');
 const { verifyToken } = require('../middleware/jwt');
 const { signUp, login } = require('../controller/userController');
@@ -21,6 +22,9 @@ const storage = multer.diskStorage({
     },
 })
 const upload = multer({ storage: storage })
+=======
+const formController = require("../controller/formController");
+>>>>>>> 756c603975d364b626dc53fd6537ed05659a15c5
 
 // api route
 router.post("/signup", signUpRequestSerializer, signUp);

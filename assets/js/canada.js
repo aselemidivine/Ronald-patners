@@ -15,16 +15,28 @@ formValue.addEventListener('submit', function(e) {
 
   //plug into the database .....  
   // replace url with your api url
-  fetch('http://localhost:3000/api/submit-form', {
+  // fetch('https://wild-blue-salmon-vest.cyclic.app/api/submit-form', {
+    fetch('http://localhost:3000/api/submit-form', {
     method: 'POST',
     body: payload,
+    mode: 'cors'
   })
+    
     .then(res => res.json())
     .then(data => console.log(data))
     .catch(err => console.log(err))
 
   resetForm();
 });
+
+// Function to alert when form have been submitted
+var form = document.getElementById('form');
+
+function myFunction() {
+  if (form.checkValidity()) {
+    alert("Adding Succesful!");
+  }
+}
 
 
 // TO TOP MENU 
@@ -39,3 +51,50 @@ window.addEventListener("scroll", () => {
     }
 })
 // });
+
+// POPUP AFTER FORM SUBMISSION
+let popup = document.getElementById("popup");
+let closeBtn = document.querySelector(".button-close-modal");
+
+function openPopup() { 
+  popup.classList.add("open-popup");
+}
+
+function closePopup() { 
+  popup.classList.remove("open-popup");
+  document.addEventListener(
+    "click",
+    function(event) {
+      // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+      if (
+        event.target.matches("button-close-modal") ||
+        !event.target.closest("popup")
+      ) {
+        closeModal()
+      }
+    },
+    false
+  )
+}
+
+
+function closeModal() {
+    document.getElementById("popup").style.display = "none"
+  }
+  
+  // Close modal when clicking outside the modal or on the close button
+  window.addEventListener("click", function(event) {
+    if (event.target === popup || event.target === closeBtn) {
+      closeModal();
+    }
+  });
+
+
+
+
+
+
+
+
+
+

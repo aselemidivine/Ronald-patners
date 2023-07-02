@@ -450,8 +450,11 @@ body.nav-active {
 }
 
 .hero .container {
-  display: grid;
-  gap: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: grid;
+  gap: 70px; */
   /* max-height: 350px; */
 }
 
@@ -563,7 +566,7 @@ body.nav-active {
 
 .service-card {
   padding: 17px;
-  min-height: 389px;
+  min-height: 322px;
   box-shadow: var(--shadow-2);
   border-radius: var(--radius-6);
 }
@@ -679,6 +682,10 @@ body.nav-active {
   display: grid;
   gap: 15px;
 }
+
+/* .feature-content {
+  text-align: center;
+} */
 
 .feature-card {
   display: flex;
@@ -969,7 +976,7 @@ body.nav-active {
      */
 
   .feature .container {
-    grid-template-columns: 0.7fr 1fr;
+    grid-template-columns: 0.9fr 1fr;
     align-items: center;
   }
 
@@ -1102,6 +1109,9 @@ body.nav-active {
   .footer .grid-list {
     grid-template-columns: repeat(4, 1fr);
   }
+  /* .footer .grid-listt {
+    grid-template-columns: repeat(2, 1fr);
+  } */
 }
 
 /**
@@ -1130,7 +1140,7 @@ body.nav-active {
      */
 
   .service .grid-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /**
@@ -1138,7 +1148,7 @@ body.nav-active {
      */
 
   .stats .container {
-    max-width: 70%;
+    max-width: 100%;
   }
 
   .stats-card {
@@ -1242,6 +1252,8 @@ body.nav-active {
 
 .btn-about {
   color: var(--white);
+  position: relative;
+  left: 39%;
 }
 
 .hidden {
@@ -1477,6 +1489,11 @@ body{
   align-items: center;
   margin-top: 74px
 }
+.study-containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .container-form {
   max-width: 700px;
@@ -1516,13 +1533,40 @@ form .user-details .input-box {
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
+
+form .user-details .input-boxx {
+  position: relative;
+  top: -25px;
+  margin-bottom: 15px;
+  width: calc(210% / 2 - 20px);
+}
 form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+form .input-boxx span.details {
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
 .user-details .input-box input {
+  background: transparent;
+  border-style: solid;
+  border-color: linear-gradient(135deg, cyan, #71b7e6, #9b59b6, tomato);
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  padding-left: 15px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-boxx input {
   background: transparent;
   border-style: solid;
   border-color: linear-gradient(135deg, cyan, #71b7e6, #9b59b6, tomato);
@@ -1618,3 +1662,95 @@ form .button input:hover {
     flex-direction: column;
   }
 }
+
+/* .col {
+    width: 255px;
+    height: 239px;
+    background: aqua;
+    box-sizing: border-box;
+    padding: 25px 35px;
+    margin-bottom: 20px;
+} */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: calc(50% - 10px); /* Adjust the width as needed */
+  margin-bottom: 20px;
+  width: 255px;
+  height: 339px;
+  box-sizing: border-box;
+  padding: 25px 35px;
+  border-radius: 18px;
+  height: 339px;
+  background: var(--black-coral);
+  color: var(--white);
+  
+}
+
+.col   h3 {
+  font-size: 18px;
+}
+
+.col   p {
+  margin-top: 18px;
+  font-size: 19px;
+  font-weight: 100;
+}
+
+.popup {
+  background: var(--baby-powder);
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  max-width: 480px;
+  margin-left: 20px;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+
+}
+
+.popup button {
+  width: 100%;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%) scale(1);
+
+
+}
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-map {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 58px;
+  align-items: center;
+}
+
+

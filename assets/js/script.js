@@ -1,24 +1,5 @@
 'use strict';
 
-// let userTexts = document.getElementsByClassName("user-text");
-// let userPics = document.getElementsByClassName("user-pic");
-
-// function showReview() {
-//   for(userPic of userPics) {
-//     userPic.classList.remove("active-pic");
-//   }
-//   for(userText of userTexts) {
-//     userText.classList.remove("active-text");
-//   }
-//   let i = Array.from(userPics).indexOf(event.target);
-
-//   userPics[i].classList.add("active-pic");
-//   userTexts[i].classList.add("active-text");
-// }
-
-/**
- * add event listener on multiple elements
- */
 
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
@@ -198,6 +179,190 @@ window.addEventListener("scroll", () => {
         toTop.classList.remove ("active");
     }
 })
+
+// SWIPPER JS
+// var swiper = new Swiper("mySwiper", {
+//   effect: "coverflow",
+//   grabCursor: true,
+//   centeredSlides: true,
+//   slidesPerView: "auto",
+//   coverflowEffect: {
+//     rotate: 50,
+//     stretch: 0,
+//     depth: 100,
+//     modifier: 1,
+//     slideShadows: true
+//   },
+  
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+// })
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 300,
+    modifier: 1,
+    slideShadows: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+
+
+
+// POPUP AFTER FORM SUBMISSION
+// let popup = document.getElementById("popup");
+// let closeBtn = document.querySelector(".button-close-modal");
+
+// function openPopup() { 
+//   popup.classList.add("open-popup");
+// }
+
+// function closePopup() { 
+//   popup.classList.remove("open-popup");
+//   document.addEventListener(
+//     "click",
+//     function(event) {
+//       // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+//       if (
+//         event.target.matches("button-close-modal") ||
+//         !event.target.closest("popup")
+//       ) {
+//         closeModal()
+//       }
+//     },
+//     false
+//   )
+// }
+
+
+// function closeModal() {
+//     document.getElementById("popup").style.display = "none"
+//   }
+  
+//   // Close modal when clicking outside the modal or on the close button
+//   window.addEventListener("click", function(event) {
+//     if (event.target === popup || event.target === closeBtn) {
+//       closeModal();
+//     }
+//   });
+
+
+
+const formValue = document.getElementById('form');
+
+//reset form value...
+const resetForm = () => {
+  formValue.reset();
+};
+
+formValue.addEventListener('submit', function(e) {
+  e.preventDefault();
+  //send request using urlencoded
+  const prePayload = new FormData(formValue);
+  const payload = new URLSearchParams(prePayload);
+  console.log([...payload]);
+
+  //plug into the database .....  
+  // replace url with your api url
+  // fetch('http://localhost:3000/api/submit-form', {
+  fetch('https://wild-blue-salmon-vest.cyclic.app/api/submit-form', {
+    method: 'POST',
+    body: payload,
+    mode: 'cors'
+  })
+    
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err))
+
+    resetForm();
+});
+
+// Function to alert when form have been submitted
+var form = document.getElementById('form');
+
+function myFunction() {
+  if (form.checkValidity()) {
+    alert("Adding Succesful!");
+  }
+}
+
+
+// TO TOP MENU 
+
+// const toTop = document.querySelector (".to-top");
+// window.addEventListener("scroll", () => {
+//     if  (window.pageYOffset > 100)  {
+//         toTop.classList.add("active");
+//     }
+//     else {
+//         toTop.classList.remove ("active");
+//     }
+// })
+// });
+
+// POPUP AFTER FORM SUBMISSION
+let popup = document.getElementById("popup");
+let closeBtn = document.querySelector(".button-close-modal");
+
+function openPopup() { 
+  popup.classList.add("open-popup");
+}
+
+function closePopup() { 
+  popup.classList.remove("open-popup");
+  document.addEventListener(
+    "click",
+    function(event) {
+      // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+      if (
+        event.target.matches("button-close-modal") ||
+        !event.target.closest("popup")
+      ) {
+        closeModal()
+      }
+    },
+    false
+  )
+}
+
+
+function closeModal() {
+    document.getElementById("popup").style.display = "none"
+  }
+  
+  // Close modal when clicking outside the modal or on the close button
+  window.addEventListener("click", function(event) {
+    if (event.target === popup || event.target === closeBtn) {
+      closeModal();
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

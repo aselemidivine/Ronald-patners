@@ -1,0 +1,19 @@
+{
+  "name": "ronald-patners",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+ 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aselemidivine/Ronald-patners.git"
+  },
+  "author": "Aselemi Divine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aselemidivine/Ronald-patners/issues"
+  },
+  "homepage": "https://github.com/aselemidivine/Ronald-patners#readme"
+}

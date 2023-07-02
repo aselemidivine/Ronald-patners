@@ -2,8 +2,14 @@
   "name": "ronald-patners",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "nodemon index.js"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+>>>>>>> 756c603975d364b626dc53fd6537ed05659a15c5
   },
   "repository": {
     "type": "git",
