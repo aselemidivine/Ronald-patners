@@ -852,6 +852,10 @@ body.nav-active {
   color: white;
 }
 
+.footerr .consider {
+  color: var(--atomic-tangerine);
+}
+
 .footer-brand .footer-text {
   margin-block: 20px;
 }
