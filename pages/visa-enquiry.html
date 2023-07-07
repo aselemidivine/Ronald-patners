@@ -33,6 +33,11 @@
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/forms.css" />
 
+   <!-- 
+    #Phone number select validator
+   -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+
   <!-- 
     - preload images
   -->
@@ -337,7 +342,7 @@
                         <option value="New Zealand">New Zealand</option>
                         <option value="Nicaragua">Nicaragua</option>
                         <option value="Niger">Niger</option>
-                        <option value="Nigeria">Nigeria</option>
+                        <option value="Nigeria" selected>Nigeria</option>
                         <option value="Niue">Niue</option>
                         <option value="Norfolk Island">Norfolk Island</option>
                         <option value="Northern Mariana Islands">Northern Mariana Islands</option>
@@ -431,7 +436,7 @@
                   </div>
                   <div class="input-box">
                     <label class="details">Phone Mobile</label>
-                    <input type="text" class="inputbox" placeholder="Enter your number" name="phoneNumber"
+                    <input type="tel" class="inputbox" placeholder="Enter your number" id="phone" name="phoneNumber"
                       id="phoneNumber" required />
                   </div>
                   <div class="input-box">
@@ -679,7 +684,7 @@
                       <option value="Uganda">Uganda</option>
                       <option value="Ukraine">Ukraine</option>
                       <option value="United Arab Emirates">United Arab Emirates</option>
-                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="United Kingdom" selected>United Kingdom</option>
                       <option value="United States">United States</option>
                       <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
                       <option value="Uruguay">Uruguay</option>
@@ -891,6 +896,20 @@
       </div>
     </div>
   </footer>
+
+
+      <!-- Twilion number cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
+      <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          preferredCountries: ["ng", "us", "in", "de", "co", "us", "gb"],
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
 
   <!-- 
     - custom js link

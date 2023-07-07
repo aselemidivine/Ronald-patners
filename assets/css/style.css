@@ -1923,7 +1923,20 @@ form .button input:hover {
   border: 1px solid var(--atomic-tangerine);;
   border-radius: 4px;
   max-width: 286px;
-  padding: 8px 0px 13px 0px;
+  padding: 8px 0px 13px 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.custom-selectt {
+  display: inline-block;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: var(--black-coral);
+  border: 1px solid var(--atomic-tangerine);;
+  border-radius: 4px;
+  max-width: 226px;
+  padding: 8px 0px 13px 10px;
   background-color: #fff;
   cursor: pointer;
 }
@@ -1940,8 +1953,32 @@ form .button input:hover {
   border-right: 6px solid transparent;
   border-top: 6px solid #555;
 }
+.custom-selectt:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #555;
+}
 
 .custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.custom-selectt select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
