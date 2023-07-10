@@ -1686,6 +1686,11 @@ form .button input:hover {
   .container {
     max-width: 100%;
   }
+
+  .containerr-form {
+    height: 649px;
+  }
+
   form .user-details .input-box {
     margin-bottom: 15px;
     width: 100%;
@@ -2020,6 +2025,8 @@ form .button input:hover {
 .custom-select:focus {
   border-color: #888;
 }
+
+
 /* .carousel-item {
 
 } */
