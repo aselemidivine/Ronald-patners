@@ -998,6 +998,9 @@ body.nav-active {
   .container {
     max-width: 720px;
   }
+  .custom-select {
+    max-width: 216px;
+  }
 
   .grid-list {
     grid-template-columns: 1fr 1fr;
@@ -1435,6 +1438,7 @@ swiper-slide img {
   .user-text {
     font-size: 15.5px;
   }
+  
 }
 
 .user-text {
@@ -1616,6 +1620,11 @@ form .input-box span.details {
 }
 
 #note {
+  min-width: 478px;
+  height: 114px;
+}
+
+.note {
   min-width: 278px;
   height: 114px;
 }
@@ -1691,6 +1700,11 @@ form .button input:hover {
   .user-details::-webkit-scrollbar {
     width: 5px;
   }
+  #note {
+    min-width: 378px;
+    height: 114px;
+  }
+ 
 }
 @media (max-width: 459px) {
   .container .content .category {
@@ -1709,6 +1723,10 @@ form .button input:hover {
   .hero-title {
     font-size: 43px;
     /* color: var(--white); */
+}
+#note {
+  min-width: 247px;
+  height: 114px;
 }
 }
 

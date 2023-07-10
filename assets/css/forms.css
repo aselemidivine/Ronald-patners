@@ -1631,6 +1631,11 @@ form .input-boxx span.details {
 }
 
 #note {
+  min-width: 478px;
+  height: 114px;
+}
+
+.note {
   min-width: 278px;
   height: 114px;
 }
