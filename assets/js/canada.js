@@ -15,8 +15,8 @@ formValue.addEventListener('submit', function(e) {
 
   //plug into the database .....  
   // replace url with your api url
-  // fetch('https://wild-blue-salmon-vest.cyclic.app/api/submit-form', {
-    fetch('http://localhost:3000/api/submit-form', {
+  fetch('https://wild-blue-salmon-vest.cyclic.app/api/submit-form', {
+    // fetch('http://localhost:3000/api/submit-form', {
     method: 'POST',
     body: payload,
     mode: 'cors'
