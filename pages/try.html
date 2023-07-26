@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/forms.css"
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -281,7 +284,7 @@
 
 
 
-
+<!-- 
   <div class="content">
 	<form id="form">
 	  <div class="user-details">
@@ -316,7 +319,7 @@
 			<option value="usa">USA</option>
 			<option value="canada">Canada</option>
 			<option value="europe">Europe</option>
-			<!-- Add more options as needed -->
+			// Add more options as needed
 		  </select>
 		</div>
 	  
@@ -332,5 +335,115 @@
 	  </div>
 	</form>
   </div>
+   -->
+
+   <div class="form__container">
+	<div class="primary-form">
+		<h5 class="primary-info">Primary Information</h5>
+
+		<form class="form">
+			<div class="form__grid">
+				<div class="form__item">
+					<label class="form__label" for="firstname">Given Name</label>
+					<input class="form__input" id="firstname" placeholder="Given Name"/>
+				</div>
+				<div class="form__item">
+					<label class="form__label" for="lastname">Family Name</label>
+					<input class="form__input" type="text" id="lastname" placeholder="Family Name"/>
+				</div>
+			</div>
+
+			<div class="form__grid">
+
+				<div class="form__item">
+					<label class="form__label" for="email">Email</label>
+					<input class="form__input" type="email" id="email" placeholder="Email Address"/>
+				</div>
+				<div class="form__item">
+					<label class="form__label" for="nationality">Nationality</label>
+					<select id="nationality">Nationality</select>
+				</div>
+			</div>
+			
+			<div class="form__grid">
+				<div class="form__item">
+					<label class="form__label" for="country-code">Country Code</label>
+					<select id="country-code">Country Code</select>
+				</div>
+				<div class="form__item">
+					<label class="form__label" for="mobile">Mobile Number</label>
+					<input class="form__input" id="mobile" type="number" placeholder="Mobile Number"/>
+				</div>
+			</div>
+
+			<div class="form__grid">
+				<div class="form__item">
+					<label class="form__label" for="dob">Date of Birth</label>
+					<input class="form__input" id="dob" placeholder="Date of Birth"/>
+				</div>
+				<div class="form__item">
+					<p class="form__label" for="gender">Gender</p>
+					<div class="form-check">
+						<input class="form__radio" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+						<label class="form__label" for="flexRadioDefault1">
+						  Male
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form__radio" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+						<label class="form__label" for="flexRadioDefault2">
+							Female
+						</label>
+					</div>
+
+					
+				</div>
+			</div>
+
+			<div class="form__item">
+				<label class="form__label" for="summary">Summary</label>
+				<textarea class="form__textarea" id="summary" placeholder="Please write something about yourself" ></textarea>
+			</div>
+		</form>
+	</div>
+
+
+	<div class="secondary-form">
+		<h5 class="primary-info">Admission Preference</h5>
+
+		<div class="countries">
+			<div class="country">
+				
+			</div>
+		</div>
+
+		<form class="form">
+			<div class="form__grid">
+				<div class="form__item">
+					<label class="form__label" for="firstname">Given Name</label>
+					<input class="form__input" id="firstname" placeholder="Given Name"/>
+				</div>
+				<div class="form__item">
+					<label class="form__label" for="lastname">Family Name</label>
+					<input class="form__input" type="text" id="lastname" placeholder="Family Name"/>
+				</div>
+			</div>
+
+			
+			<div class="form__grid">
+				<div class="form__item">
+					<label class="form__label" for="country-code">Country Code</label>
+					<select id="country-code">Country Code</select>
+				</div>
+				<div class="form__item">
+					<label class="form__label" for="mobile">Mobile Number</label>
+					<input class="form__input" id="mobile" type="number" placeholder="Mobile Number"/>
+				</div>
+			</div>
+
+		</form>
+	</div>
+   </div>
+
 </body>
 </html>
