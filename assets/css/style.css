@@ -202,6 +202,15 @@ body.nav-active {
 .section {
   padding-block: var(--section-padding);
 }
+
+.section-tailwind-form {
+  padding: 52px;
+  margin-top: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* .section {
   margin-top: 73px;
 } */
@@ -1582,6 +1591,7 @@ swiper-slide img {
   justify-content: space-between;
   /* margin: 20px 0 12px 0; */
 }
+
 form .user-details .input-box {
   position: relative;
   top: -25px;
@@ -2024,6 +2034,20 @@ form .button input:hover {
 .custom-select:hover,
 .custom-select:focus {
   border-color: #888;
+}
+
+.form-style {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.input-style {
+  /* Your input styles here */
+  border: 2px solid #c6f6d5; /* Green border */
+  background-color: #f0fff4; /* Light green background */
+  /* Add other styles like padding, font-size, etc. */
 }
 
 

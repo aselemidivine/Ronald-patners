@@ -1,336 +1,434 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Cards in Carousel</title>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!-- 
+	  - primary meta tags
+	-->
+  <title>Ronald Partners</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="title" content="Ronald Partners" />
+  <meta name="description" content="This is a study and travel agency, made by Digital ad planet" />
+
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/faviconn.png" type="image/svg+xml" />
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/forms.css" />
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg" />
+  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
+
+  <!-- 
+    #Phone number select validator
+   -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 </head>
-<body style="background-color: #4286f4;">
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-12">
-			<div id="inam" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						 <div class="container">
-						 	<div class="row">
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 300px;margin: auto;">
-						 				<img src="images/a.jpg" class="card-img-top">
-						 				<div class="card-body">
-						 					<h4 class="card-title">Why you should use skin masks ?</h4>
-						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-						 					<button type="button" class="btn btn-warning">Read More</button>
-						 					
-						 				</div>
-						 				
-						 			</div>
-						 			
-						 		</div>
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 300px;">
-						 				<img src="images/b.jpg" class="card-img-top">
-						 				<div class="card-body">
-						 					<h4 class="card-title">Why you should use skin masks ?</h4>
-						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-						 					<button type="button" class="btn btn-warning">Read More</button>
-						 					
-						 				</div>
-						 				
-						 			</div>
-						 			
-						 		</div>
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 300px;">
-						 				<img src="images/c.jpg" class="card-img-top">
-						 				<div class="card-body">
-						 					<h4 class="card-title">Why you should use skin masks ?</h4>
-						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-						 					<button type="button" class="btn btn-warning">Read More</button>
-						 					
-						 				</div>
-						 				
-						 			</div>
-						 			
-						 		</div>
-						 		
-						 	</div>
-						 	
-						 </div>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="../assets/images/logo.png" width="124" height="24" alt="Ronald home" class="logo-light" />
 
-						
-					</div>
-					<div class="carousel-item">
-						 <div class="container">
-						 	<div class="row">
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 300px;margin: auto;">
-						 				<img src="images/d.jpg" class="card-img-top">
-						 				<div class="card-body">
-						 					<h4 class="card-title">Why you should use skin masks ?</h4>
-						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-						 					<button type="button" class="btn btn-warning">Read More</button>
-						 					
-						 				</div>
-						 				
-						 			</div>
-						 			
-						 		</div>
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 300px;">
-						 				<img src="images/e.jpg" class="card-img-top">
-						 				<div class="card-body">
-						 					<h4 class="card-title">Why you should use skin masks ?</h4>
-						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-						 					<button type="button" class="btn btn-warning">Read More</button>
-						 					
-						 				</div>
-						 				
-						 			</div>
-						 			
-						 		</div>
-						 		<div class="col-sm-12 col-lg-4">
-						 			<div class="card" style="width: 300px;">
-						 				<img src="images/f.jpg" class="card-img-top">
-						 				<div class="card-body">
-						 					<h4 class="card-title">Why you should use skin masks ?</h4>
-						 					<p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-						 					<button type="button" class="btn btn-warning">Read More</button>
-						 					
-						 				</div>
-						 				
-						 			</div>
-						 			
-						 		</div>
-						 		
-						 	</div>
-						 	
-						 </div>
+        <img src="../assets/images/cropped-ronald-partner-logo.png" width="124" height="24" alt="Adex home"
+          class="logo-dark">
+      </a>
 
-						
-					</div>
-					
-				</div>
-				<a href="#inam" class="carousel-control-prev" data-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
-				</a>
-				<a href="#inam" class="carousel-control-next" data-slide="next">
-					<span class="carousel-control-next-icon"></span>
-				</a>
-				
-			</div>
-			
-		</div>
-		
-	</div>
-	
-</div>
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="../assets/images/logo.png" width="74" height="24" alt="Ronald home" />
+          </a>
+          <!-- src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" -->
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+          <li>
+            <a href="../index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="./about-us.html" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="./pages/our-services.html" class="navbar-link">Our services</a>
+          </li>
+
+          <li>
+            <a href="./offers.html" class="navbar-link">Offers</a>
+          </li>
+          <!-- <li>
+            <a href="./blogs.html" class="navbar-link">News</a>
+          </li> -->
+
+          <li>
+            <a href="./contact-us.html" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="wrapper">
+          <li>
+            <a href="https://portal.ronald-partners.net/" class="navbar-link">Login</a>
+          </li>
+          <li>
+            <a href="https://portal.ronald-partners.net/signup" class="navbar-link">Sign Up</a>
+          </li>
+          <li>
+            <a href="tel:001234567890" class="contact-link">Phone: +234(1)2953655</a>
+          </li>
+        </div>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="https://portal.ronald-partners.net/" class="btn btn-primary">Login</a>
+      <a href="https://portal.ronald-partners.net/" class="btn btn-primary">Sign Up</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
 
 
 
 
+      
 
-<section class="section project hidden" aria-labelledby="project-label">
-	<div class="containerr">
-	  <p class="section-subtitle" id="project-label">PARTNER SCHOOLS</p>
-
-
-
-	  <div class="container-fluid">
-		<!-- <div class="row"> -->
-		<div class="col-sm-12">
-		  <div id="inam" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-			  <div class="carousel-item active">
-				<div class="container">
-				  <div class="row">
-					<div class="col-sm-12 col-lg-2">
-					  <div class="card" style="width: 300px;margin: auto;">
-
-						<!-- <figure class="card-banner "> -->
-						<img src="./assets/images/stanford-removebg.png" width="360" height="214" loading="lazy"
-						  alt="Ligula tristique quis risus" class="img-coverr" />
-						<!-- </figure> -->
-					  </div>
-
-					</div>
-					<div class="col-sm-12 col-lg-2">
-					  <div class="card" style="width: 300px;">
-						<!-- <figure class="card-banner "> -->
-						<img src="./assets/images/leicester-removebg.png" width="360" height="214" loading="lazy"
-						  alt="Ligula tristique quis risus" class="img-coverr" />
-						<!-- </figure> -->
-
-					  </div>
-
-					</div>
-					<div class="col-sm-12 col-lg-2">
-					  <div class="card" style="width: 300px;">
-						<!-- <figure class="card-banner "> -->
-						<img src="./assets/images/bradford.png" width="360" height="214" loading="lazy"
-						  alt="Ligula tristique quis risus" class="img-coverr" />
-						<!-- </figure> -->
-
-					  </div>
-
-					</div>
-					<div class="col-sm-12 col-lg-2 card">
-					  <!-- <div class="card" style="width: 300px;"> -->
-					  <!-- <figure class="card-banner "> -->
-					  <img src="./assets/images/NDNU-logo-removebg.png" width="360" height="214" loading="lazy"
-						alt="Ligula tristique quis risus" class="img-coverr" />
-					  <!-- </figure> -->
-
-					  <!-- </div> -->
-
-					</div>
-
-				  </div>
-
-				</div>
+      <section class="section-tailwind-form ">
+  
+        
 
 
-			  </div>
+        <div class="mb-12 form-style w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+          <h2 class="text-2xl text-[#3b3663] font-bold mb-4">Study Abroad Enquiry</h2>
+          
+          <form>
+            <div class="relative mb-6" data-te-input-wrapper-init>
+              <input type="text"
+                class="peer block min-h-[auto] w-full rounded border-1 border-black-200  py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-black-50"
+                id="exampleInput90" placeholder="Name" />
+              <label
+                class="pointer-events-none font-lightt  text-gray-600 absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                for="exampleInput90">
+                Name
+              </label>
+            </div>
 
-			  <div class="carousel-item active">
-				<div class="container">
-				  <div class="row justify-content-center">
-					<div class="col-sm-12 col-lg-2">
-					  <div class="" style="max-width: 300px; margin: auto;">
-						<img src="./assets/images/bsbi.png.crdownload" class="img-fluid" alt="Ligula tristique quis risus" />
-					  </div>
-					</div>
-					<div class="col-sm-12 col-lg-2">
-					  <div class="" style="max-width: 300px;">
-						<img src="./assets/images/NDNU-logo-removebg.png" class="img-fluid" alt="Ligula tristique quis risus" />
-					  </div>
-					</div>
-					<div class="col-sm-12 col-lg-2">
-					  <div class="" style="max-width: 300px;">
-						<img src="./assets/images/bed.png" class="img-fluid" alt="Ligula tristique quis risus" />
-					  </div>
-					</div>
-					<div class="col-sm-12 col-lg-2">
-					  <div class="" style="max-width: 300px;">
-						<img src="./assets/images/download.png" class="img-fluid" alt="Ligula tristique quis risus" />
-					  </div>
-					</div>
-				  </div>
-				</div>
-			  </div>
+            <div class="relative mb-6" data-te-input-wrapper-init>
+              <input type="text"
+                class="peer block min-h-[auto] w-full rounded border-2 border-black py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none focus:border-black focus:ring-1 focus:ring-black hover:shadow-md"
+                id="exampleInput90"  />
+            
+              <label
+                class="pointer-events-none font-lightt text-gray-600 absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[2.5rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
+                for="exampleInput90">
+                Phone Number
+              </label>
+            </div>
+            
+            <div class="relative mb-6" data-te-input-wrapper-init>
+              <input type="email"
+                class="peer block min-h-[auto] w-full rounded border-2 border-green-200  py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none   [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-green-50"
+                id="exampleInput91" placeholder="Email address" />
+              <label
+                class="pointer-events-none font-lightt text-gray-600 absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                for="exampleInput91">
+                Email address
+              </label>
+            </div>
+            <div class="relative mb-6" data-te-input-wrapper-init>
+              <input type="text"
+                class="peer block min-h-[auto] w-full rounded border-2 border-green-200  py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none   [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-green-50"
+                id="exampleInput91" placeholder="Address" />
+              <label
+                class="pointer-events-none font-lightt text-gray-600 absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
+                for="exampleInput91">
+                Location
+              </label>
+            </div>
+            <div class="relative mb-6" data-te-input-wrapper-init>
+              <textarea
+                class="peer block min-h-[auto] w-full rounded border-2 border-green-200 py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 bg-green-50"
+                id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
 
+              <label for="exampleFormControlTextarea1"
+                class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none ">
+                Message
+              </label>
+            </div>
 
-			  <div class="carousel-item">
-				<div class="container">
-				  <div class="row justify-content-center">
-					<div class="col-sm-12 col-lg-2">
-					  <div class="" style="max-width: 300px; margin: auto;">
-						<img src="./assets/images/bsbi.png.crdownload" class="img-fluid" alt="Ligula tristique quis risus" />
-					  </div>
-					</div>
-					<div class="col-sm-12 col-lg-2">
-					  <div class="" style="max-width: 300px;">
-						<img src="./assets/images/NDNU-logo-removebg.png" class="img-fluid" alt="Ligula tristique quis risus" />
-					  </div>
-					</div>
-					<div class="col-sm-12 col-lg-2">
-					  <div class="" style="max-width: 300px;">
-						<img src="./assets/images/bed.png" class="img-fluid" alt="Ligula tristique quis risus" />
-					  </div>
-					</div>
-					<div class="col-sm-12 col-lg-2">
-					  <div class="" style="max-width: 300px;">
-						<img src="./assets/images/download.png" class="img-fluid" alt="Ligula tristique quis risus" />
-					  </div>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  
+            <button type="button" data-te-ripple-init data-te-ripple-color="light"
+              class="mb-6 inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+              Send
+            </button>
+          </form>
+        </div>
 
-			
-
-			</div>
-			<a href="#inam" class="carousel-control-prev" data-slide="prev">
-			  <span class="carousel-control-prev-icon"></span>
-			</a>
-			<a href="#inam" class="carousel-control-next" data-slide="next">
-			  <span class="carousel-control-next-icon"></span>
-			</a>
-
-		  </div>
-
-		</div>
-
-		<!-- </div> -->
-
-	  </div>
+      </section>
 
 
 
 
 
-	  <!-- </div> -->
-  </section>
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+          <h2 class="h2 section-title">
+            Join our community to get latest updates on visa openings.
+          </h2>
+
+          <a href="#" class="btn btn-primary">Try it For Free</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+  <!-- 
+        #TO TOP ICON
+       -->
+
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- #WHATSAPP
+          -->
+  <!-- <a href="https://wa.me/08168924643" class="whatsapp" target="_blank">
+            <i class="fa-3x fa-brands fa-whatsapp"></i>
+          </a> -->
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="../assets/images/logo.png" width="124" height="24" alt="Adex home" />
+        </a>
+
+        <p class="footer-text">
+          &copy; Copyright © 2022 Ronald and Partners. <br />
+          All rights reserved.
+        </p>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <li>
+          <a href="tel:001234567890" class="footer-link">+234(1)2953655
+          </a>
+        </li>
+        <li>
+          <a href="tel:001234567890" class="footer-link">
+            +2348034311748
+          </a>
+        </li>
+        <li>
+          <a href="tel:001234567890" class="footer-link">
+            +2349073666847</a>
+        </li>
+        <!-- <li>
+      <a href="tel:001234567890" class="footer-link">Phone: +234(1)2953655
+        Phone: +2348034311748
+        Phone: +2349073666847</a>
+    </li> -->
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Head Office: Ronald and Partners Consult, 1st Floor, Nurses House, PC 43, Church Gate Street,
+            Victoria
+            Island, Lagos State.
+          </address>
+        </li>
+
+
+
+        <li>
+          <a href="mailto:ronalddesk@ronald-partners.com" class="footer-link" Email: ronalddesk@ronald-partners.com></a>
+        </li>
+
+
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <p class="h4 footer-list-title">Study destinations</p>
+        </li>
+
+        <li>
+          <a href="../pages/canada.html" class="footer-link">Study in Canada</a>
+        </li>
+
+        <li>
+          <a href="../pages/usa.html" class="footer-link">Study in USA</a>
+        </li>
+
+        <li>
+          <a href="../pages/uk.html" class="footer-link">Study in UK</a>
+        </li>
+
+        <li>
+          <a href="../pages/europe.html" class="footer-link">Study in Europe</a>
+        </li>
+
+        <li>
+          <a href="../pages/europe.html" class="footer-link">Study in Switzerland</a>
+        </li>
+      </ul>
+
+      <div class="footer-list">
+        <p class="h4 footer-list-title">Other Office</p>
+        <li>
+          <address class="footer-text">
+            Ikeja Office: Ronald and Partners Consult, Suite 14, Victory School Office Complex, Olaniyan
+            Close,, Behind
+            Don Etiebet House, Off Mobolaji Bank Anthony Way, Ikeja, Lagos State.
+
+          </address>
+          <!-- </li> -->
+          <!-- </ul> -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Twilion number cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      preferredCountries: ["ng", "us", "in", "de", "co", "us", "gb"],
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/canada.js"></script>
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
 
 
 
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
-  <div class="content">
-	<form id="form">
-	  <div class="user-details">
-		<div class="input-box">
-		  <label class="details">Name</label>
-		  <input type="text" class="inputbox" placeholder="Enter your full name" name="name" id="name"
-			required />
-		</div>
-		<div class="input-box">
-		  <label class="details">Nationality</label>
-		  <input type="text" class="inputbox" placeholder="USA or" name="nationality" id="nationality"
-			required />
-		</div>
-		<div class="input-box">
-		  <label class="details">Email</label>
-		  <input type="text" class="inputbox" placeholder="Enter your email" name="email" id="email"
-			required />
-		</div>
-		<div class="input-box">
-		  <label class="details">Phone Mobile</label>
-		  <input type="text" class="inputbox" placeholder="Enter your number" name="phoneNumber"
-			id="phoneNumber" required />
-		</div>
-		<div class="input-box">
-		  <label class="details">What course do you want to study?</label>
-		  <input type="text" class="inputbox" placeholder="Choose a course" name="course" id="course"
-			required />
-		</div>
-		<div class="input-box">
-		  <label class="details">What country do you want to study in?</label>
-		  <select id="country" name="country" required>
-			<option value="usa">USA</option>
-			<option value="canada">Canada</option>
-			<option value="europe">Europe</option>
-			<!-- Add more options as needed -->
-		  </select>
-		</div>
-	  
-	  </div>
-
-	  <div class="button">
-		<input type="submit" onclick="openPopup()" value="Submit form" />
-	  </div>
-	  <div class="popup" id="popup">
-		<h2>Thank You</h2>
-		<p>Your details have been successfully submitted. Thanks!</p>
-		<button type="button" onclick="closePopup()" class="button-close-modal">OK</button>
-	  </div>
-	</form>
-  </div>
-</body>
 </html>
