@@ -1503,13 +1503,8 @@ swiper-slide img {
 }
 
 .avatar {
-  height: 30%;
-  width: 30%;
-  background: bisque;
-  border-radius: 100px;
-  position: relative;
-  top: -66px;
-  left: 181px;
+  top: 0px;
+  left: 342px;
 }
 .avatar-hero {
   height: 16%;
@@ -1636,14 +1631,14 @@ form .input-box span.details {
   height: 32px;
 }
 
-@media (min-height: 574px) {
+/* @media (min-height: 574px) {
   .study-enquiry {
     min-height: 956px;
   }
-}
+} */
 @media (min-height: 575px) {
   .study-enquiry {
-    min-height: 1153px;
+    min-height: 796px;
   }
 }
 
@@ -1744,7 +1739,12 @@ form .button input:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 114px;
+  margin-top: 60px;
+}
+.study-containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .auto-type {

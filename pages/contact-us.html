@@ -39,6 +39,7 @@
   -->
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/forms.css" />
+  <link rel="stylesheet" href="../pages/form/form.css" />
 
 
   <!-- 
@@ -183,47 +184,47 @@
 
 
 
-      <section class="section feature hidden" aria-labelledby="feature-label">
+       <section class="section feature hidden" aria-labelledby="feature-label">
         <div class="container">
           <div class="study-container">
             <div class="container-form">
-              <img src="../assets/images/hero-4.png" alt="avatar by flaticon" class="avatar" />
+              <img src="../assets/images/cropped-ronald-partner-logo.png" class="avatar" />
+
 
               <div class="title">Make an Enquiry</div>
               <div class="content">
-                <form id="form">
-                  <div class="user-details">
-                    <div class="input-boxx">
-                      <label class="details">Name</label>
-                      <input type="text" class="inputboxx" placeholder="Enter your full name" name="name" id="name"
-                        required />
+                <form class="form">
+                  <div class="form__grid">
+                    <div class="form__item">
+                      <label class="form__label" for="firstname">Given Name</label>
+                      <input class="form__input" id="firstname" placeholder="Given Name" />
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label" for="lastname">Family Name</label>
+                      <input class="form__input" type="text" id="lastname" placeholder="Family Name" />
+                    </div>
+                  </div>
+
+                  <div class="form__grid">
+
+                    <div class="form__item">
+                      <label class="form__label" for="email">Email</label>
+                      <input class="form__input" type="email" id="email" placeholder="Email Address" />
                     </div>
 
-                    <div class="input-boxx">
-                      <label class="details">Email</label>
-                      <input type="text" class="inputboxx" placeholder="Enter your email" name="email" id="email"
-                        required />
+                    <div class="form__item">
+                      <label class="form__label" for="mobile">Mobile Number</label>
+                      <input class="form__input" id="mobile" type="number" placeholder="Mobile Number" />
                     </div>
-                    <div class="input-boxx">
-                      <label class="details">Phone Mobile</label>
-                      <input type="text" class="inputboxx" placeholder="Enter your number" name="phoneNumber"
-                        id="phoneNumber" required />
-                    </div>
-
-
-                    <div class="input-boxx">
-                      <label for="note">Message:</label>
-                      <textarea id="note" name="note" id="note" required></textarea>
-                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label" for="summary">Summary</label>
+                    <textarea class="form__textarea" id="summary"
+                      placeholder="Please write something about yourself"></textarea>
                   </div>
 
                   <div class="button">
-                    <input type="submit" onclick="openPopup()" value="Submit-form" />
-                  </div>
-                  <div class="popup" id="popup">
-                    <h2>Thank You</h2>
-                    <p>Your details have been successfully submitted. Thanks!</p>
-                    <button type="button" onclick="closePopup()" class="button-close-modal">OK</button>
+                    <input type="submit" onclick="openPopup()" value="Submit form" />
                   </div>
                 </form>
               </div>

@@ -13,14 +13,46 @@ body {
     font-weight: 400;
     line-height: 1.2;
 }
-.form__container {
-    max-width: 105rem;
-    margin: 0 auto;
 
+.study-form-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .study-form-logo img {
+    max-width: 200px; /* Adjust the logo size as needed */
+  }
+
+  .address, .contact {
+    margin-top: 10px; /* Add some space between the address and contact numbers */
+    padding: 0 20px;
+  }
+
+  .form-container {
+    padding: 0 2rem;
+  }
+
+  .form-contact {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .form-heading {
+    text-align: center; /* Center the heading horizontally */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Add bold style to the heading */
+  }
+
+.form__container {
+    max-width: 138rem;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3.2rem;
-    padding: 4.8rem .2rem;
+    padding: 4.8rem 2rem;
 }
 .primary-form, .secondary-form {
     border: 1px solid rgba(0, 0, 0, 0.125);
@@ -60,10 +92,36 @@ body {
     flex-direction: column;
     gap: .6rem;
 }
+
+
+
+@media  (max-width: 968px) {
+    .form__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.2rem;
+    }
+}
+
+@media  (max-width: 668px) {
+    .form__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 .form__label {
     font-size: 1.4rem;
+    margin-top: 14px;
     color: #848484;
 }
+
+.gender-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .form__input, select {
     padding: .8rem;
     border-radius: .8rem;
@@ -104,13 +162,44 @@ body {
 }
 .form-check {
     border: 1px solid rgba(0, 0, 0, 0.125);;
-    width: 8rem;
+    width: 12rem;
     height: 3.2rem;
     padding: .2rem .4rem;
     border-radius: .4rem;
     cursor: pointer;
-
+    margin-right: 30px;
     display: flex;
     align-items: center;
     gap: .8rem;
+}
+
+.form-check-input {
+    width: 50px;
+    cursor: pointer;
+}
+
+.country-code {
+    width: 309px;
+}
+
+
+
+.button {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, cyan, #71b7e6, #9b59b6, tomato);
+}
+
+.button input {
+    cursor: pointer;
+    color: #fff;
 }
