@@ -1502,6 +1502,15 @@ swiper-slide img {
   }
 }
 
+.ad-div {
+  margin-top: 46px;
+}
+
+.ad-img {
+  width: 518px;
+  height: 241px;
+}
+
 .avatar {
   top: 0px;
   left: 342px;
