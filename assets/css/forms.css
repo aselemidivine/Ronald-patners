@@ -1514,7 +1514,6 @@ body{
   top: 121px; */
   padding: 25px 30px;
   border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .containerr-form {
@@ -1527,6 +1526,7 @@ body{
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid #000;
 }
 
 /* .containerr-form .hero-form {
