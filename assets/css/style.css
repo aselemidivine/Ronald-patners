@@ -1073,7 +1073,8 @@ body.nav-active {
  * responsive for large than 992px screen
  */
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) { */
+@media (min-width: 1200px) {
   /**
    * REUSED STYLE
    */
@@ -1511,6 +1512,19 @@ swiper-slide img {
   height: 241px;
 }
 
+@media (max-width: 768px) {
+  .ad-img {
+    width: 393px;
+  }
+ 
+}
+@media (max-width: 568px) {
+  .ad-img {
+    width: 362px;
+  }
+ 
+}
+
 .avatar {
   top: 0px;
   left: 342px;
@@ -1750,6 +1764,7 @@ form .button input:hover {
   align-items: center;
   margin-top: 60px;
 }
+
 .study-containerr {
   display: flex;
   justify-content: center;

@@ -22,6 +22,17 @@ body {
     z-index: 10;
 }
 
+@media  (max-width: 668px) {
+    .form-logo {
+      top: 6%;  
+      height: 3.5rem;
+
+    }
+    .primary-info {
+        margin-right: 130px;
+    }
+}
+
 .form-logoo {
     height: 4rem;
     position: absolute;
@@ -34,12 +45,33 @@ body {
 .hero-form {
     position: relative;
     padding: 3.6rem 2.8rem;
-
     height: auto;
     border-radius: .4rem;
     background-color: rgba(255, 255, 255, 0.8);
     width: 55rem;
 }
+
+@media (max-width: 768px) {
+    .hero-form {
+      max-width: 50rem;
+    }
+    .primary-form {
+        max-width: 35rem;
+    }
+  }
+
+@media (max-width: 568px) {
+    .hero-form {
+      max-width: 37rem;
+    }
+  }
+
+/* @media (min-width: 955px) {
+    .hero-form {
+      max-width: 37rem;
+    }
+  } */
+  
 
 .primary-form {
     width: 60rem;
@@ -110,6 +142,15 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 2.2rem;
 }
+
+@media (max-width: 768px) {
+    .form__grid {
+
+        grid-template-columns: 1fr;
+    }
+   
+  }
+
 .form__item {
     display: flex;
     flex-direction: column;

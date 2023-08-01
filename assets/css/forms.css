@@ -990,7 +990,8 @@ body.nav-active {
    * responsive for large than 992px screen
    */
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) { */
+@media (min-width: 1200px) {
   /**
      * REUSED STYLE
      */
@@ -1507,6 +1508,14 @@ body{
   margin-top: 50px;
   /* margin-top: 114px */
 }
+
+@media (max-width: 768px) {
+  .study-container {
+    max-width: 36rem;
+  }
+}
+
+
 .study-containerr {
   display: flex;
   justify-content: center;
@@ -1872,6 +1881,8 @@ html {
   grid-template-columns: 1fr 1fr;
   gap: 2.2rem;
 }
+
+
 .form__item {
   display: flex;
   flex-direction: column;
