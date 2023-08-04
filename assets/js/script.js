@@ -217,6 +217,55 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// var swiper = new Swiper('.swiper-containerr', {
+//   loop: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderWrapper = document.querySelector(".slider-wrapper");
+  const slides = document.querySelectorAll(".swiper-slide");
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.style.display = "block";
+      } else {
+        slide.style.display = "none";
+      }
+    });
+  }
+
+  function showNextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  // Initially, show only the first slide
+  showSlide(currentIndex);
+
+  // Automatically show the next slide after 3 seconds
+  setInterval(showNextSlide, 3000);
+
+  // Event listeners for navigation buttons
+  document.querySelector(".swiper-button-prev").addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  });
+
+  document.querySelector(".swiper-button-next").addEventListener("click", () => {
+    showNextSlide();
+  });
+});
+
+
 
 
 

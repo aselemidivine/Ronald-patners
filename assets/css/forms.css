@@ -1479,8 +1479,27 @@ body{
   width: 30%;
   position: relative;
   top: 0px;
-  left: 264px;
+  left: 194px;
 }
+
+/* @media (max-width: 768px) {
+  .avatar {
+    left: 223px;
+  }
+} */
+
+@media (min-width: 770px) {
+  .avatar {
+    left: 197px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .avatar {
+    left: 225px;
+  }
+}
+
 /* .avatar {
   height: 30%;
   width: 30%;
@@ -1528,7 +1547,7 @@ body{
   background-color: #fff;
   /* position: relative;
   top: 121px; */
-  padding: 25px 30px;
+  padding: 41px 30px;
   border-radius: 5px;
 }
 
@@ -1942,4 +1961,10 @@ html {
   justify-content: flex-start;
   align-items: center;
   gap: .8rem;
+}
+
+video {
+  height: 599px;
+  width: 100%;
+  object-fit: cover;
 }

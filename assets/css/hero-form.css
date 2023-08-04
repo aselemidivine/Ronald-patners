@@ -207,6 +207,30 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.125);
     outline: none;
 }
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.phone-numbers {
+    margin-right: 11px;
+    font-size: 14px;
+}
+@media (max-width: 568px) {
+    .phone-numbers {
+        font-size: 13px;
+    }
+}
+
 /* .form-check {
     border: 1px solid rgba(0, 0, 0, 0.125);;
     width: 8rem;
