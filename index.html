@@ -93,24 +93,29 @@
             <a href="./pages/blogs.html" class="navbar-link">Study Abroad</a>
           </li> -->
 
-          <li>
-            <a href="./pages/blogs.html" class="navbar-link">Visa</a>
+           <!-- Add a new list item with the dropdown container -->
+          <li class="navbar-dropdown">
+            <a href="./pages/our-services.html" class="navbar-link">Our Services <ion-icon name="chevron-down-outline"></ion-icon></a>
+            <!-- Add the dropdown content inside a nested ul element -->
+            <ul class="dropdown-content">
+              <li>
+                <a href="#">Study Abroad</a>
+              </li>
+              <li>
+                <a href="">Visa</a>
+              </li>
+              <li>
+                <a href="#">Law</a>
+              </li>
+              <li>
+                <a href="#">Immigration</a>
+              </li>
+            </ul>
           </li>
 
-          <li>
-            <a href="./pages/blogs.html" class="navbar-link">Immigration</a>
-          </li>
 
           <li>
             <a href="./pages/about-us.html" class="navbar-link">About</a>
-          </li>
-
-          <li>
-            <a href="./pages/our-services.html" class="navbar-link">Our services</a>
-          </li>
-
-          <li>
-            <a href="./pages/offers.html" class="navbar-link">Law</a>
           </li>
 
           <li>
@@ -783,77 +788,93 @@
         <video autoplay loop muted playsinline>
           <source src="https://res.cloudinary.com/dlvm6us0n/video/upload/v1691074745/Graduation_Day_2022__International_students_at_Teesside_University_opa5ea.mp4" type="video/mp4">
         </video>
-        <div class="testimoniall">
-              <div class="testimonial-pic" >
-                <img src="./assets/images/testimonial-img-4.jpg" alt="" class="user-pic active-pic"
-                  onclick="showReview()">
+        <!-- <div class="testimoniall">
+
+        <div class="slider">
+          <span id="slide-1"></span>
+          <span id="slide-2"></span>
+          <span id="slide-3"></span>
+          <div class="image-container">
+            <div class="slide">
+              <div class="video-card active-text">
+                <h3 class="immigration">IMMIGRATION CONSULTANCY</h3>
+                <p class="card-text">
+                  You can be rest assured that you get the best Immigration
+                </p>
+                <a href="./pages/immigration.html" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
               </div>
-              <div class="testimoniall-text">
-               
-                <div class="user-text active-text">
-                  <i class="fas fa-quote-left"></i>
-                  <p>Ronald-partners is one of the best consultancies. They work very hard, and very trustable
-                    consultancy
-                    and all services were free. They provide all the information as well as help you with your career
-                    plan. They provide you with information about sop, application, interview preparation and visa
-                    filing.
-                  </p>
-                  <span>Chioma Anderson, student</span>
-                </div>
-                <div class="user-text">
-                  <i class="fas fa-quote-left"></i>
-                  <p>Thank you, Ronald-partners, for your excellent service. Thank you to My Counsellor, who is so
-                    helpful
-                    and loyal about their service. Their Education Counsellors explained well the whole process to us to
-                    get my visa and made it a stress-free process all throughout. I highly recommend ronald-partners who
-                    are looking for a great migration agent.</p>
-                  <span>Kemi Adesoye, student</span>
-                </div>
-                <div class="user-text">
-                  <i class="fas fa-quote-left"></i>
-                  <p>Ronald and Partners is one of the best ones out there in their field of profession. I'm really
-                    pleased by the services they provide. They are really helpful and always provide the right guidance
-                    to
-                    the students through their experience. All the staff members are supportive and really happy with
-                    their assistance.</p>
-                  <span>Stephen Cavhill, student</span>
-                </div>
-               
-              </div>
-              <div class="testimonial-pic">
-                <img src="./assets/images/hero-3.png" alt="" class="user-pic" onclick="showReview()">
-              </div>
-        </div>
-      </div>
-  
-  
-  
-        <!-- </section> -->
-      <!-- </div> -->
-          
-<!--           
-          <div>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                
-                <div class="swiper-slide">
-                  <h2>Slide 1</h2>
-                  <p>Content of Slide 1</p>
-                </div>
-                
-                <div class="swiper-slide">
-                  <h2>Slide 2</h2>
-                  <p>Content of Slide 2</p>
-                </div>
-               
-              </div>
-             
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
             </div>
-          </div> -->
-          
+
+            <div class="slide">
+
+              <div class="video-card">
+                <h3 class="education">EDUCATION CONSULTANCY</h3>
+                <p class="card-text">
+                  We assist you in achieving your educational goals
+                </p>
+                <a href="./pages/education.html" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </div>
+           
+            <div class="slide">
+
+              <div class="video-card">
+                <h3 class="job-placement">JOB PLACEMENT ASSISTANCE</h3>
+                <p class="card-text">
+                  We provide support for finding the right job
+                </p>
+                <a href="./pages/job-placement.html" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+        </div>
+        </div>  -->
+        
+         <div class="testimoniall">
+              <div class="testimonial-pic" >
+                
+              </div>
+                <div class="testimoniall-text">
+                  <div class="video-card active-text">
+                    <h3 id="changing-text" class="immigration">IMMIGRATION CONSULTANCY</h3>
+    
+                    <p class="card-text">
+                      You can be rest assured that you get the best Immigration
+                    </p>
+                    
+                    <a href="./pages/immigration.html" class="btn-text">
+                      <span class="span">Learn More</span>
+                      
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+                
+                
+              
+              <div class="testimonial-pic">
+              </div>
+      </div>
+      </div>
+      
+      
+  
+      
+      
           
           
           <!-- 
@@ -2272,6 +2293,24 @@
 
   <script>
 
+    // let videoTexts = document.getElementsByClassName("video-card");
+    // let videoPics = document.getElementsByClassName("user-pic");
+
+    // function showReview() {
+    //   for (videoPics of videoPics) {
+    //     videoPics.classList.remove("active-pic");
+    //   }
+    //   for (videoTexts of videoTexts) {
+    //     videoTexts.classList.remove("active-text");
+    //   }
+    //   let i = Array.from(videoPics).indexOf(event.target);
+
+    //   videoPics[i].classList.add("active-pic");
+    //   videoTexts[i].classList.add("active-text");
+    // }
+
+    
+
 
 
 
@@ -2290,6 +2329,9 @@
       userPics[i].classList.add("active-pic");
       userTexts[i].classList.add("active-text");
     }
+
+
+  
 
 
 
@@ -2313,6 +2355,20 @@
 
 
   </script>
+
+  <!-- Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/64cee6a394cf5d49dc68af05/1h7439s9m';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script -->
 
 
 

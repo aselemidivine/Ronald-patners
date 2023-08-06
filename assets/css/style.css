@@ -433,6 +433,42 @@ body.nav-active {
   padding-block: 6px;
 }
 
+
+.navbar-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 8px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  margin: 4px 0;
+}
+
+.dropdown-content a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #555;
+}
+
+.navbar-link.active {
+  color: #f00; /* Change to your desired active link color */
+}
+
+/* Add styles for the dropdown icon */
+.navbar-link ion-icon {
+  margin-left: 5px; /* Adjust the margin as needed */
+}
+
 .contact-link {
   transition: var(--transition-1);
 }
@@ -574,6 +610,64 @@ body.nav-active {
 
 .hero .slider-btn.next {
   right: 20px;
+}
+
+
+.slider {
+  width: 500px;
+  height: 300px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 1500px;
+  background-color: pink;
+  height: 300px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -500px;
+}
+#slide-3:target ~ .image-container {
+  left: -1000px;
+}
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: lightgreen;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#changing-text {
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 /*-----------------------------------*\
@@ -1107,6 +1201,8 @@ body.nav-active {
 
   .navbar-link {
     color: var(--white);
+    display: flex;
+    align-items: center;
     transition: var(--transition-1);
   }
 
@@ -1432,39 +1528,6 @@ swiper-slide img {
 } */
 
 
-/* Wrapper for the slider */
-.slider-wrapper {
-  width: 300px; /* Set the width of the wrapper */
-  margin: 0 auto; /* Center the wrapper horizontally */
-  position: relative; /* Allow using positioning */
-}
-
-/* Swiper styles */
-.swiper-containerr {
-  width: 100%;
-  /* Adjust the height to your preference */
-  height: 300px;
-  /* Other styles as needed */
-}
-
-.swiper-slide {
-  background-color: #f1f1f1;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  /* Other styles as needed */
-}
-
-/* Position the pagination and navigation buttons */
-.swiper-pagination,
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 
 
 /* TESTIMONIALS */
@@ -1509,7 +1572,24 @@ swiper-slide img {
   border-radius: 10px;
   height: 350px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 10.2);
+}
+
+.video-card {
+  text-align: center;
+}
+
+.video-card.active-text {
+    display: block;
+    animation: moveup 0.5s linear forwards;
+  }
+
+.immigration {
+  font-size: 30px;
 }
 
 @media (min-height: 659px) {
@@ -1862,7 +1942,7 @@ form .button input:hover {
   background: var(--black-coral);
   position: fixed;
   bottom: 16px;
-  right: 32px;
+  left: 20px;
   height: 50px;
   width: 50px;
   display: flex;
@@ -2136,8 +2216,8 @@ video {
 /* Position the testimonial div on top of the video */
 .testimoniall {
   position: absolute;
-  top: 0;
-  right: 3%;
+  top: 14%;
+  left: 5%;
   width: 100%;
   height: 100%;
   /* Add any other styling for the testimonial div */

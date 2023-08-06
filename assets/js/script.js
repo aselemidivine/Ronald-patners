@@ -217,95 +217,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// var swiper = new Swiper('.swiper-containerr', {
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
-document.addEventListener("DOMContentLoaded", function () {
-  const sliderWrapper = document.querySelector(".slider-wrapper");
-  const slides = document.querySelectorAll(".swiper-slide");
-  let currentIndex = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      if (i === index) {
-        slide.style.display = "block";
-      } else {
-        slide.style.display = "none";
-      }
-    });
-  }
-
-  function showNextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-  }
-
-  // Initially, show only the first slide
-  showSlide(currentIndex);
-
-  // Automatically show the next slide after 3 seconds
-  setInterval(showNextSlide, 3000);
-
-  // Event listeners for navigation buttons
-  document.querySelector(".swiper-button-prev").addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
-  });
-
-  document.querySelector(".swiper-button-next").addEventListener("click", () => {
-    showNextSlide();
-  });
-});
-
-
-
-
-
-// POPUP AFTER FORM SUBMISSION
-// let popup = document.getElementById("popup");
-// let closeBtn = document.querySelector(".button-close-modal");
-
-// function openPopup() { 
-//   popup.classList.add("open-popup");
-// }
-
-// function closePopup() { 
-//   popup.classList.remove("open-popup");
-//   document.addEventListener(
-//     "click",
-//     function(event) {
-//       // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
-//       if (
-//         event.target.matches("button-close-modal") ||
-//         !event.target.closest("popup")
-//       ) {
-//         closeModal()
-//       }
-//     },
-//     false
-//   )
-// }
-
-
-// function closeModal() {
-//     document.getElementById("popup").style.display = "none"
-//   }
-  
-//   // Close modal when clicking outside the modal or on the close button
-//   window.addEventListener("click", function(event) {
-//     if (event.target === popup || event.target === closeBtn) {
-//       closeModal();
-//     }
-//   });
-
 
 
 const formValue = document.getElementById('form');
@@ -398,11 +309,54 @@ function closeModal() {
     }
   });
 
+
+
+
+
+
+    // let videoTexts = document.getElementsByClassName("video-card");
+    // let videoPics = document.getElementsByClassName("user-pic");
+
+    // function showReview() {
+    //   for (userPic of userPics) {
+    //     videoPics.classList.remove("active-pic");
+    //   }
+    //   for (videoTexts of videoTexts) {
+    //     videoTexts.classList.remove("active-text");
+    //   }
+    //   let i = Array.from(userPics).indexOf(event.target);
+
+    //   videoPics[i].classList.add("active-pic");
+    //   videoTexts[i].classList.add("active-text");
+    // }
+
+
+  // Function to change the text after 5 seconds
+  // function changeText() {
+  //   const textContainer = document.getElementById('changing-text');
+  //   const texts = [
+  //     'NEW TEXT 1',
+  //     'NEW TEXT 2',
+  //     'NEW TEXT 3',
+  //     // Add as many texts as you want to display
+  //   ];
+
+  //   let currentIndex = 0;
+
+  //   function updateText() {
+  //     textContainer.textContent = texts[currentIndex];
+  //     currentIndex = (currentIndex + 1) % texts.length;
+  //   }
+
+  //   // Call the updateText function after 5 seconds
+  //   setTimeout(updateText, 2000);
+  // }
+
+  // // Call the changeText function when the page loads
+  // document.addEventListener('DOMContentLoaded', changeText);
+
+
  
-
-
-
-
 
 
 
