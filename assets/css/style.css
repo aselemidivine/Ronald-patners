@@ -438,11 +438,16 @@ body.nav-active {
   display: block;
 }
 
+.navbar-dropdown:hover .dropdown-content li:hover {
+  background-color: #f1f1f1; /* Change the background color as needed */
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   padding: 8px;
+  width: 216px;
   border: 1px solid #ddd;
   z-index: 1;
 }
@@ -2277,8 +2282,13 @@ video {
   border: 1px solid;
   margin-top: 15px;
   display: flex;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
+}
+.learn:hover {
+  background-color: var(--baby-powder);
+  opacity: 0.4;
 }
 
 
