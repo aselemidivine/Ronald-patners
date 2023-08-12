@@ -315,6 +315,10 @@ body.nav-active {
   width: 90%;
 }
 
+.about__custom__width {
+  width: 80%;
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -1183,6 +1187,14 @@ body.nav-active {
 
   .feature-banner {
     order: 1;
+  }
+
+  .feature__banner__flex {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
 }
 

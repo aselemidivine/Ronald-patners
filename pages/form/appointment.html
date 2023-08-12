@@ -10,6 +10,7 @@
   <!-- <link rel="stylesheet" href="../../assets/css/style.css" /> -->
   <link rel="shortcut icon" href="../../assets/images/faviconn.png" type="image/svg+xml" />
   <link rel="stylesheet" href="../../assets/css/forms.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
   <link rel="stylesheet" href="./form.css" />
 
 </head>
@@ -27,7 +28,7 @@
       <nav class="navbar" data-navbar>
         <div class="navbar-top">
           <a href="#" class="logo">
-            <img src="../../assets/images/logo.png" width="74" height="24" alt="Ronald home" />
+            <img src="../assets/images/logo.png" width="74" height="24" alt="Ronald home" />
           </a>
           <!-- src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" -->
 
@@ -41,20 +42,40 @@
             <a href="../../index.html" class="navbar-link">Home</a>
           </li>
 
+         
+
+           <!-- Add a new list item with the dropdown container -->
+          <li class="navbar-dropdown">
+            <a href="#" class="navbar-link">Our Services <ion-icon name="chevron-down-outline"></ion-icon></a>
+            <!-- Add the dropdown content inside a nested ul element -->
+            <ul class="dropdown-content">
+              <li>
+                <a href="../study-abroad.html">Study Abroad</a>
+              </li>
+              <li>
+                <a href="./expert-visa-services.html">Visa</a>
+              </li>
+              <li>
+                <a href="#">Law</a>
+              </li>
+              <li>
+                <a href="./appointment.html">Book An Appointment</a>
+              </li>
+              <li>
+                <a href="./immigration.html">Immigration</a>
+              </li>
+            </ul>
+          </li>
+
+
           <li>
             <a href="../about-us.html" class="navbar-link">About</a>
           </li>
 
           <li>
-            <a href="../our-services.html" class="navbar-link">Our services</a>
+            <a href="../offers.html" class="navbar-link">Refferal</a>
           </li>
-
-          <li>
-            <a href="../offers.html" class="navbar-link">Offers</a>
-          </li>
-          <!-- <li>
-                <a href="./pages/blogs.html" class="navbar-link">News</a>
-              </li> -->
+         
 
           <li>
             <a href="../contact-us.html" class="navbar-link">Contact</a>
@@ -128,13 +149,14 @@
   </div>
   <h3 class="form-heading">Welcome! Book an Online Educational Consultation</h3>
   <div class="welcome__container">
-      <p class="address">Book your appointment in a few simple steps: Choose a service, pick your date and time, and fill in your details. See you soon!</p>
-    </div>
+    <p class="address">Book your appointment in a few simple steps: Choose a service, pick your date and time, and fill
+      in your details. See you soon!</p>
+  </div>
   <div class="form__container">
     <div class="primary-form">
       <h5 class="primary-info">Primary Information</h5>
 
-      <form id="form" ="form">
+      <form id="form"="form">
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="firstname">Given Name *</label>
@@ -154,7 +176,7 @@
           </div>
           <div class="form__item">
             <label class="form__label" for="nationality">Nationality *</label>
-             <select id="nationality" name="nationality">
+            <select id="nationality" name="nationality">
               <option value="Afghanistan">Afghanistan</option>
               <option value="Åland Islands">Åland Islands</option>
               <option value="Albania">Albania</option>
@@ -667,7 +689,7 @@
               </div>
               <div class="form-check">
                 <input class="form-check-input form__radio" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                checked>
+                  checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Female
                 </label>
@@ -695,7 +717,7 @@
         </div>
       </div>
 
-      <form id="form"  class="form">
+      <form id="form" class="form">
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="firstname">What Do You Want Consultation About? *</label>
@@ -706,7 +728,7 @@
             <select id="nationality" name="nationality">
               <option value="Virtual">Virtual</option>
               <option value="Physical">Physical</option>
-            
+
             </select>
           </div>
         </div>
@@ -714,45 +736,22 @@
 
         <div class="form__grid">
           <div class="form__item">
-            <label class="form__label" for="month">Appointment Month *</label>
-            <!-- <select id="month" name="month">
-              <option value="January">January</option>
-              <option value="February">February</option>
-              <option value="March">March</option>
-              <option value="April">April</option>
-              <option value="May">May</option>
-              <option value="June">June</option>
-              <option value="July">July</option>
-              <option value="August">August</option>
-              <option value="September">September</option>
-              <option value="October">October</option>
-              <option value="November">November</option>
-              <option value="December">December</option>
-            </select> -->
-
+            <label class="form__label" for="month">Appointment Date *</label>
             <input type="date" id="dateInput" class="select">
           </div>
 
           <div class="form__item">
-            <label class="form__label" for="year">Appointment Year</label>
-            <select id="year" name="year">
-              <option value="2024">2024</option>
-              <option value="2025">2025</option>
-              <option value="2026">2026</option>
-              <option value="2027">2027</option>
-              <option value="2028">2028</option>
-              <option value="2029">2029</option>
-              <option value="2030">2030</option>
-            </select>
+            <label class="form__label" for="meeting-time">Appointment Time:</label>
+            <input type="time" id="meeting-time" name="meeting-time" min="09:00" max="18:00" class="select" required>
           </div>
         </div>
       </form>
-      
+
     </div>
     <div class="button">
       <input type="submit" onclick="openPopup()" value="Book Appointment" />
     </div>
-   
+
     <div class="popup" id="popup">
       <h2>Thank You</h2>
       <p>Your details have been successfully submitted. Thanks!</p>
@@ -900,11 +899,11 @@
         <p>recurring</p>
     </form> -->
 
-    <script src="../../assets/js/script.js"></script>
-    <script src="../../assets/js/canada.js"></script>
+  <script src="../../assets/js/script.js"></script>
+  <script src="../../assets/js/canada.js"></script>
 
 
-      <!-- 
+  <!-- 
     - ionicon
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
