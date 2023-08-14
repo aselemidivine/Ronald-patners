@@ -62,7 +62,8 @@ body {
 
 @media (max-width: 568px) {
     .hero-form {
-      max-width: 37rem;
+      /* max-width: 37rem; */
+      max-width: 33rem;
     }
   }
 

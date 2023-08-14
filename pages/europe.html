@@ -13,6 +13,8 @@
     <meta name="title" content="Ronald Partners" />
     <meta name="description" content="This is a study and travel agency, made by Digital ad planet" />
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
     <!-- 
     - favicon
   -->
@@ -92,6 +94,9 @@
                       </li>
                       <li>
                         <a href="#">Law</a>
+                      </li>
+                      <li>
+                        <a href="../pages/work-visa.html">Work Migration / Employment Visa</a>
                       </li>
                       <li>
                         <a href="../pages/form/appointment.html">Book An Appointment</a>
@@ -372,7 +377,7 @@
             <section class="section feature hidden" aria-labelledby="feature-label">
                 <div class="container">
                     <figure class="feature-banner">
-                        <img src="../assets/images/business-1.jpg" width="800" height="531" loading="lazy"
+                        <img src="../assets/images/banner-5.png" width="800" height="531" loading="lazy"
                             alt="feature banner" class="w-100" />
                     </figure>
 
@@ -453,7 +458,7 @@
             <section class="section feature hidden" aria-labelledby="feature-label">
                 <div class="container">
                     <figure class="feature-banner">
-                        <img src="../assets/images/svg.webp" width="800" height="531" loading="lazy"
+                        <img src="../assets/images/banner-1.png" width="800" height="531" loading="lazy"
                             alt="feature banner" class="w-100" />
                     </figure>
 
@@ -1407,7 +1412,7 @@
          </form>
        </div>
        <div class="button">
-         <input type="submit" onclick="openPopup()" value="Submit form" />
+         <input type="submit" id="sweetalert" value="Submit form" />
        </div>
        <div class="popup" id="popup">
          <h2>Thank You</h2>
@@ -1667,6 +1672,7 @@
 
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/canada.js"></script>
+    <script src="../assets/js/sweetalert.js"></script>
 
 
 

@@ -7,6 +7,8 @@
   <meta name="description" content="This is a study and travel agency, made by Digitalents Hub" />
 
   <title>Ronald Partners</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
   <!-- <link rel="stylesheet" href="../../assets/css/style.css" /> -->
   <link rel="shortcut icon" href="../../assets/images/faviconn.png" type="image/svg+xml" />
   <link rel="stylesheet" href="../../assets/css/forms.css" />
@@ -28,7 +30,7 @@
       <nav class="navbar" data-navbar>
         <div class="navbar-top">
           <a href="#" class="logo">
-            <img src="../assets/images/logo.png" width="74" height="24" alt="Ronald home" />
+            <img src="../../assets/images/logo.png" width="74" height="24" alt="Ronald home" />
           </a>
           <!-- src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" -->
 
@@ -53,16 +55,19 @@
                 <a href="../study-abroad.html">Study Abroad</a>
               </li>
               <li>
-                <a href="./expert-visa-services.html">Visa</a>
+                <a href="../expert-visa-services.html">Visa</a>
               </li>
               <li>
                 <a href="#">Law</a>
               </li>
               <li>
+                <a href="../work-visa.html">Work Migration / Employment Visa</a>
+              </li>
+              <li>
                 <a href="./appointment.html">Book An Appointment</a>
               </li>
               <li>
-                <a href="./immigration.html">Immigration</a>
+                <a href="../immigration.html">Immigration</a>
               </li>
             </ul>
           </li>
@@ -156,7 +161,7 @@
     <div class="primary-form">
       <h5 class="primary-info">Primary Information</h5>
 
-      <form id="form"="form">
+      <form id="form" class="form">
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="firstname">Given Name *</label>
@@ -749,7 +754,7 @@
 
     </div>
     <div class="button">
-      <input type="submit" onclick="openPopup()" value="Book Appointment" />
+      <input type="submit" id="sweetalert" value="Book Appointment" />
     </div>
 
     <div class="popup" id="popup">
@@ -901,6 +906,8 @@
 
   <script src="../../assets/js/script.js"></script>
   <script src="../../assets/js/canada.js"></script>
+  <script src="../../assets/js/sweetalert.js"></script>
+
 
 
   <!-- 

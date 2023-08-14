@@ -218,3 +218,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.partner__button {
+    margin-top: 20px;
+}
