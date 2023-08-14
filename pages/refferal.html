@@ -13,6 +13,9 @@
   <meta name="title" content="Ronald Partners" />
   <meta name="description" content="This is a study and travel agency, made by Digital ad planet" />
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
   <!-- 
     - favicon
   -->
@@ -158,85 +161,6 @@
         - #HERO
       -->
 
-      <section class="section" aria-label="home"
-              >
-
-        <div class="page-title__area pt-110 ">
-              <video autoplay loop muted playsinline>
-                <source src="https://res.cloudinary.com/dlvm6us0n/video/upload/v1691074745/Graduation_Day_2022__International_students_at_Teesside_University_opa5ea.mp4" type="video/mp4">
-              </video>
-        </div>
-          
-
-      </section>
-
-
-
-      <!-- 
-        #STUDY ENQUIRY
-     -->
-      <!-- <section class="section study-enquiry ">
-        <div class="study-container">
-          <div class="container-form">
-            <img src="../assets/images/hero-4.png" alt="avatar by flaticon" class="avatar" />
-            <div class="title">Study Abroad Enquiry</div>
-            <div class="content">
-              <form id="form">
-                <div class="user-details">
-                  <div class="input-box">
-                    <label class="details">Name</label>
-                    <input type="text" class="inputbox" placeholder="Enter your full name" name="name" id="name"
-                      required />
-                  </div>
-                  <div class="input-box">
-                    <label class="details">Nationality</label>
-                    <input type="text" class="inputbox" placeholder="USA or" name="nationality" id="nationality"
-                      required />
-                  </div>
-                  <div class="input-box">
-                    <label class="details">Email</label>
-                    <input type="text" class="inputbox" placeholder="Enter your email" name="email" id="email"
-                      required />
-                  </div>
-                  <div class="input-box">
-                    <label class="details">Phone Mobile</label>
-                    <input type="text" class="inputbox" placeholder="Enter your number" name="phoneNumber"
-                      id="phoneNumber" required />
-                  </div>
-                  <div class="input-box">
-                    <label class="details">What course do you want to study?</label>
-                    <input type="text" class="inputbox" placeholder="Choose a course" name="course" id="course"
-                      required />
-                  </div>
-                  <div class="input-box">
-                    <label class="details">What country do you want to study in?</label>
-                    <select id="country" name="country" required>
-                      <option value="usa">USA</option>
-                      <option value="canada">Canada</option>
-                      <option value="europe">Europe</option>
-                     
-                    </select>
-                  </div>
-                  <div class="input-box">
-                    <label for="note">Note:</label>
-                    <textarea id="note" name="note" id="note" required></textarea>
-                  </div>
-                </div>
-
-                <div class="button">
-                  <input type="submit" onclick="openPopup()" value="Submit form" />
-                </div>
-                <div class="popup" id="popup">
-                  <h2>Thank You</h2>
-                  <p>Your details have been successfully submitted. Thanks!</p>
-                  <button type="button" onclick="closePopup() " class="button-close-modal">OK</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
       <div class="form-contact">
         <div class="study-form-logo">
           <!-- Your logo image or text goes here -->
@@ -247,7 +171,7 @@
         <p class="contact">Contact Mobile Numbers: +234(1)2953655, +2348034311748, +2349073666847</p>
     
       </div>
-      <h3 class="form-heading">Student Registration Form</h3>
+      <h3 class="form-heading">Refferal Form</h3>
       <div class="form__container">
         <div class="primary-form">
           <h5 class="primary-info">Primary Information</h5>
@@ -1103,7 +1027,7 @@
           </form>
         </div>
         <div class="button">
-          <input type="submit" onclick="openPopup()" value="Submit form" />
+          <input type="submit" id="sweetalert" value="Submit form" />
         </div>
         <div class="popup" id="popup">
           <h2>Thank You</h2>
@@ -1643,6 +1567,7 @@
 
   <script src="../assets/js/script.js"></script>
   <script src="../assets/js/canada.js"></script>
+  <script src="../assets/js/sweetalert.js"></script>
 
 
   <!-- 
