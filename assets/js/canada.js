@@ -1,22 +1,23 @@
 
-const formValue = document.getElementById('form');
+const formVValue = document.querySelector('.form');
 
 //reset form value...
 const resetForm = () => {
-  formValue.reset();
+  formVValue.reset();
 };
 
-formValue.addEventListener('submit', function(e) {
+formVValue.addEventListener('submit', function(e) {
   e.preventDefault();
   //send request using urlencoded
-  const prePayload = new FormData(formValue);
+  const prePayload = new FormData(formVValue);
   const payload = new URLSearchParams(prePayload);
   console.log([...payload]);
 
   //plug into the database .....  
   // replace url with your api url
   // fetch('https://wild-blue-salmon-vest.cyclic.app/api/submit-form', {
-    fetch('https://api.ronald-partners.net/api/submit-form', {
+    // fetch('https://api.ronald-partners.net/api/submit-form', {
+    fetch('http://localhost:3500/api/submit-form', {
     method: 'POST',
     body: payload,
     mode: 'cors'
