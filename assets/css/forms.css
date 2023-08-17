@@ -297,6 +297,8 @@ body.nav-active {
   width: 90%;
 }
 
+
+
 /*-----------------------------------*\
     #HEADER
   \*-----------------------------------*/
@@ -306,7 +308,7 @@ body.nav-active {
 }
 
 .header {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -908,7 +910,7 @@ body.nav-active {
        */
 
     /* --section-padding: 120px; */
-    --section-padding: 70px;
+    --section-padding: 30px;
   }
 
   /**
@@ -990,7 +992,8 @@ body.nav-active {
    * responsive for large than 992px screen
    */
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) { */
+@media (min-width: 1200px) {
   /**
      * REUSED STYLE
      */
@@ -1476,12 +1479,38 @@ body{
 .avatar {
   height: 30%;
   width: 30%;
+  position: relative;
+  top: 0px;
+  left: 194px;
+}
+
+/* @media (max-width: 768px) {
+  .avatar {
+    left: 223px;
+  }
+} */
+
+@media (min-width: 770px) {
+  .avatar {
+    left: 197px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .avatar {
+    left: 225px;
+  }
+}
+
+/* .avatar {
+  height: 30%;
+  width: 30%;
   background: bisque;
   border-radius: 100px;
   position: relative;
   top: -66px;
   left: 181px;
-}
+} */
 
 .avatar-hero {
   height: 30%;
@@ -1497,8 +1526,17 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 114px
+  margin-top: 50px;
+  /* margin-top: 114px */
 }
+
+@media (max-width: 768px) {
+  .study-container {
+    max-width: 36rem;
+  }
+}
+
+
 .study-containerr {
   display: flex;
   justify-content: center;
@@ -1511,9 +1549,8 @@ body{
   background-color: #fff;
   /* position: relative;
   top: 121px; */
-  padding: 25px 30px;
+  padding: 41px 30px;
   border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .containerr-form {
@@ -1526,7 +1563,12 @@ body{
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid #000;
 }
+
+/* .containerr-form .hero-form {
+  height: 600px;
+} */
 .container-form .title {
   font-size: 25px;
   font-weight: 500;
@@ -1811,3 +1853,120 @@ form .button input:hover {
 }
 
 
+/* this is style, please just edit it accordingly */
+html {
+  font-size: 62.5%;
+}
+
+.form__container {
+  max-width: 105rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  padding: 4.8rem;
+}
+
+.primary-form, .secondary-form {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1.4rem;
+  padding-bottom: 2.8rem;
+  border-radius: .25em;
+  background-color: #fff;
+
+}
+.secondary-form {
+  align-self: start;
+}
+.primary-info {
+  background-color: rgba(11, 1, 70, 0.2);
+  color: #333;
+  display: inline-block;
+  margin-bottom: 1.8rem;
+  padding: .8rem 1.6rem;
+  font-size: 1.4rem;
+  border-radius: 10rem;
+}
+.primary-form, .secondary-form,
+.form__input:focus, .form__textarea:focus {
+  box-shadow: 0 0 .6rem rgba(0, 0, 0, .15);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.2rem;
+}
+
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+.form__label {
+  font-size: 1.4rem;
+  color: #848484;
+}
+.form__input, select {
+  padding: .8rem;
+  border-radius: .8rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  color: #848484;
+  transition: all .15s;
+}
+.form__input::placeholder {
+  color: #8484846e;
+}
+.form__input:focus, select:focus {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  outline: none;
+}
+.form__item span {
+  font-size: 1.2rem;
+  display: flex;
+  gap: .6rem;
+  color: #848484;
+}
+.form__textarea {
+  width: 100%;
+  resize: none;
+  height: 12rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .6rem;
+  transition: all .15s;
+}
+.form__textarea::placeholder {
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: #84848475;
+}
+.form__textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  outline: none;
+}
+.form-check {
+  border: 1px solid rgba(0, 0, 0, 0.125);;
+  width: 8rem;
+  height: 3.2rem;
+  padding: .2rem .4rem;
+  border-radius: .4rem;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .8rem;
+}
+
+video {
+  height: 599px;
+  width: 100%;
+  object-fit: cover;
+}

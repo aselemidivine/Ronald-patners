@@ -9,6 +9,7 @@
   <!-- 
     - primary meta tags
   -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <title>Ronald Partners</title>
   <meta name="title" content="Ronald Partners" />
   <meta name="description" content="This is a study and travel agency, made by Digital ad planet" />
@@ -39,6 +40,7 @@
   -->
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/forms.css" />
+  <link rel="stylesheet" href="../pages/form/form.css" />
 
 
   <!-- 
@@ -77,23 +79,61 @@
             <a href="../index.html" class="navbar-link">Home</a>
           </li>
 
-          <li>
-            <a href="./about-us.html" class="navbar-link">About</a>
-          </li>
-
-          <li>
-            <a href="./our-services.html" class="navbar-link">Our services</a>
-          </li>
-
-          <li>
-            <a href="./offers.html" class="navbar-link">Offers</a>
-          </li>
           <!-- <li>
-            <a href="./blogs.html" class="navbar-link">News</a>
+            <a href="./pages/blogs.html" class="navbar-link">Study Abroad</a>
           </li> -->
 
+           <!-- Add a new list item with the dropdown container -->
+          <li class="navbar-dropdown">
+            <a href="#" class="navbar-link">Our Services <ion-icon name="chevron-down-outline"></ion-icon></a>
+            <!-- Add the dropdown content inside a nested ul element -->
+            <ul class="dropdown-content">
+              <li>
+                <a href="../pages/study-abroad.html">Study Abroad</a>
+              </li>
+              <li>
+                <a href="../pages/expert-visa-services.html">Visa</a>
+              </li>
+              <li>
+                <a href="#">Law</a>
+              </li>
+              <li>
+                <a href="../pages/form/appointment.html">Book An Appointment</a>
+              </li>
+              <li>
+                <a href="./pages/work-visa.html">Work Migration / Employment Visa</a>
+              </li>
+              <li>
+                <a href="../pages/immigration.html">Immigration</a>
+              </li>
+            </ul>
+          </li>
+
+
           <li>
-            <a href="./contact-us.html" class="navbar-link">Contact</a>
+            <a href="../pages/about-us.html" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="../pages/refferal.html" class="navbar-link">Refferal</a>
+          </li>
+         
+
+          <li>
+            <a href="../pages/blogs.html" class="navbar-link">News</a>
+          </li>
+          <li class="navbar-dropdown">
+            <a href="" class="navbar-link">Contact <ion-icon name="chevron-down-outline"></ion-icon></a>
+            <!-- Add the dropdown content inside a nested ul element -->
+            <ul class="dropdown-content">
+              <li>
+                <a href="../pages/contact-us.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="../pages/form/appointment.html">Book An Appointment</a>
+              </li>
+          
+            </ul>
           </li>
         </ul>
 
@@ -175,6 +215,7 @@
         </div>
 
       </section>
+      
 
       <!-- 
         - #CONTACT
@@ -183,47 +224,47 @@
 
 
 
-      <section class="section feature hidden" aria-labelledby="feature-label">
+       <section class="section feature hidden" aria-labelledby="feature-label">
         <div class="container">
           <div class="study-container">
             <div class="container-form">
-              <img src="../assets/images/hero-4.png" alt="avatar by flaticon" class="avatar" />
+              <img src="../assets/images/cropped-ronald-partner-logo.png" class="avatar" />
+
 
               <div class="title">Make an Enquiry</div>
               <div class="content">
-                <form id="form">
-                  <div class="user-details">
-                    <div class="input-boxx">
-                      <label class="details">Name</label>
-                      <input type="text" class="inputboxx" placeholder="Enter your full name" name="name" id="name"
-                        required />
+                <form class="form">
+                  <div class="form__grid">
+                    <div class="form__item">
+                      <label class="form__label" for="firstname">Given Name</label>
+                      <input class="form__input" id="firstname" placeholder="Given Name" />
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label" for="lastname">Family Name</label>
+                      <input class="form__input" type="text" id="lastname" placeholder="Family Name" />
+                    </div>
+                  </div>
+
+                  <div class="form__grid">
+
+                    <div class="form__item">
+                      <label class="form__label" for="email">Email</label>
+                      <input class="form__input" type="email" id="email" placeholder="Email Address" />
                     </div>
 
-                    <div class="input-boxx">
-                      <label class="details">Email</label>
-                      <input type="text" class="inputboxx" placeholder="Enter your email" name="email" id="email"
-                        required />
+                    <div class="form__item">
+                      <label class="form__label" for="mobile">Mobile Number</label>
+                      <input class="form__input" id="mobile" type="number" placeholder="Mobile Number" />
                     </div>
-                    <div class="input-boxx">
-                      <label class="details">Phone Mobile</label>
-                      <input type="text" class="inputboxx" placeholder="Enter your number" name="phoneNumber"
-                        id="phoneNumber" required />
-                    </div>
-
-
-                    <div class="input-boxx">
-                      <label for="note">Message:</label>
-                      <textarea id="note" name="note" id="note" required></textarea>
-                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label" for="summary">Summary</label>
+                    <textarea class="form__textarea" id="summary"
+                      placeholder="Please write something about yourself"></textarea>
                   </div>
 
                   <div class="button">
-                    <input type="submit" onclick="openPopup()" value="Submit-form" />
-                  </div>
-                  <div class="popup" id="popup">
-                    <h2>Thank You</h2>
-                    <p>Your details have been successfully submitted. Thanks!</p>
-                    <button type="button" onclick="closePopup()" class="button-close-modal">OK</button>
+                    <input type="submit" id="sweetalert" value="Submit form" />
                   </div>
                 </form>
               </div>
@@ -261,11 +302,18 @@
                 <a href="tel:234(1)2953655" class="footer-link">Phone: +234(1)2953655</a>
               </li>
               <li>
-                <a href="tel:001234567890" class="footer-link">Phone: +2348034311748</a>
+                <a href="tel:2348165040887" class="footer-link">Phone: +2348165040887</a>
+              </li>
+              <li>
+                <a href="tel:2348034311748" class="footer-link">Phone: +2348034311748</a>
 
               </li>
               <li>
-                <a href="tel:001234567890" class="footer-link"> Phone: +2349073666847</a>
+                <a href="tel:2349155101004" class="footer-link"> Phone: +2349155101004</a>
+
+              </li>
+              <li>
+                <a href="tel:2349160331957" class="footer-link"> Phone: +2349160331957</a>
 
               </li>
               <li>
@@ -285,7 +333,7 @@
       </section>
 
 
-      <section class="section study-enquiry ">
+      <section class="section">
         <div class="contact-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126839.17400459042!2d3.3171881337547386!3d6.556461039098839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf528ddd979ab%3A0xd35d0d875d085787!2sRonald%20And%20Partners%20Consult!5e0!3m2!1sen!2sng!4v1686127468915!5m2!1sen!2sng"
@@ -474,6 +522,8 @@
 
   <script src="../assets/js/script.js"></script>
   <script src="../assets/js/canada.js"></script>
+  <script src="../../assets/js/sweetalert.js"></script>
+
 
 
   <!-- 
