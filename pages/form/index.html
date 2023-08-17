@@ -7,132 +7,13 @@
   <meta name="description" content="This is a study and travel agency, made by Digitalents Hub" />
 
   <title>Ronald Partners</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
   <!-- <link rel="stylesheet" href="../../assets/css/style.css" /> -->
   <link rel="shortcut icon" href="../../assets/images/faviconn.png" type="image/svg+xml" />
   <link rel="stylesheet" href="../../assets/css/forms.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
   <link rel="stylesheet" href="./form.css" />
-
-
-
-  <!-- <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 62.5%;
-        }
-        body {
-            font-family: sans-serif;
-            font-size: 1.6rem;
-            font-weight: 400;
-            line-height: 1.2;
-        }
-        .form__container {
-            max-width: 105rem;
-            margin: 0 auto;
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3.2rem;
-            padding: 4.8rem .2rem;
-        }
-        .primary-form, .secondary-form {
-            border: 1px solid rgba(0, 0, 0, 0.125);
-            padding: 1.4rem;
-            padding-bottom: 2.8rem;
-            border-radius: .25em;
-        }
-        .secondary-form {
-            align-self: start;
-        }
-        .primary-info {
-            background-color: rgba(11, 1, 70, 0.2);
-            color: #333;
-            display: inline-block;
-            margin-bottom: 1.8rem;
-            padding: .8rem 1.6rem;
-            font-size: 1.4rem;
-            border-radius: 10rem;
-        }
-        .primary-form, .secondary-form,
-        .form__input:focus, .form__textarea:focus {
-            box-shadow: 0 0 .6rem rgba(0, 0, 0, .15);
-        }
-        .form {
-            display: flex;
-            flex-direction: column;
-            gap: 1.2rem;
-        }
-
-        .form__grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2.2rem;
-        }
-        .form__item {
-            display: flex;
-            flex-direction: column;
-            gap: .6rem;
-        }
-        .form__label {
-            font-size: 1.4rem;
-            color: #848484;
-        }
-        .form__input, select {
-            padding: .8rem;
-            border-radius: .8rem;
-            border: 1px solid rgba(0, 0, 0, 0.125);
-            color: #848484;
-            transition: all .15s;
-        }
-        .form__input::placeholder {
-            color: #8484846e;
-        }
-        .form__input:focus, select:focus {
-            border: 1px solid rgba(0, 0, 0, 0.125);
-            outline: none;
-        }
-        .form__item span {
-            font-size: 1.2rem;
-            display: flex;
-            gap: .6rem;
-            color: #848484;
-        }
-        .form__textarea {
-            width: 100%;
-            resize: none;
-            height: 12rem;
-            padding: 1rem;
-            border: 1px solid rgba(0, 0, 0, 0.125);
-            border-radius: .6rem;
-            transition: all .15s;
-        }
-        .form__textarea::placeholder {
-            font-size: 1.2rem;
-            font-family: inherit;
-            color: #84848475;
-        }
-        .form__textarea:focus {
-            border: 1px solid rgba(0, 0, 0, 0.125);
-            outline: none;
-        }
-        .form-check {
-            border: 1px solid rgba(0, 0, 0, 0.125);;
-            width: 8rem;
-            height: 3.2rem;
-            padding: .2rem .4rem;
-            border-radius: .4rem;
-            cursor: pointer;
-
-            display: flex;
-            align-items: center;
-            gap: .8rem;
-        }
-
-    </style> -->
 
 </head>
 
@@ -149,7 +30,7 @@
       <nav class="navbar" data-navbar>
         <div class="navbar-top">
           <a href="#" class="logo">
-            <img src="../assets/images/logo.png" width="74" height="24" alt="Ronald home" />
+            <img src="../../assets/images/logo.png" width="74" height="24" alt="Ronald home" />
           </a>
           <!-- src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" -->
 
@@ -160,26 +41,62 @@
 
         <ul class="navbar-list">
           <li>
-            <a href="./index.html" class="navbar-link">Home</a>
+            <a href="../../index.html" class="navbar-link">Home</a>
           </li>
+
+         
+
+           <!-- Add a new list item with the dropdown container -->
+          <li class="navbar-dropdown">
+            <a href="#" class="navbar-link">Our Services <ion-icon name="chevron-down-outline"></ion-icon></a>
+            <!-- Add the dropdown content inside a nested ul element -->
+            <ul class="dropdown-content">
+              <li>
+                <a href="../study-abroad.html">Study Abroad</a>
+              </li>
+              <li>
+                <a href="../expert-visa-services.html">Visa</a>
+              </li>
+              <li>
+                <a href="#">Law</a>
+              </li>
+              <li>
+                <a href="../work-visa.html">Work Migration / Employment Visa</a>
+              </li>
+              <li>
+                <a href="./appointment.html">Book An Appointment</a>
+              </li>
+              <li>
+                <a href="../immigration.html">Immigration</a>
+              </li>
+            </ul>
+          </li>
+
 
           <li>
             <a href="../about-us.html" class="navbar-link">About</a>
           </li>
 
           <li>
-            <a href="../our-services.html" class="navbar-link">Our services</a>
+            <a href="../offers.html" class="navbar-link">Refferal</a>
           </li>
+         
 
           <li>
-            <a href="../offers.html" class="navbar-link">Offers</a>
+            <a href="../blogs.html" class="navbar-link">News</a>
           </li>
-          <!-- <li>
-                <a href="./pages/blogs.html" class="navbar-link">News</a>
-              </li> -->
-
-          <li>
-            <a href="../contact-us.html" class="navbar-link">Contact</a>
+          <li class="navbar-dropdown">
+            <a href="" class="navbar-link">Contact <ion-icon name="chevron-down-outline"></ion-icon></a>
+            <!-- Add the dropdown content inside a nested ul element -->
+            <ul class="dropdown-content">
+              <li>
+                <a href="../contact-us.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="../form/appointment.html">Book An Appointment</a>
+              </li>
+          
+            </ul>
           </li>
         </ul>
 
@@ -246,23 +163,22 @@
     </div>
     <p class="address">Head Office: Ronald and Partners Consult, 1st Floor, Nurses House, PC 43, Church Gate Street,
       Victoria Island, Lagos State.</p>
-    <p class="contact">Contact Mobile Numbers: +234(1)2953655, +2348034311748, +2349073666847</p>
-
+    <p class="contact">Contact Mobile Numbers: +234(1)2953655, +2348034311748, 2348165040887</p>
   </div>
   <h3 class="form-heading">Student Registration Form</h3>
   <div class="form__container">
     <div class="primary-form">
       <h5 class="primary-info">Primary Information</h5>
 
-      <form id="form" ="form">
+      <form id="form" class="form">
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="firstname">Given Name *</label>
-            <input class="form__input" id="firstname" placeholder="Given Name" />
+            <input class="form__input" id="firstname" name="name" placeholder="Given Name" />
           </div>
           <div class="form__item">
             <label class="form__label" for="lastname">Family Name *</label>
-            <input class="form__input" type="text" id="lastname" placeholder="Family Name" />
+            <input class="form__input" type="text" name="lastname" id="lastname" placeholder="Family Name" />
           </div>
         </div>
 
@@ -270,7 +186,7 @@
 
           <div class="form__item">
             <label class="form__label" for="email">Email *</label>
-            <input class="form__input" type="email" id="email" placeholder="Email Address" />
+            <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" />
           </div>
           <div class="form__item">
             <label class="form__label" for="nationality">Nationality *</label>
@@ -802,6 +718,11 @@
           <label class="form__label" for="summary">Summary</label>
           <textarea class="form__textarea" id="summary" placeholder="Please write something about yourself"></textarea>
         </div>
+
+        <div class="button">
+          <!-- <input type="submit" onclick="openPopup()" value="Submit form" id="sweetalert" /> -->
+          <input type="submit" value="Submit form" id="sweetalert" />
+        </div>
       </form>
     </div>
 
@@ -1102,11 +1023,133 @@
           </div>
         </div>
 
+
+        <div class="form__grid">
+          <div class="form__item">
+            <label class="form__label" for="month">Institution of choice *</label>
+            <select id="schools" name="schools">
+              <option value="Brescia University College">Brescia University College</option>
+              <option value="Canadian College">Canadian College</option>
+              <option value="Coast Mountain College">Coast Mountain College</option>
+              <option value="Cumberland College">Cumberland College</option>
+              <option value="Great Plains College">Great Plains College</option>
+              <option value="IBT - College">IBT - College</option>
+              <option value="Lakeland College">Lakeland College</option>
+              <option value="Nipissing University">Nipissing University</option>
+              <option value="North West College">North West College</option>
+              <option value="Northern Lights College">Northern Lights College</option>
+              <option value="St. Thomas University">St. Thomas University</option>
+              <option value="Parkland College">Parkland College</option>
+              <option value="Selkirk College">Selkirk College</option>
+              <option value="Southeast College">Southeast College</option>
+              <option value="Great Lake College Ontario">Great Lake College Ontario</option>
+              <option value="Regina University">Regina University</option>
+              <option value="Lethbridge University">Lethbridge University</option>
+              <option value="University of Manitoba">University of Manitoba</option>
+              <option value="University of West Canada">University of West Canada</option>
+              <option value="Laurentian University">Laurentian University</option>
+              <option value="Mount Alison University">Mount Alison University</option>
+              <option value="Acadia University">Acadia University</option>
+              <option value="Algoma University">Algoma University</option>
+              <option value="Cape Breton University">Cape Breton University</option>
+              <option value="University Canada West">University Canada West</option>
+              <option value="McGuil University">McGuil University</option>
+              <option value="University of Waterloo">University of Waterloo</option>
+              <option value="Capilano University">Capilano University</option>
+              <option value="Saint Mary’s University">Saint Mary’s University</option>
+              <option value="Yorkshire University">Yorkshire University</option>
+              <option value="ICM/University of Manitoba">ICM/University of Manitoba</option>
+              <option value="FIC/Simon Frasier University">FIC/Simon Frasier University</option>
+              <option value="Toronto Metropolitan University (International College)">Toronto Metropolitan University (International College)</option>
+              <option value="Edgewood College">Edgewood College</option>
+              <option value="Fox Valley Technical College">Fox Valley Technical College</option>
+              <option value="Glasgow Caledonian New York College (GCNYC)">Glasgow Caledonian New York College (GCNYC)</option>
+              <option value="Hanover College">Hanover College</option>
+              <option value="Hartwick College">Hartwick College</option>
+              <option value="Community Colleges of Spokane">Community Colleges of Spokane</option>
+              <option value="Community College of Philadelphia">Community College of Philadelphia</option>
+              <option value="COE College">COE College</option>
+              <option value="Greensboro College">Greensboro College</option>
+              <option value="Monroe College">Monroe College</option>
+              <option value="Keck Graduate Institute">Keck Graduate Institute</option>
+              <option value="Los Angeles Mission College">Los Angeles Mission College</option>
+              <option value="American International College">American International College</option>
+              <option value="Whitworth University">Whitworth University</option>
+              <option value="Westminster College">Westminster College</option>
+              <option value="San Mateo Colleges of Silicon Valley">San Mateo Colleges of Silicon Valley</option>
+              <option value="Rider University">Rider University</option>
+              <option value="UNIVERSITY OF NEW HAMPSHIRE">UNIVERSITY OF NEW HAMPSHIRE</option>
+              <option value="FLORIDA ATLANTIC UNIVERSITY">FLORIDA ATLANTIC UNIVERSITY</option>
+              <option value="UNIVERSITY OF IDAHO">UNIVERSITY OF IDAHO</option>
+              <option value="QUEENS COLLEGE">QUEENS COLLEGE</option>
+              <option value="RICHARD ISLAND COLLEGE">RICHARD ISLAND COLLEGE</option>
+              <option value="UMASS LOWELL">UMASS LOWELL</option>
+              <option value="UMASS DARMOND">UMASS DARMOND</option>
+              <option value="UMASS BOSTON">UMASS BOSTON</option>
+              <option value="WEBSTER UNIVERSITY">WEBSTER UNIVERSITY</option>
+              <option value="CONCORDIA UNIVERSITY CALIFORNIA">CONCORDIA UNIVERSITY CALIFORNIA</option>
+              <option value="INTERNATIONAL GLOBAL UNIVERSITY">INTERNATIONAL GLOBAL UNIVERSITY</option>
+              <option value="Shoreline Community College">Shoreline Community College</option>
+              <option value="Paul Smiths College">Paul Smiths College</option>
+              <option value="Notre Dame de Namur University (NDNU)">Notre Dame de Namur University (NDNU)</option>
+              <option value="Pacific Lutheran University">Pacific Lutheran University</option>
+              <option value="Pacific States University">Pacific States University</option>
+              <option value="UNIVERSITY OF DUNDEE">UNIVERSITY OF DUNDEE</option>
+              <option value="TEESSIDE UNIVERSITY" selected>TEESSIDE UNIVERSITY</option>
+              <option value="UNIVERSITY OF ESSEX">UNIVERSITY OF ESSEX</option>
+              <option value="COVENTRY UNIVERSITY">COVENTRY UNIVERSITY</option>
+              <option value="BEDFORDSHIRE UNIVERSITY">BEDFORDSHIRE UNIVERSITY</option>
+              <option value="UNIVERSITY OF LAW">UNIVERSITY OF LAW</option>
+              <option value="PLYMOUTH UNIVERSITY">PLYMOUTH UNIVERSITY</option>
+              <option value="UNIVERSITY OF EAST LONDON">UNIVERSITY OF EAST LONDON</option>
+              <option value="UNIVERSITY OF ROEHAMPTON">UNIVERSITY OF ROEHAMPTON</option>
+              <option value="REVENSBORNE UNIVERSITY">REVENSBORNE UNIVERSITY</option>
+              <option value="UNIVERSITY OF LEICESTER">UNIVERSITY OF LEICESTER</option>
+              <option value="UNIVERSITY OF LACANSTER">UNIVERSITY OF LACANSTER</option>
+              <option value="BPP UNIVERSITY MANCHESTER">BPP UNIVERSITY MANCHESTER</option>
+              <option value="REVENSBORNE UNIVERSITY">REVENSBORNE UNIVERSITY</option>
+              <option value="BPP UNIVERSITY LONDON">BPP UNIVERSITY LONDON</option>
+              <option value="BRADFORD UNIVERSITY">BRADFORD UNIVERSITY</option>
+              <option value="SOLET UNIVERSITY SOUTHAMPTON">SOLET UNIVERSITY SOUTHAMPTON</option>
+              <option value="UNIVERSITY OF WORCESTER">UNIVERSITY OF WORCESTER</option>
+              <option value="UNIVERSITY OF SURREY">UNIVERSITY OF SURREY</option>
+              <option value="GREENWICH UNIVERSITY">GREENWICH UNIVERSITY</option>
+              <option value="BIRMINGHAM CITY UNIVERSITY">BIRMINGHAM CITY UNIVERSITY</option>
+              <option value="GLASGOW CALEDONIA UNIVERSITY">GLASGOW CALEDONIA UNIVERSITY</option>
+              <option value="ROBERT GORDON UNIVERSITY">ROBERT GORDON UNIVERSITY</option>
+              <option value="UNIVERSITY OF HULL">UNIVERSITY OF HULL</option>
+              <option value="UNIVERSITY OF ABERDEEN">UNIVERSITY OF ABERDEEN</option>
+              <option value="MIDDLESEX UNIVERSITY">MIDDLESEX UNIVERSITY</option>
+              <option value="UNIVERSITY OF DERBY">UNIVERSITY OF DERBY</option>
+              <option value="UNIVERSITY OF THE CREATIVE ART">UNIVERSITY OF THE CREATIVE ART</option>
+              <option value="HERTFORDSHIRE UNIVERSITY">HERTFORDSHIRE UNIVERSITY</option>
+              <option value="STRATHCLYDE UNIVERSITY">STRATHCLYDE UNIVERSITY</option>
+              <option value="UNIVERSITY OF SOUTH WALES">UNIVERSITY OF SOUTH WALES</option>
+              <option value="UNIVERSITY OF WEST OF ENGLAND">UNIVERSITY OF WEST OF ENGLAND</option>
+              <option value="SWANSEA UNIVERSITY PRIFYSGOL ABERTAWE">SWANSEA UNIVERSITY PRIFYSGOL ABERTAWE</option>
+            </select>
+            
+
+          </div>
+          <div class="form__item">
+            <label class="form__label" for="year">Education Level *</label>
+            <select id="year" name="year">
+              <option value="ssce">SSCE</option>
+              <option value="high_school">High School</option>
+              <option value="diploma">Diploma</option>
+              <option value="bsc">Bsc</option>
+              <option value="hnd">Hnd</option>
+              <option value="masters">Masters</option>
+              <option value="phd">Phd</option>
+            </select>
+          </div>
+        </div>
+       
       </form>
+      
     </div>
-    <div class="button">
-      <input type="submit" onclick="openPopup()" value="Submit form" />
-    </div>
+    
+   
     <div class="popup" id="popup">
       <h2>Thank You</h2>
       <p>Your details have been successfully submitted. Thanks!</p>
@@ -1208,23 +1251,23 @@
         </li>
 
         <li>
-          <a href="../pages/canada.html" class="footer-link">Study in Canada</a>
+          <a href="../../pages/canada.html" class="footer-link">Study in Canada</a>
         </li>
 
         <li>
-          <a href="../pages/usa.html" class="footer-link">Study in USA</a>
+          <a href="../../pages/usa.html" class="footer-link">Study in USA</a>
         </li>
 
         <li>
-          <a href="../pages/uk.html" class="footer-link">Study in UK</a>
+          <a href="../../pages/uk.html" class="footer-link">Study in UK</a>
         </li>
 
         <li>
-          <a href="../pages/europe.html" class="footer-link">Study in Europe</a>
+          <a href="../../pages/europe.html" class="footer-link">Study in Europe</a>
         </li>
 
         <li>
-          <a href="../pages/europe.html" class="footer-link">Study in Switzerland</a>
+          <a href="../../pages/europe.html" class="footer-link">Study in Switzerland</a>
         </li>
       </ul>
 
@@ -1254,7 +1297,14 @@
         <p>recurring</p>
     </form> -->
 
+
+
+    
     <script src="../../assets/js/canada.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script src="../../assets/js/sweetalert.js"></script>
+
+
 
       <!-- 
     - ionicon
@@ -1263,7 +1313,7 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
-  <script>
+  <!-- <script>
     document.querySelector('.form-a').addEventListener('click', function (e) {
       console.dir(document.querySelector('.input-a').value)
 
@@ -1272,7 +1322,8 @@
         console.log(document.querySelectorAll('option').forEach(el => el.value))
       })
     })
-  </script>
+  </script> -->
+ 
 </body>
 
 </html>

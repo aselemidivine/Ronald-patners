@@ -220,63 +220,25 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-// POPUP AFTER FORM SUBMISSION
-// let popup = document.getElementById("popup");
-// let closeBtn = document.querySelector(".button-close-modal");
-
-// function openPopup() { 
-//   popup.classList.add("open-popup");
-// }
-
-// function closePopup() { 
-//   popup.classList.remove("open-popup");
-//   document.addEventListener(
-//     "click",
-//     function(event) {
-//       // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
-//       if (
-//         event.target.matches("button-close-modal") ||
-//         !event.target.closest("popup")
-//       ) {
-//         closeModal()
-//       }
-//     },
-//     false
-//   )
-// }
-
-
-// function closeModal() {
-//     document.getElementById("popup").style.display = "none"
-//   }
-  
-//   // Close modal when clicking outside the modal or on the close button
-//   window.addEventListener("click", function(event) {
-//     if (event.target === popup || event.target === closeBtn) {
-//       closeModal();
-//     }
-//   });
-
-
-
-const formValue = document.getElementById('form');
+const formVValue = document.querySelector('.form');
 
 //reset form value...
 const resetForm = () => {
-  formValue.reset();
+  formVValue.reset();
 };
 
-formValue.addEventListener('submit', function(e) {
+formVValue.addEventListener('submit', function(e) {
   e.preventDefault();
   //send request using urlencoded
-  const prePayload = new FormData(formValue);
+  const prePayload = new FormData(formVValue);
   const payload = new URLSearchParams(prePayload);
   console.log([...payload]);
 
   //plug into the database .....  
   // replace url with your api url
-  // fetch('http://localhost:3000/api/submit-form', {
-  fetch('https://wild-blue-salmon-vest.cyclic.app/api/submit-form', {
+  // fetch('https://wild-blue-salmon-vest.cyclic.app/api/submit-form', {
+    // fetch('https://api.ronald-partners.net/api/submit-form', {
+    fetch('http://localhost:3500/api/submit-form', {
     method: 'POST',
     body: payload,
     mode: 'cors'
@@ -286,7 +248,7 @@ formValue.addEventListener('submit', function(e) {
     .then(data => console.log(data))
     .catch(err => console.log(err))
 
-    resetForm();
+  resetForm();
 });
 
 // Function to alert when form have been submitted
@@ -349,11 +311,54 @@ function closeModal() {
     }
   });
 
+
+
+
+
+
+    // let videoTexts = document.getElementsByClassName("video-card");
+    // let videoPics = document.getElementsByClassName("user-pic");
+
+    // function showReview() {
+    //   for (userPic of userPics) {
+    //     videoPics.classList.remove("active-pic");
+    //   }
+    //   for (videoTexts of videoTexts) {
+    //     videoTexts.classList.remove("active-text");
+    //   }
+    //   let i = Array.from(userPics).indexOf(event.target);
+
+    //   videoPics[i].classList.add("active-pic");
+    //   videoTexts[i].classList.add("active-text");
+    // }
+
+
+  // Function to change the text after 5 seconds
+  // function changeText() {
+  //   const textContainer = document.getElementById('changing-text');
+  //   const texts = [
+  //     'NEW TEXT 1',
+  //     'NEW TEXT 2',
+  //     'NEW TEXT 3',
+  //     // Add as many texts as you want to display
+  //   ];
+
+  //   let currentIndex = 0;
+
+  //   function updateText() {
+  //     textContainer.textContent = texts[currentIndex];
+  //     currentIndex = (currentIndex + 1) % texts.length;
+  //   }
+
+  //   // Call the updateText function after 5 seconds
+  //   setTimeout(updateText, 2000);
+  // }
+
+  // // Call the changeText function when the page loads
+  // document.addEventListener('DOMContentLoaded', changeText);
+
+
  
-
-
-
-
 
 
 

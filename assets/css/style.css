@@ -315,6 +315,10 @@ body.nav-active {
   width: 90%;
 }
 
+.about__custom__width {
+  width: 80%;
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -431,6 +435,52 @@ body.nav-active {
 .navbar-link {
   font-weight: var(--fw-700);
   padding-block: 6px;
+}
+
+
+.navbar-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar-dropdown:hover .dropdown-content li:hover {
+  background-color: #f1f1f1; /* Change the background color as needed */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 8px;
+  /* width: 216px; */
+  max-width: 282px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  margin: 4px 0;
+}
+
+/* .dropdown-content:hover {
+  background-color: var(--atomic-tangerine);
+} */
+
+.dropdown-content a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #555;
+}
+
+.navbar-link.active {
+  color: #f00; /* Change to your desired active link color */
+}
+
+/* Add styles for the dropdown icon */
+.navbar-link ion-icon {
+  margin-left: 5px; /* Adjust the margin as needed */
 }
 
 .contact-link {
@@ -576,6 +626,64 @@ body.nav-active {
   right: 20px;
 }
 
+
+.slider {
+  width: 500px;
+  height: 300px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 1500px;
+  background-color: pink;
+  height: 300px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -500px;
+}
+#slide-3:target ~ .image-container {
+  left: -1000px;
+}
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: lightgreen;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#changing-text {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -585,7 +693,7 @@ body.nav-active {
 }
 
 .service .section-title {
-  margin-block-end: 50px;
+  margin-block-end: 20px;
 }
 
 .service-card {
@@ -707,6 +815,13 @@ body.nav-active {
   display: grid;
   gap: 50px;
 }
+
+.section .feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .feature .items-center {
   display: row;
   gap: 50px;
@@ -753,12 +868,19 @@ body.nav-active {
 /* .stats { background-image: linear-gradient(to bottom, var(--white) 50%, var(--cultured) 50%); } */
 
 .stats-card {
+  position: absolute;
   display: grid;
+  top: 10%;
+  right: 16%;
   grid-template-columns: 1fr 1fr;
   text-align: center;
   gap: 36px 24px;
   padding: 45px 30px;
   border-radius: var(--radius-8);
+}
+
+.card-text {
+  font-weight: bold;
 }
 
 .stats-card .card-text > * {
@@ -989,7 +1111,7 @@ body.nav-active {
      */
 
     /* --section-padding: 120px; */
-    --section-padding: 70px;
+    --section-padding: 30px;
   }
 
   /**
@@ -1005,7 +1127,7 @@ body.nav-active {
 
   .grid-list {
     grid-template-columns: 1fr 1fr;
-    padding: 60px;
+    padding: 20px;
   }
 
   /**
@@ -1067,13 +1189,22 @@ body.nav-active {
   .feature-banner {
     order: 1;
   }
+
+  .feature__banner__flex {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
 }
 
 /**
  * responsive for large than 992px screen
  */
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) { */
+@media (min-width: 1200px) {
   /**
    * REUSED STYLE
    */
@@ -1106,6 +1237,8 @@ body.nav-active {
 
   .navbar-link {
     color: var(--white);
+    display: flex;
+    align-items: center;
     transition: var(--transition-1);
   }
 
@@ -1199,6 +1332,8 @@ body.nav-active {
   .footerr .grid-listt {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
   }
 }
 
@@ -1244,6 +1379,8 @@ body.nav-active {
 
   .stats-card {
     padding: 60px;
+    top: 10%;
+    right: 16%;
   }
 
   /**
@@ -1400,11 +1537,38 @@ swiper-slide img {
   width: 100%;
 }
 
-/* .image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  grid-gap: 10px; 
+/* .swiper-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.swiper-slide {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: #888;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #333;
 } */
+
+
+
 
 /* TESTIMONIALS */
 .contain {
@@ -1421,6 +1585,13 @@ swiper-slide img {
   margin: auto;
 }
 
+.testimoniall {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
+
 .testimon .container {
   text-align: center;
 }
@@ -1432,7 +1603,81 @@ swiper-slide img {
   border-radius: 10px;
   height: 350px;
   position: relative;
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 10.2);
+
+  
+}
+
+.testimoniall-text {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 10px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 10.2);
+
+}
+
+.testimonialll-textt {
+  width: 100%;
+  border-radius: 10px;
+  min-height: 287px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 10.2);
+
+}
+
+.testimonialll-text {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 10.2);
+
+}
+
+.f1-students {
+  width: 50%;
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 10.2);
+
+  
+}
+
+.video-card {
+  text-align: center;
+}
+
+.video-card.active-text {
+    display: block;
+    animation: moveup 0.5s linear forwards;
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Change the opacity (0.7) as needed */
+  }
+
+.immigration {
+  font-size: 30px;
 }
 
 @media (min-height: 659px) {
@@ -1502,10 +1747,33 @@ swiper-slide img {
   }
 }
 
-.avatar {
+.ad-div {
+  margin-top: 46px;
+}
+
+.ad-img {
+  width: 518px;
+  height: 241px;
+}
+
+@media (max-width: 768px) {
+  .ad-img {
+    width: 393px;
+  }
+ 
+}
+@media (max-width: 568px) {
+  .ad-img {
+    /* width: 362px; */
+    width: 348px;
+  }
+ 
+}
+
+/* .avatar {
   top: 0px;
   left: 342px;
-}
+} */
 .avatar-hero {
   height: 16%;
   width: 20%;
@@ -1741,6 +2009,7 @@ form .button input:hover {
   align-items: center;
   margin-top: 60px;
 }
+
 .study-containerr {
   display: flex;
   justify-content: center;
@@ -1762,7 +2031,7 @@ form .button input:hover {
   background: var(--black-coral);
   position: fixed;
   bottom: 16px;
-  right: 32px;
+  left: 20px;
   height: 50px;
   width: 50px;
   display: flex;
@@ -1877,7 +2146,8 @@ form .button input:hover {
 }
 
 .school-logo {
-  width: 297px;
+  /* width: 297px; */
+  width: 90%;
 }
 
 .swiper-slide:not(.swiper-slide-active) {
@@ -2020,6 +2290,50 @@ form .button input:hover {
   width: 100%;
   cursor: pointer;
 }
+
+video {
+  height: 599px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%; /* You can adjust the width as needed */
+  height: 600px; /* Set the desired height */
+}
+
+.video-wrapper-stat {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 299px;
+}
+
+/* Position the testimonial div on top of the video */
+.testimoniall {
+  position: absolute;
+  top: 14%;
+  left: 1%;
+  width: 100%;
+  height: 100%;
+  /* Add any other styling for the testimonial div */
+}
+
+.learn {
+  height: 50px;
+  border: 1px solid;
+  margin-top: 15px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.learn:hover {
+  background-color: var(--baby-powder);
+  opacity: 0.4;
+}
+
 
 /* Additional styles for hover and focus states */
 .custom-select:hover,
