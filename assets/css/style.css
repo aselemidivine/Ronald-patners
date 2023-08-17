@@ -1620,18 +1620,19 @@ swiper-slide img {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 10.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 10.2);
 
 }
 
 .testimonialll-textt {
   width: 100%;
   border-radius: 10px;
+  min-height: 287px;
   position: relative;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 10.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 10.2);
 
 }
 
@@ -2145,7 +2146,8 @@ form .button input:hover {
 }
 
 .school-logo {
-  width: 297px;
+  /* width: 297px; */
+  width: 90%;
 }
 
 .swiper-slide:not(.swiper-slide-active) {
