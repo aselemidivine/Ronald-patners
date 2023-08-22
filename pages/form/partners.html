@@ -178,11 +178,11 @@
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="firstname">Given Name *</label>
-            <input class="form__input" id="firstname" placeholder="Given Name" />
+            <input class="form__input" id="firstname" name="name" placeholder="Given Name" />
           </div>
           <div class="form__item">
             <label class="form__label" for="lastname">Family Name *</label>
-            <input class="form__input" type="text" id="lastname" placeholder="Family Name" />
+            <input class="form__input" name="surname" type="text" id="lastname" placeholder="Family Name" />
           </div>
         </div>
 
@@ -190,7 +190,7 @@
 
           <div class="form__item">
             <label class="form__label" for="email">Email *</label>
-            <input class="form__input" type="email" id="email" placeholder="Email Address" />
+            <input class="form__input" name="email" type="email" id="email" placeholder="Email Address" />
           </div>
           <div class="form__item">
             <label class="form__label" for="location"> Location *</label>
@@ -442,18 +442,18 @@
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="dob">Company Name *</label>
-            <input class="form__input" id="dob" placeholder="e.g Ronald and partners" />
+            <input class="form__input" id="dob" name="companyName" placeholder="e.g Ronald and partners" />
           </div>
           <div class="form__item">
             <label class="form__label" for="mobile">Mobile Number *</label>
-            <input class="form__input" id="mobile" type="number" placeholder="Mobile Number" />
+            <input class="form__input" name="phoneNumber" id="mobile" type="number" placeholder="Mobile Number" />
           </div>
         </div>
 
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="dob">Company Website</label>
-            <input class="form__input" id="dob" placeholder="www" />
+            <input class="form__input" id="dob" name="companyWebsite" placeholder="www" />
           </div>
 
 
@@ -476,33 +476,33 @@
 
         <div class="form__item">
           <label class="form__label" for="summary">Summary</label>
-          <textarea class="form__textarea" id="summary" placeholder="Please write something about yourself"></textarea>
+          <textarea class="form__textarea" name="summary" id="summary" placeholder="Please write something about yourself"></textarea>
+        </div>
+        <div class="button partner__button">
+          <input type="submit" id="sweetalert" value="Submit form" />
         </div>
       </form>
-      <div class="button partner__button">
-        <input type="submit" id="sweetalert" value="Submit form" />
-      </div>
     </div>
 
 
     <div class="secondary-form">
       <h5 class="primary-info">Education Institutions</h5>
 
-      <div class="countries">
+      <!-- <div class="countries">
         <div class="country">
 
         </div>
-      </div>
+      </div> -->
 
       <form id="form" class="form">
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="firstname">Given Name *</label>
-            <input class="form__input" id="firstname" placeholder="Given Name" />
+            <input class="form__input" name="name"  id="firstname" placeholder="Given Name" />
           </div>
           <div class="form__item">
             <label class="form__label" for="lastname">Family Name *</label>
-            <input class="form__input" type="text" id="lastname" placeholder="Family Name" />
+            <input class="form__input" name="surname" type="text" id="lastname" placeholder="Family Name" />
           </div>
         </div>
 
@@ -510,7 +510,7 @@
 
           <div class="form__item">
             <label class="form__label" for="email">Email *</label>
-            <input class="form__input" type="email" id="email" placeholder="Email Address" />
+            <input class="form__input" type="email" id="email" name="email" placeholder="Email Address" />
           </div>
           <div class="form__item">
             <label class="form__label" for="location"> Location *</label>
@@ -762,18 +762,18 @@
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="dob">Institution Name *</label>
-            <input class="form__input" id="dob" placeholder="e.g Ronald and partners" />
+            <input class="form__input" name="institutionName" id="dob" placeholder="e.g Ronald and partners" />
           </div>
           <div class="form__item">
             <label class="form__label" for="mobile">Mobile Number *</label>
-            <input class="form__input" id="mobile" type="number" placeholder="Mobile Number" />
+            <input class="form__input" id="mobile" type="number" name="phoneNumber" placeholder="Mobile Number" />
           </div>
         </div>
 
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="dob">Institution Website</label>
-            <input class="form__input" id="dob" placeholder="www" />
+            <input class="form__input" id="dob" name="institutionWebsite" placeholder="www" />
           </div>
 
           <div class="form__item">
@@ -790,13 +790,13 @@
 
         <div class="form__item">
           <label class="form__label" for="summary">Summary</label>
-          <textarea class="form__textarea" id="summary" placeholder="Please write something about yourself"></textarea>
+          <textarea class="form__textarea" name="summary" id="summary" placeholder="Please write something about yourself"></textarea>
+        </div>
+        
+        <div class="button partner__button">
+          <input type="submit" id="sweetalert" value="Submit form" />
         </div>
       </form>
-
-      <div class="button partner__button">
-        <input type="submit" id="sweetalert" value="Submit form" />
-      </div>
     </div>
     <!-- <div class="button">
       <input type="submit" onclick="openPopup()" value="Submit form" />
@@ -950,7 +950,7 @@
     </form> -->
 
     <script src="../../assets/js/script.js"></script>
-    <script src="../../assets/js/canada.js"></script>
+    <!-- <script src="../../assets/js/canada.js"></script> -->
     <script src="../../assets/js/sweetalert.js"></script>
 
 

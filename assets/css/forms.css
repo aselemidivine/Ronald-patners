@@ -210,8 +210,8 @@ body.nav-active {
   } */
 
 .has-bg-image {
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-repeat: no-repeat;
+  background-position: center; */
   background-size: cover;
 }
 
@@ -984,7 +984,7 @@ body.nav-active {
 
   .feature-banner {
     order: 1;
-    margin-bottom: 76px;
+    /* margin-bottom: 76px; */
   }
 }
 
@@ -1970,3 +1970,28 @@ video {
   width: 100%;
   object-fit: cover;
 }
+
+.teeside__text__margin {
+  margin: 10px 0;
+}
+
+.dark__img__background {
+  background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url('../../assets/images/Teesside\ University\ Banner.png');
+}
+
+.course__list {
+  max-width: 297px;
+  
+}
+
+.text__align {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.course__listt {
+  width: 100%;
+  
+  
+}
+

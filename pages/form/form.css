@@ -222,3 +222,29 @@ body {
 .partner__button {
     margin-top: 20px;
 }
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    
+  }
+  
+  .course-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(456px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(522px, 1fr));
+    padding: 86px;
+    padding: 25px;
+    gap: 2rem;
+  }
+
+  .coursee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+    padding: 25px;
+    gap: 2rem;
+  }
+
+
+ 
