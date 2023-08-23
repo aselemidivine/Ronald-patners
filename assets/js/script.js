@@ -251,6 +251,8 @@ formVValue.addEventListener('submit', function(e) {
   resetForm();
 });
 
+
+
 // Function to alert when form have been submitted
 var form = document.getElementById('form');
 

@@ -233,7 +233,7 @@ body {
   .course-grid {
     display: grid;
     /* grid-template-columns: repeat(auto-fill, minmax(456px, 1fr)); */
-    grid-template-columns: repeat(auto-fill, minmax(522px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(578px, 1fr));
     padding: 86px;
     padding: 25px;
     gap: 2rem;
@@ -241,10 +241,12 @@ body {
 
   .coursee-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(343px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
     padding: 25px;
     gap: 2rem;
   }
+
+
 
 
  

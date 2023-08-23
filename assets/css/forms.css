@@ -1978,6 +1978,13 @@ video {
 .dark__img__background {
   background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url('../../assets/images/Teesside\ University\ Banner.png');
 }
+.dark__img__background__main {
+  background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url('../../assets/images/ab-us.jpg');
+}
+
+.dark__img__background__2 {
+  background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url('../../assets/images/dundee-banner.jpeg');
+}
 
 .course__list {
   max-width: 297px;
