@@ -232,15 +232,15 @@
 
               <div class="title">Make an Enquiry</div>
               <div class="content">
-                <form class="form">
+                <form id="form" class="form">
                   <div class="form__grid">
                     <div class="form__item">
                       <label class="form__label" for="firstname">Given Name</label>
-                      <input class="form__input" id="firstname" placeholder="Given Name" />
+                      <input class="form__input" type="text" name="name" id="firstname" placeholder="Given Name" />
                     </div>
                     <div class="form__item">
                       <label class="form__label" for="lastname">Family Name</label>
-                      <input class="form__input" type="text" id="lastname" placeholder="Family Name" />
+                      <input class="form__input" type="text" name="surname"  id="lastname" placeholder="Family Name" />
                     </div>
                   </div>
 
@@ -248,17 +248,17 @@
 
                     <div class="form__item">
                       <label class="form__label" for="email">Email</label>
-                      <input class="form__input" type="email" id="email" placeholder="Email Address" />
+                      <input class="form__input" type="email" name="email"  id="email" placeholder="Email Address" />
                     </div>
 
                     <div class="form__item">
                       <label class="form__label" for="mobile">Mobile Number</label>
-                      <input class="form__input" id="mobile" type="number" placeholder="Mobile Number" />
+                      <input class="form__input" id="mobile" name="phoneNumber"  type="number" placeholder="Mobile Number" />
                     </div>
                   </div>
                   <div class="form__item">
                     <label class="form__label" for="summary">Summary</label>
-                    <textarea class="form__textarea" id="summary"
+                    <textarea class="form__textarea" id="summary" name="summary"
                       placeholder="Please write something about yourself"></textarea>
                   </div>
 
@@ -1142,7 +1142,6 @@
 
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-  <script src="../assets/js/script.js"></script>
   <script src="../assets/js/canada.js"></script>
   <script src="../../assets/js/sweetalert.js"></script>
 
