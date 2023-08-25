@@ -178,11 +178,11 @@
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="firstname">Given Name *</label>
-            <input class="form__input" id="firstname" placeholder="Given Name" />
+            <input class="form__input" id="firstname" name="name" placeholder="Given Name" />
           </div>
           <div class="form__item">
             <label class="form__label" for="lastname">Family Name *</label>
-            <input class="form__input" type="text" id="lastname" placeholder="Family Name" />
+            <input class="form__input" type="text" name="surname" id="lastname" placeholder="Family Name" />
           </div>
         </div>
 
@@ -190,7 +190,7 @@
 
           <div class="form__item">
             <label class="form__label" for="email">Email *</label>
-            <input class="form__input" type="email" id="email" placeholder="Email Address" />
+            <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" />
           </div>
           <div class="form__item">
             <label class="form__label" for="nationality">Nationality *</label>
@@ -442,7 +442,7 @@
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="country-code">Country Code</label>
-            <select id="country-code" class="country-code">
+            <select id="country-code" name="countryCode" class="country-code">
               <option value="+93">Afghanistan (+93)</option>
               <option value="+358">Åland Islands (+358)</option>
               <option value="+355">Albania (+355)</option>
@@ -687,14 +687,14 @@
           </div>
           <div class="form__item">
             <label class="form__label" for="mobile">Mobile Number *</label>
-            <input class="form__input" id="mobile" type="number" placeholder="Mobile Number" />
+            <input class="form__input" id="mobile" name="phoneNumber" type="number" placeholder="Mobile Number" />
           </div>
         </div>
 
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="dob">Date of Birth</label>
-            <input class="form__input" id="dob" placeholder="Date of Birth" />
+            <input class="form__input" id="dob" name="dob" placeholder="Date of Birth" />
           </div>
           <div class="form__item">
             <p class="form__label" for="gender">Gender</p>
@@ -720,12 +720,10 @@
 
         <div class="form__item">
           <label class="form__label" for="summary">Summary</label>
-          <textarea class="form__textarea" id="summary" placeholder="Please write something about yourself"></textarea>
+          <textarea class="form__textarea" id="summary" name="summary" placeholder="Please write something about yourself"></textarea>
         </div>
-      </form>
-    </div>
 
-
+        
     <div class="secondary-form">
       <h5 class="primary-info">Appointment Preference</h5>
 
@@ -735,11 +733,10 @@
         </div>
       </div>
 
-      <form id="form" class="form">
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="firstname">What Do You Want Consultation About? *</label>
-            <input class="form__input" id="firstname" placeholder="Choose course" />
+            <input class="form__input" id="firstname" name="consult" placeholder="Choose course" />
           </div>
           <div class="form__item">
             <label class="form__label" for="nationality">Do You want it Physically or Virtually *</label>
@@ -755,7 +752,7 @@
         <div class="form__grid">
           <div class="form__item">
             <label class="form__label" for="month">Appointment Date *</label>
-            <input type="date" id="dateInput" class="select">
+            <input type="date" id="dateInput" name="appointment-date" class="select">
           </div>
 
           <div class="form__item">
@@ -763,11 +760,14 @@
             <input type="time" id="meeting-time" name="meeting-time" min="09:00" max="18:00" class="select" required>
           </div>
         </div>
-      </form>
 
-    </div>
-    <div class="button">
-      <input type="submit" id="sweetalert" value="Book Appointment" />
+        
+      <div class="button">
+        <input type="submit" id="sweetalert" value="Book Appointment" />
+      </div>
+      </div>
+
+      </form>
     </div>
 
     <div class="popup" id="popup">
@@ -776,8 +776,6 @@
       <button type="button" onclick="closePopup()" class="button-close-modal">OK</button>
     </div>
   </div>
-
-
 
 
 
@@ -917,7 +915,6 @@
         <p>recurring</p>
     </form> -->
 
-  <script src="../../assets/js/script.js"></script>
   <script src="../../assets/js/canada.js"></script>
   <script src="../../assets/js/sweetalert.js"></script>
 
@@ -930,7 +927,7 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
-  <script>
+   <!-- <script>
     document.querySelector('.form-a').addEventListener('click', function (e) {
       console.dir(document.querySelector('.input-a').value)
 
@@ -938,8 +935,8 @@
       document.querySelector('.select').addEventListener('change', function (e) {
         console.log(document.querySelectorAll('option').forEach(el => el.value))
       })
-    })
-  </script>
+    })  
+  </script> -->
 </body>
 
 </html>

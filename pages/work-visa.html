@@ -11,6 +11,7 @@
   -->
     <title>Ronald Partners</title>
     <meta name="title" content="Ronald Partners" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <meta name="description" content="This is a study and travel agency, made by Digital ad planet" />
 
     <!-- 
@@ -373,23 +374,24 @@
               <div class="primary-form">
                 <h5 class="primary-info">Primary Information</h5>
           
-                <form id="form" ="form">
+                <form id="form" class="form">
                   <div class="form__grid">
                     <div class="form__item">
                       <label class="form__label" for="firstname">Given Name *</label>
-                      <input class="form__input" id="firstname" placeholder="Given Name" />
+                      <input class="form__input" type="text" name="name" id="firstname" placeholder="Given Name" />
                     </div>
                     <div class="form__item">
                       <label class="form__label" for="lastname">Family Name *</label>
-                      <input class="form__input" type="text" id="lastname" placeholder="Family Name" />
+                      <input class="form__input" type="text" name="surname" id="lastname" placeholder="Family Name" />
                     </div>
                   </div>
+                  <button id="testingbutton">CLICKered HEREEEEE</button>
           
                   <div class="form__grid">
           
                     <div class="form__item">
                       <label class="form__label" for="email">Email *</label>
-                      <input class="form__input" type="email" id="email" placeholder="Email Address" />
+                      <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" />
                     </div>
                     <div class="form__item">
                       <label class="form__label" for="nationality">Nationality *</label>
@@ -641,7 +643,7 @@
                   <div class="form__grid">
                     <div class="form__item">
                       <label class="form__label" for="country-code">Country Code</label>
-                      <select id="country-code" class="country-code">
+                      <select id="country-code" name="countryCode" class="country-code">
                         <option value="+93">Afghanistan (+93)</option>
                         <option value="+358">Åland Islands (+358)</option>
                         <option value="+355">Albania (+355)</option>
@@ -886,14 +888,14 @@
                     </div>
                     <div class="form__item">
                       <label class="form__label" for="mobile">Mobile Number *</label>
-                      <input class="form__input" id="mobile" type="number" placeholder="Mobile Number" />
+                      <input class="form__input" id="mobile" name="phoneNumber" type="number" placeholder="Mobile Number" />
                     </div>
                   </div>
           
                   <div class="form__grid">
                     <div class="form__item">
                       <label class="form__label" for="dob">Date of Birth</label>
-                      <input class="form__input" id="dob" placeholder="Date of Birth" />
+                      <input class="form__input" name="dob" id="dob" placeholder="Date of Birth" />
                     </div>
                     <div class="form__item">
                       <p class="form__label" for="gender">Gender</p>
@@ -919,7 +921,7 @@
           
                   <div class="form__item">
                     <label class="form__label" for="summary">Summary</label>
-                    <textarea class="form__textarea" id="summary" placeholder="Please write something about yourself"></textarea>
+                    <textarea class="form__textarea" name="summary" id="summary" placeholder="Please write something about yourself"></textarea>
                   </div>
 
                   <div class="button">
@@ -943,11 +945,11 @@
                   <div class="form__grid">
                     <div class="form__item">
                       <label class="form__label" for="firstname">What Industry would you want to work in? *</label>
-                      <input class="form__input" id="firstname" placeholder="Choose industry" />
+                      <input class="form__input" id="firstname" name="industry" placeholder="Choose industry" />
                     </div>
                     <div class="form__item">
                       <label class="form__label" for="nationality">What country do you want to work in? *</label>
-                      <select id="nationality" name="nationality">
+                      <select id="nationality" name="countryToStudy">
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Åland Islands">Åland Islands</option>
                         <option value="Albania">Albania</option>
@@ -1231,12 +1233,12 @@
                   <div class="form__grid">
                     <div class="form__item">
                       <label class="form__label" for="cv">Upload CV/RESUME *</label>
-                      <input type="file" id="cv" class="form__input"  >
+                      <input type="file" name="cv" id="cv" class="form__input"  >
           
                     </div>
                     <div class="form__item">
                       <label class="form__label" for="year">Other Document</label>
-                      <input type="file" id="otherDocument" class="form__input"  >
+                      <input type="file" name="otherDoc" id="otherDocument" class="form__input"  >
                      
                     </div>
                   </div>
@@ -1409,7 +1411,6 @@
 
 
   <script src="../assets/js/sweetalert.js"></script>
-  <script src="../assets/js/script.js"></script>
   <script src="../assets/js/canada.js"></script>
 
     <script>

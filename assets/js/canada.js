@@ -1,12 +1,21 @@
-
 const formVValue = document.querySelector('.form');
 
+/* const test = document.getElementById('testingbutton');
+test.addEventListener('click', function (e) {
+  e.preventDefault();
+  const prePayload = new FormData(formVValue);
+  const payload = new URLSearchParams(prePayload);
+  console.log('running');
+  console.log([...payload], 'checking');
+}) */
 //reset form value...
+
 const resetForm = () => {
   formVValue.reset();
 };
+console.log(formVValue)
 
-formVValue.addEventListener('submit', function(e) {
+formVValue.addEventListener('submit', function (e) {
   e.preventDefault();
   //send request using urlencoded
   const prePayload = new FormData(formVValue);
@@ -26,7 +35,6 @@ formVValue.addEventListener('submit', function(e) {
     .then(res => res.json())
     .then(data => console.log(data))
     .catch(err => console.log(err))
-
   resetForm();
 });
 
@@ -39,25 +47,24 @@ function myFunction() {
   }
 }
 
-
 // TO TOP MENU 
 
-const toTop = document.querySelector (".to-top");
+/* const toTop = document.querySelector (".to-top");
 window.addEventListener("scroll", () => {
     if  (window.pageYOffset > 100)  {
-        toTop.classList.add("active");
+      toTop.classList.add("active");
     }
     else {
-        toTop.classList.remove ("active");
+      toTop.classList.remove ("active");
     }
-})
+}) */
 // });
 
 // POPUP AFTER FORM SUBMISSION
 let popup = document.getElementById("popup");
 let closeBtn = document.querySelector(".button-close-modal");
 
-function openPopup() { 
+function openPopup() {
   popup.classList.add("open-popup");
 }
 
