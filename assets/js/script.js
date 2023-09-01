@@ -241,7 +241,7 @@ formVValue.addEventListener('submit', function(e) {
     fetch('http://localhost:3500/api/submit-form', {
     method: 'POST',
     body: payload,
-    mode: 'cors'
+    mode: 'no-cors'
   })
     
     .then(res => res.json())
