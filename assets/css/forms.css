@@ -1253,6 +1253,10 @@ body.nav-active {
   /* justify-content: space-between; */
 }
 
+.apply__btn {
+margin-top: 30px;
+}
+
 .btn-about {
   color: var(--white);
   position: relative;

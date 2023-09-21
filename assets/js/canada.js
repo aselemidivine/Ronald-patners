@@ -17,10 +17,10 @@ formVValue.addEventListener('submit', function(e) {
   // replace url with your api url
   // fetch('https://wild-blue-salmon-vest.cyclic.app/api/submit-form', {
     // fetch('https://api.ronald-partners.net/api/submit-form', {
-    fetch('http://localhost:3500/api/submit-form', {
-    method: 'POST',
-    body: payload,
-    mode: 'no-cors'
+    // fetch('http://localhost:3500/api/submit-form', {
+    // method: 'POST',
+    // body: payload,
+    // mode: 'no-cors'
   })
     
     .then(res => res.json())
