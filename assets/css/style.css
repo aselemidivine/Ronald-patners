@@ -2367,6 +2367,9 @@ video {
   /* Add other styles like padding, font-size, etc. */
 }
 
+.link__default {
+  color: blue;
+}
 
 /* .carousel-item {
 
