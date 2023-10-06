@@ -678,6 +678,9 @@ body.nav-active {
 
 .feature .section-text {
   margin-block: 25px 30px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 .feature-list {
@@ -1984,6 +1987,10 @@ video {
 }
 .dark__img__background__main {
   background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url('../../assets/images/ab-us.jpg');
+}
+
+.dark__img__background__main__caregiver {
+  background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url('../../assets/images/caregiver.jpg');
 }
 
 .dark__img__background__2 {

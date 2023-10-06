@@ -55,6 +55,7 @@ font-family: 'Rubik', sans-serif; */
    */
 
   --section-padding: 40px;
+  --section-padding__extra: 100px;
   /* --section-padding: 90px; */
 
   /**
@@ -201,6 +202,10 @@ body.nav-active {
 
 .section {
   padding-block: var(--section-padding);
+}
+
+.section__extra {
+  padding-block: var(--section-padding__extra);
 }
 
 .section-tailwind-form {
@@ -1629,7 +1634,7 @@ swiper-slide img {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 10.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -1641,7 +1646,7 @@ swiper-slide img {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 10.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -1653,7 +1658,7 @@ swiper-slide img {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 10.2);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -1662,7 +1667,7 @@ swiper-slide img {
   border-radius: 10px;
   position: relative;
   padding: 20px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 10.2);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 
   
 }
