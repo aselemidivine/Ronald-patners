@@ -17,6 +17,8 @@
     - favicon
   -->
   <link rel="shortcut icon" href="../assets/images/faviconn.png" type="image/svg+xml" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 
   <!-- 
     - google font link
@@ -263,7 +265,7 @@
         <div class="primary-form">
           <h5 class="primary-info">Primary Information</h5>
 
-          <form id="form" class="form" enctype="multipart/form-data">
+          <form id="formInPage" class="form" enctype="multipart/form-data">
             <div class="form__grid">
               <div class="form__item">
                 <label class="form__label" for="firstname">Given Name *</label>
@@ -815,7 +817,6 @@
             </div>
 
             <div class="button">
-              <!-- <input type="submit" onclick="openPopup()" value="Submit form" id="sweetalert" /> -->
               <input type="submit" value="Submit form" id="sweetalert" />
             </div>
             <!-- </form> -->
@@ -835,11 +836,11 @@
           <div class="form__grid">
             <div class="form__item">
               <label class="form__label" for="firstname">Job Applying?* </label>
-              <input class="form__input" id="firstname" name="course" placeholder="Job you will like to have" />
+              <input class="form__input" id="firstname" name="preferedJob" placeholder="Job you will like to have" />
             </div>
             <div class="form__item">
               <label class="form__label" for="nationality">Do have any working experience?* </label>
-              <select id="nationality" name="studyDestination">
+              <select id="nationality" name="experience">
 
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -880,6 +881,11 @@
             </div>
 
           </div>
+
+          <!-- <div class="button">
+            <input type="submit" value="Submit form" id="sweetalert" />
+          </div> -->
+
           </form>
 
         </div>
@@ -1080,10 +1086,11 @@
 
   </script>
 
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-  <script src="../assets/js/script.js"></script>
-  <script src="../assets/js/canada.js"></script>
+<script src="/assets/js/canada.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/sweetalert.js"></script>
+
 
 
   <!-- 
