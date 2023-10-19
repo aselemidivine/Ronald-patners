@@ -55,6 +55,16 @@ body {
     gap: 3.2rem;
     padding: 4.8rem 2rem;
 }
+
+.form__container--fair {
+    max-width: 138rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4.8rem 2rem;
+
+}
 .primary-form, .secondary-form {
     border: 1px solid rgba(0, 0, 0, 0.125);
     padding: 1.4rem;
