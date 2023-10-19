@@ -57,6 +57,7 @@
      */
 
   --section-padding: 40px;
+  --section-padding-fair: 30px;
   /* --section-padding: 90px; */
 
   /**
@@ -902,6 +903,40 @@ body.nav-active {
    * responsive for large than 768px screen
    */
 
+@media (max-width: 768px) {
+  .dark__img__background__main__fair {
+    margin-top: 74px;
+  }
+
+  .section__extra {
+    padding-block: 35px;
+  }
+
+  .hero {
+    padding-block-start: calc(var(--section-padding) + 39px);
+    /* padding-block-start: calc(var(--section-padding) + 196px); */
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 563px) {
+  .dark__img__background__main__fair {
+    margin-top: 76px;
+  }
+
+  .section__extra {
+    padding-block: 0px;
+  }
+
+  .hero {
+    padding-block-start: calc(var(--section-padding-fair) + 8px);
+    /* padding-block-start: calc(var(--section-padding) + 196px); */
+    text-align: left;
+  }
+}
+
+
 @media (min-width: 768px) {
   /**
      * CUSTOM PROPERTY
@@ -922,6 +957,10 @@ body.nav-active {
 
   .container {
     max-width: 720px;
+  }
+
+  .dark__img__background__main__fair {
+    margin-top: 74px;
   }
 
   .grid-list {
@@ -1054,8 +1093,13 @@ body.nav-active {
      */
 
   .hero {
-    padding-block-start: calc(var(--section-padding) + 50px);
+    padding-block-start: calc(var(--section-padding) + 130px);
+    /* padding-block-start: calc(var(--section-padding) + 196px); */
     text-align: left;
+  }
+
+  .dark__img__background__main__fair {
+    margin-top: 70px;
   }
 
   .hero .container {
@@ -1991,6 +2035,14 @@ video {
 
 .dark__img__background__main__caregiver {
   background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url('../../assets/images/caregiver.jpg');
+  margin-top: 50px;
+}
+
+.dark__img__background__main__fair {
+  /* background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url('../../assets/images/fair-banner.jpeg'); */
+  background-image: url('../../assets/images/fair-banner.jpeg');
+  background-size: 100% !important;
+  /* margin-top: 66px; */
 }
 
 .dark__img__background__2 {
