@@ -2384,6 +2384,10 @@ video {
 .banner__section--style {
   margin: 50px 0 20px 0;
 }
+
+.mb-40 {
+  margin-bottom: 40px;
+}
 /* .carousel-item {
 
 } */

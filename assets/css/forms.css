@@ -957,6 +957,11 @@ body.nav-active {
     font-size: 21px;
     padding-bottom: 31px;
   }
+
+  .dark__img__background__main__caregiver {
+    height: 117px;
+  } 
+
 }
 
 @media (min-width: 768px) {

@@ -16,8 +16,8 @@ formVValue.addEventListener('submit', function(e) {
 
   //plug into the database .....
   // replace url with your api url
-    // fetch('https://api.ronald-partners.net/api/submit-form', {
-    fetch('http://localhost:3500/api/submit-form', {
+    fetch('https://api.ronald-partners.net/api/submit-form', {
+    // fetch('http://localhost:3500/api/submit-form', {
     method: 'POST',
     body: payload,
      mode: 'no-cors'
