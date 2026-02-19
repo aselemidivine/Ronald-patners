@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "build:css": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/tailwind.generated.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/tailwind.generated.css --watch"
   },
- 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aselemidivine/Ronald-patners.git"
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/aselemidivine/Ronald-patners/issues"
   },
-  "homepage": "https://github.com/aselemidivine/Ronald-patners#readme"
+  "homepage": "https://github.com/aselemidivine/Ronald-patners#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
 }
