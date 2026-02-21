@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 
-    - primary meta tags
   <title>Ronald Partners</title>
   <meta name="title" content="Ronald Partners" />
   <meta name="description" content="This is a study and travel agency, made by Digitalents Hub" />
@@ -21,9 +19,7 @@
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-
-
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- 
     - favicon
@@ -58,8 +54,10 @@
 </head>
 
 <body>
-  <header class="header" data-header>
-    <div class="container">
+  <header
+    class="header fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300"
+    data-header>
+    <div class="container flex items-center justify-between">
       <a href="#" class="logo">
         <img src="./assets/images/logo.png" width="124" height="24" alt="Ronald home" class="logo-light" />
 
@@ -81,74 +79,96 @@
 
         <ul class="navbar-list">
           <li>
-            <a href="./index.html" class="navbar-link">Home</a>
+            <a href="./index.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Home</a>
           </li>          
 
           <!-- Add a new list item with the dropdown container -->
-          <li class="navbar-dropdown">
-            <a class="navbar-link">Our Services <ion-icon name="chevron-down-outline"></ion-icon></a>
-            <!-- Add the dropdown content inside a nested ul element -->
-            <ul class="dropdown-content">
-              <li>
-                <a href="./pages/study-abroad.html">Study Abroad</a>
-              </li>
-              <li>
-                <a href="./pages/expert-visa-services.html">Visa</a>
-              </li>
-              <li>
-                <a href="./pages/ielts.html">IELTS</a>
-              </li>
-              <li>
-                <a href="./pages/work-visa.html">Work Migration / Employment Visa</a>
-              </li>
+          <li class=" navbar-dropdown">
+              <a class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Our Services <ion-icon name="
+                chevron-down-outline"></ion-icon></a>
+              <!-- Add the dropdown content inside a nested ul element -->
+              <ul class="dropdown-content"
+                style="background:#ffffff; border-radius:12px; box-shadow:0 15px 35px rgba(0,0,0,0.08); padding:12px 0;">
+                <li>
+                  <a href="./pages/study-abroad.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">Study
+                    Abroad</a>
+                </li>
+                <li>
+                  <a href="./pages/expert-visa-services.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">Visa</a>
+                </li>
+                <li>
+                  <a href="./pages/ielts.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">IELTS</a>
+                </li>
+                <li>
+                  <a href="./pages/work-visa.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">Work
+                    Migration / Employment Visa</a>
+                </li>
 
-              <li>
-                <a href="./pages/law.html" target="_blank">Law</a>
-              </li>
-              <li>
-                <a href="./pages/immigration.html">Immigration</a>
-              </li>
-              <li>
-                <a href="./canada-caregiver-jobs-recruitment.html" >Jobs in Canada</a>
-              </li>
-            </ul>
+                <li>
+                  <a href="./pages/law.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;"
+                    target="_blank">Law</a>
+                </li>
+                <li>
+                  <a href="./pages/immigration.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">Immigration</a>
+                </li>
+                <li>
+                  <a href="./canada-caregiver-jobs-recruitment.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">Jobs in
+                    Canada</a>
+                </li>
+              </ul>
           </li>
 
 
           <li>
-            <a href="./pages/about-us.html" class="navbar-link">About</a>
+            <a href="./pages/about-us.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">About</a>
           </li>
 
           <li>
-            <a href="./pages/form/referral.html" class="navbar-link">Referral</a>
+            <a href=" ./pages/form/referral.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Referral</a>
           </li>
           <li>
-            <a href="./canada-caregiver-jobs-recruitment.html" class="navbar-link">Jobs</a>
+            <a href=" ./canada-caregiver-jobs-recruitment.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Jobs</a>
           </li>
 
           <li>
-            <a href="./pages/events.html" class="navbar-link">Events</a>
+            <a href=" ./pages/events.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Events</a>
           </li>
           <!-- <li>
-            <a href="./pages/jobs/canada-caregiver-jobs-recruitment.html" class="navbar-link">Jobs Overseas</a>
+            <a href=" ./pages/jobs/canada-caregiver-jobs-recruitment.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Jobs Overseas</a>
           </li> -->
 
 
           <!-- <li>
-            <a href="./pages/blogs.html" class="navbar-link">Ad-News</a>
+            <a href=" ./pages/blogs.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Ad-News</a>
           </li> -->
           <li>
-            <a href="./pages/contact-us.html" class="navbar-link">Contact</a>
+            <a href=" ./pages/contact-us.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Contact</a>
           </li>
-          <!-- <li class="navbar-dropdown">
-            <a class="navbar-link">Contact <ion-icon name="chevron-down-outline"></ion-icon></a>
-            <ul class="dropdown-content">
-              <li>
-                <a href="./pages/contact-us.html">Contact Us</a>
-              </li>
-            
+          <!-- <li class=" navbar-dropdown">
+              <a class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Contact <ion-icon name="
+                chevron-down-outline"></ion-icon></a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="./pages/contact-us.html">Contact Us</a>
+                </li>
 
-            </ul>
+
+              </ul>
           </li> -->
         </ul>
 
@@ -166,13 +186,13 @@
 
         <ul class="social-list">
           <li>
-            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL"  target="_blank"  class="social-link">
+            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL" target="_blank" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#"  target="_blank"  class="social-link">
+            <a href="#" target="_blank" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
@@ -184,16 +204,17 @@
           </li>
 
           <li>
-            <a href="https://www.youtube.com/@RonaldPartners"  target="_blank"  class="social-link">
+            <a href="https://www.youtube.com/@RonaldPartners" target="_blank" class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/ronaldandpartners/"  target="_blank"  class="social-link">
+            <a href="https://www.linkedin.com/in/ronaldandpartners/" target="_blank" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-        </ul>      </nav>
+        </ul>
+      </nav>
 
       <a href="https://portal.ronald-partners.net/" class="btn ">Login</a>
       <a href="https://portal.ronald-partners.net/signup" class="btn btn-primary">Sign Up</a>
@@ -212,7 +233,7 @@
         - #HERO
       -->
 
-          <!-- <section class="section">
+      <!-- <section class="section">
             <div class="container mx-auto my-24 text-center">
               <p
                 class="inline-block rounded-lg bg-green-50 px-6 py-[0.32rem] text-sm font-medium text-gray-600 shadow-lg"
@@ -224,15 +245,17 @@
 
       <section class="section hero has-bg-image" aria-label="home"
         style="background-image: url('./assets/images/hero-bg.jpg')">
-        >
+        <div class="hero-overlay"></div>
         <!-- <div></div> -->
         <!-- style="background-color: var(--hero);" -->
 
         <div class="container">
           <div class="hero-content">
             <h3 class="hero-text-header">Effective Visa Solution</h3>
-            <h1 class="h1 hero-title">HIGHER STUDY IN <span class="auto-type"></span> </h1>
-
+            <h1 class="hero-title">
+              Study Abroad in <br><span class="auto-type"></span><br>
+              With Trusted Experts
+            </h1>
 
             <p class="hero-text">
               Our professionalism, honesty, sincerity &amp; dedication to
@@ -240,10 +263,8 @@
             </p>
 
             <div class="btn-wrapper">
-              <a href="./pages/form/index.html" class="btn btn-primary"> Apply Here </a>
-
-              <a href="./pages/form/partners.html" class="btn btn-outline">Partner Here</a>
-
+              <a href="./pages/form/index.html" class="btn btn-primary">Start Application</a>
+              <a href="./pages/form/partners.html" class="btn btn-outline">Become a Partner</a>
 
             </div>
             <a href="./pages/universisties/dundee.html">
@@ -253,9 +274,6 @@
             </a>
 
           </div>
-
-
-
 
 
           <div class="study-containerr">
@@ -300,490 +318,14 @@
                       <label class="form__label" for="nationality">Destination Country</label>
                       <select id="destination" name="destinationCountry">
                         <option value="Afghanistan">Afghanistan</option>
-                        <option value="Åland Islands">Åland Islands</option>
-                        <option value="Albania">Albania</option>
-                        <option value="Algeria">Algeria</option>
-                        <option value="American Samoa">American Samoa</option>
-                        <option value="Andorra">Andorra</option>
-                        <option value="Angola">Angola</option>
-                        <option value="Anguilla">Anguilla</option>
-                        <option value="Antarctica">Antarctica</option>
-                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Armenia">Armenia</option>
-                        <option value="Aruba">Aruba</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Austria">Austria</option>
-                        <option value="Azerbaijan">Azerbaijan</option>
-                        <option value="Bahamas">Bahamas</option>
-                        <option value="Bahrain">Bahrain</option>
-                        <option value="Bangladesh">Bangladesh</option>
-                        <option value="Barbados">Barbados</option>
-                        <option value="Belarus">Belarus</option>
-                        <option value="Belgium">Belgium</option>
-                        <option value="Belize">Belize</option>
-                        <option value="Benin">Benin</option>
-                        <option value="Bermuda">Bermuda</option>
-                        <option value="Bhutan">Bhutan</option>
-                        <option value="Bolivia">Bolivia</option>
-                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                        <option value="Botswana">Botswana</option>
-                        <option value="Bouvet Island">Bouvet Island</option>
-                        <option value="Brazil">Brazil</option>
-                        <option value="Brunei Darussalam">Brunei Darussalam</option>
-                        <option value="Bulgaria">Bulgaria</option>
-                        <option value="Burkina Faso">Burkina Faso</option>
-                        <option value="Burundi">Burundi</option>
-                        <option value="Cambodia">Cambodia</option>
-                        <option value="Cameroon">Cameroon</option>
-                        <option value="Canada" selected>Canada</option>
-                        <option value="Cape Verde">Cape Verde</option>
-                        <option value="Cayman Islands">Cayman Islands</option>
-                        <option value="Central African Republic">Central African Republic</option>
-                        <option value="Chad">Chad</option>
-                        <option value="Chile">Chile</option>
-                        <option value="China">China</option>
-                        <option value="Christmas Island">Christmas Island</option>
-                        <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Comoros">Comoros</option>
-                        <option value="Congo">Congo</option>
-                        <option value="Congo, The Democratic Republic of The">Congo
-                        </option>
-                        <option value="Cook Islands">Cook Islands</option>
-                        <option value="Costa Rica">Costa Rica</option>
-                        <option value="Cote D'ivoire">Cote D'ivoire</option>
-                        <option value="Croatia">Croatia</option>
-                        <option value="Cuba">Cuba</option>
-                        <option value="Cyprus">Cyprus</option>
-                        <option value="Czech Republic">Czech Republic</option>
-                        <option value="Denmark">Denmark</option>
-                        <option value="Djibouti">Djibouti</option>
-                        <option value="Dominica">Dominica</option>
-                        <option value="Dominican Republic">Dominican Republic</option>
-                        <option value="Ecuador">Ecuador</option>
-                        <option value="Egypt">Egypt</option>
-                        <option value="El Salvador">El Salvador</option>
-                        <option value="Equatorial Guinea">Equatorial Guinea</option>
-                        <option value="Eritrea">Eritrea</option>
-                        <option value="Estonia">Estonia</option>
-                        <option value="Ethiopia">Ethiopia</option>
-                        <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
-                        <option value="Faroe Islands">Faroe Islands</option>
-                        <option value="Fiji">Fiji</option>
-                        <option value="Finland">Finland</option>
-                        <option value="France">France</option>
-                        <option value="French Guiana">French Guiana</option>
-                        <option value="French Polynesia">French Polynesia</option>
-                        <option value="French Southern Territories">French Southern Territories</option>
-                        <option value="Gabon">Gabon</option>
-                        <option value="Gambia">Gambia</option>
-                        <option value="Georgia">Georgia</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Ghana">Ghana</option>
-                        <option value="Gibraltar">Gibraltar</option>
-                        <option value="Greece">Greece</option>
-                        <option value="Greenland">Greenland</option>
-                        <option value="Grenada">Grenada</option>
-                        <option value="Guadeloupe">Guadeloupe</option>
-                        <option value="Guam">Guam</option>
-                        <option value="Guatemala">Guatemala</option>
-                        <option value="Guernsey">Guernsey</option>
-                        <option value="Guinea">Guinea</option>
-                        <option value="Guinea-bissau">Guinea-bissau</option>
-                        <option value="Guyana">Guyana</option>
-                        <option value="Haiti">Haiti</option>
-                        <option value="Heard Island and Mcdonald Islands">Heard Island </option>
-                        <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
-                        <option value="Honduras">Honduras</option>
-                        <option value="Hong Kong">Hong Kong</option>
-                        <option value="Hungary">Hungary</option>
-                        <option value="Iceland">Iceland</option>
-                        <option value="India">India</option>
-                        <option value="Indonesia">Indonesia</option>
-                        <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
-                        <option value="Iraq">Iraq</option>
-                        <option value="Ireland">Ireland</option>
-                        <option value="Isle of Man">Isle of Man</option>
-                        <option value="Israel">Israel</option>
-                        <option value="Italy">Italy</option>
-                        <option value="Jamaica">Jamaica</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Jersey">Jersey</option>
-                        <option value="Jordan">Jordan</option>
-                        <option value="Kazakhstan">Kazakhstan</option>
-                        <option value="Kenya">Kenya</option>
-                        <option value="Kiribati">Kiribati</option>
-                        <option value="Korea, Republic of">Korea, Republic of</option>
-                        <option value="Kuwait">Kuwait</option>
-                        <option value="Kyrgyzstan">Kyrgyzstan</option>
-                        <option value="Lao People's Democratic Republic">Lao People's</option>
-                        <option value="Latvia">Latvia</option>
-                        <option value="Lebanon">Lebanon</option>
-                        <option value="Lesotho">Lesotho</option>
-                        <option value="Liberia">Liberia</option>
-                        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
-                        <option value="Liechtenstein">Liechtenstein</option>
-                        <option value="Lithuania">Lithuania</option>
-                        <option value="Luxembourg">Luxembourg</option>
-                        <option value="Macao">Macao</option>
-                        <option value="Macedonia, The Former Yugoslav Republic of">Macedonia</option>
-                        <option value="Madagascar">Madagascar</option>
-                        <option value="Malawi">Malawi</option>
-                        <option value="Malaysia">Malaysia</option>
-                        <option value="Maldives">Maldives</option>
-                        <option value="Mali">Mali</option>
-                        <option value="Malta">Malta</option>
-                        <option value="Marshall Islands">Marshall Islands</option>
-                        <option value="Martinique">Martinique</option>
-                        <option value="Mauritania">Mauritania</option>
-                        <option value="Mauritius">Mauritius</option>
-                        <option value="Mayotte">Mayotte</option>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Moldova, Republic of">Moldova, Republic of</option>
-                        <option value="Monaco">Monaco</option>
-                        <option value="Mongolia">Mongolia</option>
-                        <option value="Montenegro">Montenegro</option>
-                        <option value="Montserrat">Montserrat</option>
-                        <option value="Morocco">Morocco</option>
-                        <option value="Mozambique">Mozambique</option>
-                        <option value="Myanmar">Myanmar</option>
-                        <option value="Namibia">Namibia</option>
-                        <option value="Nauru">Nauru</option>
-                        <option value="Nepal">Nepal</option>
-                        <option value="Netherlands">Netherlands</option>
-                        <option value="Netherlands Antilles">Netherlands Antilles</option>
-                        <option value="New Caledonia">New Caledonia</option>
-                        <option value="New Zealand">New Zealand</option>
-                        <option value="Nicaragua">Nicaragua</option>
-                        <option value="Niger">Niger</option>
-                        <option value="Nigeria">Nigeria</option>
-                        <option value="Niue">Niue</option>
-                        <option value="Norfolk Island">Norfolk Island</option>
-                        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
-                        <option value="Norway">Norway</option>
-                        <option value="Oman">Oman</option>
-                        <option value="Pakistan">Pakistan</option>
-                        <option value="Palau">Palau</option>
-                        <option value="Panama">Panama</option>
-                        <option value="Papua New Guinea">Papua New Guinea</option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="Peru">Peru</option>
-                        <option value="Philippines">Philippines</option>
-                        <option value="Pitcairn">Pitcairn</option>
-                        <option value="Poland">Poland</option>
-                        <option value="Portugal">Portugal</option>
-                        <option value="Puerto Rico">Puerto Rico</option>
-                        <option value="Qatar">Qatar</option>
-                        <option value="Reunion">Reunion</option>
-                        <option value="Romania">Romania</option>
-                        <option value="Russian Federation">Russian Federation</option>
-                        <option value="Rwanda">Rwanda</option>
-                        <option value="Saint Helena">Saint Helena</option>
-                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-                        <option value="Saint Lucia">Saint Lucia</option>
-                        <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                        <option value="Saint Vincent and The Grenadines">Saint Vincent</option>
-                        <option value="Samoa">Samoa</option>
-                        <option value="San Marino">San Marino</option>
-                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
-                        <option value="Saudi Arabia">Saudi Arabia</option>
-                        <option value="Senegal">Senegal</option>
-                        <option value="Serbia">Serbia</option>
-                        <option value="Seychelles">Seychelles</option>
-                        <option value="Sierra Leone">Sierra Leone</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Slovakia">Slovakia</option>
-                        <option value="Slovenia">Slovenia</option>
-                        <option value="Solomon Islands">Solomon Islands</option>
-                        <option value="Somalia">Somalia</option>
-                        <option value="South Africa">South Africa</option>
-                        <option value="South Georgia and The South Sandwich Islands">South Georgia </option>
-                        <option value="Spain">Spain</option>
-                        <option value="Sri Lanka">Sri Lanka</option>
-                        <option value="Sudan">Sudan</option>
-                        <option value="Suriname">Suriname</option>
-                        <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
-                        <option value="Swaziland">Swaziland</option>
-                        <option value="Sweden">Sweden</option>
-                        <option value="Switzerland">Switzerland</option>
-                        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
-                        <option value="Taiwan">Taiwan</option>
-                        <option value="Tajikistan">Tajikistan</option>
-                        <option value="Tanzania, United Republic of">Tanzania</option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="Timor-leste">Timor-leste</option>
-                        <option value="Togo">Togo</option>
-                        <option value="Tokelau">Tokelau</option>
-                        <option value="Tonga">Tonga</option>
-                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-                        <option value="Tunisia">Tunisia</option>
-                        <option value="Turkey">Turkey</option>
-                        <option value="Turkmenistan">Turkmenistan</option>
-                        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
-                        <option value="Tuvalu">Tuvalu</option>
-                        <option value="Uganda">Uganda</option>
-                        <option value="Ukraine">Ukraine</option>
-                        <option value="United Arab Emirates">United Arab Emirates</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United States">United States</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Uzbekistan">Uzbekistan</option>
-                        <option value="Vanuatu">Vanuatu</option>
-                        <option value="Venezuela">Venezuela</option>
-                        <option value="Viet Nam">Viet Nam</option>
-                        <option value="Virgin Islands, British">Virgin Islands, British</option>
-                        <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
-                        <option value="Wallis and Futuna">Wallis and Futuna</option>
-                        <option value="Western Sahara">Western Sahara</option>
-                        <option value="Yemen">Yemen</option>
-                        <option value="Zambia">Zambia</option>
-                        <option value="Zimbabwe">Zimbabwe</option>
+
                       </select>
                     </div>
                     <div class="form__item">
                       <label class="form__label" for="nationality">Nationality</label>
                       <select id="nationality" name="nationality">
                         <option value="Afghanistan">Afghanistan</option>
-                        <option value="Åland Islands">Åland Islands</option>
-                        <option value="Albania">Albania</option>
-                        <option value="Algeria">Algeria</option>
-                        <option value="American Samoa">American Samoa</option>
-                        <option value="Andorra">Andorra</option>
-                        <option value="Angola">Angola</option>
-                        <option value="Anguilla">Anguilla</option>
-                        <option value="Antarctica">Antarctica</option>
-                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Armenia">Armenia</option>
-                        <option value="Aruba">Aruba</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Austria">Austria</option>
-                        <option value="Azerbaijan">Azerbaijan</option>
-                        <option value="Bahamas">Bahamas</option>
-                        <option value="Bahrain">Bahrain</option>
-                        <option value="Bangladesh">Bangladesh</option>
-                        <option value="Barbados">Barbados</option>
-                        <option value="Belarus">Belarus</option>
-                        <option value="Belgium">Belgium</option>
-                        <option value="Belize">Belize</option>
-                        <option value="Benin">Benin</option>
-                        <option value="Bermuda">Bermuda</option>
-                        <option value="Bhutan">Bhutan</option>
-                        <option value="Bolivia">Bolivia</option>
-                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                        <option value="Botswana">Botswana</option>
-                        <option value="Bouvet Island">Bouvet Island</option>
-                        <option value="Brazil">Brazil</option>
-                        <option value="Brunei Darussalam">Brunei Darussalam</option>
-                        <option value="Bulgaria">Bulgaria</option>
-                        <option value="Burkina Faso">Burkina Faso</option>
-                        <option value="Burundi">Burundi</option>
-                        <option value="Cambodia">Cambodia</option>
-                        <option value="Cameroon">Cameroon</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Cape Verde">Cape Verde</option>
-                        <option value="Cayman Islands">Cayman Islands</option>
-                        <option value="Central African Republic">Central African Republic</option>
-                        <option value="Chad">Chad</option>
-                        <option value="Chile">Chile</option>
-                        <option value="China">China</option>
-                        <option value="Christmas Island">Christmas Island</option>
-                        <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Comoros">Comoros</option>
-                        <option value="Congo">Congo</option>
-                        <option value="Congo, The Democratic Republic of The">Congo
-                        </option>
-                        <option value="Cook Islands">Cook Islands</option>
-                        <option value="Costa Rica">Costa Rica</option>
-                        <option value="Cote D'ivoire">Cote D'ivoire</option>
-                        <option value="Croatia">Croatia</option>
-                        <option value="Cuba">Cuba</option>
-                        <option value="Cyprus">Cyprus</option>
-                        <option value="Czech Republic">Czech Republic</option>
-                        <option value="Denmark">Denmark</option>
-                        <option value="Djibouti">Djibouti</option>
-                        <option value="Dominica">Dominica</option>
-                        <option value="Dominican Republic">Dominican Republic</option>
-                        <option value="Ecuador">Ecuador</option>
-                        <option value="Egypt">Egypt</option>
-                        <option value="El Salvador">El Salvador</option>
-                        <option value="Equatorial Guinea">Equatorial Guinea</option>
-                        <option value="Eritrea">Eritrea</option>
-                        <option value="Estonia">Estonia</option>
-                        <option value="Ethiopia">Ethiopia</option>
-                        <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
-                        <option value="Faroe Islands">Faroe Islands</option>
-                        <option value="Fiji">Fiji</option>
-                        <option value="Finland">Finland</option>
-                        <option value="France">France</option>
-                        <option value="French Guiana">French Guiana</option>
-                        <option value="French Polynesia">French Polynesia</option>
-                        <option value="French Southern Territories">French Southern Territories</option>
-                        <option value="Gabon">Gabon</option>
-                        <option value="Gambia">Gambia</option>
-                        <option value="Georgia">Georgia</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Ghana">Ghana</option>
-                        <option value="Gibraltar">Gibraltar</option>
-                        <option value="Greece">Greece</option>
-                        <option value="Greenland">Greenland</option>
-                        <option value="Grenada">Grenada</option>
-                        <option value="Guadeloupe">Guadeloupe</option>
-                        <option value="Guam">Guam</option>
-                        <option value="Guatemala">Guatemala</option>
-                        <option value="Guernsey">Guernsey</option>
-                        <option value="Guinea">Guinea</option>
-                        <option value="Guinea-bissau">Guinea-bissau</option>
-                        <option value="Guyana">Guyana</option>
-                        <option value="Haiti">Haiti</option>
-                        <option value="Heard Island and Mcdonald Islands">Heard Island </option>
-                        <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
-                        <option value="Honduras">Honduras</option>
-                        <option value="Hong Kong">Hong Kong</option>
-                        <option value="Hungary">Hungary</option>
-                        <option value="Iceland">Iceland</option>
-                        <option value="India">India</option>
-                        <option value="Indonesia">Indonesia</option>
-                        <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
-                        <option value="Iraq">Iraq</option>
-                        <option value="Ireland">Ireland</option>
-                        <option value="Isle of Man">Isle of Man</option>
-                        <option value="Israel">Israel</option>
-                        <option value="Italy">Italy</option>
-                        <option value="Jamaica">Jamaica</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Jersey">Jersey</option>
-                        <option value="Jordan">Jordan</option>
-                        <option value="Kazakhstan">Kazakhstan</option>
-                        <option value="Kenya">Kenya</option>
-                        <option value="Kiribati">Kiribati</option>
-                        <option value="Korea, Republic of">Korea, Republic of</option>
-                        <option value="Kuwait">Kuwait</option>
-                        <option value="Kyrgyzstan">Kyrgyzstan</option>
-                        <option value="Lao People's Democratic Republic">Lao People's</option>
-                        <option value="Latvia">Latvia</option>
-                        <option value="Lebanon">Lebanon</option>
-                        <option value="Lesotho">Lesotho</option>
-                        <option value="Liberia">Liberia</option>
-                        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
-                        <option value="Liechtenstein">Liechtenstein</option>
-                        <option value="Lithuania">Lithuania</option>
-                        <option value="Luxembourg">Luxembourg</option>
-                        <option value="Macao">Macao</option>
-                        <option value="Macedonia, The Former Yugoslav Republic of">Macedonia</option>
-                        <option value="Madagascar">Madagascar</option>
-                        <option value="Malawi">Malawi</option>
-                        <option value="Malaysia">Malaysia</option>
-                        <option value="Maldives">Maldives</option>
-                        <option value="Mali">Mali</option>
-                        <option value="Malta">Malta</option>
-                        <option value="Marshall Islands">Marshall Islands</option>
-                        <option value="Martinique">Martinique</option>
-                        <option value="Mauritania">Mauritania</option>
-                        <option value="Mauritius">Mauritius</option>
-                        <option value="Mayotte">Mayotte</option>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Moldova, Republic of">Moldova, Republic of</option>
-                        <option value="Monaco">Monaco</option>
-                        <option value="Mongolia">Mongolia</option>
-                        <option value="Montenegro">Montenegro</option>
-                        <option value="Montserrat">Montserrat</option>
-                        <option value="Morocco">Morocco</option>
-                        <option value="Mozambique">Mozambique</option>
-                        <option value="Myanmar">Myanmar</option>
-                        <option value="Namibia">Namibia</option>
-                        <option value="Nauru">Nauru</option>
-                        <option value="Nepal">Nepal</option>
-                        <option value="Netherlands">Netherlands</option>
-                        <option value="Netherlands Antilles">Netherlands Antilles</option>
-                        <option value="New Caledonia">New Caledonia</option>
-                        <option value="New Zealand">New Zealand</option>
-                        <option value="Nicaragua">Nicaragua</option>
-                        <option value="Niger">Niger</option>
-                        <option value="Nigeria" selected>Nigeria</option>
-                        <option value="Niue">Niue</option>
-                        <option value="Norfolk Island">Norfolk Island</option>
-                        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
-                        <option value="Norway">Norway</option>
-                        <option value="Oman">Oman</option>
-                        <option value="Pakistan">Pakistan</option>
-                        <option value="Palau">Palau</option>
-                        <option value="Panama">Panama</option>
-                        <option value="Papua New Guinea">Papua New Guinea</option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="Peru">Peru</option>
-                        <option value="Philippines">Philippines</option>
-                        <option value="Pitcairn">Pitcairn</option>
-                        <option value="Poland">Poland</option>
-                        <option value="Portugal">Portugal</option>
-                        <option value="Puerto Rico">Puerto Rico</option>
-                        <option value="Qatar">Qatar</option>
-                        <option value="Reunion">Reunion</option>
-                        <option value="Romania">Romania</option>
-                        <option value="Russian Federation">Russian Federation</option>
-                        <option value="Rwanda">Rwanda</option>
-                        <option value="Saint Helena">Saint Helena</option>
-                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-                        <option value="Saint Lucia">Saint Lucia</option>
-                        <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                        <option value="Saint Vincent and The Grenadines">Saint Vincent</option>
-                        <option value="Samoa">Samoa</option>
-                        <option value="San Marino">San Marino</option>
-                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
-                        <option value="Saudi Arabia">Saudi Arabia</option>
-                        <option value="Senegal">Senegal</option>
-                        <option value="Serbia">Serbia</option>
-                        <option value="Seychelles">Seychelles</option>
-                        <option value="Sierra Leone">Sierra Leone</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Slovakia">Slovakia</option>
-                        <option value="Slovenia">Slovenia</option>
-                        <option value="Solomon Islands">Solomon Islands</option>
-                        <option value="Somalia">Somalia</option>
-                        <option value="South Africa">South Africa</option>
-                        <option value="South Georgia and The South Sandwich Islands">South Georgia </option>
-                        <option value="Spain">Spain</option>
-                        <option value="Sri Lanka">Sri Lanka</option>
-                        <option value="Sudan">Sudan</option>
-                        <option value="Suriname">Suriname</option>
-                        <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
-                        <option value="Swaziland">Swaziland</option>
-                        <option value="Sweden">Sweden</option>
-                        <option value="Switzerland">Switzerland</option>
-                        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
-                        <option value="Taiwan">Taiwan</option>
-                        <option value="Tajikistan">Tajikistan</option>
-                        <option value="Tanzania, United Republic of">Tanzania</option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="Timor-leste">Timor-leste</option>
-                        <option value="Togo">Togo</option>
-                        <option value="Tokelau">Tokelau</option>
-                        <option value="Tonga">Tonga</option>
-                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-                        <option value="Tunisia">Tunisia</option>
-                        <option value="Turkey">Turkey</option>
-                        <option value="Turkmenistan">Turkmenistan</option>
-                        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
-                        <option value="Tuvalu">Tuvalu</option>
-                        <option value="Uganda">Uganda</option>
-                        <option value="Ukraine">Ukraine</option>
-                        <option value="United Arab Emirates">United Arab Emirates</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United States">United States</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Uzbekistan">Uzbekistan</option>
-                        <option value="Vanuatu">Vanuatu</option>
-                        <option value="Venezuela">Venezuela</option>
-                        <option value="Viet Nam">Viet Nam</option>
-                        <option value="Virgin Islands, British">Virgin Islands, British</option>
-                        <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
-                        <option value="Wallis and Futuna">Wallis and Futuna</option>
-                        <option value="Western Sahara">Western Sahara</option>
-                        <option value="Yemen">Yemen</option>
-                        <option value="Zambia">Zambia</option>
-                        <option value="Zimbabwe">Zimbabwe</option>
+
                       </select>
                     </div>
                   </div>
@@ -791,245 +333,7 @@
                     <label class="form__label" for="country-code">Country Code</label>
                     <select id="country-code" name="countryCode" name="code">
                       <option value="+93">Afghanistan (+93)</option>
-                      <option value="+358">Åland Islands (+358)</option>
-                      <option value="+355">Albania (+355)</option>
-                      <option value="+213">Algeria (+213)</option>
-                      <option value="+1-684">American Samoa (+1-684)</option>
-                      <option value="+376">Andorra (+376)</option>
-                      <option value="+244">Angola (+244)</option>
-                      <option value="+1-264">Anguilla (+1-264)</option>
-                      <option value="+672">Antarctica (+672)</option>
-                      <option value="+1-268">Antigua and Barbuda (+1-268)</option>
-                      <option value="+54">Argentina (+54)</option>
-                      <option value="+374">Armenia (+374)</option>
-                      <option value="+297">Aruba (+297)</option>
-                      <option value="+61">Australia (+61)</option>
-                      <option value="+43">Austria (+43)</option>
-                      <option value="+994">Azerbaijan (+994)</option>
-                      <option value="+1-242">Bahamas (+1-242)</option>
-                      <option value="+973">Bahrain (+973)</option>
-                      <option value="+880">Bangladesh (+880)</option>
-                      <option value="+1-246">Barbados (+1-246)</option>
-                      <option value="+375">Belarus (+375)</option>
-                      <option value="+32">Belgium (+32)</option>
-                      <option value="+501">Belize (+501)</option>
-                      <option value="+229">Benin (+229)</option>
-                      <option value="+1-441">Bermuda (+1-441)</option>
-                      <option value="+975">Bhutan (+975)</option>
-                      <option value="+591">Bolivia (+591)</option>
-                      <option value="+387">Bosnia and Herzegovina (+387)</option>
-                      <option value="+267">Botswana (+267)</option>
-                      <option value="+47">Bouvet Island (+47)</option>
-                      <option value="+55">Brazil (+55)</option>
-                      <option value="+673">Brunei Darussalam (+673)</option>
-                      <option value="+359">Bulgaria (+359)</option>
-                      <option value="+226">Burkina Faso (+226)</option>
-                      <option value="+257">Burundi (+257)</option>
-                      <option value="+855">Cambodia (+855)</option>
-                      <option value="+237">Cameroon (+237)</option>
-                      <option value="+1">Canada (+1)</option>
-                      <option value="+238">Cape Verde (+238)</option>
-                      <option value="+1-345">Cayman Islands (+1-345)</option>
-                      <option value="+236">Central African Republic (+236)</option>
-                      <option value="+235">Chad (+235)</option>
-                      <option value="+56">Chile (+56)</option>
-                      <option value="+86">China (+86)</option>
-                      <option value="+61">Christmas Island (+61)</option>
-                      <option value="+61">Cocos (Keeling) Islands (+61)</option>
-                      <option value="+57">Colombia (+57)</option>
-                      <option value="+269">Comoros (+269)</option>
-                      <option value="+242">Congo (+242)</option>
-                      <option value="+243">Congo, The Democratic Republic of The (+243)</option>
-                      <option value="+682">Cook Islands (+682)</option>
-                      <option value="+506">Costa Rica (+506)</option>
-                      <option value="+225">Cote D'ivoire (+225)</option>
-                      <option value="+385">Croatia (+385)</option>
-                      <option value="+53">Cuba (+53)</option>
-                      <option value="+357">Cyprus (+357)</option>
-                      <option value="+420">Czech Republic (+420)</option>
-                      <option value="+45">Denmark (+45)</option>
-                      <option value="+253">Djibouti (+253)</option>
-                      <option value="+1-767">Dominica (+1-767)</option>
-                      <option value="+1-809, 1-829, 1-849">Dominican Republic (+1-809, 1-829, 1-849)</option>
-                      <option value="+593">Ecuador (+593)</option>
-                      <option value="+20">Egypt (+20)</option>
-                      <option value="+503">El Salvador (+503)</option>
-                      <option value="+240">Equatorial Guinea (+240)</option>
-                      <option value="+291">Eritrea (+291)</option>
-                      <option value="+372">Estonia (+372)</option>
-                      <option value="+251">Ethiopia (+251)</option>
-                      <option value="+500">Falkland Islands (Malvinas) (+500)</option>
-                      <option value="+298">Faroe Islands (+298)</option>
-                      <option value="+679">Fiji (+679)</option>
-                      <option value="+358">Finland (+358)</option>
-                      <option value="+33">France (+33)</option>
-                      <option value="+594">French Guiana (+594)</option>
-                      <option value="+689">French Polynesia (+689)</option>
-                      <option value="+262">French Southern Territories (+262)</option>
-                      <option value="+241">Gabon (+241)</option>
-                      <option value="+220">Gambia (+220)</option>
-                      <option value="+995">Georgia (+995)</option>
-                      <option value="+49">Germany (+49)</option>
-                      <option value="+233">Ghana (+233)</option>
-                      <option value="+350">Gibraltar (+350)</option>
-                      <option value="+30">Greece (+30)</option>
-                      <option value="+299">Greenland (+299)</option>
-                      <option value="+1-473">Grenada (+1-473)</option>
-                      <option value="+590">Guadeloupe (+590)</option>
-                      <option value="+1-671">Guam (+1-671)</option>
-                      <option value="+502">Guatemala (+502)</option>
-                      <option value="+44-1481">Guernsey (+44-1481)</option>
-                      <option value="+224">Guinea (+224)</option>
-                      <option value="+245">Guinea-bissau (+245)</option>
-                      <option value="+592">Guyana (+592)</option>
-                      <option value="+509">Haiti (+509)</option>
-                      <option value="+672">Heard Island and Mcdonald Islands (+672)</option>
-                      <option value="+379">Holy See (Vatican City State) (+379)</option>
-                      <option value="+504">Honduras (+504)</option>
-                      <option value="+852">Hong Kong (+852)</option>
-                      <option value="+36">Hungary (+36)</option>
-                      <option value="+354">Iceland (+354)</option>
-                      <option value="+91">India (+91)</option>
-                      <option value="+62">Indonesia (+62)</option>
-                      <option value="+98">Iran, Islamic Republic of (+98)</option>
-                      <option value="+964">Iraq (+964)</option>
-                      <option value="+353">Ireland (+353)</option>
-                      <option value="+44-1624">Isle of Man (+44-1624)</option>
-                      <option value="+972">Israel (+972)</option>
-                      <option value="+39">Italy (+39)</option>
-                      <option value="+1-876">Jamaica (+1-876)</option>
-                      <option value="+81">Japan (+81)</option>
-                      <option value="+44-1534">Jersey (+44-1534)</option>
-                      <option value="+962">Jordan (+962)</option>
-                      <option value="+7">Kazakhstan (+7)</option>
-                      <option value="+254">Kenya (+254)</option>
-                      <option value="+686">Kiribati (+686)</option>
-                      <option value="+82">Korea, Republic of (+82)</option>
-                      <option value="+965">Kuwait (+965)</option>
-                      <option value="+996">Kyrgyzstan (+996)</option>
-                      <option value="+856">Lao People's Democratic Republic (+856)</option>
-                      <option value="+371">Latvia (+371)</option>
-                      <option value="+961">Lebanon (+961)</option>
-                      <option value="+266">Lesotho (+266)</option>
-                      <option value="+231">Liberia (+231)</option>
-                      <option value="+218">Libyan Arab Jamahiriya (+218)</option>
-                      <option value="+423">Liechtenstein (+423)</option>
-                      <option value="+370">Lithuania (+370)</option>
-                      <option value="+352">Luxembourg (+352)</option>
-                      <option value="+853">Macao (+853)</option>
-                      <option value="+389">Macedonia, The Former Yugoslav Republic of (+389)</option>
-                      <option value="+261">Madagascar (+261)</option>
-                      <option value="+265">Malawi (+265)</option>
-                      <option value="+60">Malaysia (+60)</option>
-                      <option value="+960">Maldives (+960)</option>
-                      <option value="+223">Mali (+223)</option>
-                      <option value="+356">Malta (+356)</option>
-                      <option value="+692">Marshall Islands (+692)</option>
-                      <option value="+596">Martinique (+596)</option>
-                      <option value="+222">Mauritania (+222)</option>
-                      <option value="+230">Mauritius (+230)</option>
-                      <option value="+262">Mayotte (+262)</option>
-                      <option value="+52">Mexico (+52)</option>
-                      <option value="+373">Moldova, Republic of (+373)</option>
-                      <option value="+377">Monaco (+377)</option>
-                      <option value="+976">Mongolia (+976)</option>
-                      <option value="+382">Montenegro (+382)</option>
-                      <option value="+1-664">Montserrat (+1-664)</option>
-                      <option value="+212">Morocco (+212)</option>
-                      <option value="+258">Mozambique (+258)</option>
-                      <option value="+95">Myanmar (+95)</option>
-                      <option value="+264">Namibia (+264)</option>
-                      <option value="+674">Nauru (+674)</option>
-                      <option value="+977">Nepal (+977)</option>
-                      <option value="+31">Netherlands (+31)</option>
-                      <option value="+599">Netherlands Antilles (+599)</option>
-                      <option value="+687">New Caledonia (+687)</option>
-                      <option value="+64">New Zealand (+64)</option>
-                      <option value="+505">Nicaragua (+505)</option>
-                      <option value="+227">Niger (+227)</option>
-                      <option value="+234">Nigeria (+234)</option>
-                      <option value="+683">Niue (+683)</option>
-                      <option value="+672">Norfolk Island (+672)</option>
-                      <option value="+1-670">Northern Mariana Islands (+1-670)</option>
-                      <option value="+47">Norway (+47)</option>
-                      <option value="+968">Oman (+968)</option>
-                      <option value="+92">Pakistan (+92)</option>
-                      <option value="+680">Palau (+680)</option>
-                      <option value="+970">Palestinian Territory, Occupied (+970)</option>
-                      <option value="+507">Panama (+507)</option>
-                      <option value="+675">Papua New Guinea (+675)</option>
-                      <option value="+595">Paraguay (+595)</option>
-                      <option value="+51">Peru (+51)</option>
-                      <option value="+63">Philippines (+63)</option>
-                      <option value="+64">Pitcairn (+64)</option>
-                      <option value="+48">Poland (+48)</option>
-                      <option value="+351">Portugal (+351)</option>
-                      <option value="+1-787, 1-939">Puerto Rico (+1-787, 1-939)</option>
-                      <option value="+974">Qatar (+974)</option>
-                      <option value="+262">Reunion (+262)</option>
-                      <option value="+40">Romania (+40)</option>
-                      <option value="+7">Russian Federation (+7)</option>
-                      <option value="+250">Rwanda (+250)</option>
-                      <option value="+290">Saint Helena (+290)</option>
-                      <option value="+1-869">Saint Kitts and Nevis (+1-869)</option>
-                      <option value="+1-758">Saint Lucia (+1-758)</option>
-                      <option value="+508">Saint Pierre and Miquelon (+508)</option>
-                      <option value="+1-784">Saint Vincent and The Grenadines (+1-784)</option>
-                      <option value="+685">Samoa (+685)</option>
-                      <option value="+378">San Marino (+378)</option>
-                      <option value="+239">Sao Tome and Principe (+239)</option>
-                      <option value="+966">Saudi Arabia (+966)</option>
-                      <option value="+221">Senegal (+221)</option>
-                      <option value="+381">Serbia (+381)</option>
-                      <option value="+248">Seychelles (+248)</option>
-                      <option value="+232">Sierra Leone (+232)</option>
-                      <option value="+65">Singapore (+65)</option>
-                      <option value="+421">Slovakia (+421)</option>
-                      <option value="+386">Slovenia (+386)</option>
-                      <option value="+677">Solomon Islands (+677)</option>
-                      <option value="+252">Somalia (+252)</option>
-                      <option value="+27">South Africa (+27)</option>
-                      <option value="+500">South Georgia and The South Sandwich Islands (+500)</option>
-                      <option value="+34">Spain (+34)</option>
-                      <option value="+94">Sri Lanka (+94)</option>
-                      <option value="+249">Sudan (+249)</option>
-                      <option value="+597">Suriname (+597)</option>
-                      <option value="+47">Svalbard and Jan Mayen (+47)</option>
-                      <option value="+268">Swaziland (+268)</option>
-                      <option value="+46">Sweden (+46)</option>
-                      <option value="+41">Switzerland (+41)</option>
-                      <option value="+963">Syrian Arab Republic (+963)</option>
-                      <option value="+886">Taiwan (+886)</option>
-                      <option value="+992">Tajikistan (+992)</option>
-                      <option value="+255">Tanzania, United Republic of (+255)</option>
-                      <option value="+66">Thailand (+66)</option>
-                      <option value="+670">Timor-leste (+670)</option>
-                      <option value="+228">Togo (+228)</option>
-                      <option value="+690">Tokelau (+690)</option>
-                      <option value="+676">Tonga (+676)</option>
-                      <option value="+1-868">Trinidad and Tobago (+1-868)</option>
-                      <option value="+216">Tunisia (+216)</option>
-                      <option value="+90">Turkey (+90)</option>
-                      <option value="+993">Turkmenistan (+993)</option>
-                      <option value="+1-649">Turks and Caicos Islands (+1-649)</option>
-                      <option value="+688">Tuvalu (+688)</option>
-                      <option value="+256">Uganda (+256)</option>
-                      <option value="+380">Ukraine (+380)</option>
-                      <option value="+971">United Arab Emirates (+971)</option>
-                      <option value="+44">United Kingdom (+44)</option>
-                      <option value="+1">United States (+1)</option>
-                      <option value="+598">Uruguay (+598)</option>
-                      <option value="+998">Uzbekistan (+998)</option>
-                      <option value="+678">Vanuatu (+678)</option>
-                      <option value="+58">Venezuela (+58)</option>
-                      <option value="+84">Viet Nam (+84)</option>
-                      <option value="+1-284">Virgin Islands, British (+1-284)</option>
-                      <option value="+1-340">Virgin Islands, U.S. (+1-340)</option>
-                      <option value="+681">Wallis and Futuna (+681)</option>
-                      <option value="+212">Western Sahara (+212)</option>
-                      <option value="+967">Yemen (+967)</option>
-                      <option value="+260">Zambia (+260)</option>
-                      <option value="+263">Zimbabwe (+263)</option>
+
                     </select>
                   </div>
 
@@ -1042,9 +346,9 @@
 
                   <div class="button">
                     <!-- <input type="submit" onclick="openPopup()" value="Submit form" id="showRandomAlert" /> -->
-                    <input type="submit" value="Submit form" id="sweetalert" />
+                    <input type="submit" value="Get Free Consultation" id="sweetalert" />
                   </div>
-                  <div class="phone">
+                  <!-- <div class="phone">
                     <ul class="phone-list">
                       <li class="phone-numbers">+234(1)2953655</li>
                       <li class="phone-numbers">+2348034311748</li>
@@ -1059,7 +363,7 @@
                       </li>
                      
                     </ul>
-                  </div>
+                  </div> -->
                 </form>
                 <!-- </div> -->
 
@@ -1071,90 +375,28 @@
       </section>
 
       <div class="video-wrapper">
-        <video autoplay loop muted playsinline>
+        <video autoplay loop muted playsinline preload="none">
           <source
             src="https://player.vimeo.com/progressive_redirect/playback/399224417/rendition/1080p/file.mp4?loc=external&amp;signature=0c042aef1522710f4de40000c3bcf8262292927131a3e77732d618e7c462eb7a"
             type="video/mp4">
         </video>
 
-        <!-- <div class="testimoniall">
-
-        <div class="slider">
-          <span id="slide-1"></span>
-          <span id="slide-2"></span>
-          <span id="slide-3"></span>
-          <div class="image-container">
-            <div class="slide">
-              <div class="video-card active-text">
-                <h3 class="immigration">IMMIGRATION CONSULTANCY</h3>
-                <p class="card-text">
-                  You can be rest assured that you get the best Immigration
-                </p>
-                <a href="./pages/immigration.html" class="btn-text">
-                  <span class="span">Learn More</span>
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </div>
-            </div>
-
-            <div class="slide">
-
-              <div class="video-card">
-                <h3 class="education">EDUCATION CONSULTANCY</h3>
-                <p class="card-text">
-                  We assist you in achieving your educational goals
-                </p>
-                <a href="./pages/education.html" class="btn-text">
-                  <span class="span">Learn More</span>
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </div>
-            </div>
-           
-            <div class="slide">
-
-              <div class="video-card">
-                <h3 class="job-placement">JOB PLACEMENT ASSISTANCE</h3>
-                <p class="card-text">
-                  We provide support for finding the right job
-                </p>
-                <a href="./pages/job-placement.html" class="btn-text">
-                  <span class="span">Learn More</span>
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="buttons">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-          </div>
-        </div>
-        </div>  -->
-
         <div class="testimoniall">
-          <div class="testimonial-pic">
-
-          </div>
           <div class="testimoniall-text">
             <div class="video-card active-text">
               <h3 id="changing-text" class="immigration">IMMIGRATION CONSULTANCY</h3>
 
               <p class="card-text">
-                You can be rest assured that you get the best Immigration
+                You can be rest assured that you <br> get the best Immigration
               </p>
               <div class="learn">
-
                 <a href="./pages/immigration.html" class="btn-text">
                   <span class="span">LEARN MORE</span>
+                </a>
               </div>
 
-              </a>
             </div>
           </div>
-
-
 
           <div class="testimonial-pic">
           </div>
@@ -1171,7 +413,8 @@
             - #SERVICE
       -->
 
-      <section class="section service" aria-labelledby="service-label">
+      <section class="section service service-section" aria-labelledby="service-label">
+        <div class="service-bg-shape"></div>
         <div class="container">
           <p class="section-subtitle" id="service-label">What We Do?</p>
 
@@ -1180,7 +423,7 @@
           </h2>
 
           <ul class="grid-list">
-            <li class="card-list hidden">
+            <li class="card-list">
               <div class="service-card">
                 <div class="card-icon">
                   <img src="./assets/images/consultants-icon.png" alt="">
@@ -1201,7 +444,7 @@
               </div>
             </li>
 
-            <li class="card-list hidden">
+            <li class="card-list">
               <div class="service-card">
                 <div class="card-icon">
                   <img src="./assets/images/student-icon-new.png" alt="">
@@ -1226,7 +469,7 @@
               </div>
             </li>
 
-            <li class="card-list hidden">
+            <li class="card-list">
               <div class="service-card">
                 <div class="card-icon">
                   <img src="./assets/images/institution-icon.png" alt="">
@@ -1246,7 +489,7 @@
               </div>
             </li>
 
-            <li class="card-list hidden">
+            <li class="card-list">
               <div class="service-card">
                 <div class="card-icon">
                   <img src="./assets/images/school-icon.png" alt="">
@@ -1280,13 +523,6 @@
 
       <section class="about" aria-labelledby="about-label">
         <div class="container">
-          <a href="./pages/universisties/teeside.html">
-
-            <figure class="about-banner">
-              <img src="./assets/images/updated.jpg" height="454px" width="551px" loading="lazy" alt="about banner"
-                class="w-100" />
-            </figure>
-          </a>
 
           <div class="about-content">
             <p class="section-subtitle" id="about-label">Why Choose Us?</p>
@@ -1302,7 +538,7 @@
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">STUDY IN CANADA</spna>
+                      <span class="span h5">STUDY IN CANADA</span>
                     </button>
                   </h3>
 
@@ -1315,7 +551,7 @@
                     path of settling in the adjudged best country on earth
                     today...
                     <a href="./pages/canada.html" class="btn-text">
-                      <button class="span">APPLY HERE</button>
+                      APPLY HERE
                     </a>
                   </p>
                 </div>
@@ -1327,15 +563,16 @@
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">STUDY IN USA</spna>
+                      <span class="span h5">STUDY IN USA</span>
                     </button>
                   </h3>
 
                   <p class="accordion-content">
                     The United State of America is the Federal Republic consisting of 50 States.
                     It is a country with the most diverse culture in the world with its
-                    exemplary uniqueness and unsearchable opportunities… <a href="./pages/usa.html"
-                      class="btn-text"><button class="span">APPLY HERE</button>
+                    exemplary uniqueness and unsearchable opportunities…
+                    <a href="./pages/usa.html" class="btn-text">
+                      APPLY HERE
                     </a>
                   </p>
 
@@ -1348,15 +585,17 @@
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">STUDY IN UK</spna>
+                      <span class="span h5">STUDY IN UK</span>
                     </button>
                   </h3>
 
                   <p class="accordion-content">
                     Studying in the UK has always been a unique experience for students
                     particularly as it relates to the availability of courses, the standard of education,
-                    the language of instruction, scholarship availability, and flexible visa rules… <a
-                      href="./pages/uk.html" class="btn-text"><button class="span">APPLY HERE</button> </a>
+                    the language of instruction, scholarship availability, and flexible visa rules…
+                    <a href="./pages/uk.html" class="btn-text">
+                      APPLY HERE
+                    </a>
                   </p>
                 </div>
               </li>
@@ -1367,7 +606,7 @@
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">STUDY IN EUROPE</spna>
+                      <span class="span h5">STUDY IN EUROPE</span>
                     </button>
                   </h3>
 
@@ -1375,8 +614,10 @@
                     Europe is another amazing study abroad destination for students across the world,
                     Africans are not exempted. Studying in Europe has been lovely beautified by the acceptance
                     of English Language as a means of learning and instruction in both Private and Public Universities
-                    and Colleges… <a href="./pages/europe.html" class="btn-text"><button class="span">APPLY
-                        HERE</button> </a>
+                    and Colleges…
+                    <a href="./pages/europe.html" class="btn-text">
+                      APPLY HERE
+                    </a>
                   </p>
                 </div>
               </li>
@@ -1387,19 +628,29 @@
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">STUDY IN AUSTRALIA</spna>
+                      <span class="span h5">STUDY IN AUSTRALIA</span>
                     </button>
                   </h3>
 
                   <p class="accordion-content">
                     When people think of Australia, they see wide open spaces of outback bush, kangaroos, koalas, and
-                    clean air and water. Australia has much more to offer than the usual expectations… <a
-                      href="./pages/study-abroad.html" class="btn-text"><button class="span">APPLY HERE</button> </a>
+                    clean air and water. Australia has much more to offer than the usual expectations…
+                    <a href="./pages/study-abroad.html" class="btn-text">
+                      APPLY HERE
+                    </a>
                   </p>
                 </div>
               </li>
             </ul>
           </div>
+
+          <a href="./pages/universisties/teeside.html">
+            <figure class="about-banner">
+              <img src="./assets/images/updated.jpg" height="454px" width="551px" loading="lazy" alt="about banner"
+                class="w-100" />
+            </figure>
+          </a>
+
         </div>
       </section>
 
@@ -1610,7 +861,7 @@
               <p class="card-text">
                 <span class="h1">10k + </span>
 
-                <spna class="span">Happy Clients and Students</spna>
+                <span class="span">Happy Clients and Students</span>
               </p>
             </li>
 
@@ -1618,7 +869,7 @@
               <p class="card-text">
                 <span class="h1">20 + </span>
 
-                <spna class="span">Countries Affiliation</spna>
+                <span class="span">Countries Affiliation</span>
               </p>
             </li>
 
@@ -1626,14 +877,14 @@
               <p class="card-text">
                 <span class="h1">100+</span>
 
-                <spna class="span">Top University Partner</spna>
+                <span class="span">Top University Partner</span>
               </p>
             </li>
 
             <li>
               <p class="card-text">
                 <span class="h1">10k+ </span>
-                <spna class="span">Visa & Immigration</spna>
+                <span class="span">Visa & Immigration</span>
               </p>
             </li>
           </ul>
@@ -1644,147 +895,142 @@
         - #THINK OF STUDYING 
       -->
 
-      <section class="section project" aria-labelledby="project-label">
+      <section class="section project project-section" aria-labelledby="project-label">
         <div class="container">
+      
           <p class="section-subtitle" id="project-label">DREAM COUNTRIES</p>
-          <h2 class="h2 section-title">
-            Where are you thinking of studying?
+          <h2 class="section-title">
+            Explore Your Dream Study Destination
           </h2>
-
+      
           <ul class="grid-list">
+      
+            <!-- UK -->
             <li>
               <div class="maincontainer">
                 <div class="thecard">
                   <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/UK.png" width="560" height="414" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
+                    <img src="./assets/images/UK.png" alt="Study in UK" />
                   </div>
                   <div class="theback">
-                    <p>The uniqueness of the United Kingdom is the fantastic amalgamation of its ultra-modernity and
-                      cultural richness. As the UK is the home to many of the most ancient, premier universities,
-                      thousands of international students flock to study in the UK every year.</p>
-                    <a href="#" class="btn-text">
-                      <a href="./pages/uk.html" class="btn btn-primary">APPLY HERE
-                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                      </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="maincontainer">
-                <div class="thecard">
-                  <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/australia.png" width="560" height="350" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="theback">
-                    <p>Study in Australia if you wish to study in a country that is at the helm of innovation and
-                      technological advancement. Australia is a diverse, happening country that opens your minds to
-                      possibilities and prepares you for a bright future anywhere in the world.</p>
-                    <a href="#" class="btn-text">
-                      <a href="./pages/europe.html" class="btn btn-primary">APPLY HERE
-                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                      </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="maincontainer">
-                <div class="thecard">
-                  <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/ireland.png" width="560" height="350" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="theback">
-                    <p>Located in the north-western fringes of Europe, Ireland’s history is long and complicated. The
-                      customs,
-                      myths, and languages of these peoples are still very important to modern day Irish citizens.</p>
-                    <a href="./pages/europe.html" class="btn btn-primary">APPLY HERE
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <p>
+                      The United Kingdom combines ultra-modern innovation with deep cultural heritage.
+                      Home to many of the world’s oldest universities, it attracts thousands of international students yearly.
+                    </p>
+                    <a href="./pages/uk.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                   </div>
                 </div>
               </div>
             </li>
+      
+            <!-- Australia -->
             <li>
               <div class="maincontainer">
                 <div class="thecard">
                   <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/USA.png" width="560" height="350" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
+                    <img src="./assets/images/australia.png" alt="Study in Australia" />
                   </div>
                   <div class="theback">
-                    <p>The United State of America is a federation of 50 component states. It is a country with the most
-                      diverse culture in the world with its exemplary uniqueness and unsearchable opportunities.</p>
-                    <a href="./pages/usa.html" class="btn btn-primary">APPLY HERE
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <p>
+                      Study in Australia — a global leader in innovation and research.
+                      A diverse and forward-thinking country that prepares you for global opportunities.
+                    </p>
+                    <a href="./pages/australia.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                   </div>
                 </div>
               </div>
             </li>
+      
+            <!-- Ireland -->
             <li>
               <div class="maincontainer">
                 <div class="thecard">
                   <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/canada.png" width="560" height="350" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
+                    <img src="./assets/images/ireland.png" alt="Study in Ireland" />
                   </div>
                   <div class="theback">
-                    <p>Diversity and open-mindedness are the fabrics of Canada. This is the reason why thousands of
-                      international students have chosen to study in Canada and make the country their permanent home
-                      in
-                      recent times.</p>
-                    <a href="./pages/canada.html" class="btn btn-primary">APPLY HERE
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <p>
+                      Ireland offers a rich cultural heritage and world-class education system.
+                      A growing destination for international students in Europe.
+                    </p>
+                    <a href="./pages/europe.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                   </div>
                 </div>
               </div>
             </li>
+      
+            <!-- USA -->
             <li>
               <div class="maincontainer">
                 <div class="thecard">
                   <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/europe.png" width="560" height="350" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
+                    <img src="./assets/images/USA.png" alt="Study in USA" />
                   </div>
                   <div class="theback">
-                    <p>Studying in Europe has been lovely beautified by the acceptance of English Language
-                      as a means of learning and instruction in both Private and Public Universities and Colleges </p>
-                    <a href="./pages/europe.html" class="btn btn-primary">APPLY HERE
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <p>
+                      The United States offers unmatched diversity, cutting-edge research,
+                      and endless academic opportunities across 50 states.
+                    </p>
+                    <a href="./pages/usa.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                   </div>
                 </div>
               </div>
             </li>
+      
+            <!-- Canada -->
+            <li>
+              <div class="maincontainer">
+                <div class="thecard">
+                  <div class="thefront">
+                    <img src="./assets/images/canada.png" alt="Study in Canada" />
+                  </div>
+                  <div class="theback">
+                    <p>
+                      Canada is known for diversity and academic excellence.
+                      A top destination for students seeking quality education and permanent opportunities.
+                    </p>
+                    <a href="./pages/canada.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Europe -->
+            <li>
+              <div class="maincontainer">
+                <div class="thecard">
+                  <div class="thefront">
+                    <img src="./assets/images/europe.png" alt="Study in Europe" />
+                  </div>
+                  <div class="theback">
+                    <p>
+                      Europe offers diverse educational systems with English-taught programs
+                      across public and private universities.
+                    </p>
+                    <a href="./pages/europe.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+      
           </ul>
         </div>
       </section>
@@ -2480,13 +1726,13 @@
 
         <ul class="social-list">
           <li>
-            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL"  target="_blank"  class="social-link">
+            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL" target="_blank" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#"  target="_blank"  class="social-link">
+            <a href="#" target="_blank" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
@@ -2498,12 +1744,12 @@
           </li>
 
           <li>
-            <a href="https://www.youtube.com/@RonaldPartners"  target="_blank"  class="social-link">
+            <a href="https://www.youtube.com/@RonaldPartners" target="_blank" class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/ronaldandpartners/"  target="_blank"  class="social-link">
+            <a href="https://www.linkedin.com/in/ronaldandpartners/" target="_blank" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
@@ -2696,6 +1942,34 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header");
+      if (window.scrollY > 50) {
+        header.style.boxShadow = "0 10px 30px rgba(0,0,0,0.08)";
+      } else {
+        header.style.boxShadow = "none";
+      }
+    });
+  </script>
+  <script>
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll(".reveal");
+
+      reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+  </script>
 
 </body>
 
