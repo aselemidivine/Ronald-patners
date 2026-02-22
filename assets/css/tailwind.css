@@ -1,7 +1,1 @@
 @import "tailwindcss";
-
-@source "./index.html";
-@source "./pages/**/*.html";
-@source "./canada-caregiver-jobs-recruitment.html";
-@source "./assets/js/**/*.js";
-
