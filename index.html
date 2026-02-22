@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 
-    - primary meta tags
   <title>Ronald Partners</title>
   <meta name="title" content="Ronald Partners" />
   <meta name="description" content="This is a study and travel agency, made by Digitalents Hub" />
@@ -21,9 +19,6 @@
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-
-
 
   <!-- 
     - favicon
@@ -41,6 +36,7 @@
   <!-- 
     - custom css link
   -->
+  <link rel="stylesheet" href="./assets/css/tailwind.generated.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/hero-form.css" />
   <!-- <link rel="stylesheet" href="./assets/css/forms.css" /> -->
@@ -57,8 +53,10 @@
 </head>
 
 <body>
-  <header class="header" data-header>
-    <div class="container">
+  <header
+    class="header fixed top-0 left-0 w-full z-50 transition-all duration-300"
+    data-header>
+    <div class="container flex items-center justify-between">
       <a href="#" class="logo">
         <img src="./assets/images/logo.png" width="124" height="24" alt="Ronald home" class="logo-light" />
 
@@ -80,76 +78,96 @@
 
         <ul class="navbar-list">
           <li>
-            <a href="./index.html" class="navbar-link">Home</a>
-          </li>
-
-
+            <a href="./index.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Home</a>
+          </li>          
 
           <!-- Add a new list item with the dropdown container -->
-          <li class="navbar-dropdown">
-            <a class="navbar-link">Our Services <ion-icon name="chevron-down-outline"></ion-icon></a>
-            <!-- Add the dropdown content inside a nested ul element -->
-            <ul class="dropdown-content">
-              <li>
-                <a href="./pages/study-abroad.html">Study Abroad</a>
-              </li>
-              <li>
-                <a href="./pages/expert-visa-services.html">Visa</a>
-              </li>
-              <li>
-                <a href="./pages/ielts.html">IELTS</a>
-              </li>
-              <li>
-                <a href="./pages/work-visa.html">Work Migration / Employment Visa</a>
-              </li>
+          <li class=" navbar-dropdown">
+              <a class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Our Services <ion-icon name="
+                chevron-down-outline"></ion-icon></a>
+              <!-- Add the dropdown content inside a nested ul element -->
+              <ul class="dropdown-content"
+                style="background:#ffffff; border-radius:12px; box-shadow:0 15px 35px rgba(0,0,0,0.08); padding:12px 0;">
+                <li>
+                  <a href="./pages/study-abroad.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">Study
+                    Abroad</a>
+                </li>
+                <li>
+                  <a href="./pages/expert-visa-services.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">Visa</a>
+                </li>
+                <li>
+                  <a href="./pages/ielts.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">IELTS</a>
+                </li>
+                <li>
+                  <a href="./pages/work-visa.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">Work
+                    Migration / Employment Visa</a>
+                </li>
 
-              <li>
-                <a href="./pages/law.html" target="_blank">Law</a>
-              </li>
-              <li>
-                <a href="./pages/immigration.html">Immigration</a>
-              </li>
-              <li>
-                <a href="./canada-caregiver-jobs-recruitment.html" >Jobs in Canada</a>
-              </li>
-            </ul>
+                <li>
+                  <a href="./pages/law.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;"
+                    target="_blank">Law</a>
+                </li>
+                <li>
+                  <a href="./pages/immigration.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">Immigration</a>
+                </li>
+                <li>
+                  <a href="./canada-caregiver-jobs-recruitment.html"
+                    style="padding:10px 20px; display:block; font-size:14px; font-weight:500; color:#333;">Jobs in
+                    Canada</a>
+                </li>
+              </ul>
           </li>
 
 
           <li>
-            <a href="./pages/about-us.html" class="navbar-link">About</a>
+            <a href="./pages/about-us.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">About</a>
           </li>
 
           <li>
-            <a href="./pages/form/referral.html" class="navbar-link">Referral</a>
+            <a href=" ./pages/form/referral.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Referral</a>
           </li>
           <li>
-            <a href="./canada-caregiver-jobs-recruitment.html" class="navbar-link">Jobs</a>
+            <a href=" ./canada-caregiver-jobs-recruitment.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Jobs</a>
           </li>
 
           <li>
-            <a href="./pages/events.html" class="navbar-link">Events</a>
+            <a href=" ./pages/events.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Events</a>
           </li>
           <!-- <li>
-            <a href="./pages/jobs/canada-caregiver-jobs-recruitment.html" class="navbar-link">Jobs Overseas</a>
+            <a href=" ./pages/jobs/canada-caregiver-jobs-recruitment.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Jobs Overseas</a>
           </li> -->
 
 
           <!-- <li>
-            <a href="./pages/blogs.html" class="navbar-link">Ad-News</a>
+            <a href=" ./pages/blogs.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Ad-News</a>
           </li> -->
           <li>
-            <a href="./pages/contact-us.html" class="navbar-link">Contact</a>
+            <a href=" ./pages/contact-us.html"
+              class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Contact</a>
           </li>
-          <!-- <li class="navbar-dropdown">
-            <a class="navbar-link">Contact <ion-icon name="chevron-down-outline"></ion-icon></a>
-            <ul class="dropdown-content">
-              <li>
-                <a href="./pages/contact-us.html">Contact Us</a>
-              </li>
-            
+          <!-- <li class=" navbar-dropdown">
+              <a class="navbar-link font-semibold text-md tracking-wide hover:text-blue-600 transition duration-300"">Contact <ion-icon name="
+                chevron-down-outline"></ion-icon></a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="./pages/contact-us.html">Contact Us</a>
+                </li>
 
-            </ul>
+
+              </ul>
           </li> -->
         </ul>
 
@@ -167,13 +185,13 @@
 
         <ul class="social-list">
           <li>
-            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL"  target="_blank"  class="social-link">
+            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL" target="_blank" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#"  target="_blank"  class="social-link">
+            <a href="#" target="_blank" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
@@ -185,16 +203,17 @@
           </li>
 
           <li>
-            <a href="https://www.youtube.com/@RonaldPartners"  target="_blank"  class="social-link">
+            <a href="https://www.youtube.com/@RonaldPartners" target="_blank" class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/ronaldandpartners/"  target="_blank"  class="social-link">
+            <a href="https://www.linkedin.com/in/ronaldandpartners/" target="_blank" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-        </ul>      </nav>
+        </ul>
+      </nav>
 
       <a href="https://portal.ronald-partners.net/" class="btn ">Login</a>
       <a href="https://portal.ronald-partners.net/signup" class="btn btn-primary">Sign Up</a>
@@ -213,17 +232,29 @@
         - #HERO
       -->
 
+      <!-- <section class="section">
+            <div class="container mx-auto my-24 text-center">
+              <p
+                class="inline-block rounded-lg bg-green-50 px-6 py-[0.32rem] text-sm font-medium text-gray-600 shadow-lg"
+              >
+                Tailwind CSS is now enabled on this site. This banner is styled with Tailwind utility classes.
+              </p>
+            </div>
+          </section> -->
+
       <section class="section hero has-bg-image" aria-label="home"
         style="background-image: url('./assets/images/hero-bg.jpg')">
-        >
+        <div class="hero-overlay"></div>
         <!-- <div></div> -->
         <!-- style="background-color: var(--hero);" -->
 
         <div class="container">
           <div class="hero-content">
             <h3 class="hero-text-header">Effective Visa Solution</h3>
-            <h1 class="h1 hero-title">HIGHER STUDY IN <span class="auto-type"></span> </h1>
-
+            <h1 class="hero-title">
+              Study Abroad in <br><span class="auto-type"></span><br>
+              With Trusted Experts
+            </h1>
 
             <p class="hero-text">
               Our professionalism, honesty, sincerity &amp; dedication to
@@ -231,10 +262,8 @@
             </p>
 
             <div class="btn-wrapper">
-              <a href="./pages/form/index.html" class="btn btn-primary"> Apply Here </a>
-
-              <a href="./pages/form/partners.html" class="btn btn-outline">Partner Here</a>
-
+              <a href="./pages/form/index.html" class="btn btn-primary">Start Application</a>
+              <a href="./pages/form/partners.html" class="btn btn-outline">Become a Partner</a>
 
             </div>
             <a href="./pages/universisties/dundee.html">
@@ -244,9 +273,6 @@
             </a>
 
           </div>
-
-
-
 
 
           <div class="study-containerr">
@@ -1033,9 +1059,9 @@
 
                   <div class="button">
                     <!-- <input type="submit" onclick="openPopup()" value="Submit form" id="showRandomAlert" /> -->
-                    <input type="submit" value="Submit form" id="sweetalert" />
+                    <input type="submit" value="Get Free Consultation" id="sweetalert" />
                   </div>
-                  <div class="phone">
+                  <!-- <div class="phone">
                     <ul class="phone-list">
                       <li class="phone-numbers">+234(1)2953655</li>
                       <li class="phone-numbers">+2348034311748</li>
@@ -1050,7 +1076,7 @@
                       </li>
                      
                     </ul>
-                  </div>
+                  </div> -->
                 </form>
                 <!-- </div> -->
 
@@ -1062,118 +1088,66 @@
       </section>
 
       <div class="video-wrapper">
-        <video autoplay loop muted playsinline>
+        <video autoplay loop muted playsinline preload="none">
           <source
             src="https://player.vimeo.com/progressive_redirect/playback/399224417/rendition/1080p/file.mp4?loc=external&amp;signature=0c042aef1522710f4de40000c3bcf8262292927131a3e77732d618e7c462eb7a"
             type="video/mp4">
         </video>
 
         <!-- <div class="testimoniall">
-
-        <div class="slider">
-          <span id="slide-1"></span>
-          <span id="slide-2"></span>
-          <span id="slide-3"></span>
-          <div class="image-container">
-            <div class="slide">
-              <div class="video-card active-text">
-                <h3 class="immigration">IMMIGRATION CONSULTANCY</h3>
-                <p class="card-text">
-                  You can be rest assured that you get the best Immigration
-                </p>
-                <a href="./pages/immigration.html" class="btn-text">
-                  <span class="span">Learn More</span>
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </div>
-            </div>
-
-            <div class="slide">
-
-              <div class="video-card">
-                <h3 class="education">EDUCATION CONSULTANCY</h3>
-                <p class="card-text">
-                  We assist you in achieving your educational goals
-                </p>
-                <a href="./pages/education.html" class="btn-text">
-                  <span class="span">Learn More</span>
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </div>
-            </div>
-           
-            <div class="slide">
-
-              <div class="video-card">
-                <h3 class="job-placement">JOB PLACEMENT ASSISTANCE</h3>
-                <p class="card-text">
-                  We provide support for finding the right job
-                </p>
-                <a href="./pages/job-placement.html" class="btn-text">
-                  <span class="span">Learn More</span>
-                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="buttons">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-          </div>
-        </div>
-        </div>  -->
-
-        <div class="testimoniall">
-          <div class="testimonial-pic">
-
-          </div>
           <div class="testimoniall-text">
             <div class="video-card active-text">
               <h3 id="changing-text" class="immigration">IMMIGRATION CONSULTANCY</h3>
 
               <p class="card-text">
+                You can be rest assured that you <br> get the best Immigration
+              </p>
+              <div class="learn">
+                <a href="./pages/immigration.html" class="btn-text">
+                  <span class="span">LEARN MORE</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+
+        <div class="testimoniall">
+          <div class="testimonial-pic">
+          </div>
+
+          <div class="testimoniall-text">
+            <div class="video-card active-text">
+              <h3 id="changing-text" class="immigration">IMMIGRATION CONSULTANCY</h3>
+              <p class="card-text">
                 You can be rest assured that you get the best Immigration
               </p>
               <div class="learn">
-
                 <a href="./pages/immigration.html" class="btn-text">
-                  <span class="span">LEARN MORE</span>
+                <span class="span">LEARN MORE</span>
+                </a>
               </div>
-
-              </a>
             </div>
           </div>
 
-
-
           <div class="testimonial-pic">
           </div>
+
         </div>
       </div>
 
-
-
       <section class="banner__section--style stats hidden" aria-label="our stats">
         <a href="./pages/fair/education-fair.html">
-
-          
           <img class="banner__img--style" src="./assets/images/fair-banner.jpeg" alt="">
         </a>
       </section>
-
-
-
-
-
-
-
 
       <!-- 
             - #SERVICE
       -->
 
-      <section class="section service" aria-labelledby="service-label">
+      <section class="section service service-section" aria-labelledby="service-label">
+        <div class="service-bg-shape"></div>
         <div class="container">
           <p class="section-subtitle" id="service-label">What We Do?</p>
 
@@ -1182,7 +1156,7 @@
           </h2>
 
           <ul class="grid-list">
-            <li class="card-list hidden">
+            <li class="card-list">
               <div class="service-card">
                 <div class="card-icon">
                   <img src="./assets/images/consultants-icon.png" alt="">
@@ -1203,7 +1177,7 @@
               </div>
             </li>
 
-            <li class="card-list hidden">
+            <li class="card-list">
               <div class="service-card">
                 <div class="card-icon">
                   <img src="./assets/images/student-icon-new.png" alt="">
@@ -1228,7 +1202,7 @@
               </div>
             </li>
 
-            <li class="card-list hidden">
+            <li class="card-list">
               <div class="service-card">
                 <div class="card-icon">
                   <img src="./assets/images/institution-icon.png" alt="">
@@ -1248,7 +1222,7 @@
               </div>
             </li>
 
-            <li class="card-list hidden">
+            <li class="card-list">
               <div class="service-card">
                 <div class="card-icon">
                   <img src="./assets/images/school-icon.png" alt="">
@@ -1280,15 +1254,8 @@
         - #WHY CHOOSE US
       -->
 
-      <section class="about hidden" aria-labelledby="about-label">
+      <section class="about" aria-labelledby="about-label">
         <div class="container">
-          <a href="./pages/universisties/teeside.html">
-
-            <figure class="about-banner">
-              <img src="./assets/images/updated.jpg" height="454px" width="551px" loading="lazy" alt="about banner"
-                class="w-100" />
-            </figure>
-          </a>
 
           <div class="about-content">
             <p class="section-subtitle" id="about-label">Why Choose Us?</p>
@@ -1304,7 +1271,7 @@
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">STUDY IN CANADA</spna>
+                      <span class="span h5">STUDY IN CANADA</span>
                     </button>
                   </h3>
 
@@ -1317,7 +1284,7 @@
                     path of settling in the adjudged best country on earth
                     today...
                     <a href="./pages/canada.html" class="btn-text">
-                      <button class="span">APPLY HERE</button>
+                      APPLY HERE
                     </a>
                   </p>
                 </div>
@@ -1329,15 +1296,16 @@
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">STUDY IN USA</spna>
+                      <span class="span h5">STUDY IN USA</span>
                     </button>
                   </h3>
 
                   <p class="accordion-content">
                     The United State of America is the Federal Republic consisting of 50 States.
                     It is a country with the most diverse culture in the world with its
-                    exemplary uniqueness and unsearchable opportunities… <a href="./pages/usa.html"
-                      class="btn-text"><button class="span">APPLY HERE</button>
+                    exemplary uniqueness and unsearchable opportunities…
+                    <a href="./pages/usa.html" class="btn-text">
+                      APPLY HERE
                     </a>
                   </p>
 
@@ -1350,15 +1318,17 @@
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">STUDY IN UK</spna>
+                      <span class="span h5">STUDY IN UK</span>
                     </button>
                   </h3>
 
                   <p class="accordion-content">
                     Studying in the UK has always been a unique experience for students
                     particularly as it relates to the availability of courses, the standard of education,
-                    the language of instruction, scholarship availability, and flexible visa rules… <a
-                      href="./pages/uk.html" class="btn-text"><button class="span">APPLY HERE</button> </a>
+                    the language of instruction, scholarship availability, and flexible visa rules…
+                    <a href="./pages/uk.html" class="btn-text">
+                      APPLY HERE
+                    </a>
                   </p>
                 </div>
               </li>
@@ -1369,7 +1339,7 @@
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">STUDY IN EUROPE</spna>
+                      <span class="span h5">STUDY IN EUROPE</span>
                     </button>
                   </h3>
 
@@ -1377,8 +1347,10 @@
                     Europe is another amazing study abroad destination for students across the world,
                     Africans are not exempted. Studying in Europe has been lovely beautified by the acceptance
                     of English Language as a means of learning and instruction in both Private and Public Universities
-                    and Colleges… <a href="./pages/europe.html" class="btn-text"><button class="span">APPLY
-                        HERE</button> </a>
+                    and Colleges…
+                    <a href="./pages/europe.html" class="btn-text">
+                      APPLY HERE
+                    </a>
                   </p>
                 </div>
               </li>
@@ -1389,26 +1361,35 @@
                     <button class="accordion-btn" data-accordion-btn>
                       <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <spna class="span h5">STUDY IN AUSTRALIA</spna>
+                      <span class="span h5">STUDY IN AUSTRALIA</span>
                     </button>
                   </h3>
 
                   <p class="accordion-content">
                     When people think of Australia, they see wide open spaces of outback bush, kangaroos, koalas, and
-                    clean air and water. Australia has much more to offer than the usual expectations… <a
-                      href="./pages/study-abroad.html" class="btn-text"><button class="span">APPLY HERE</button> </a>
+                    clean air and water. Australia has much more to offer than the usual expectations…
+                    <a href="./pages/study-abroad.html" class="btn-text">
+                      APPLY HERE
+                    </a>
                   </p>
                 </div>
               </li>
             </ul>
           </div>
+
+          <a href="./pages/universisties/teeside.html">
+            <figure class="about-banner">
+              <img src="./assets/images/updated.jpg" height="454px" width="551px" loading="lazy" alt="about banner"
+                class="w-100" />
+            </figure>
+          </a>
+
         </div>
       </section>
 
       <!-- 
         #LIST OF SCHOOLS
        -->
-
 
       <section class="section project swiper mySwiper">
         <!-- <div class="container"> -->
@@ -1563,15 +1544,11 @@
         <!-- </div> -->
       </section>
 
-
-
-
-
       <!-- 
         - #ABOUT
       -->
 
-      <section class="section feature hidden" aria-labelledby="feature-label">
+      <section class="section feature" aria-labelledby="feature-label">
         <div class="container">
           <figure class=" feature__banner__flex">
             <img src="./assets/images/ronald-flyer.png" width="800" height="531" loading="lazy" alt="feature banner"
@@ -1603,8 +1580,7 @@
         - #STATS
       -->
 
-
-      <section class="stats hidden" aria-label="our stats">
+      <section class="stats" aria-label="our stats">
         <!-- <div class="container"> -->
         <div class="video-wrapper-stat">
           <div class="video-overlay"></div>
@@ -1618,7 +1594,7 @@
               <p class="card-text">
                 <span class="h1">10k + </span>
 
-                <spna class="span">Happy Clients and Students</spna>
+                <span class="span">Happy Clients and Students</span>
               </p>
             </li>
 
@@ -1626,7 +1602,7 @@
               <p class="card-text">
                 <span class="h1">20 + </span>
 
-                <spna class="span">Countries Affiliation</spna>
+                <span class="span">Countries Affiliation</span>
               </p>
             </li>
 
@@ -1634,167 +1610,161 @@
               <p class="card-text">
                 <span class="h1">100+</span>
 
-                <spna class="span">Top University Partner</spna>
+                <span class="span">Top University Partner</span>
               </p>
             </li>
 
             <li>
               <p class="card-text">
                 <span class="h1">10k+ </span>
-                <spna class="span">Visa & Immigration</spna>
+                <span class="span">Visa & Immigration</span>
               </p>
             </li>
           </ul>
         </div>
       </section>
 
-
-
       <!-- 
         - #THINK OF STUDYING 
       -->
 
-      <section class="section project hidden" aria-labelledby="project-label">
+      <section class="section project project-section" aria-labelledby="project-label">
         <div class="container">
+
           <p class="section-subtitle" id="project-label">DREAM COUNTRIES</p>
-          <h2 class="h2 section-title">
-            Where are you thinking of studying?
+          <h2 class="section-title">
+            Explore Your Dream Study Destination
           </h2>
 
           <ul class="grid-list">
+
+            <!-- UK -->
             <li>
               <div class="maincontainer">
                 <div class="thecard">
                   <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/UK.png" width="560" height="414" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
+                    <img src="./assets/images/UK.png" alt="Study in UK" />
                   </div>
                   <div class="theback">
-                    <p>The uniqueness of the United Kingdom is the fantastic amalgamation of its ultra-modernity and
-                      cultural richness. As the UK is the home to many of the most ancient, premier universities,
-                      thousands of international students flock to study in the UK every year.</p>
-                    <a href="#" class="btn-text">
-                      <a href="./pages/uk.html" class="btn btn-primary">APPLY HERE
-                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                      </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="maincontainer">
-                <div class="thecard">
-                  <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/australia.png" width="560" height="350" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="theback">
-                    <p>Study in Australia if you wish to study in a country that is at the helm of innovation and
-                      technological advancement. Australia is a diverse, happening country that opens your minds to
-                      possibilities and prepares you for a bright future anywhere in the world.</p>
-                    <a href="#" class="btn-text">
-                      <a href="./pages/europe.html" class="btn btn-primary">APPLY HERE
-                        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                      </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="maincontainer">
-                <div class="thecard">
-                  <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/ireland.png" width="560" height="350" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="theback">
-                    <p>Located in the north-western fringes of Europe, Ireland’s history is long and complicated. The
-                      customs,
-                      myths, and languages of these peoples are still very important to modern day Irish citizens.</p>
-                    <a href="./pages/europe.html" class="btn btn-primary">APPLY HERE
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <p>
+                      The United Kingdom combines ultra-modern innovation with deep cultural heritage.
+                      Home to many of the world’s oldest universities, it attracts thousands of international students
+                      yearly.
+                    </p>
+                    <a href="./pages/uk.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                   </div>
                 </div>
               </div>
             </li>
+
+            <!-- Australia -->
             <li>
               <div class="maincontainer">
                 <div class="thecard">
                   <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/USA.png" width="560" height="350" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
+                    <img src="./assets/images/australia.png" alt="Study in Australia" />
                   </div>
                   <div class="theback">
-                    <p>The United State of America is a federation of 50 component states. It is a country with the most
-                      diverse culture in the world with its exemplary uniqueness and unsearchable opportunities.</p>
-                    <a href="./pages/usa.html" class="btn btn-primary">APPLY HERE
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <p>
+                      Study in Australia — a global leader in innovation and research.
+                      A diverse and forward-thinking country that prepares you for global opportunities.
+                    </p>
+                    <a href="./pages/australia.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                   </div>
                 </div>
               </div>
             </li>
+
+            <!-- Ireland -->
             <li>
               <div class="maincontainer">
                 <div class="thecard">
                   <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/canada.png" width="560" height="350" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
+                    <img src="./assets/images/ireland.png" alt="Study in Ireland" />
                   </div>
                   <div class="theback">
-                    <p>Diversity and open-mindedness are the fabrics of Canada. This is the reason why thousands of
-                      international students have chosen to study in Canada and make the country their permanent home
-                      in
-                      recent times.</p>
-                    <a href="./pages/canada.html" class="btn btn-primary">APPLY HERE
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <p>
+                      Ireland offers a rich cultural heritage and world-class education system.
+                      A growing destination for international students in Europe.
+                    </p>
+                    <a href="./pages/europe.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                   </div>
                 </div>
               </div>
             </li>
+
+            <!-- USA -->
             <li>
               <div class="maincontainer">
                 <div class="thecard">
                   <div class="thefront">
-                    <div class="project-card">
-                      <figure class="card-banner img-holder">
-                        <img src="./assets/images/europe.png" width="560" height="350" loading="lazy"
-                          alt="Ligula tristique quis risus" class="img-cover" />
-                      </figure>
-                    </div>
+                    <img src="./assets/images/USA.png" alt="Study in USA" />
                   </div>
                   <div class="theback">
-                    <p>Studying in Europe has been lovely beautified by the acceptance of English Language
-                      as a means of learning and instruction in both Private and Public Universities and Colleges </p>
-                    <a href="./pages/europe.html" class="btn btn-primary">APPLY HERE
-                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    <p>
+                      The United States offers unmatched diversity, cutting-edge research,
+                      and endless academic opportunities across 50 states.
+                    </p>
+                    <a href="./pages/usa.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                   </div>
                 </div>
               </div>
             </li>
+
+            <!-- Canada -->
+            <li>
+              <div class="maincontainer">
+                <div class="thecard">
+                  <div class="thefront">
+                    <img src="./assets/images/canada.png" alt="Study in Canada" />
+                  </div>
+                  <div class="theback">
+                    <p>
+                      Canada is known for diversity and academic excellence.
+                      A top destination for students seeking quality education and permanent opportunities.
+                    </p>
+                    <a href="./pages/canada.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Europe -->
+            <li>
+              <div class="maincontainer">
+                <div class="thecard">
+                  <div class="thefront">
+                    <img src="./assets/images/europe.png" alt="Study in Europe" />
+                  </div>
+                  <div class="theback">
+                    <p>
+                      Europe offers diverse educational systems with English-taught programs
+                      across public and private universities.
+                    </p>
+                    <a href="./pages/europe.html" class="btn btn-primary">
+                      APPLY HERE
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
           </ul>
         </div>
       </section>
@@ -1803,7 +1773,7 @@
           - #TESTIMONIALS
          -->
 
-      <section class="hidden testimon">
+      <section class="testimon">
         <div class="container">
 
           <p class="section-subtitle" id="project-label">TESTIMONIALS</p>
@@ -1812,9 +1782,8 @@
           </h2>
         </div>
         <div class="section contain">
-
           <div class="testimonial">
-            <div class="testimonial-text" style=" background-image: url('./assets/images/hero-bg.jpg')">
+            <div class="testimonial-text px-16 py-20 rounded-md text-white" style=" background-image: url('./assets/images/hero-bg.jpg')">
               <div class="user-text">
                 <i class="fas fa-quote-left"></i>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt recusandae cum odio maiores
@@ -1870,14 +1839,12 @@
             </div>
           </div>
         </div>
-
-
-
       </section>
 
       <!-- 
           #STUDY ENQUIRY
           -->
+
       <section class="section study-enquiry ">
         <div class="container">
           <div class="study-title">
@@ -2452,7 +2419,6 @@
     </article>
   </main>
 
-
   <!-- 
         #TO TOP ICON
        -->
@@ -2490,13 +2456,13 @@
 
         <ul class="social-list">
           <li>
-            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL"  target="_blank"  class="social-link">
+            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL" target="_blank" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#"  target="_blank"  class="social-link">
+            <a href="#" target="_blank" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
@@ -2508,12 +2474,12 @@
           </li>
 
           <li>
-            <a href="https://www.youtube.com/@RonaldPartners"  target="_blank"  class="social-link">
+            <a href="https://www.youtube.com/@RonaldPartners" target="_blank" class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/ronaldandpartners/"  target="_blank"  class="social-link">
+            <a href="https://www.linkedin.com/in/ronaldandpartners/" target="_blank" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
@@ -2706,6 +2672,34 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector(".header");
+      if (window.scrollY > 50) {
+        header.style.boxShadow = "0 10px 30px rgba(0,0,0,0.08)";
+      } else {
+        header.style.boxShadow = "none";
+      }
+    });
+  </script>
+  <script>
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll(".reveal");
+
+      reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+  </script>
 
 </body>
 
