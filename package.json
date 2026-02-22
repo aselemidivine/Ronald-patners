@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node server/index.js",
     "build:css": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/tailwind.generated.css --minify",
-    "watch:css": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/tailwind.generated.css --watch"
+    "watch:css": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/tailwind.generated.css --watch=always"
   },
   "repository": {
     "type": "git",
