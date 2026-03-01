@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../assets/css/forms.css" />
   <link rel="stylesheet" href="./form.css" />
   <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/hero-form.css" />
 </head>
 
 <body>
@@ -44,9 +45,9 @@
             <a href="../../index.html" class="navbar-link">Home</a>
           </li>
 
-         
 
-           <!-- Add a new list item with the dropdown container -->
+
+          <!-- Add a new list item with the dropdown container -->
           <li class="navbar-dropdown">
             <a href="#" class="navbar-link">Our Services <ion-icon name="chevron-down-outline"></ion-icon></a>
             <!-- Add the dropdown content inside a nested ul element -->
@@ -83,7 +84,7 @@
           <li>
             <a href="./referral.html" class="navbar-link">Referral</a>
           </li>
-         
+
           <li>
             <a href="../../canada-caregiver-jobs-recruitment.html" class="navbar-link">Jobs Overseas</a>
           </li>
@@ -101,7 +102,7 @@
               <!-- <li>
                 <a href="../form/appointment.html">Book An Appointment</a>
               </li> -->
-          
+
             </ul>
           </li>
         </ul>
@@ -120,13 +121,13 @@
 
         <ul class="social-list">
           <li>
-            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL"  target="_blank"  class="social-link">
+            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL" target="_blank" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#"  target="_blank"  class="social-link">
+            <a href="#" target="_blank" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
@@ -138,12 +139,12 @@
           </li>
 
           <li>
-            <a href="https://www.youtube.com/@RonaldPartners"  target="_blank"  class="social-link">
+            <a href="https://www.youtube.com/@RonaldPartners" target="_blank" class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/ronaldandpartners/"  target="_blank"  class="social-link">
+            <a href="https://www.linkedin.com/in/ronaldandpartners/" target="_blank" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
@@ -161,51 +162,41 @@
     </div>
   </header>
 
-  <div class="form-contact">
-    <div class="study-form-logo">
-      <!-- Your logo image or text goes here -->
-      <img src="../../assets/images/cropped-ronald-partner-logo.png" alt="Logo" />
-    </div>
-    <p class="address">Head Office: Ronald and Partners Consult, 1st Floor, Nurses House, PC 43, Church Gate Street,
-      Victoria Island, Lagos State.</p>
-    <p class="contact">Contact Mobile Numbers: +234(1)2953655, +2348034311748, +2349073666847</p>
-    <p class="contact">Emails: edu.ronald101@gmail.com ronalddesk@gmail.com info@ronald-partners.net</p>
+  <section class="study-form-section">
+    <div class="study-form-container">
+      <div class="study-form-logo">
+        <img src="../../assets/images/cropped-ronald-partner-logo.png" alt="Logo" />
+      </div>
 
+      <h2 class="study-form-heading">Partner With Us</h2>
+      <p class="study-form-subheading">For Universities, Education Institutions and Individuals</p>
 
-  </div>
-  <h3 class="form-heading">Partner With Us</h3>
-  <div class="welcome__container">
-    <p class="address">For Universities, Education Institutions and Individuals</p>
-  </div>
-
- <div class="form__container">
-    <div class="primary-form">
-      <h5 class="primary-info">Referral Partners</h5>
+      <h5 class="study-form-label">Referral Partners</h5>
       <div class="welcome__container">
         <p class="address">Refer students and clients to Ronald-partners consult and get rewarded.</p>
       </div>
 
-      <form id="form" class="form">
-        <div class="form__grid">
-          <div class="form__item">
-            <label class="form__label" for="firstname">Given Name *</label>
-            <input class="form__input" id="firstname" name="name" placeholder="Given Name" />
+      <form id="form" class="form study-form">
+        <div class="study-form-gridd">
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="firstname">Given Name *</label>
+            <input class="study-form-input" id="firstname" name="name" placeholder="Given Name" />
           </div>
-          <div class="form__item">
-            <label class="form__label" for="lastname">Family Name *</label>
-            <input class="form__input" name="surname" type="text" id="lastname" placeholder="Family Name" />
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="lastname">Family Name *</label>
+            <input class="study-form-input" name="surname" type="text" id="lastname" placeholder="Family Name" />
           </div>
         </div>
 
-        <div class="form__grid">
+        <div class="study-form-gridd">
 
-          <div class="form__item">
-            <label class="form__label" for="email">Email *</label>
-            <input class="form__input" name="email" type="email" id="email" placeholder="Email Address" />
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="email">Email *</label>
+            <input class="study-form-input" name="email" type="email" id="email" placeholder="Email Address" />
           </div>
-          <div class="form__item">
-            <label class="form__label" for="location"> Location *</label>
-             <select id="location" name="location">
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="location"> Location *</label>
+            <select class="study-form-input study-form-select" id="location" name="location">
               <option value="Afghanistan">Afghanistan</option>
               <option value="Åland Islands">Åland Islands</option>
               <option value="Albania">Albania</option>
@@ -450,27 +441,27 @@
           </div>
         </div>
 
-        <div class="form__grid">
-          <div class="form__item">
-            <label class="form__label" for="dob">Company Name *</label>
-            <input class="form__input" id="dob" name="companyName" placeholder="e.g Ronald and partners" />
+        <div class="study-form-gridd">
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="dob">Company Name *</label>
+            <input class="study-form-input" id="dob" name="companyName" placeholder="e.g Ronald and partners" />
           </div>
-          <div class="form__item">
-            <label class="form__label" for="mobile">Mobile Number *</label>
-            <input class="form__input" name="phoneNumber" id="mobile" type="number" placeholder="Mobile Number" />
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="mobile">Mobile Number *</label>
+            <input class="study-form-input" name="phoneNumber" id="mobile" type="number" placeholder="Mobile Number" />
           </div>
         </div>
 
-        <div class="form__grid">
-          <div class="form__item">
-            <label class="form__label" for="dob">Company Website</label>
-            <input class="form__input" id="dob" name="companyWebsite" placeholder="www" />
+        <div class="study-form-gridd">
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="dob">Company Website</label>
+            <input class="study-form-input" id="dob" name="companyWebsite" placeholder="www" />
           </div>
 
 
-          <div class="form__item">
-            <label class="form__label" for="role"> Your Role *</label>
-             <select id="role" name="role">
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="role"> Your Role *</label>
+            <select class="study-form-input study-form-select" id="role" name="role">
               <option value="director">Director</option>
               <option value="counselor">Counsellor</option>
               <option value="owner">Owner</option>
@@ -480,52 +471,48 @@
               <option value="franchise">Franchise Owner</option>
               <option value="manager" selected>Manager</option>
               <option value="others">Others</option>
-              
+
             </select>
           </div>
         </div>
 
-        <div class="form__item">
-          <label class="form__label" for="summary">Summary</label>
-          <textarea class="form__textarea" name="summary" id="summary" placeholder="Please write something about yourself"></textarea>
+        <div class="study-form-field">
+          <label class="study-form-label-text" for="summary">Summary</label>
+          <textarea class="study-form-input study-form-textarea" name="summary" id="summary"
+            placeholder="Please write something about yourself"></textarea>
         </div>
-        <div class="button partner__button">
-          <input type="submit" id="sweetalert" value="Submit form" />
+
+
+        <h5 class="study-form-label">Education Institution Partnership</h5>
+
+        <div class="welcome__container">
+          <p class="address">Appoint Ronald-partners consult as education agent in Nigeria and other countries in
+            Africa.
+          </p>
         </div>
-      </form>
-    </div>
 
 
-    <div class="secondary-form">
-      <h5 class="primary-info">Education Institution Partnership</h5>
 
-      <div class="welcome__container">
-        <p class="address">Appoint Ronald-partners consult as education agent in Nigeria and other countries in Africa.</p>
-      </div>
-
-    
-
-      <form id="form" class="form-value">
-        <div class="form__grid">
-          <div class="form__item">
-            <label class="form__label" for="firstname">Given Name *</label>
-            <input class="form__input" name="name"  id="firstname" placeholder="Given Name" />
+        <div class="study-form-gridd">
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="firstname">Given Name *</label>
+            <input class="study-form-input" name="name" id="firstname" placeholder="Given Name" />
           </div>
-          <div class="form__item">
-            <label class="form__label" for="lastname">Family Name *</label>
-            <input class="form__input" name="surname" type="text" id="lastname" placeholder="Family Name" />
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="lastname">Family Name *</label>
+            <input class="study-form-input" name="surname" type="text" id="lastname" placeholder="Family Name" />
           </div>
         </div>
 
-        <div class="form__grid">
+        <div class="study-form-gridd">
 
-          <div class="form__item">
-            <label class="form__label" for="email">Email *</label>
-            <input class="form__input" type="email" id="email" name="email" placeholder="Email Address" />
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="email">Email *</label>
+            <input class="study-form-input" type="email" id="email" name="email" placeholder="Email Address" />
           </div>
-          <div class="form__item">
-            <label class="form__label" for="location"> Location *</label>
-             <select id="location" name="location">
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="location"> Location *</label>
+            <select class="study-form-input study-form-select" id="location" name="location">
               <option value="Afghanistan">Afghanistan</option>
               <option value="Åland Islands">Åland Islands</option>
               <option value="Albania">Albania</option>
@@ -770,46 +757,48 @@
           </div>
         </div>
 
-        <div class="form__grid">
-          <div class="form__item">
-            <label class="form__label" for="dob">Institution Name *</label>
-            <input class="form__input" name="institutionName" id="dob" placeholder="e.g Ronald and partners" />
+        <div class="study-form-gridd">
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="dob">Institution Name *</label>
+            <input class="study-form-input" name="institutionName" id="dob" placeholder="e.g Ronald and partners" />
           </div>
-          <div class="form__item">
-            <label class="form__label" for="mobile">Mobile Number *</label>
-            <input class="form__input" id="mobile" type="number" name="phoneNumber" placeholder="Mobile Number" />
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="mobile">Mobile Number *</label>
+            <input class="study-form-input" id="mobile" type="number" name="phoneNumber" placeholder="Mobile Number" />
           </div>
         </div>
 
-        <div class="form__grid">
-          <div class="form__item">
-            <label class="form__label" for="dob">Institution Website</label>
-            <input class="form__input" id="dob" name="institutionWebsite" placeholder="www" />
+        <div class="study-form-gridd">
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="dob">Institution Website</label>
+            <input class="study-form-input" id="dob" name="institutionWebsite" placeholder="www" />
           </div>
 
-          <div class="form__item">
-            <label class="form__label" for="role"> Institution Level *</label>
-             <select id="level" name="level">
+          <div class="study-form-field">
+            <label class="study-form-label-text" for="role"> Institution Level *</label>
+            <select class="study-form-input study-form-select" id="level" name="level">
               <option value="high_school">High School</option>
               <option value="university">University</option>
-            
-              
+
+
             </select>
           </div>
-         
+
         </div>
 
-        <div class="form__item">
-          <label class="form__label" for="summary">Summary</label>
-          <textarea class="form__textarea" name="summary" id="summary" placeholder="Please write something about yourself"></textarea>
+        <div class="study-form-field">
+          <label class="study-form-label-text" for="summary">Summary</label>
+          <textarea class="study-form-input study-form-textarea" name="summary" id="summary"
+            placeholder="Please write something about yourself"></textarea>
         </div>
-        
-        <div class="button ">
-          <input type="submit" id="sweetalert" value="Submit form" />
+
+        <div class="study-form-submit-wrapper">
+          <button type="submit" class="study-form-submit">Submit Form <ion-icon name="paper-plane-outline"
+              aria-hidden="true"></ion-icon></button>
         </div>
       </form>
     </div>
-  </div> 
+  </section>
 
 
 
@@ -830,13 +819,13 @@
 
         <ul class="social-list">
           <li>
-            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL"  target="_blank"  class="social-link">
+            <a href="https://www.facebook.com/ronaldpartners?mibextid=ZbWKwL" target="_blank" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#"  target="_blank"  class="social-link">
+            <a href="#" target="_blank" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
@@ -848,12 +837,12 @@
           </li>
 
           <li>
-            <a href="https://www.youtube.com/@RonaldPartners"  target="_blank"  class="social-link">
+            <a href="https://www.youtube.com/@RonaldPartners" target="_blank" class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/ronaldandpartners/"  target="_blank"  class="social-link">
+            <a href="https://www.linkedin.com/in/ronaldandpartners/" target="_blank" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
@@ -943,7 +932,7 @@
 
   <!-- <form class="form-a">
         <input class="input-a" type="radio">
-        <select class="select" type="radio">
+        <select class="study-form-input" type="radio">
             <option>None</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
@@ -951,12 +940,12 @@
         <p>recurring</p>
     </form> -->
 
-    <script src="../../assets/js/canada.js"></script>
-    <!-- <script src="../../assets/js/script.js"></script> -->
-    <script src="../../assets/js/sweetalert.js"></script>
+  <script src="../../assets/js/canada.js"></script>
+  <!-- <script src="../../assets/js/script.js"></script> -->
+  <script src="../../assets/js/sweetalert.js"></script>
 
 
-      <!-- 
+  <!-- 
     - ionicon
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
