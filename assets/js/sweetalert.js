@@ -1,48 +1,47 @@
-// document.getElementById("showRandomAlert").addEventListener("click", function() {
-//   const alerts = [
-//     { title: "Success!", text: "Operation completed successfully.", icon: "success" },
-//     { title: "Error!", text: "An error occurred.", icon: "error" },
-//     { title: "Warning!", text: "Please proceed with caution.", icon: "warning" },
-//     { title: "Info!", text: "Here's some important information.", icon: "info" },
-//   ];
+/**
+ * Universal Form Submission Handler
+ * Automatically finds all <form> elements on the page, prevents default submission,
+ * sends data via fetch to the API, and shows a SweetAlert confirmation.
+ */
+(function () {
+    const API_URL = 'https://api.ronald-partners.net/api/events-form';
 
-//   const randomIndex = Math.floor(Math.random() * alerts.length);
-//   const randomAlert = alerts[randomIndex];
+    // Find all forms on the page
+    const forms = document.querySelectorAll('form');
 
-//   Swal.fire({
-//     title: randomAlert.title,
-//     text: randomAlert.text,
-//     icon: randomAlert.icon,
-//     confirmButtonText: "OK"
-//   });
-// });
+    forms.forEach(function (form) {
+        // Skip forms that have an action attribute pointing to a different endpoint
+        // (e.g. newsletter input-wrapper forms that are not real submission forms)
+        if (form.classList.contains('input-wrapper')) return;
 
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
 
-// document.getElementById("showRandomAlert").addEventListener("click", function() {
-//     const alerts = [
-//       { title: "Success!", text: "Operation completed successfully.", icon: "success" },
-//       { title: "Error!", text: "An error occurred.", icon: "error" },
-//     ];
-  
-//     const randomIndex = Math.floor(Math.random() * alerts.length);
-//     const randomAlert = alerts[randomIndex];
-  
-//     const toast = Swal.mixin({
-//       toast: true,
-//       position: "top-end",
-//       showConfirmButton: false,
-//       timer: 10000 // Adjust the duration in milliseconds (e.g., 5000ms = 5 seconds)
-//     });
-  
-//     toast.fire({
-//       icon: randomAlert.icon,
-//       title: randomAlert.title,
-//       text: randomAlert.text
-//     });
-//   });
+            // Build the payload from form data
+            const formData = new FormData(form);
+            const payload = new URLSearchParams(formData);
+            console.log('Form submitted:', [...payload]);
 
-
-
-document.getElementById('sweetalert').addEventListener('click', function() {
-    Swal.fire('Thank You. We will get back to you soon!');
-})
+            // Send request to API
+            fetch(API_URL, {
+                method: 'POST',
+                body: payload,
+                mode: 'no-cors'
+            })
+                .then(function (res) {
+                    return res.json();
+                })
+                .then(function (data) {
+                    console.log('Response:', data);
+                    Swal.fire('Thank You. We will get back to you soon!');
+                    form.reset();
+                })
+                .catch(function (err) {
+                    console.log('Request sent (opaque response with no-cors):', err);
+                    // Still show success - mode: 'no-cors' returns opaque response that can't be parsed
+                    Swal.fire('Thank You. We will get back to you soon!');
+                    form.reset();
+                });
+        });
+    });
+})();
