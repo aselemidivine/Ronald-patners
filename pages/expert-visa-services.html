@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="../assets/css/tailwind.generated.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/forms.css" />
+  <link rel="stylesheet" href="../assets/css/hero-form.css" />
+
 
 
     <!-- 
@@ -84,7 +86,7 @@
                                 <a href="../pages/study-abroad.html">Study Abroad</a>
                             </li>
                             <li>
-                                <a href="../pages/expert-visa-services.html">Visa</a>
+                                <a href="../pages/events.html">Events</a>
                             </li>
                             <li>
                                 <a href="#">Law</a>
@@ -183,142 +185,438 @@
             <div class="overlay" data-nav-toggler data-overlay></div>
         </div>
     </header>
+<main>
 
-    <main>
-        <article>
-            <!-- 
-        - #HERO
-      -->
+<!-- HERO -->
+<section class="visa-hero">
+  <div class="container hero-inner">
+    <h1>Study Abroad – Your Gateway to Global Education</h1>
+    <p>
+      Fast Track Admission into 300+ Universities across Canada, UK, USA,
+      Australia, Ireland, France, Spain, Germany and more.
+    </p>
 
-            <section class="section hero has-bg-image" aria-label="home"
-                style="background-image: url('../assets/images/ab-us.jpg')">
-                >
+    <!-- <a href="#apply" class="btn-primary-modern">Apply Now</a> -->
+    <div class="study-form-submit-wrapper">
+            <a href="#study-form" class="apply-btn">
 
-                <div class="page-title__area pt-110 ">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xxl-12">
-                                <div class="page__title-wrapper text-center">
-                                    <h3 class="pb-100">Expert Visa Services</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            APPLY NOW
+            <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
 
-            </section>
-
-            <!-- 
-        - #REQUIREMENTS
-      -->
-
-            <section class="section service" aria-labelledby="service-label">
-                <div class="container">
-
-                    <ul class="grid-list">
-                        <li class="card-list hidden">
-                            <div class="service-card">
-                                <div class="card-icon">
-                                    <img src="../assets/images/consultants-icon.png" alt="">
-                                    <!-- <ion-icon name="call-outline" aria-hidden="true"></ion-icon> -->
-                                </div>
-
-                                <h3 class="h4 card-title"> Ensure The Requirements</h3>
-
-                                <p class="card-text">
-
-                                    Work permit approval in higher education is designed for career professionals.
-                                    You can be rest assured that you get the best Immigration.
-                                </p>
+            </a>
+        </div>
+  </div>
+</section>
 
 
-                            </div>
-                        </li>
+<!-- APPLICATION FORM -->
+    <section class="study-form-section" id="study-form" aria-label="study enquiry form">
+    <div class="study-form-container">
 
-                        <li class="card-list hidden">
-                            <div class="service-card">
-                                <div class="card-icon">
-                                    <!-- <img src="../assets/images/student-icon-new.png" alt=""> -->
-                                    <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
-                                </div>
+        <h2 class="study-form-heading">Interested in studying abroad with Ronald Partners?</h2>
+        <p class="study-form-subheading">Fill in your details to request a callback!</p>
 
-                                <h3 class="h4 card-title">Collection of The Documents</h3>
+        <form class="study-form" id="visa-enquiry-form" data-api="http://localhost:3500/api/submit-form-visa">
+        <!-- <form class="study-form" id="visa-enquiry-form" data-api="https://api.ronald-partners.net/api/submit-form-visa"> -->
 
-                                <p class="card-text">
-                                    Work permit approval in higher education is designed for career professionals
-                                    seeking to study.
-                                </p>
-                            </div>
-                        </li>
+        <!-- NAME -->
+        <div class="study-form-grid">
 
-                        <li class="card-list hidden">
-                            <div class="service-card">
-                                <div class="card-icon">
-                                    <img src="../assets/images/institution-icon.png" alt="">
-                                </div>
+            <div class="study-form-field">
+            <input class="study-form-input" type="text" id="sf-name" name="name" placeholder="First Name" required />
+            </div>
 
-                                <h3 class="h4 card-title">Fill Up The Required From</h3>
-                                <p class="card-text">
-                                    Work permit approval in higher education is designed for career professionals
-                                    seeking to study.
-                                </p>
-                            </div>
-                        </li>
+            <div class="study-form-field">
+            <input class="study-form-input" type="text" id="sf-surname" name="surname" placeholder="Last Name" required />
+            </div>
 
+            <div class="study-form-field">
+            <input class="study-form-input" type="tel" id="sf-mobile" name="phoneNumber" placeholder="Tel Number" />
+            </div>
 
-                    </ul>
-                </div>
-            </section>
+            <div class="study-form-field">
+            <input class="study-form-input" type="email" id="sf-email" name="email" placeholder="Email Address" required />
+            </div>
+
+            
+
+        </div>
+
+        <!-- LOCATION -->
+        <div class="study-form-grid">
 
 
-            <!-- 
-                #NECCESSARYREQUIREMENTS
-             -->
+                <div class="study-form-field">
+            <select class="study-form-input study-form-select" name="experience">
+                <option value="">Years of Work Experience</option>
+                <option value="None">None</option>
+                <option value="1-4 Years">1 - 4 Years</option>
+                <option value="5-8 Years">5 - 8 Years</option>
+                <option value="9-12 Years">9 - 12 Years</option>
+                <option value="12+ Years">Above 12 Years</option>
+            </select>
+            </div>
 
-            <section class="section feature hidden" aria-labelledby="feature-label">
-                <div class="container">
-                    <!-- <figure class="feature-banner">
-                        <img src="../assets/images/business-1.jpg" width="800" height="531" loading="lazy"
-                            alt="feature banner" class="w-100" />
-                    </figure> -->
+            <div class="study-form-field">
+            <select class="study-form-input study-form-select" name="sponsorship">
+                <option value="">How Will You Sponsor Your Education?</option>
+                <option value="Self Sponsor">Self Sponsor</option>
+                <option value="Family Sponsor">Family Sponsor</option>
+                <option value="Government Sponsor">Government Sponsor</option>
+                <option value="Study Loan">Study Loan</option>
+                <option value="Scholarship">Scholarship</option>
+            </select>
+            </div>
 
-                    <div class="feature-content">
+                <div class="study-form-field">
+            <select class="study-form-input study-form-select" id="sf-nationality" name="nationality">
 
-                        <figure class="feature-banner">
-                            <img src="../assets/images/2.png" width="800" height="531" loading="lazy"
-                                alt="feature banner" class="w-100" />
-                        </figure>
+                <!-- your country list remains unchanged -->
+                <option value="">Nationality</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ireland">Ireland</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
 
-                        <!-- <a href="../pages/form/index.html" class="btn btn-about">APPLY HERE</a> -->
+            </select>
+            </div>
+
+            <div class="study-form-field">
+            <input class="study-form-input" type="text" name="course" placeholder="Course You Want To Study">
+            </div>
+        </div>
+        <div class="study-form-grid">
+
+            <div class="study-form-field">
+            <input class="study-form-input" type="text" id="sf-city" name="city" placeholder="City" />
+            </div>
+
+            <div class="study-form-field">
+            <input class="study-form-input" type="number" name="age" placeholder="Age">
+            </div>
+
+                <div class="study-form-field">
+              <select class="study-form-input study-form-select" id="sf-resumptionDate" name="resumptionDate">
+                  <option value="" selected disabled>When Will You Like To Resume</option>
+                  <option value="January">January</option>
+                  <option value="february">February</option>
+                  <option value="march">March</option>
+                  <option value="april">April</option>
+                  <option value="may">May</option>
+                  <option value="june">June</option>
+                  <option value="july">July</option>
+                  <option value="august">August</option>
+                  <option value="september">September</option>
+                  <option value="october">October</option>
+                  <option value="november">November</option>
+                  <option value="december">December</option>
+                
+               
+                </select>
+            </div>
+
+             <div class="study-form-field">
+                <input class="study-form-input" type="text" id="sf-tuition" name="tuitionBudget" placeholder="Tuition Budget" />
+              </div>
+        </div>
+
+        <!-- MESSAGE -->
+        <div class="study-form-grid study-form-grid--full">
+
+            <div class="study-form-field study-form-field--full">
+            <textarea
+                class="study-form-input study-form-textarea"
+                id="sf-query"
+                name="summary"
+                placeholder="Please write something about yourself..."
+                rows="4"></textarea>
+            </div>
+
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="study-form-submit-wrapper">
+            <button type="submit" value="Submit form" class="study-form-submit" id="sweetalert">
+
+            Submit
+            <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
+
+            </button>
+        </div>
+
+        </form>
+
+    </div>
+    </section>
 
 
-                    </div>
-                    <div class="feature-content">
+<!-- STUDY DESTINATIONS -->
+<section class="section destinations">
+  <div class="container">
 
-                        <figure class="feature-banner">
-                            <img src="../assets/images/7.png" width="800" height="531" loading="lazy"
-                                alt="feature banner" class="w-100" />
-                        </figure>
+    <h2 class="section-title">Study Destinations</h2>
+
+   <div class="destinations-grid">
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/ca.png" alt="Canada flag">
+    Canada
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/au.png" alt="Australia flag">
+    Australia
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/gb.png" alt="UK flag">
+    United Kingdom
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/us.png" alt="USA flag">
+    United States
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/ie.png" alt="Ireland flag">
+    Ireland
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/fr.png" alt="France flag">
+    France
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/es.png" alt="Spain flag">
+    Spain
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/de.png" alt="Germany flag">
+    Germany
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/fi.png" alt="Finland flag">
+    Finland
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/pl.png" alt="Poland flag">
+    Poland
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/hu.png" alt="Hungary flag">
+    Hungary
+  </div>
+
+  <div class="destination-card">
+    <span class="bullet"></span>
+    <img src="https://flagcdn.com/w40/tr.png" alt="Turkey flag">
+    Turkey
+  </div>
+
+</div>
+
+  </div>
+</section>
+
+
+<!-- SPECIAL FEATURES -->
+<section class="section features">
+  <div class="container">
+
+    <h2 class="section-title">Special Features</h2>
+
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <ion-icon name="school-outline"></ion-icon>
+        <h4>Simplified Admission System</h4>
+      </div>
+
+      <div class="feature-card">
+        <ion-icon name="shield-checkmark-outline"></ion-icon>
+        <h4>Expert Visa Services</h4>
+      </div>
+
+      <div class="feature-card">
+        <ion-icon name="people-outline"></ion-icon>
+        <h4>Family Migration Opportunity</h4>
+      </div>
+
+      <div class="feature-card">
+        <ion-icon name="briefcase-outline"></ion-icon>
+        <h4>Study & Work Opportunities</h4>
+      </div>
+
+      <div class="feature-card">
+        <ion-icon name="cash-outline"></ion-icon>
+        <h4>Affordable Tuition Plans</h4>
+      </div>
+
+      <div class="feature-card">
+        <ion-icon name="card-outline"></ion-icon>
+        <h4>Study Loan for Canada & USA</h4>
+      </div>
+
+      <div class="feature-card">
+        <ion-icon name="book-outline"></ion-icon>
+        <h4>IELTS Training (Optional)</h4>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- WHY STUDY ABROAD -->
+<section class="section why-study">
+  <div class="container">
+
+    <h2 class="section-title">Why Study Abroad?</h2>
+
+    <div class="flex">
+
+        <ul class="benefits-list">
+            
+            <li>High Quality Education with research focused programs</li>
+      <li>Diverse cultural exposure and global opportunities</li>
+      <li>Career benefits and international work experience</li>
+      <li>Post Study Work Opportunities</li>
+      <li>Pathway to second citizenship</li>
+      <li>Family migration & settlement options</li>
+      <li>Scholarships and study loans available</li>
+      
+    </ul>
+
+
+            <figure class="feature-banner">
+                <img src="../assets/images/svg-2.webp" width="800" height="531" loading="lazy"
+                alt="feature banner" class="w-100" />
+            </figure>
+    
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ADMISSION REQUIREMENTS -->
+<div class="requirements-grid">
+
+  <div class="requirement-card">
+    <h3>Undergraduate Admission</h3>
+    <ul>
+      <li>WAEC / NECO / IGCSE or equivalent</li>
+      <li>Academic transcripts</li>
+      <li>Valid passport data page</li>
+      <li>Birth certificate</li>
+      <li>CV with contact details</li>
+      <li>IELTS 6.0 (Not Mandatory)</li>
+    </ul>
+  </div>
+
+  <div class="requirement-card">
+    <h3>Postgraduate / Masters</h3>
+    <ul>
+      <li>Bachelor Degree Certificate</li>
+      <li>Academic transcripts</li>
+      <li>Statement of Purpose</li>
+      <li>Detailed CV</li>
+      <li>Employment reference letter</li>
+      <li>Academic reference letter</li>
+      <li>Name change proof if applicable</li>
+      <li>IELTS 6.0 (Not Mandatory)</li>
+    </ul>
+  </div>
+
+</div>
 
 
 
-                    </div>
-                </div>
-                <div class="apply__btn">
-                    <a href="../pages/form/index.html" class="btn btn-about">APPLY HERE</a>
-                </div>
-            </section>
+<!-- TESTIMONIAL -->
+      <section class="testimon">
+        <div class="container">
 
-
-
-
-
-
-
-
-
-        </article>
-    </main>
+          <p class="section-subtitle" id="project-label">TESTIMONIALS</p>
+          <h2 class="h2 section-title">
+            What Our Happy Students Have To Say
+          </h2>
+        </div>
+        <div class="section contain">
+          <div class="testimonial">
+            <div class="testimonial-text px-16 py-20 rounded-md text-white">
+              <div class="user-text">
+                <i class="fas fa-quote-left"></i>
+                <p>Ronald and Partners made my admission and visa process very easy.
+          I studied Law and Public Policy at Teesside University. Their
+          services were professional and completely free.</p>
+                <span>Progress Ikpeama, student</span>
+              </div>
+              <div class="user-text active-text">
+                <i class="fas fa-quote-left"></i>
+                <p>I am currently studying Masters in Public Health and Health Promotion at Robert Gordon University. My application was so simplified to the extent that I thought it as too easy,  every step of the processes were made to look so simple, kidos to the highly efficient team at Ronald and Partners Consult. 
+                </p>
+                <span>Matron Veronica Ekwere, student</span>
+              </div>
+              <div class="user-text">
+                <i class="fas fa-quote-left"></i>
+                <p>Thank you, Ronald-partners, for your excellent service. Thank you to My Counsellor, who is so
+                  helpful
+                  and loyal about their service. Their Education Counsellors explained well the whole process to us to
+                  get my visa and made it a stress-free process all throughout. I highly recommend ronald-partners who
+                  are looking for a great migration agent.</p>
+                <span>Kemi Adesoye, student</span>
+              </div>
+              <div class="user-text">
+                <i class="fas fa-quote-left"></i>
+                <p>The team guided me step-by-step through my application.
+          Their visa experts were very supportive and responsive.
+          I highly recommend Ronald and Partners.</p>
+                <span>Joseph Oyenkami, student</span>
+              </div>
+              <div class="user-text">
+                <i class="fas fa-quote-left"></i>
+                <p>Ronald and Partners is one of the best ones out there in their field of profession. I'm really
+                  pleased by the services they provide. They are really helpful and always provide the right guidance
+                  to
+                  the students through their experience. All the staff members are supportive and really happy with
+                  their assistance.</p>
+                <span>Toyin Samuel, student</span>
+              </div>
+            </div>
+            <div class="testimonial-pic">
+              <img src="../assets/images/progres.jpeg" alt="" class="user-pic" onclick="showReview()">
+              <img src="../assets/images/matron.jpeg" alt="" class="user-pic active-pic"
+                onclick="showReview()">
+              <img src="../assets/images/Joseph.jpeg" alt="" class="user-pic" onclick="showReview()">
+              <img src="../assets/images/hero-3.png" alt="" class="user-pic" onclick="showReview()">
+            </div>
+          </div>
+        </div>
+      </section>
+</main>
 
 
     <!-- 
@@ -348,7 +646,7 @@
                 </a>
 
                 <p class="footer-text">
-                    &copy; Copyright © 2022 Ronald and Partners. <br />
+                    &copy; Copyright © 2026 Ronald and Partners. <br />
                     All rights reserved.
                 </p>
 
@@ -402,6 +700,33 @@
     </li> -->
             </div>
 
+            
+            <ul class="footer-list">
+                <li>
+                    <p class="h4 footer-list-title">Study destinations</p>
+                </li>
+
+                <li>
+                    <a href="../pages/canada.html" class="footer-link">Study in Canada</a>
+                </li>
+                
+                <li>
+                    <a href="../pages/usa.html" class="footer-link">Study in USA</a>
+                </li>
+
+                <li>
+                    <a href="../pages/uk.html" class="footer-link">Study in UK</a>
+                </li>
+
+                <li>
+                    <a href="../pages/europe.html" class="footer-link">Study in Europe</a>
+                </li>
+                
+                <li>
+                    <a href="../pages/europe.html" class="footer-link">Study in Switzerland</a>
+                </li>
+            </ul>
+
             <ul class="footer-list">
                 <li>
                     <p class="h4 footer-list-title">Get in Touch</p>
@@ -423,32 +748,6 @@
                 </li>
 
 
-            </ul>
-
-            <ul class="footer-list">
-                <li>
-                    <p class="h4 footer-list-title">Study destinations</p>
-                </li>
-
-                <li>
-                    <a href="../pages/canada.html" class="footer-link">Study in Canada</a>
-                </li>
-
-                <li>
-                    <a href="../pages/usa.html" class="footer-link">Study in USA</a>
-                </li>
-
-                <li>
-                    <a href="../pages/uk.html" class="footer-link">Study in UK</a>
-                </li>
-
-                <li>
-                    <a href="../pages/europe.html" class="footer-link">Study in Europe</a>
-                </li>
-
-                <li>
-                    <a href="../pages/europe.html" class="footer-link">Study in Switzerland</a>
-                </li>
             </ul>
 
             <div class="footer-list">
@@ -500,7 +799,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/canada.js"></script>
+    <script src="../assets/js/sweetalert.js"></script>
 
 
     <!-- 

@@ -334,7 +334,7 @@ body.nav-active {
 }
 
 .about__custom__width {
-  width: 80%;
+  width: 100%;
 }
 
 /*-----------------------------------*\
@@ -2828,3 +2828,180 @@ animation: animate 4s steps(12) infinite;
   left: 0%;
 }
 } */
+
+
+
+.visa-hero{
+padding:120px 20px;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('../images/ab-us.jpg');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+}
+
+.hero-inner{
+max-width:800px;
+margin:auto;
+}
+
+.section-title{
+font-size:34px;
+font-weight:700;
+text-align:center;
+margin-bottom:40px;
+}
+
+.destinations-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.destination-card{
+background:#fff;
+padding:25px;
+text-align:center;
+border-radius:10px;
+font-weight:600;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:.3s;
+}
+
+.destination-card:hover{
+transform:translateY(-5px);
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.feature-card{
+text-align:center;
+padding:30px;
+border-radius:10px;
+background:#f7f7f7;
+}
+
+.feature-card ion-icon{
+font-size:40px;
+color:#ff6600;
+margin-bottom:10px;
+}
+
+.benefits-list{
+max-width:700px;
+margin:auto;
+line-height:2;
+font-size:18px;
+}
+
+.requirements-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.requirement-card{
+background:#fff;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.apply-form{
+display:grid;
+gap:15px;
+margin:auto;
+}
+
+.apply-form input,
+.apply-form select{
+padding:14px;
+border-radius:6px;
+border:1px solid #ddd;
+}
+
+.btn-primary-modern{
+background:#ff6600;
+color:#fff;
+padding:14px 28px;
+border-radius:6px;
+display:inline-block;
+text-decoration:none;
+font-weight:600;
+}
+
+.destinations-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  margin-top:40px;
+}
+
+.destination-card{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:#fff;
+  padding:14px 18px;
+  border-radius:10px;
+  font-weight:600;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  transition:all .25s ease;
+}
+
+.destination-card img{
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.destination-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* beautiful bullet */
+
+.bullet{
+  width:10px;
+  height:10px;
+  background: var(--charcoal);
+  border-radius:50%;
+  display:inline-block;
+}
+
+
+/* Styled bullets for lists in Why Study Abroad and Admission Requirements */
+.benefits-list,
+.requirements-grid ul {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+}
+
+.benefits-list li,
+.requirements-grid ul li {
+  position: relative;
+  padding-left: 28px; /* space for custom bullet */
+  margin-bottom: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* custom bullet */
+.benefits-list li::before,
+.requirements-grid ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--charcoal); /* blue bullet */
+  border-radius: 50%;
+}
