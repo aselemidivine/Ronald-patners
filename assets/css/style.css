@@ -2705,6 +2705,20 @@ video {
 
   /* Add any other styling for the testimonial div */
 }
+.video_text_container {
+  position: absolute;
+  width: 90%;
+  margin: auto;
+  top: 40%;
+  left: 7%;
+
+  /* Add any other styling for the testimonial div */
+}
+
+.video_text_header {
+  color: #fff;
+  text-align: center;
+}
 
 .learn {
   height: 50px;

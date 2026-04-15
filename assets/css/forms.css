@@ -1528,6 +1528,14 @@ swiper-slide img {
   text-align: center;
 }
 
+.contact-us-text {
+  color: white;
+  font-size: 57px;
+  padding: 17px;
+  text-align: center;
+  font-weight: 800;
+}
+
 .pb-30 {
   padding-bottom: 7px;
   text-align: center;
@@ -2103,6 +2111,16 @@ video {
     background-size: 100% !important;
     background-repeat: no-repeat;
     /* height: 118px; */
+    padding: 175px;
+}
+
+.dark__img__background__main__teeside {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../../assets/images/Teesside University Banner.png");
+    margin-top: 80px;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    height: 118px;
     padding: 175px;
 }
 
