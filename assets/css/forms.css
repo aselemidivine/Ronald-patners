@@ -287,6 +287,7 @@ body.nav-active {
   color: var(--moonstone);
   font-weight: var(--fw-700);
   margin-block-end: 16px;
+  text-align: center;
 }
 
 .grid-list {
@@ -620,6 +621,7 @@ body.nav-active {
 .about .container {
   display: grid;
   gap: 50px;
+  padding: 20px;
 }
 
 .about .section-title {
