@@ -65,7 +65,8 @@
      */
 
   --shadow-1: 0 0 20px hsla(216, 14%, 14%, 0.05);
-  --shadow-2: 0 0 0 0.05rem hsla(214, 88%, 27%, 0.08),
+  --shadow-2:
+    0 0 0 0.05rem hsla(214, 88%, 27%, 0.08),
     0 0 1.25rem hsla(216, 14%, 14%, 0.06);
   --shadow-3: 0 0 1.25rem hsla(216, 14%, 14%, 0.04);
 
@@ -414,6 +415,8 @@ body.nav-active {
 .navbar-link {
   font-weight: var(--fw-700);
   padding-block: 6px;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .contact-link {
@@ -962,8 +965,7 @@ body.nav-active {
 
   .dark__img__background__main__caregiver {
     height: 117px;
-  } 
-
+  }
 }
 
 @media (min-width: 768px) {
@@ -998,7 +1000,7 @@ body.nav-active {
 
   .dark__img__background__main__caregiver {
     height: 217px;
-  } 
+  }
 
   .pb-30 {
     font-size: 38px;
@@ -1098,7 +1100,7 @@ body.nav-active {
 
   .dark__img__background__main__caregiver {
     height: 480px;
-  } 
+  }
 
   .navbar,
   .navbar.active {
@@ -1112,12 +1114,10 @@ body.nav-active {
     gap: 30px;
   }
 
-
   .pb-30 {
     font-size: 51px;
     margin-top: 37px;
   }
-
 
   .navbar-link {
     color: var(--white);
@@ -1853,19 +1853,19 @@ form .button input:hover {
   .user-pic {
     width: 30%;
   }
-  
-    .testimonial-text {
-      height: 600px;
-    }
-  }
 
-  .content form .user-details {
-    max-height: 300px;
-    overflow-y: scroll;
+  .testimonial-text {
+    height: 600px;
   }
-  .user-details::-webkit-scrollbar {
-    width: 5px;
-  }
+}
+
+.content form .user-details {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.user-details::-webkit-scrollbar {
+  width: 5px;
+}
 
 @media (max-width: 459px) {
   .container .content .category {
@@ -1936,7 +1936,9 @@ form .button input:hover {
   padding: 0 30px 30px;
   color: #333;
   visibility: hidden;
-  transition: transform 0.4s, top 0.4s;
+  transition:
+    transform 0.4s,
+    top 0.4s;
 }
 
 .popup button {
@@ -2098,32 +2100,36 @@ video {
 }
 
 .dark__img__background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("../../assets/images/Teesside\ University\ Banner.png");
 }
 .dark__img__background__main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("../../assets/images/ab-us.jpg");
 }
 
 .dark__img__background__main__caregiver {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("../../assets/images/caregiver.jpg");
-    margin-top: 80px;
-    background-size: 100% !important;
-    background-repeat: no-repeat;
-    /* height: 118px; */
-    padding: 175px;
+  margin-top: 80px;
+  background-size: 100% !important;
+  background-repeat: no-repeat;
+  /* height: 118px; */
+  padding: 175px;
 }
 
 .dark__img__background__main__teeside {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("../../assets/images/Teesside University Banner.png");
-    margin-top: 80px;
-    background-size: 100% !important;
-    background-repeat: no-repeat;
-    height: 118px;
-    padding: 175px;
+  margin-top: 80px;
+  background-size: 100% !important;
+  background-repeat: no-repeat;
+  height: 118px;
+  padding: 175px;
 }
 
 .dark__img__background__main__fair {
@@ -2135,7 +2141,8 @@ video {
 }
 
 .dark__img__background__2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("../../assets/images/dundee-banner.jpeg");
 }
 

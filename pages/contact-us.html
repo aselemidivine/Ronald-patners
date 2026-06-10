@@ -43,6 +43,9 @@
   <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
   <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
   <link rel="stylesheet" href="../assets/css/hero-form.css" />
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -356,9 +359,19 @@
 
             </div>
 
+              <div class="study-form-captcha">
+                <div
+                  class="g-recaptcha"         
+                  data-sitekey="6LfsLnIsAAAAAE96PVEzxxJpKCe5MzpuZP8QPhpA"
+                  data-callback="enableSubmitButton"
+                  data-expired-callback="disableSubmitButton"
+                  > 
+                </div>
+              </div>
+
             <!-- SUBMIT -->
             <div class="study-form-submit-wrapper">
-              <button type="submit" value="Submit form" class="study-form-submit" id="sweetalert">
+              <button type="submit" value="Submit form" disabled class="study-form-submit" id="sweetalert">
 
                 Submit
                 <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
@@ -406,12 +419,12 @@
             Book Appointment
           </button>
         </div>
-        <div id="appointment-section" style="display: none;">
+        <div id="appointment-section" style="display: none;" class="appointment-section">
 
 
 
 
-          <div class="study-form-container">
+          <div class="appointment-form-container">
 
             <h5 class="study-form-label">Primary Information</h5>
 
@@ -503,8 +516,18 @@
                 </div>
               </div>
 
+              <div class="study-form-captcha">
+                <div
+                  class="g-recaptcha"         
+                  data-sitekey="6LfsLnIsAAAAAE96PVEzxxJpKCe5MzpuZP8QPhpA"
+                  data-callback="enableSubmitButton"
+                  data-expired-callback="disableSubmitButton"
+                  > 
+                </div>
+              </div>
+
               <div class="study-form-submit-wrapper">
-                <button type="submit" class="study-form-submit">Finish Booking Appointment <ion-icon
+                <button type="submit" class="study-form-submit" id="sweetalert" disabled>Finish Booking Appointment <ion-icon
                     name="paper-plane-outline" aria-hidden="true"></ion-icon></button>
               </div>
             </form>
@@ -711,7 +734,7 @@
       var formSection = document.getElementById("appointment-section");
 
       if (formSection.style.display === "none") {
-        formSection.style.display = "block";
+        formSection.style.display = "flex";
       } else {
         formSection.style.display = "none"; // optional toggle
       }

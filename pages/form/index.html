@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="../../assets/css/style.css" />
   <link rel="stylesheet" href="./form.css" />
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
 </head>
 
 <body>
@@ -1083,10 +1086,19 @@
             <input type="file" id="otherDocument" name="otherDocument" class="form__input"><br>
           </div>
         </div>     
+           <div class="study-form-captcha">
+              <div
+                class="g-recaptcha"         
+                data-sitekey="6LfsLnIsAAAAAE96PVEzxxJpKCe5MzpuZP8QPhpA"
+                data-callback="enableSubmitButton"
+                data-expired-callback="disableSubmitButton"
+                > 
+              </div>
+            </div>
         
         <div class="button">
           <!-- <input type="submit" onclick="openPopup()" value="Submit form" id="sweetalert" /> -->
-          <input type="submit" value="Submit form" id="sweetalert" />
+          <input type="submit" disabled value="Submit form" id="sweetalert" />
         </div>
         
       </form>

@@ -43,6 +43,11 @@
   <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg" />
   <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
   <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -264,8 +269,8 @@
         <h2 class="study-form-heading">Interested in studying abroad with Ronald Partners?</h2>
         <p class="study-form-subheading">Fill in your details to request a callback!</p>
 
-        <form class="study-form" id="visa-enquiry-form" data-api="http://localhost:3500/api/submit-form-visa">
-          <!-- <form class="study-form" id="visa-enquiry-form" data-api="https://api.ronald-partners.net/api/submit-form-visa"> -->
+        <!-- <form class="study-form" id="visa-enquiry-form" data-api="http://localhost:3500/api/submit-form-visa"> -->
+          <form class="study-form" id="visa-enquiry-form" data-api="https://api.ronald-partners.net/api/submit-form-visa">
 
           <!-- NAME -->
           <div class="study-form-gridd">
@@ -627,6 +632,16 @@
             </div>
 
           </div>
+
+             <div class="study-form-captcha">
+              <div
+                class="g-recaptcha"         
+                data-sitekey="6LfsLnIsAAAAAE96PVEzxxJpKCe5MzpuZP8QPhpA"
+                data-callback="enableSubmitButton"
+                data-expired-callback="disableSubmitButton"
+                > 
+              </div>
+            </div>
 
           <!-- SUBMIT -->
           <div class="study-form-submit-wrapper">

@@ -43,6 +43,9 @@
   <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
   <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
   <link rel="stylesheet" href="../assets/css/hero-form.css" />
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -378,7 +381,7 @@
 
           <h5 class="study-form-label">Primary Information</h5>
 
-          <form id="form" class="form study-form">
+          <form id="form" class="form study-form" data-api="https://api.ronald-partners.net/api/submit-form">
             <div class="study-form-gridd">
               <div class="study-form-field">
                 <label class="study-form-label-text" for="firstname">Given Name *</label>
@@ -1243,9 +1246,18 @@
 
         </div>
 
+            <div class="study-form-captcha mt-4">
+              <div
+                class="g-recaptcha"         
+                data-sitekey="6LfsLnIsAAAAAE96PVEzxxJpKCe5MzpuZP8QPhpA"
+                data-callback="enableSubmitButton"
+                data-expired-callback="disableSubmitButton"
+                > 
+              </div>
+            </div>
 
         <div class="study-form-submit-wrapper">
-          <button type="submit" class="study-form-submit">Submit Form <ion-icon name="paper-plane-outline"
+          <button type="submit" disabled class="study-form-submit" id="sweetalert" value="Submit Form">Submit Form <ion-icon name="paper-plane-outline"
               aria-hidden="true"></ion-icon></button>
         </div>
 

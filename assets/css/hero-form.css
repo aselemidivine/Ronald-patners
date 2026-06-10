@@ -54,6 +54,10 @@ body {
   z-index: 10;
 }
 
+.mt-4 {
+  margin-top: 40px;
+}
+
 @media (max-width: 668px) {
   .form-logo {
     top: 6%;
@@ -308,6 +312,15 @@ select:focus {
   justify-content: space-evenly;
   align-items: center;
 }
+/* .study-form-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f0f0 100%);
+  padding: 60px 20px 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+} */
 
 .study-form-section::before {
   content: "";
@@ -519,6 +532,18 @@ select:focus {
   max-width: 1200px;
   margin: 0 0;
   padding: 0 20px;
+}
+
+.appointment-form-container {
+  display: block;
+  width: 1200px;
+  margin: 0 0;
+  padding: 0 20px;
+}
+
+.appointment-section {
+  justify-content: center;
+  align-items: center;
 }
 
 /* Section label badge (e.g. "Primary Information", "Appointment Preference") */

@@ -51,6 +51,7 @@
   <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
   <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
@@ -266,8 +267,8 @@
           <h2 class="study-form-heading">Interested in studying abroad with Ronald Partners?</h2>
           <p class="study-form-subheading">Fill in your details to request a callback!</p>
 
-          <form class="study-form" id="study-enquiry-form" data-api="http://localhost:3500/api/submit-form">
-          <!-- <form class="study-form" id="study-enquiry-form" data-api="https://api.ronald-partners.net/api/submit-form"> -->
+          <!-- <form class="study-form" id="study-enquiry-form" data-api="http://localhost:3500/api/submit-form"> -->
+          <form class="study-form" id="study-enquiry-form" data-api="https://api.ronald-partners.net/api/submit-form">
             <div class="study-form-grid">
               <div class="study-form-field">
                 <input class="study-form-input" type="text" id="sf-name" name="name" placeholder="First Name"
@@ -829,8 +830,18 @@
               </div>
             </div>
 
+            <div class="study-form-captcha">
+              <div
+                class="g-recaptcha"         
+                data-sitekey="6LfsLnIsAAAAAE96PVEzxxJpKCe5MzpuZP8QPhpA"
+                data-callback="enableSubmitButton"
+                data-expired-callback="disableSubmitButton"
+                > 
+              </div>
+            </div>
+
             <div class="study-form-submit-wrapper">
-              <button type="submit" value="Submit form" class="study-form-submit" id="sweetalert">
+              <button type="submit" value="Submit form" class="study-form-submit" id="sweetalert" disabled>
                 Submit <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
               </button>
             </div>
@@ -2284,7 +2295,6 @@
 
 
   <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-
 
   <!-- 
     - custom js link
