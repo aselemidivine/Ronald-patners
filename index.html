@@ -269,31 +269,24 @@
 
           <!-- <form class="study-form" id="study-enquiry-form" data-api="http://localhost:3500/api/submit-form"> -->
           <form class="study-form" id="study-enquiry-form" data-api="https://api.ronald-partners.net/api/submit-form">
-            <div class="study-form-grid">
+            <div class="study-form-gridd">
               <div class="study-form-field">
-                <input class="study-form-input" type="text" id="sf-name" name="name" placeholder="First Name"
+                <input class="study-form-input" type="text" id="sf-surname" name="fullName" placeholder="Fullname"
                   required />
               </div>
               <div class="study-form-field">
-                <input class="study-form-input" type="text" id="sf-surname" name="surname" placeholder="Last Name"
-                  required />
+                <input class="study-form-input" type="tel" id="sf-mobile" name="phoneNumber" placeholder="Telephone Number" />
               </div>
-              <div class="study-form-field">
-                <input class="study-form-input" type="tel" id="sf-mobile" name="phoneNumber" placeholder="Tel Number" />
-              </div>
-              <div class="study-form-field">
-                <input class="study-form-input" type="email" id="sf-email" name="email" placeholder="Email Address"
-                  required />
-              </div>
+        
             </div>
 
-            <div class="study-form-grid">
+            <div class="study-form-gridd">
               <div class="study-form-field">
                 <input class="study-form-input" type="text" id="sf-city" name="city" placeholder="City" />
               </div>
               <div class="study-form-field">
                 <select class="study-form-input study-form-select" id="sf-destination" name="destinationCountry">
-                  <option value="">Study Destination</option>
+                  <option value="">Which country do you want to study?</option>
                   <option value="Afghanistan">Afghanistan</option>
                   <option value="Åland Islands">Åland Islands</option>
                   <option value="Albania">Albania</option>
@@ -781,7 +774,7 @@
                   <option value="Zimbabwe">Zimbabwe</option>
                 </select>
               </div>
-                <div class="study-form-field">
+              <div class="study-form-field">
                 <input class="study-form-input" type="text" id="sf-course" name="course" placeholder="Course Of Study" />
               </div>
               <div class="study-form-field">
@@ -808,7 +801,7 @@
               </div>
               <div class="study-form-field">
                 <select class="study-form-input study-form-select" id="sf-sponsorship" name="sponsorship">
-                  <option value="" selected disabled>How Do You Intend To Fund?</option>
+                  <option value="" selected disabled>How do you intend to sponsor yourself?</option>
                   <option value="self">Self Funding</option>
                   <option value="family">Family Funding</option>
                   <option value="loan">Loan</option>
@@ -821,9 +814,13 @@
                
                 </select>
               </div>
+              <div class="study-form-field">
+                <input class="study-form-input" type="email" id="sf-email" name="email" placeholder="Email Address"
+                  required />
+              </div>
             </div>
 
-            <div class="study-form-grid study-form-grid--full">
+            <div class="study-form-gridd study-form-grid--full">
               <div class="study-form-field study-form-field--full">
                 <textarea class="study-form-input study-form-textarea" id="sf-query" name="summary"
                   placeholder="Please write something about yourself..." rows="4"></textarea>
@@ -847,12 +844,27 @@
             </div>
           </form>
         </div>
+         <div class="about-container">
+          <div class="about-content">
+            <h2 class="section-title">
+              Meet one-on-one with top university representatives
+            </h2>
+            <p>
+            Explore the unique opportunity to engage directly with admission officials and representatives from leading international universities and colleges. 
+            Studying abroad does not always mean paying full tuition. At the event, you will discover a range of tuition discount opportunities offered by participating universities in the UK and Canada. In addition, attendees will receive valuable guidance on current student visa regulations and immigration requirements. <a class="anchor" href="/pages/events.html">click to attend edu-fair</a>
+            </p>
+            <div class="mt">
+
+              <img class="edu__img--style" src="./assets/images/fair-banner-2.jpeg" alt="">
+            </div>
+
+          </div>
+        </div>
       </section>
 
       <!-- 
         - #ABOUT US SECTION
       -->
-
       <section class="about-us-section" id="about-us" aria-label="about us">
         <div class="about-us-container">
           <div class="about-us-content">

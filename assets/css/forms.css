@@ -1069,6 +1069,10 @@ body.nav-active {
   }
 
   .feature-banner {
+    order: 2;
+    /* margin-bottom: 76px; */
+  }
+  .feature-banner-2 {
     order: 1;
     /* margin-bottom: 76px; */
   }
@@ -1243,7 +1247,7 @@ body.nav-active {
      */
 
   .service .grid-list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   /**
@@ -1857,6 +1861,10 @@ form .button input:hover {
   .testimonial-text {
     height: 600px;
   }
+
+  .dark__img__background__main__edu_fair {
+    padding: 40px !important;
+  }
 }
 
 .content form .user-details {
@@ -2130,6 +2138,22 @@ video {
   background-repeat: no-repeat;
   height: 118px;
   padding: 175px;
+}
+
+.dark__img__background__main__edu_fair{
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../../assets/images/fair-banner-2.jpeg");
+  margin-top: 80px;
+  background-size: 100% !important;
+  background-repeat: no-repeat;
+  /* height: 138px; */
+  padding: 205px;
+}
+
+.fair-img {
+  width: 380px;
+  height: 400px;
 }
 
 .dark__img__background__main__fair {

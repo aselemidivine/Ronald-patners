@@ -160,6 +160,10 @@ body {
   line-height: 1.7;
 }
 
+.anchor {
+  color: var(--atomic-tangerine);
+}
+
 body.nav-active {
   overflow: hidden;
 }
@@ -999,6 +1003,20 @@ body.nav-active {
   max-width: 600px;
 }
 
+.t-align-left {
+  width: 600px;
+}
+
+.t-align-left h2 {
+  text-align: left;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @keyframes fadeLeft {
   from {
     opacity: 0;
@@ -1483,6 +1501,10 @@ body.nav-active {
 
   .feature-banner {
     order: 1;
+  }
+
+  .feature-banner-2 {
+    order: 2;
   }
 
   .feature__banner__flex {
@@ -2107,11 +2129,13 @@ swiper-slide img {
 
   .about-container {
     margin-top: 50px;
-    padding: 20px;
   }
 
   .benefits-container {
     display: grid !important;
+  }
+  .edu__img--style {
+    height: 190px !important;
   }
 }
 
@@ -2332,6 +2356,18 @@ form .button input:hover {
   #note {
     min-width: 378px;
     height: 114px;
+  }
+
+  .t-align-left {
+    width: 390px;
+  }
+
+  .t-align-left .section-title {
+    font-size: 27px;
+  }
+
+  .t-align-left h5 {
+    margin-bottom: 50px;
   }
 }
 
@@ -2764,6 +2800,12 @@ video {
   background-size: 100%;
 }
 
+.edu__img--style {
+  width: 100%;
+  background-size: 100%;
+  height: 250px;
+}
+
 .banner__section--style {
   margin: 50px 0 20px 0;
 }
@@ -2859,7 +2901,13 @@ animation: animate 4s steps(12) infinite;
   font-size: 34px;
   font-weight: 700;
   text-align: center;
+  line-height: 1.3;
   margin-bottom: 40px;
+  color: #0fa3b1;
+}
+
+.mt {
+  margin-top: 100px;
 }
 
 .destinations-grid {
