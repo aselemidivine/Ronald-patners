@@ -689,8 +689,8 @@ select:focus {
 }
 
 .about-us-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 550px;
+  margin: 0 0;
 }
 
 .about-us-content {
@@ -734,7 +734,7 @@ select:focus {
 
 .about-us-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 

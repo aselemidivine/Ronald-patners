@@ -2142,13 +2142,13 @@ video {
 
 .dark__img__background__main__edu_fair{
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url("../../assets/images/fair-banner-2.jpeg");
   margin-top: 80px;
   background-size: 100% !important;
   background-repeat: no-repeat;
   /* height: 138px; */
-  padding: 205px;
+  padding: 275px;
 }
 
 .fair-img {
