@@ -310,7 +310,6 @@ select:focus {
   position: relative;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 /* .study-form-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #f0f0f0 100%);
@@ -961,6 +960,3 @@ select:focus {
   }
 }
 
-/* =============================================
-   TESTIMONIAL REDESIGN — TEAL THEME
-   ============================================= */

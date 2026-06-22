@@ -2135,7 +2135,11 @@ swiper-slide img {
     display: grid !important;
   }
   .edu__img--style {
-    height: 330px !important;
+    height: 510px !important;
+  }
+
+  .about-us-content {
+    margin-top: 60px;
   }
 }
 
@@ -2801,7 +2805,7 @@ video {
 }
 
 .edu__img--style {
-  width: 70%;
+  width: 100%;
   background-size: 100%;
 }
 .flex {
