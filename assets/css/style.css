@@ -3073,3 +3073,166 @@ animation: animate 4s steps(12) infinite;
   background-color: var(--charcoal); /* blue bullet */
   border-radius: 50%;
 }
+
+.compliance-section {
+    padding: 80px 0;
+    background: #f8f9fb;
+}
+
+.section-text {
+    max-width: 700px;
+    margin: 15px auto 50px;
+    text-align: center;
+    color: #666;
+    line-height: 1.7;
+}
+
+.compliance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.compliance-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.compliance-card:hover {
+    transform: translateY(-5px);
+}
+
+.compliance-card i {
+    font-size: 40px;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.compliance-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.compliance-card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.compliance-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.compliance-card {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s ease;
+}
+
+.compliance-card:hover {
+    transform: translateY(-6px);
+}
+
+.compliance-icon {
+    font-size: 45px;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.download-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    margin-top: 15px;
+    background: #0056b3;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.download-link:hover {
+    background: #003d82;
+    transform: scale(1.1);
+}
+
+.download-link i {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.compliance-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.compliance-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    text-align:center;
+    transition:.3s;
+}
+
+.compliance-card:hover{
+    transform:translateY(-8px);
+}
+
+.certificate-img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-bottom:1px solid #eee;
+}
+
+.compliance-card h3{
+    margin:20px 15px;
+    font-size:20px;
+    color:#222;
+}
+
+.view-btn{
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 0px 25px;
+    background: var(--charcoal);
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.view-btn:hover{
+    background:#003d82;
+}
+
+.view-btn i{
+    margin-right:8px;
+}
